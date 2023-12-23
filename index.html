@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- General -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Explorations</title>
+	<meta name="description" content="Exploring the abandoned and the unusual.">
+	<!-- Share Metadata-->
+	<meta property="og:title" content="Explorations"/>
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Exploring the abandoned and unusual."/>
+	<meta property="og:url" content="https://explorations.calek.co"/>
+	<meta property="og:image" content="https://explorations.calek.co/og.png"/>
+	<!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+	<!-- Links -->
+	<link rel="stylesheet" href="bootstrap-grid.css">
+	<link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css'/>
+	<link rel="stylesheet" href="style.css">
+
+	
+</head>
+<body>
+<div class="container-fluid" style="background-color: #000;">
+
+
+	<div id="controls" class="controls">
+		<button id="buttonMinus" onclick="addColumn()">–</button>
+		<button id="buttonPlus" onclick="removeColumn()">+</button>
+	</div>
+
+
+	<div id="images" class="images">
+		<div class="row">
+			<div id="imageGrid" class="col-md-12 image-grid">
+				<a id="bobsled" href="20231210_titos-bunker/titos-bunker.html"><div class="image-element">
+					<img class="" src="20231210_titos-bunker/3.jpg">
+					<div class="info"><h2>Tito's Bunker</h2><p>Konjic, Bosnia and Herzegovina</p></div>
+				</div></a>
+				<a id="bobsled" href="20231209_bobsled/bobsled.html"><div class="image-element">
+					<img class="" src="20231209_bobsled/3.jpg">
+					<div class="info"><h2>1984 Olympic Bobsled Track</h2><p>Sarajevo, Bosnia and Herzegovina</p></div>
+				</div></a>
+				<a id="zeljava" href="20231205_zeljava/zeljava.html"><div class="image-element">
+					<img class="" src="20231205_zeljava/8.jpg">
+					<div class="info"><h2>Željava Underground Air Base</h2><p>Željava, Croatia</p></div>
+				</div></a>
+				<a id="petrova-gora" href="20231204_petrova-gora/petrova-gora.html"><div class="image-element">
+					<img class="" src="20231204_petrova-gora/13.jpg">
+					<div class="info"><h2>Monument to the Uprising of the People of Kordun and Banija</h2><p>Petrova Gora National Park, Vojnić, Croatia</p></div>
+				</div></a>
+				<a id="brezovica" href="20231204_brezovica/brezovica.html"><div class="image-element">
+					<img class="" src="20231204_brezovica/1.jpg">
+					<div class="info"><h2>Monument to the Detachment</h2><p>Novo Selo Palanječko, Croatia</p></div>
+				</div></a>
+				<a id="stone-flower" href="20231204_stone-flower/stone-flower.html"><div class="image-element">
+					<img class="" src="20231204_stone-flower/4.jpg">
+					<div class="info"><h2>Monument to the Revolution of the People of Moslavina</h2><p>Podgarić, Croatia</p></div>
+				</div></a>
+				<a id="moslavina" href="20231204_moslavina/moslavina.html"><div class="image-element">
+					<img class="" src="20231204_moslavina/3.jpg">
+					<div class="info"><h2>Monument to the Revolution of the People of Moslavina</h2><p>Jasenovac, Croatia</p></div>
+				</div></a>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer" class="footer">
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<p>↑ <a class="link" href="#images" class="back-to-top">Back to the top</a></p>
+				<p>V0.1 – Explorations, concept, and code by <a class="link" href="https://www.calek.co" target="_blank">Luke Caish-Sadlek</a></p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div id="map" class="map"></div>
+
+
+
+<!-- Scripts -->
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+<script src="zoom.js"></script>
+<script src="map-box.js"></script>
+
+
+</body>
+</html>

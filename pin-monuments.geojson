@@ -1,0 +1,103 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+	      "image": "20231204_moslavina/3.jpg",
+        "title": "Monument to the Revolution of the People of Moslavina",
+	      "description": "Podgarić, Croatia",
+        "link": "20231204_moslavina/moslavina.html"
+      },
+      "geometry": {
+        "coordinates": [16.777734, 45.640779],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+	      "image": "20231204_stone-flower/4.jpg",
+        "title": "Stone Flower Monument",
+        "description": "Jasenovac, Croatia",
+	      "link": "20231204_stone-flower/stone-flower.html"
+      },
+      "geometry": {
+        "coordinates": [16.928378, 45.280374],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20231204_brezovica/1.jpg",
+        "title": "Monument to the Detachment",
+        "description": "Novo Selo Palanječko, Croatia",
+        "link": "20231204_brezovica/brezovica.html"
+      },
+      "geometry": {
+        "coordinates": [16.458686, 45.502486],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20231204_petrova-gora/13.jpg",
+        "title": "Monument to the Uprising",
+        "description": "Petrova Gora National Park, Vojnić, Croatia",
+        "link": "20231204_petrova-gora/petrova-gora.html"
+      },
+      "geometry": {
+        "coordinates": [15.804969, 45.316262],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20231205_zeljava/8.jpg",
+        "title": "Željava Underground Air Base",
+        "description": "PŽeljava, Croatia",
+        "link": "20231205_zeljava/zeljava.html"
+      },
+      "geometry": {
+        "coordinates": [15.757574, 44.836768],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20231209_bobsled/3.jpg",
+        "title": "1984 Olympic Bobsled Track",
+        "description": "Sarajevo, Bosnia and Herzegovina",
+        "link": "20231209_bobsled/bobsled.html"
+      },
+      "geometry": {
+        "coordinates": [18.443177, 43.839776],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20231210_titos-bunker/3.jpg",
+        "title": "Željava Underground Air Base",
+        "description": "Tito's Bunker",
+        "link": "Konjic, Bosnia and Herzegovina"
+      },
+      "geometry": {
+        "coordinates": [17.994890, 43.634250],
+        "type": "Point"
+      }
+    }
+
+  ],
+  "type": "FeatureCollection"
+}
