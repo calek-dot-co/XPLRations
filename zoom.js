@@ -76,7 +76,6 @@ function updateGrid() {
   // Edit things based on view levels 
   if (currentColumns === 6) {
     buttonMinus.classList.add('buttonActive16');
-    buttonMinus.style.cursor = 'default';
     window.scrollTo(0, 0);
     mapElement.style.zIndex = '5';
   } else if (currentColumns === 5) {
@@ -91,7 +90,6 @@ function updateGrid() {
     });
   } else if (currentColumns === 1) {
     buttonPlus.classList.add('buttonActive16');
-    buttonPlus.style.cursor = 'default';
     images.style.paddingLeft = '15vw';
     images.style.paddingRight = '15vw';
     infoElements.forEach(element => {
