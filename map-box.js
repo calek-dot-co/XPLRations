@@ -3,8 +3,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibHVrZWNhaXNoc2FkbGVrIiwiYSI6ImNscTVuMnI1cjAxN
     container: 'map',
     // Replace YOUR_STYLE_URL with your style URL.
     style: 'mapbox://styles/lukecaishsadlek/clq72rpek003e01pjcvxcfv63', 
-    center: [17, 44.5],
-    zoom: 6.5,
+    center: [18, 43.5],
+    zoom: 6,
   });
 
 
