@@ -294,7 +294,7 @@ button:active {
 }
 
 #controls-back {
-  opacity: 0;
+  opacity: 1;
 }
 
 #controls-back {
@@ -381,5 +381,9 @@ button:active {
   display: none;
 }
 
+
+.mapboxgl-control-container {
+  display: none;
+}
 
 

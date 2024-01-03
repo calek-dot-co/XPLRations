@@ -6,7 +6,8 @@
 
   // Function to handle scroll events
   function handleScroll() {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const offset = -200; // You can adjust this value based on your needs
+    const scrollTop = window.scrollY || document.documentElement.scrollTop + offset;
 
     // Check the scroll direction
     if (scrollTop > lastScrollTop) {
@@ -23,3 +24,4 @@
 
   // Attach the scroll event listener
   window.addEventListener('scroll', handleScroll);
+

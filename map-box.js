@@ -8,7 +8,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibHVrZWNhaXNoc2FkbGVrIiwiYSI6ImNscTVuMnI1cjAxN
   });
 
 
-  map.loadImage('pin-monuments.png', (error, image) => {
+  map.loadImage('pins.png', (error, image) => {
       if (error) throw error;
       map.addImage('custom-icon', image);
   });
@@ -20,7 +20,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibHVrZWNhaXNoc2FkbGVrIiwiYSI6ImNscTVuMnI1cjAxN
     // Load GeoJSON data
     map.addSource('features', {
         type: 'geojson',
-        data: 'pin-monuments.geojson'  // Path to GeoJSON file
+        data: 'pins.geojson'  // Path to GeoJSON file
     });
 
     // Add a layer for the GeoJSON data
