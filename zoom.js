@@ -83,15 +83,19 @@ function updateGrid() {
     mapElement.style.zIndex = '-5';
   } else if (currentColumns === 2) {
     buttonPlus.classList.remove('buttonActive16');
-    images.style.paddingLeft = '0';
-    images.style.paddingRight = '0';
+    images.classList.remove('images-1fr');
+    images.style.paddingTop = '0vw';
+    // images.style.paddingLeft = '0';
+    // images.style.paddingRight = '0';
     infoElements.forEach(element => {
       element.style.display = 'none';
     });
   } else if (currentColumns === 1) {
     buttonPlus.classList.add('buttonActive16');
-    images.style.paddingLeft = '15vw';
-    images.style.paddingRight = '15vw';
+    images.classList.add('images-1fr');
+    images.style.paddingTop = '5vw';
+    // images.style.paddingLeft = '15vw';
+    // images.style.paddingRight = '15vw';
     infoElements.forEach(element => {
       element.style.display = 'block';
     });
