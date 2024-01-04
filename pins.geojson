@@ -3,7 +3,7 @@
     {
       "type": "Feature",
       "properties": {
-	      "image": "20231204_moslavina/3.jpg",
+	      "image": "20231204_moslavina/thumb.jpg",
         "title": "Monument to the Revolution of the People of Moslavina",
 	      "description": "Podgarić, Croatia",
         "link": "20231204_moslavina/moslavina.html"
@@ -17,7 +17,7 @@
     {
       "type": "Feature",
       "properties": {
-	      "image": "20231204_stone-flower/4.jpg",
+	      "image": "20231204_stone-flower/thumb.jpg",
         "title": "Stone Flower Monument",
         "description": "Jasenovac, Croatia",
 	      "link": "20231204_stone-flower/stone-flower.html"
@@ -31,7 +31,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231204_brezovica/1.jpg",
+        "image": "20231204_brezovica/thumb.jpg",
         "title": "Monument to the Detachment",
         "description": "Novo Selo Palanječko, Croatia",
         "link": "20231204_brezovica/brezovica.html"
@@ -45,7 +45,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231204_petrova-gora/13.jpg",
+        "image": "20231204_petrova-gora/thumb.jpg",
         "title": "Monument to the Uprising",
         "description": "Petrova Gora National Park, Vojnić, Croatia",
         "link": "20231204_petrova-gora/petrova-gora.html"
@@ -59,7 +59,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231205_zeljava/8.jpg",
+        "image": "20231205_zeljava/thumb.jpg",
         "title": "Željava Underground Air Base",
         "description": "PŽeljava, Croatia",
         "link": "20231205_zeljava/zeljava.html"
@@ -73,7 +73,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231209_bobsled/3.jpg",
+        "image": "20231209_bobsled/thumb.jpg",
         "title": "1984 Olympic Bobsled Track",
         "description": "Sarajevo, Bosnia and Herzegovina",
         "link": "20231209_bobsled/bobsled.html"
@@ -87,7 +87,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231210_titos-bunker/3.jpg",
+        "image": "20231210_titos-bunker/thumb.jpg",
         "title": "Tito's Bunker",
         "description": "Konjic, Bosnia and Herzegovina",
         "link": "20231210_titos-bunker/titos-bunker.html"
@@ -101,7 +101,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231220_godinje/3.jpg",
+        "image": "20231220_godinje/thumb.jpg",
         "title": "Monument to Fallen Fighters of WWII",
         "description": "Godinje, Montenegro",
         "link": "20231220_godinje/godinje.html"
@@ -115,7 +115,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231210_hotel-igman/3.jpg",
+        "image": "20231210_hotel-igman/thumb.jpg",
         "title": "Hotel Igman",
         "description": "Gornja Grkarica, Bosnia & Herzegovina",
         "link": "20231210_hotel-igman/hotel-igman.html"
@@ -129,7 +129,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231215_kupari-hotels/01.jpg",
+        "image": "20231215_kupari-hotels/thumb.jpg",
         "title": "Abandoned Hotels",
         "description": "Kupari, Croatia",
         "link": "20231215_kupari-hotels/kupari-hotels.html"
@@ -143,7 +143,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231218_sub-bunkers/1.jpg",
+        "image": "20231218_sub-bunkers/thumb.jpg",
         "title": "Submarine Bunkers",
         "description": "Luštica, Montenegro",
         "link": "20231218_sub-bunkers/sub-bunkers.html"
@@ -157,7 +157,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231218_barutana/1.jpg",
+        "image": "20231218_barutana/thumb.jpg",
         "title": "Memorial to the Fallen of the Lješanska Nahija Region",
         "description": "Barutana, Montenegro",
         "link": "20231218_barutana/barutana.html"
@@ -171,7 +171,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231218_sutjeska/4.jpg",
+        "image": "20231218_sutjeska/thumb.jpg",
         "title": "Monument to the Fallen Soldiers on Sutjeska",
         "description": "Carine, Montenegro",
         "link": "20231218_sutjeska/sutjeska.html"
@@ -185,7 +185,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231218_nicsik/1.jpg",
+        "image": "20231218_nicsik/thumb.jpg",
         "title": "Monument to Fallen Fighters of WWII",
         "description": "Nikšić, Montenegro",
         "link": "20231218_nicsik/nicsik.html"
@@ -199,7 +199,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20231231_spac/7.jpg",
+        "image": "20231231_spac/thumb.jpg",
         "title": "Spaç Prison",
         "description": "Kodër-Spaç, Albania",
         "link": "20231231_spac/spac.html"
