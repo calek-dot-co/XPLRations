@@ -210,7 +210,6 @@ img, video {
         top: 2px;
         right: 2px;
         padding: 1px 3px 3px 3px;
-        font-size: 10px;
       }
     }
 
@@ -294,6 +293,7 @@ button {
   font-size: 30px;
   padding-bottom: .4rem;
   padding-left: .5rem;
+  padding-right: .5rem;
 }
 button:hover {
   background-color: #e2e2e2;
