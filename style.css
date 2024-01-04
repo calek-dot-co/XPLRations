@@ -294,6 +294,7 @@ button {
   padding-bottom: .4rem;
   padding-left: .5rem;
   padding-right: .5rem;
+  touch-action: manipulation;
 }
 button:hover {
   background-color: #e2e2e2;
