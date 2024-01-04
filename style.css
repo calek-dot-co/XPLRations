@@ -135,9 +135,6 @@ img, video {
   font-size: 0;
 }
 
-.image-landscape {
-}
-
 .image-vertical {
   margin-left: 16.666%;
   margin-right: 16.666%;
@@ -341,8 +338,8 @@ button:active {
 }
     @media (max-width: 600px) {
       .header {
-        padding-left: 20px;
-        padding-right: 20px;
+/*        padding-left: 20px;
+        padding-right: 20px;*/
         margin-top: 10px;
         margin-bottom: 10px;
       }
@@ -400,8 +397,6 @@ button:active {
 .mapboxgl-popup-close-button {
   display: none;
 }
-
-
 .mapboxgl-control-container {
   display: none;
 }
