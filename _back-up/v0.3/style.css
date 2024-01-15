@@ -10,7 +10,7 @@ html {
 body {
   margin: 0 auto;
   background-color: #000;
-  overflow: hidden !important;
+  overflow-x: hidden;
 }
 
 .container-fluid {
@@ -31,25 +31,6 @@ h1 {
     h1 {
       font-size: 2rem;
     }
-  }
-
-.headline {
-  margin-top: 2vw;
-  font-size: 2.5vw;
-  line-height: 2.8vw;
-  color: #FFF;
-  font-family: sans-serif;
-  font-weight: 700;
-}
-
-    @media (max-width: 600px) {
-      .headline {
-        font-size: 10vw;
-        line-height: 13vw;
-        color: #FFF;
-        font-family: sans-serif;
-        font-weight: 700;
-      }
   }
 
 h2 {
@@ -98,67 +79,26 @@ span {
   opacity: 0.8;
 }
 
-/*----  Desktop ----*/
 
-@media (min-width: 601px) {
-  #images-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100vh !important;
-    overflow: scroll; 
-  }
-  .image-pop-up {
-    height: auto;
-    width: 20vw;
-    min-width: 280px;
-    padding: 1px 2vw 2vw 2vw;
-    background-color: #000;
-    border-radius: 16px;
-    box-shadow:
-      0px 0px 16.0px hsl(0deg 0% 0% / 0.25);
-    margin-top: 2vw;
-    margin-bottom: 5vw;
-    margin-right: 2vw;
-  }
-  .line-wrapper {
-    display: none;
-  }
+.images-1fr {
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
+  @media (max-width: 600px) {
+    .images-1fr {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+  }
 
-/*----  Mobile ----*/
-
-@media (max-width: 600px) {
-  #images-wrapper {
-    pointer-events: none !important;
-    position: absolute;
-    top: 84vh;
-  }
-  .image-pop-up {
-    padding: 1px 8vw 8vw 8vw;
-    background-color: #000;
-    border-radius: 24px 24px 0 0;
-    pointer-events: auto;
-  }
-  .line-wrapper {
-    margin-top: 2vw;
-    margin-left: 32vw;
-    margin-bottom: 5vw;
-  }
-  .line-mobile {
-    height: 6px;
-    border-radius: 5px;
-    background-color: #fff;
-    width: 20vw;
-    opacity: .2;
-  }
+.container-fluid {
+  margin: 0;
+  padding: 0;
 }
-
-
 
 .image-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   column-gap: 2px;
   row-gap: 2px;
@@ -172,6 +112,12 @@ span {
     position: relative;
 }
 
+/*  @media (min-width: 600px) {
+    .image-element-1fr {
+      padding-left: 15vw;
+      padding-right: 15vw;
+    }
+  }*/
 .image-element:hover {
   opacity: 0.8;
 }
@@ -294,9 +240,9 @@ img, video {
 
 
 .info {
-/*  display: none;*/
+  display: none;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 /*  padding-left: 15px;*/
 /*  margin-left: 16.66666667%;*/
 }
@@ -408,12 +354,25 @@ button:active {
 
 /*------------ Footer ------------*/
 
-.footer-text {
-  margin-top: 2vh;
-  padding-bottom: 2vh;
+.footer {
+  margin-top: 10vh;
+  padding-bottom: 20vh;
   text-align: center;
-  font-size: 1rem;
 }
+  @media (max-width: 600px) {
+      .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+        padding-bottom: 40vh;
+      }
+    }
+  @media (max-width: 1024px) {
+      .footer {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+    }
 
 
 
@@ -428,14 +387,8 @@ button:active {
 }
 
 .mapboxgl-popup-content {
-  border-radius: 16px !important;
-  padding-bottom: 20px !important;
-  padding-left: 20px;
-  padding-right: 20px;
-  overflow: hidden;
-  background-color: #000;
-  box-shadow:
-    0px 8px 16.0px hsl(0deg 0% 0% / 0.25);
+  border-radius: 0 !important;
+  padding-bottom: 10px !important;
 }
 
 .map-link, .map-link:hover {
@@ -443,29 +396,11 @@ button:active {
   text-decoration: underline;
 }
 
-.mapboxgl-popup-close-button, .mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-compass, .mapboxgl-ctrl-bottom-right {
-  display: none !important;
+.mapboxgl-popup-close-button {
+  display: none;
+}
+.mapboxgl-control-container {
+  display: none;
 }
 
-.mapboxgl-ctrl-top-left {
-  margin-left: 2vw;
-  margin-top: 2vw;
-}
-
-.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
-  border-top-color: #000 !important;
-}
-.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
-  border-bottom-color: #000 !important;
-  margin-top: 28px;
-}
-.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-  border-right-color: #000 !important;
-}
-.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
-  border-left-color: #000 !important;
-}
-
-
- 
 

@@ -1,17 +1,42 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoibHVrZWNhaXNoc2FkbGVrIiwiYSI6ImNscTVuMnI1cjAxN2kydnM5dXNveGJub24ifQ.KUqrzudfmNeHhF1hHEehJQ'; 
-  const map = new mapboxgl.Map({
-    container: 'map',
-    // Replace YOUR_STYLE_URL with your style URL.
-    style: 'mapbox://styles/lukecaishsadlek/clq72rpek003e01pjcvxcfv63', 
-    center: [18, 43.5],
-    zoom: 6,
-  });
+
+const map = new mapboxgl.Map({
+  container: 'map',
+  // Replace YOUR_STYLE_URL with your style URL.
+  style: 'mapbox://styles/lukecaishsadlek/clq72rpek003e01pjcvxcfv63', 
+  center: [19.5, 43.8],
+  zoom: 6.5,
+});
 
 
-  map.loadImage('pins.png', (error, image) => {
-      if (error) throw error;
-      map.addImage('custom-icon', image);
-  });
+
+// Set map zoom based on screen size
+
+var mq = window.matchMedia( "(min-width: 600px)" );
+
+if (mq.matches){
+    map.setZoom(6.5); //set map zoom level for desktop size
+} else {
+    map.setZoom(5); //set map zoom level for mobile size
+    map.setCenter([18, 42.8])
+};
+
+
+
+// Custom pin image
+
+map.loadImage('pins.png', (error, image) => {
+    if (error) throw error;
+    map.addImage('custom-icon', image);
+});
+
+
+
+// Map controls
+
+var nav = new mapboxgl.NavigationControl();
+map.addControl(nav, 'top-left');
+
 
 
   map.once('load', () => {
@@ -36,7 +61,6 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibHVrZWNhaXNoc2FkbGVrIiwiYSI6ImNscTVuMnI1cjAxN
         }
     });
   });
-  // map.addControl(new mapboxgl.NavigationControl() );
 
 
   //Add an event listener that runs when a user clicks on the map element.
@@ -53,7 +77,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibHVrZWNhaXNoc2FkbGVrIiwiYSI6ImNscTVuMnI1cjAxN
     const popup = new mapboxgl.Popup({ offset: [0, -30] })
     .setLngLat(feature.geometry.coordinates)
     .setHTML(
-    `<img src="${feature.properties.image}" style="width: 109%; height: auto; margin-top: -10px; margin-right: -10px; margin-left: -10px;"><h2 style="margin-top: 10px; margin-bottom: 0; color: #000">${feature.properties.title}</h2><p style="margin-top: 5px; margin-bottom: 5px; color: #000; font-size: 16px; line-height: 1.1rem;">${feature.properties.description}</p><a class="map-link" href="${feature.properties.link}">More info</a>`
+    `<a class="map-link" style="color: #fff; text-decoration: none;" href="${feature.properties.link}"><img class="map-image" src="${feature.properties.image}" style="width: 120%; height: auto; margin-top: -10px; margin-right: -20px; margin-left: -20px;"><h2 style="margin-top: 20px; margin-bottom: 0; color: #fff">${feature.properties.title}</h2><p style="margin-top: 5px; margin-bottom: 5px; color: #fff; font-size: 16px; line-height: 1.1rem;">${feature.properties.description}</p><a class="map-link" style="color: #fff;" href="${feature.properties.link}">More info</a></a>`
     )
     .addTo(map);
 
