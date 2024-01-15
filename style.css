@@ -132,7 +132,7 @@ span {
   #images-wrapper {
     pointer-events: none !important;
     position: absolute;
-    top: 84vh;
+    top: 84svh;
   }
   .image-pop-up {
     padding: 1px 8vw 8vw 8vw;
