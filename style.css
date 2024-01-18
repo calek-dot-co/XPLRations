@@ -44,8 +44,8 @@ h1 {
 
     @media (max-width: 600px) {
       .headline {
-        font-size: 10vw;
-        line-height: 13vw;
+        font-size: 6vw;
+        line-height: 8vw;
         color: #FFF;
         font-family: sans-serif;
         font-weight: 700;
@@ -132,7 +132,7 @@ span {
   #images-wrapper {
     pointer-events: none !important;
     position: absolute;
-    top: 80svh;
+    top: 83svh;
   }
   .image-pop-up {
     padding: 1px 8vw 8vw 8vw;
@@ -423,7 +423,8 @@ button:active {
   position: fixed; 
   top: 0; 
   bottom: 0; 
-  width: 100vw; 
+  width: 100vw;
+  height: 100dvh; 
   z-index: -5;
 }
 
