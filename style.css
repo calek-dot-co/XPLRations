@@ -7,6 +7,12 @@ html {
   overflow-x: hidden;
 }
 
+.row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
 body {
   margin: 0 auto;
   background-color: #000;
@@ -342,7 +348,7 @@ button {
   background-color: #fff;
   color: #000;
   font-size: 30px;
-  padding-bottom: .45rem;
+  padding-bottom: .25rem;
   padding-left: .4rem;
   padding-right: .35rem;
   touch-action: manipulation;
@@ -415,6 +421,10 @@ button:active {
   font-size: 1rem;
 }
 
+.footer {
+  min-height: 25vh;
+}
+
 
 
 /*------------ Mapbox ------------*/
@@ -468,5 +478,10 @@ button:active {
 }
 
 
+
+
+
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+--bs-gutter-x: 0;
  
 
