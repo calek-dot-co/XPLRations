@@ -4,8 +4,8 @@ const map = new mapboxgl.Map({
   container: 'map',
   // Replace YOUR_STYLE_URL with your style URL.
   style: 'mapbox://styles/lukecaishsadlek/clq72rpek003e01pjcvxcfv63', 
-  center: [19.5, 43.8],
-  zoom: 6.5,
+  center: [21, 47.8], //also design default
+  zoom: 4,
 });
 
 
@@ -15,10 +15,10 @@ const map = new mapboxgl.Map({
 var mq = window.matchMedia( "(min-width: 600px)" );
 
 if (mq.matches){
-    map.setZoom(6.5); //set map zoom level for desktop size
+    map.setZoom(4.7); //set map zoom level for desktop size
 } else {
-    map.setZoom(5); //set map zoom level for mobile size
-    map.setCenter([18, 42.8])
+    map.setZoom(4); //set map zoom level for mobile size
+    map.setCenter([17, 45.8])
 };
 
 

@@ -3,9 +3,9 @@
     {
       "type": "Feature",
       "properties": {
-	      "image": "20231204_moslavina/thumb.jpg",
+        "image": "20231204_moslavina/thumb.jpg",
         "title": "Monument to the Revolution of the People of Moslavina",
-	      "description": "Podgarić, Croatia",
+        "description": "PodgariÄ‡, Croatia",
         "link": "20231204_moslavina/moslavina.html"
       },
       "geometry": {
@@ -17,10 +17,10 @@
     {
       "type": "Feature",
       "properties": {
-	      "image": "20231204_stone-flower/thumb.jpg",
+        "image": "20231204_stone-flower/thumb.jpg",
         "title": "Stone Flower Monument",
         "description": "Jasenovac, Croatia",
-	      "link": "20231204_stone-flower/stone-flower.html"
+        "link": "20231204_stone-flower/stone-flower.html"
       },
       "geometry": {
         "coordinates": [16.928378, 45.280374],
@@ -33,7 +33,7 @@
       "properties": {
         "image": "20231204_brezovica/thumb.jpg",
         "title": "Monument to the Detachment",
-        "description": "Novo Selo Palanječko, Croatia",
+        "description": "Novo Selo PalanjeÄko, Croatia",
         "link": "20231204_brezovica/brezovica.html"
       },
       "geometry": {
@@ -47,7 +47,7 @@
       "properties": {
         "image": "20231204_petrova-gora/thumb.jpg",
         "title": "Monument to the Uprising",
-        "description": "Petrova Gora National Park, Vojnić, Croatia",
+        "description": "Petrova Gora National Park, VojniÄ‡, Croatia",
         "link": "20231204_petrova-gora/petrova-gora.html"
       },
       "geometry": {
@@ -60,8 +60,8 @@
       "type": "Feature",
       "properties": {
         "image": "20231205_zeljava/thumb.jpg",
-        "title": "Željava Underground Air Base",
-        "description": "PŽeljava, Croatia",
+        "title": "Å½eljava Underground Air Base",
+        "description": "PÅ½eljava, Croatia",
         "link": "20231205_zeljava/zeljava.html"
       },
       "geometry": {
@@ -145,7 +145,7 @@
       "properties": {
         "image": "20231218_sub-bunkers/thumb.jpg",
         "title": "Submarine Bunkers",
-        "description": "Luštica, Montenegro",
+        "description": "LuÅ¡tica, Montenegro",
         "link": "20231218_sub-bunkers/sub-bunkers.html"
       },
       "geometry": {
@@ -158,7 +158,7 @@
       "type": "Feature",
       "properties": {
         "image": "20231218_barutana/thumb.jpg",
-        "title": "Memorial to the Fallen of the Lješanska Nahija Region",
+        "title": "Memorial to the Fallen of the LjeÅ¡anska Nahija Region",
         "description": "Barutana, Montenegro",
         "link": "20231218_barutana/barutana.html"
       },
@@ -187,7 +187,7 @@
       "properties": {
         "image": "20231218_nicsik/thumb.jpg",
         "title": "Monument to Fallen Fighters of WWII",
-        "description": "Nikšić, Montenegro",
+        "description": "NikÅ¡iÄ‡, Montenegro",
         "link": "20231218_nicsik/nicsik.html"
       },
       "geometry": {
@@ -200,8 +200,8 @@
       "type": "Feature",
       "properties": {
         "image": "20231231_spac/thumb.jpg",
-        "title": "Spaç Prison",
-        "description": "Kodër-Spaç, Albania",
+        "title": "SpaÃ§ Prison",
+        "description": "KodÃ«r-SpaÃ§, Albania",
         "link": "20231231_spac/spac.html"
       },
       "geometry": {
@@ -214,15 +214,18 @@
       "type": "Feature",
       "properties": {
         "image": "20240120_vogelsang/thumb.jpg",
-        "title": "Kaserne Vogelsang",
-        "description": "Zehdenick, Germany",
-        "link": "20240120_vogelsang/vogelsang.html"
+        "title": "SpaÃ§ Prison",
+        "description": "KodÃ«r-SpaÃ§, Albania",
+        "link": "20231231_spac/spac.html"
       },
       "geometry": {
-        "coordinates": [13.372901, 53.054751],
+        "coordinates": [18.045741, 35.899179],
         "type": "Point"
       }
     }
+
+
+
 
   ],
   "type": "FeatureCollection"
