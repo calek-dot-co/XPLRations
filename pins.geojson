@@ -222,6 +222,62 @@
         "coordinates": [13.372901, 53.054751],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240203_krampnitz-kaserne/thumb.jpg",
+        "title": "Krampnitz Kaserne",
+        "description": "Potsdam, Germany",
+        "link": "20240203_krampnitz-kaserne/krampnitz-kaserne.html"
+      },
+      "geometry": {
+        "coordinates": [13.049188, 52.459357],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240210_flughafen-brand/thumb.jpg",
+        "title": "Flugplatz Brand",
+        "description": "Halbe, Germany",
+        "link": "20240210_flughafen-brand/flughafen-brand.html"
+      },
+      "geometry": {
+        "coordinates": [13.748315, 52.038914],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240217_kraftwerk-henningsdorf/thumb.jpg",
+        "title": "Kraftwerk Henningsdorf",
+        "description": "Henningsdorf, Germany",
+        "link": "20240217_kraftwerk-henningsdorf/kraftwerk-henningsdorf.html"
+      },
+      "geometry": {
+        "coordinates": [13.213050, 52.640754],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240218_kraftwerk_plessa/thumb.jpg",
+        "title": "Kraftwerk Plessa",
+        "description": "Plessa, Germany",
+        "link": "20240218_kraftwerk_plessa/kraftwerk_plessa.html"
+      },
+      "geometry": {
+        "coordinates": [13.611516, 51.471062],
+        "type": "Point"
+      }
     }
 
   ],
