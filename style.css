@@ -39,24 +39,7 @@ h1 {
     }
   }
 
-.headline {
-  margin-top: 2vw;
-  font-size: 2.5vw;
-  line-height: 2.8vw;
-  color: #FFF;
-  font-family: sans-serif;
-  font-weight: 700;
-}
 
-    @media (max-width: 600px) {
-      .headline {
-        font-size: 6vw;
-        line-height: 8vw;
-        color: #FFF;
-        font-family: sans-serif;
-        font-weight: 700;
-      }
-  }
 
 h2 {
   font-weight: 700;
@@ -89,9 +72,7 @@ a {
   text-decoration: none;
 }
 
-a h2:hover {
-  text-decoration: underline;
-}
+
 
 span {
   font-weight: 100;
@@ -104,27 +85,32 @@ span {
   opacity: 0.8;
 }
 
-/*----  Desktop ----*/
+
+
+
+
+/*----  Desktop Panel ----*/
 
 @media (min-width: 601px) {
-  #images-wrapper {
+  #panel {
     position: absolute;
     top: 0;
     right: 0;
     height: 100vh !important;
     overflow: scroll; 
   }
-  .image-pop-up {
+  .panel-inner {
     height: auto;
+    min-height: 100vw;
     width: 20vw;
     min-width: 280px;
-    padding: 1px 2vw 2vw 2vw;
+    padding: 2vw 2vw 2vw 2vw;
     background-color: #000;
-    border-radius: 16px;
+    border-radius: 2vw;
     box-shadow:
       0px 0px 16.0px hsl(0deg 0% 0% / 0.25);
     margin-top: 2vw;
-    margin-bottom: 5vw;
+    margin-bottom: 2vw;
     margin-right: 2vw;
   }
   .line-wrapper {
@@ -132,24 +118,27 @@ span {
   }
 }
 
-/*----  Mobile ----*/
+
+
+
+/*----  Mobile Panel ----*/
 
 @media (max-width: 600px) {
-  #images-wrapper {
+  #panel {
     pointer-events: none !important;
     position: absolute;
-    top: 83svh;
+    top: 87.2svh;
   }
-  .image-pop-up {
-    padding: 1px 8vw 8vw 8vw;
+  .panel-inner {
+    padding: 1vw 8vw 8vw 8vw;
     background-color: #000;
-    border-radius: 24px 24px 0 0;
+    border-radius: 8vw 8vw 0 0;
     pointer-events: auto;
   }
   .line-wrapper {
     margin-top: 2vw;
     margin-left: 32vw;
-    margin-bottom: 5vw;
+    margin-bottom: 7vw;
   }
   .line-mobile {
     height: 6px;
@@ -162,14 +151,8 @@ span {
 
 
 
-.image-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  column-gap: 2px;
-  row-gap: 2px;
-  transition: 1s;
-}
+
+/*----  Panel Imagery ----*/
 
 .image-element {
   width: auto;
@@ -177,13 +160,149 @@ span {
   opacity: 1;
     position: relative;
 }
-
-.image-element:hover {
+.image-element:hover > img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.image-element:hover > .info > h2 {
+  text-decoration: underline;
+}
+.image-element:active > img {
   opacity: 0.8;
 }
-.image-element:active {
-  opacity: 0.5;
+
+
+
+
+/*----  Homepage Specific Text Styles ----*/
+
+.panel-headline {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: #FFF;
+  font-family: sans-serif;
+  font-weight: 700;
 }
+  @media (max-width: 600px) {
+    .panel-headline {
+      font-size: 8vw;
+      line-height: 8vw;
+    }
+  }
+
+.panel-title {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+.panel-location {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+.panel-credit {
+  margin-top: 3vh;
+  padding-bottom: 1vh;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.25vw;
+  font-weight: 500;
+}
+
+
+
+/*----  Filters  ----*/
+
+/*--- Hide and Show ---*/
+
+.expo {
+  display: none;
+}
+input#f-all:checked ~ .all {
+  display: block;
+}
+
+input#f-east-germany:checked ~ .former-yugoslavia, {
+  display: none;
+}
+input#f-east-germany:checked ~ .east-germany {
+  display: block;
+}
+
+input#f-former-yugoslavia:checked ~ .east-germany {
+  display: none;
+}
+input#f-former-yugoslavia:checked ~ .former-yugoslavia {
+  display: block;
+}
+
+
+/*--- Radio & Label Styling ---*/
+
+/* Hide radio buttons */
+input {
+   display: none;
+}
+/* Underline all labels so they look like links */
+input[type="radio"]+label {
+  color: #fff;
+  text-decoration: none;
+  background-color: #2a2a2a;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: .8rem;
+  display: inline-block;
+}
+/* Remove underline for active label */
+input[type="radio"]:checked+label {
+  border-bottom: 0px solid;
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+}
+/* Remove hover effect and cusror chancel for active label */
+input[type="radio"]:checked:hover+label {
+  color: #000;
+  cursor: default;
+  background-color: #fff;
+}
+/* Hover effect */
+input[type="radio"]:hover+label {
+  color: #fff;
+  background-color: #4C4C4C;
+}
+/* Give correct cursor on desktop hover */
+label {
+  cursor: pointer;
+  margin-right: 5px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.filter-last {
+  margin-bottom: 30px;
+}
+.note {
+  display: none;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 img, video {
@@ -245,53 +364,6 @@ img, video {
     }
 
 
-.text-icon {
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  padding: 3px 6px 4px 6px;
-  border-radius: 40px;
-  color: #fff;
-  font-size: 14px;
-  text-shadow:
-      0 1px 1px hsl(0deg 0% 0% / 0.075),
-      0 2px 2px hsl(0deg 0% 0% / 0.075),
-      0 4px 4px hsl(0deg 0% 0% / 0.075),
-      0 8px 8px hsl(0deg 0% 0% / 0.075),
-      0 16px 16px hsl(0deg 0% 0% / 0.075),
-      0 32px 32px hsl(0deg 0% 0% / 0.075)
-    ;
-}
-  @media (max-width: 600px) {
-      .text-icon {
-        top: 2px;
-        right: 2px;
-        padding: 1px 3px 3px 3px;
-      }
-    }
-
-/*-- Corner triangle ℹ --*/
-/*.text-icon { 
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #000;
-  color: #fff;
-  padding: 5px 5px 20px 25px;
-  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 0%);
-}*/
-/*-- Floating ★ --*/
-/*.text-icon {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 3px 6px 4px 6px;
-  border-radius: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size: 12px;
-}*/
-
 
 
 
@@ -300,17 +372,12 @@ img, video {
 
 
 .info {
-/*  display: none;*/
   padding-top: 10px;
   padding-bottom: 20px;
-/*  padding-left: 15px;*/
-/*  margin-left: 16.66666667%;*/
 }
   @media (max-width: 1024px) {
     .info {
       padding-left: 0px;
-/*      margin-left: 20px;*/
-/*      margin-right: 20px;*/
       padding-bottom: 30px;
     }
   }
@@ -343,7 +410,6 @@ button {
   height: 3rem;
   width: 3rem;
   text-align: center;
-  border-radius: 50%;
   border: none;
   background-color: #fff;
   color: #000;
@@ -360,6 +426,9 @@ button:hover {
 button:active {
   background-color: #6E6E6E;
   cursor: grabbing;
+}
+.button-round {
+  border-radius: 50%;
 }
 .buttonActive, .buttonActive16 {
   background-color: #6E6E6E;
@@ -414,16 +483,52 @@ button:active {
 
 /*------------ Footer ------------*/
 
-.footer-text {
-  margin-top: 2vh;
-  padding-bottom: 2vh;
-  text-align: center;
-  font-size: 1rem;
+.footer {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+    @media (max-width: 600px) {
+      .footer {
+/*        padding-left: 20px;
+        padding-right: 20px;*/
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+      }
+    }
+    @media (max-width: 1024px) {
+      .footer {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+    }
+.row-fix {
+  margin-left: 0;
+  margin-right: 0;
+}
+.previous-teaser {
+  text-align: right;
+  padding-right: 20px;
+}
+.next-teaser {
+  padding-left: 20px;
+}
+    @media (max-width: 600px) {
+      .previous-teaser {
+        text-align: center;
+        padding-right: 0px;
+      }
+      .next-teaser {
+                margin-bottom: 5vh;
+        text-align: center;
+        padding-left: 0px;
+      }
+    }
+.previous-teaser:hover > a > h2, .next-teaser:hover > a > h2 {
+  text-decoration: underline;
 }
 
-.footer {
-  min-height: 25vh;
-}
 
 
 
