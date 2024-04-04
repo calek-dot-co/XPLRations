@@ -278,6 +278,20 @@
         "coordinates": [13.611516, 51.471062],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240330_neues-lager/thumb.jpg",
+        "title": "Neues Lager",
+        "description": "Jüterbog, Germany",
+        "link": "20240330_neues-lager/neues-lager.html"
+      },
+      "geometry": {
+        "coordinates": [13.030022, 51.997822],
+        "type": "Point"
+      }
     }
 
   ],
