@@ -331,6 +331,21 @@ img, video {
       }
     }
 
+
+
+.image-thumb {
+  padding-bottom: 15px;
+}
+  @media (max-width: 600px) {
+    .image-thumb {
+      max-width: 50%;
+      padding-left: 25%;
+      align-content: center;
+    }
+  }
+
+
+
 .text-content {
   margin-left: 25%;
   margin-right: 25%;
@@ -510,9 +525,16 @@ button:active {
 .previous-teaser {
   text-align: right;
   padding-right: 20px;
+  padding-left: 20px;
+}
+.map-teaser {
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .next-teaser {
   padding-left: 20px;
+  padding-right: 20px;
 }
     @media (max-width: 600px) {
       .previous-teaser {
@@ -520,13 +542,22 @@ button:active {
         padding-right: 0px;
       }
       .next-teaser {
-                margin-bottom: 5vh;
+        margin-bottom: 5vh;
         text-align: center;
         padding-left: 0px;
       }
+      .map-teaser {
+        margin-bottom: 5vh;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
     }
-.previous-teaser:hover > a > h2, .next-teaser:hover > a > h2 {
+.previous-teaser:hover > a > h2, .next-teaser:hover > a > h2, .map-teaser:hover > a > h2 {
   text-decoration: underline;
+}
+.next-disabled {
+  color: #818181;
 }
 
 

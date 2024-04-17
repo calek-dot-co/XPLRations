@@ -292,6 +292,34 @@
         "coordinates": [13.030022, 51.997822],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240316_templhof-flughafen/thumb.jpg",
+        "title": "Flughafen Templhof",
+        "description": "Berlin, Germany",
+        "link": "20240316_templhof-flughafen/templhof-flughafen.html"
+      },
+      "geometry": {
+        "coordinates": [13.389500, 52.482231],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240414_abandonned-train-yard/thumb.jpg",
+        "title": "Train Graveyard",
+        "description": "Istvántelek, Hungary",
+        "link": "20240414_abandonned-train-yard/abandonned-train-yard.html"
+      },
+      "geometry": {
+        "coordinates": [19.104321, 47.548947],
+        "type": "Point"
+      }
     }
 
   ],
