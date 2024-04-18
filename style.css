@@ -518,7 +518,7 @@ button:active {
         margin-right: 10%;
       }
     }
-.row-fix {
+.row {
   margin-left: 0;
   margin-right: 0;
 }
@@ -540,17 +540,19 @@ button:active {
       .previous-teaser {
         text-align: center;
         padding-right: 0px;
+        padding-left: 0px;
       }
       .next-teaser {
         margin-bottom: 5vh;
         text-align: center;
+        padding-right: 0px;
         padding-left: 0px;
       }
       .map-teaser {
         margin-bottom: 5vh;
         text-align: center;
-        padding-left: 0px;
         padding-right: 0px;
+        padding-left: 0px;
       }
     }
 .previous-teaser:hover > a > h2, .next-teaser:hover > a > h2, .map-teaser:hover > a > h2 {
