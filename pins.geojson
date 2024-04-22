@@ -320,6 +320,34 @@
         "coordinates": [19.104321, 47.548947],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240414_kelenfold//thumb.jpg",
+        "title": "Kelenföld Erőmű",
+        "description": "Kelenföld, Hungary",
+        "link": "20240414_kelenfold/kelenfold.html"
+      },
+      "geometry": {
+        "coordinates": [19.056976, 47.462020],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240420_kossuth-mozi-cinema/thumb.jpg",
+        "title": "Kossuth Mozi Cinema",
+        "description": "Miskolc, Hungary",
+        "link": "20240420_kossuth-mozi-cinema/kossuth-mozi-cinema.html"
+      },
+      "geometry": {
+        "coordinates": [20.780335, 48.103539],
+        "type": "Point"
+      }
     }
 
   ],
