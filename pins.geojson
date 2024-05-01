@@ -325,7 +325,7 @@
     {
       "type": "Feature",
       "properties": {
-        "image": "20240414_kelenfold//thumb.jpg",
+        "image": "20240414_kelenfold/thumb.jpg",
         "title": "Kelenföld Erőmű",
         "description": "Kelenföld, Hungary",
         "link": "20240414_kelenfold/kelenfold.html"
@@ -346,6 +346,34 @@
       },
       "geometry": {
         "coordinates": [20.780335, 48.103539],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240421_bars-501/thumb.jpg",
+        "title": "BARS 501",
+        "description": "Kálló, Hungary",
+        "link": "20240421_bars-501/bars-501.html"
+      },
+      "geometry": {
+        "coordinates": [19.436019, 47.735373],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240421_castle/thumb.jpg",
+        "title": "Hajmáskér Barracks",
+        "description": "Hajmáskér, Hungary",
+        "link": "20240421_castle/castle.html"
+      },
+      "geometry": {
+        "coordinates": [18.026087, 47.148408],
         "type": "Point"
       }
     }
