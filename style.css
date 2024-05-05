@@ -224,17 +224,24 @@ input#f-all:checked ~ .all {
   display: block;
 }
 
-input#f-east-germany:checked ~ .former-yugoslavia, {
+input#f-east-germany:checked ~ .former-yugoslavia, .hungary {
   display: none;
 }
 input#f-east-germany:checked ~ .east-germany {
   display: block;
 }
 
-input#f-former-yugoslavia:checked ~ .east-germany {
+input#f-former-yugoslavia:checked ~ .east-germany, .hungary {
   display: none;
 }
 input#f-former-yugoslavia:checked ~ .former-yugoslavia {
+  display: block;
+}
+
+input#f-hungary:checked ~ .east-germany, .former-yugoslavia {
+  display: none;
+}
+input#f-hungary:checked ~ .hungary {
   display: block;
 }
 
@@ -623,3 +630,12 @@ button:active {
 --bs-gutter-x: 0;
  
 
+
+
+
+/*------------ Model Viewer ------------*/
+
+model-viewer {
+  width: auto;
+  height: 500px;
+}

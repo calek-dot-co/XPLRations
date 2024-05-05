@@ -376,6 +376,20 @@
         "coordinates": [18.026087, 47.148408],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240426_f4-bunker/thumb.jpg",
+        "title": "F4 'Rákosi' Bunker",
+        "description": "Budapest, Hungary",
+        "link": "20240426_f4-bunker/f4-bunker.html"
+      },
+      "geometry": {
+        "coordinates": [19.047764, 47.503848],
+        "type": "Point"
+      }
     }
 
   ],

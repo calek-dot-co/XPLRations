@@ -30,16 +30,20 @@
 
 			<input type="radio" name="filter" id="f-all" checked>
 			<label for="f-all">All</label>
+			<input type="radio" name="filter" id="f-hungary">
+			<label for="f-hungary">Hungary (6)</label>
 			<input type="radio" name="filter" id="f-east-germany">
 			<label for="f-east-germany">Germany (7)</label>
 			<input type="radio" name="filter" id="f-former-yugoslavia">
-			<label for="f-former-yugoslavia" class="filter-last">Yugoslavia (14)</label>
-<!-- 			<input type="radio" name="filter" id="f-hungary">
-			<label for="f-hungary" class="filter-last">Hungary (5)</label> -->
+			<label for="f-former-yugoslavia" class="filter-last">Former Yugoslavia (14)</label>
 			<div class="note east-germany">7 Germany explorations</div>
 			<div class="note former-yugoslavia">14 former Yugoslavia explorations</div>
-			<div class="note hungary">5 Hungary explorations</div>
+			<div class="note hungary">6 Hungary explorations</div>
 
+			<a id="f4" class="expo all hungary" href="20240426_f4-bunker/f4-bunker.html"><div class="image-element">
+				<img src="20240426_f4-bunker/thumb.jpg">
+				<div class="info"><h2 class="panel-title">F4 "Rákosi" Bunker</h2><p class="panel-location">Budapest, Hungary</p></div>
+			</div></a>
 			<a id="castle" class="expo all hungary" href="20240421_castle/castle.html"><div class="image-element">
 				<img src="20240421_castle/thumb.jpg">
 				<div class="info"><h2 class="panel-title">Hajmáskér Barracks</h2><p class="panel-location">Hajmáskér, Hungary</p></div>
@@ -183,12 +187,14 @@
       desktop: {
     	'f-all': { center: [20, 48], zoom: 4.2 }, // Desktop
     	'f-east-germany': { center: [15, 52.5], zoom: 6 }, // Desktop
-    	'f-former-yugoslavia': { center: [19, 44], zoom: 5.8 } // Desktop
+    	'f-former-yugoslavia': { center: [19, 44], zoom: 5.8 }, // Desktop
+    	'f-hungary': { center: [20.2, 47.5], zoom: 6.8 } // Desktop
       },
       mobile: {
    		'f-all': { center: [17.5, 42], zoom: 3.5 }, // Mobile
     	'f-east-germany': { center: [13.5, 51.5], zoom: 6 }, // Mobile
-   		'f-former-yugoslavia': { center: [18, 41.8], zoom: 5 } // Mobile
+   		'f-former-yugoslavia': { center: [18, 41.8], zoom: 5 }, // Mobile
+   		'f-hungary': { center: [19.5, 47], zoom: 5.8 } // Mobile
       }
     };
     
