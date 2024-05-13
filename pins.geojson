@@ -390,6 +390,62 @@
         "coordinates": [19.047764, 47.503848],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240428-1_zrenjanin/thumb.jpg",
+        "title": "Memorial to the Uprising in Vojvodina",
+        "description": "Zrenjanin, Serbia",
+        "link": "20240428-1_zrenjanin/zrenjanin.html"
+      },
+      "geometry": {
+        "coordinates": [20.369086, 45.368681],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240428-2_titel/thumb.jpg",
+        "title": "Monument to Fallen Soldiers and Victims of Fascism",
+        "description": "Titel, Serbia",
+        "link": "20240428-2_titel/titel.html"
+      },
+      "geometry": {
+        "coordinates": [20.311939, 45.205108],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240428-3_jabuka/thumb.jpg",
+        "title": "Brazde Monument at the Stratište Memorial Complex",
+        "description": "Jabuka, Serbia",
+        "link": "20240428-3_jabuka/jabuka.html"
+      },
+      "geometry": {
+        "coordinates": [20.633826, 44.928807],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240428-4_pozarevac/thumb.jpg",
+        "title": "The Star at the Memorial Park Čačalica",
+        "description": "Požarevac, Serbia",
+        "link": "20240428-4_pozarevac/pozarevac.html"
+      },
+      "geometry": {
+        "coordinates": [21.203777, 44.613644],
+        "type": "Point"
+      }
     }
 
   ],
