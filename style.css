@@ -575,7 +575,7 @@ model-viewer {
   display: inline;
   width: auto;
   height: auto;
-  margin-right: 6px;
+  margin-right: 3px;
 
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -617,11 +617,11 @@ model-viewer {
 .menu {
   overflow-x: visible;
   width: auto;
-  padding-bottom: 12px; 
+  padding-bottom: 12px;
 }
 .menu-row {
   margin-bottom: 6px;
-    width: 550px;
+  white-space: nowrap;
 }
 
 

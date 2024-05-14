@@ -446,6 +446,90 @@
         "coordinates": [21.203777, 44.613644],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240428-5_majdanpek/thumb.jpg",
+        "title": "Monument to the Liberators of Majdanpek",
+        "description": "Majdanpek, Serbia",
+        "link": "20240428-5_majdanpek/majdanpek.html"
+      },
+      "geometry": {
+        "coordinates": [21.942936, 44.428616],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240429-1_grkinja/thumb.jpg",
+        "title": "Monument to Fallen Fighters",
+        "description": "Grkinja, Serbia",
+        "link": "20240429-1_grkinja/grkinja.html"
+      },
+      "geometry": {
+        "coordinates": [21.992358, 43.208037],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240429-2_nis/thumb.jpg",
+        "title": "Bubanj Memorial Park",
+        "description": "Niš, Serbia",
+        "link": "20240429-2_nis/nis.html"
+      },
+      "geometry": {
+        "coordinates": [21.872675, 43.305106],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240429-3_popina/thumb.jpg",
+        "title": "Mausoleum to the Fallen Insurgents",
+        "description": "Štulac, Serbia",
+        "link": "20240429-3_popina/popina.html"
+      },
+      "geometry": {
+        "coordinates": [20.958237, 43.630205],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240429-4_ostra/thumb.jpg",
+        "title": "Monument to Courage",
+        "description": "Ostra, Serbia",
+        "link": "20240429-4_ostra/ostra.html"
+      },
+      "geometry": {
+        "coordinates": [20.516627, 43.911487],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240429-5_kadinjaca/thumb.jpg",
+        "title": "Kadinjača Memorial Complex",
+        "description": "Užice, Serbia",
+        "link": "20240429-5_kadinjaca/kadinjaca.html"
+      },
+      "geometry": {
+        "coordinates": [19.742700, 43.912133],
+        "type": "Point"
+      }
     }
 
   ],
