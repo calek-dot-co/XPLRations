@@ -530,6 +530,34 @@
         "coordinates": [19.742700, 43.912133],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240430_kragujevac/thumb.jpg",
+        "title": "Interrupted Flight Memorial",
+        "description": "Kragujevac, Serbia",
+        "link": "20240430_kragujevac/kragujevac.html"
+      },
+      "geometry": {
+        "coordinates": [20.885852, 44.016008],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240501_kosmaj/thumb.jpg",
+        "title": "Monument to the Fallen Soldiers",
+        "description": "Kosmaj, Serbia",
+        "link": "20240501_kosmaj/kosmaj.html"
+      },
+      "geometry": {
+        "coordinates": [20.571861, 44.467925],
+        "type": "Point"
+      }
     }
 
   ],
