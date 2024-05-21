@@ -48,6 +48,7 @@ h2 {
 .sub-title {
   font-size: 2rem;
   font-weight: 500;
+  line-height: 1.1;
 }
   @media (max-width: 600px) {
     .sub-title {
@@ -618,6 +619,7 @@ model-viewer {
   overflow-x: visible;
   width: auto;
   padding-bottom: 12px;
+  margin-right: 2vw;
 }
 .menu-row {
   margin-bottom: 6px;

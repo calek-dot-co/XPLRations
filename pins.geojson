@@ -558,6 +558,34 @@
         "coordinates": [20.571861, 44.467925],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240506_kosovo-library/thumb.jpg",
+        "title": "The National Library of Kosovo",
+        "description": "Pristina, Kosovo",
+        "link": "20240506_kosovo-library/kosovo-library.html"
+      },
+      "geometry": {
+        "coordinates": [21.162328, 42.657527],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240507_sports-hall/thumb.jpg",
+        "title": "Palace of Youth and Sports",
+        "description": "Pristina, Kosovo",
+        "link": "20240507_sports-hall/sports-hall.html"
+      },
+      "geometry": {
+        "coordinates": [21.156705, 42.661130],
+        "type": "Point"
+      }
     }
 
   ],

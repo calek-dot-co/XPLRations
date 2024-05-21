@@ -30,22 +30,24 @@
 			<div class="menu">
 				<div class="menu-row">
 					<button data-filter="all" class="button-filter button-filter-active">All</button>
+					<button data-filter="kosovo" class="button-filter">Kosovo (2)</button>
 					<button data-filter="serbia" class="button-filter">Serbia (12)</button>
 					<button data-filter="hungary" class="button-filter">Hungary (6)</button>
 					<button data-filter="east-germany" class="button-filter">Germany (7)</button>
-					<button data-filter="albania" class="button-filter">Albania (1)</button>
 					<button data-filter="croatia" class="button-filter">Croatia (6)</button>
 				</div>
 				<div class="menu-row">
 					<button data-filter="montenegro" class="button-filter">Montenegro (5)</button>
 					<button data-filter="bosnia" class="button-filter">Bosnia & Herzegovina (3)</button>
-					<button data-filter="former-yugoslavia" class="button-filter">Former Yugoslavia (18)</button>
+					<button data-filter="albania" class="button-filter">Albania (1)</button>
+					<button data-filter="former-yugoslavia" class="button-filter">Former Yugoslavia (28)</button>
 				</div>
 			</div>
 		</div>
 		<div id="imageGrid" class="image-grid">
 
 
+			<div class="note kosovo">2 Kosovo explorations</div>
 			<div class="note serbia">12 Serbia explorations</div>
 			<div class="note hungary">6 Hungary explorations</div>
 			<div class="note east-germany">7 Germany explorations</div>
@@ -54,8 +56,17 @@
 
 			<div class="note montenegro">5 Montenegro explorations</div>
 			<div class="note bosnia">3 Bosnia & Herzegovina explorations</div>
-			<div class="note former-yugoslavia">18 former Yugoslavia explorations</div>
+			<div class="note former-yugoslavia">28 former Yugoslavia explorations</div>
 			
+
+			<a id="zrenjanin" class="expo all former-yugoslavia kosovo" href="20240507_sports-hall/sports-hall.html"><div class="image-element">
+				<img src="20240507_sports-hall/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Palace of Youth and Sports</h2><p class="panel-location">Pristina, Kosovo</p></div>
+			</div></a>
+			<a id="f4" class="expo all former-yugoslavia kosovo" href="20240506_kosovo-library/kosovo-library.html"><div class="image-element">
+				<img src="20240506_kosovo-library/thumb.jpg">
+				<div class="info"><h2 class="panel-title">The National Library of Kosovo</h2><p class="panel-location">Pristina, Kosovo</p></div>
+			</div></a>
 
 
 			<a id="zrenjanin" class="expo all former-yugoslavia serbia" href="20240501_kosmaj/kosmaj.html"><div class="image-element">
@@ -272,6 +283,7 @@
     const mapSettings = {
         desktop: {
             'all': { center: [20, 48], zoom: 4.2 },
+            'kosovo': { center: [21.17, 42.66], zoom: 12.8 },
             'serbia': { center: [21.5, 44.3], zoom: 7.2 },
             'hungary': { center: [20.2, 47.8], zoom: 7 },
             'albania': { center: [20.1, 41.1], zoom: 7 },
@@ -283,6 +295,7 @@
         },
         mobile: {
             'all': { center: [17.5, 42], zoom: 3.5 },
+            'kosovo': { center: [21.161, 42.655], zoom: 12.8 },
             'serbia': { center: [21, 43.5], zoom: 6 },
             'hungary': { center: [19.4, 47.1], zoom: 6 },
             'albania': { center: [20.1, 41.1], zoom: 7 },
