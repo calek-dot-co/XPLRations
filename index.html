@@ -30,35 +30,55 @@
 			<div class="menu">
 				<div class="menu-row">
 					<button data-filter="all" class="button-filter button-filter-active">All</button>
-					<button data-filter="kosovo" class="button-filter">Kosovo (2)</button>
+					<button data-filter="macedonia" class="button-filter">North Macedonia (3)</button>
+					<button data-filter="kosovo" class="button-filter">Kosovo (3)</button>
 					<button data-filter="serbia" class="button-filter">Serbia (12)</button>
 					<button data-filter="hungary" class="button-filter">Hungary (6)</button>
 					<button data-filter="east-germany" class="button-filter">Germany (7)</button>
-					<button data-filter="croatia" class="button-filter">Croatia (6)</button>
 				</div>
 				<div class="menu-row">
+					<button data-filter="former-yugoslavia" class="button-filter">Former Yugoslavia (28)</button>
+					<button data-filter="albania" class="button-filter">Albania (1)</button>
 					<button data-filter="montenegro" class="button-filter">Montenegro (5)</button>
 					<button data-filter="bosnia" class="button-filter">Bosnia & Herzegovina (3)</button>
-					<button data-filter="albania" class="button-filter">Albania (1)</button>
-					<button data-filter="former-yugoslavia" class="button-filter">Former Yugoslavia (28)</button>
+					<button data-filter="croatia" class="button-filter">Croatia (6)</button>
 				</div>
 			</div>
 		</div>
 		<div id="imageGrid" class="image-grid">
 
 
-			<div class="note kosovo">2 Kosovo explorations</div>
+			<div class="note macedonia">3 North Macedonia explorations</div>
+			<div class="note kosovo">3 Kosovo explorations</div>
 			<div class="note serbia">12 Serbia explorations</div>
 			<div class="note hungary">6 Hungary explorations</div>
 			<div class="note east-germany">7 Germany explorations</div>
-			<div class="note albania">1 Albania exploration</div>
-			<div class="note croatia">6 Croatia explorations</div>
 
+			<div class="note croatia">6 Croatia explorations</div>
 			<div class="note montenegro">5 Montenegro explorations</div>
 			<div class="note bosnia">3 Bosnia & Herzegovina explorations</div>
+			<div class="note albania">1 Albania exploration</div>
 			<div class="note former-yugoslavia">28 former Yugoslavia explorations</div>
-			
 
+
+			<a id="f4" class="expo all former-yugoslavia macedonia" href="20240511_makedonium/makedonium.html"><div class="image-element">
+				<img src="20240511_makedonium/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Makedonium - Ilinden Monument</h2><p class="panel-location">Krushevo, North Macedonia</p></div>
+			</div></a>
+			<a id="zrenjanin" class="expo all former-yugoslavia macedonia" href="20240510-2_prilep/prilep.html"><div class="image-element">
+				<img src="20240510-2_prilep/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Park of the Revolution</h2><p class="panel-location">Prilep, North Macedonia</p></div>
+			</div></a>
+			<a id="f4" class="expo all former-yugoslavia macedonia" href="20240510-1_kavadarci/kavadarci.html"><div class="image-element">
+				<img src="20240510-1_kavadarci/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Kosturnica</h2><p class="panel-location">Kavadarci, North Macedonia</p></div>
+			</div></a>
+
+			
+			<a id="f4" class="expo all former-yugoslavia kosovo" href="20240510_varrezat/varrezat.html"><div class="image-element">
+				<img src="20240510_varrezat/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Varrezat e Dëshmorëve</h2><p class="panel-location">Pristina, Kosovo</p></div>
+			</div></a>
 			<a id="zrenjanin" class="expo all former-yugoslavia kosovo" href="20240507_sports-hall/sports-hall.html"><div class="image-element">
 				<img src="20240507_sports-hall/thumb.jpg">
 				<div class="info"><h2 class="panel-title">Palace of Youth and Sports</h2><p class="panel-location">Pristina, Kosovo</p></div>
@@ -277,12 +297,14 @@
 
 
 <script>
-	// Reposition map based on button clicks
-  document.addEventListener('DOMContentLoaded', function() {
+
+// Reposition map based on button clicks
+document.addEventListener('DOMContentLoaded', function() {
     // Define map settings for desktop and mobile for each filter, including new locations
     const mapSettings = {
         desktop: {
             'all': { center: [20, 48], zoom: 4.2 },
+            'macedonia': { center: [22.1, 41.6], zoom: 8 },
             'kosovo': { center: [21.17, 42.66], zoom: 12.8 },
             'serbia': { center: [21.5, 44.3], zoom: 7.2 },
             'hungary': { center: [20.2, 47.8], zoom: 7 },
@@ -295,6 +317,7 @@
         },
         mobile: {
             'all': { center: [17.5, 42], zoom: 3.5 },
+            'macedonia': { center: [21.8, 41.3], zoom: 7 },
             'kosovo': { center: [21.161, 42.655], zoom: 12.8 },
             'serbia': { center: [21, 43.5], zoom: 6 },
             'hungary': { center: [19.4, 47.1], zoom: 6 },
@@ -324,11 +347,11 @@
     });
 
     // Optional: Adjust map when resizing window
-    window.addEventListener('resize', function() {
-      const checkedFilterId = document.querySelector('input[type="radio"][name="filter"]:checked').id;
-      changeMapView(checkedFilterId);
-    });
-	});
+    // window.addEventListener('resize', function() {
+    //   const checkedFilterId = document.querySelector('input[type="radio"][name="filter"]:checked').id;
+    //   changeMapView(checkedFilterId);
+    // });
+});
 
 
 

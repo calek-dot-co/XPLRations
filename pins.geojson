@@ -61,7 +61,7 @@
       "properties": {
         "image": "20231205_zeljava/thumb.jpg",
         "title": "Željava Underground Air Base",
-        "description": "PŽeljava, Croatia",
+        "description": "Željava, Croatia",
         "link": "20231205_zeljava/zeljava.html"
       },
       "geometry": {
@@ -584,6 +584,62 @@
       },
       "geometry": {
         "coordinates": [21.156705, 42.661130],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240510_varrezat/thumb.jpg",
+        "title": "Varrezat e Dëshmorëve",
+        "description": "Pristina, Kosovo",
+        "link": "20240510_varrezat/varrezat.html"
+      },
+      "geometry": {
+        "coordinates": [21.175491, 42.658779],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240510-1_kavadarci/thumb.jpg",
+        "title": "Kosturnica",
+        "description": "Kavadarci, North Macedonia",
+        "link": "20240510-1_kavadarci/kavadarci.html"
+      },
+      "geometry": {
+        "coordinates": [22.022804, 41.432642],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240510-2_prilep/thumb.jpg",
+        "title": "Park of the Revolution",
+        "description": "Prilep, North Macedonia",
+        "link": "20240510-2_prilep/prilep.html"
+      },
+      "geometry": {
+        "coordinates": [21.554519, 41.334346],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "image": "20240511_makedonium/thumb.jpg",
+        "title": "Makedonium, Ilinden Monument",
+        "description": "Krushevo, North Macedonia",
+        "link": "20240511_makedonium/makedonium.html"
+      },
+      "geometry": {
+        "coordinates": [21.248343, 41.377401],
         "type": "Point"
       }
     }
