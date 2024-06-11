@@ -292,6 +292,9 @@ img, video {
 .spacer-small {
   margin-top: 5vh;
 }
+.spacer-medium {
+  margin-top: 10vh;
+}
     @media (max-width: 600px) {
       .spacer {
         margin-top: 5vh;
@@ -299,7 +302,11 @@ img, video {
       .spacer-small {
         margin-top: 2vh;
       }
+      .spacer-medium {
+        margin-top: 8vh;
+      }
     }
+
 
 
 

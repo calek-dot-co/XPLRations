@@ -4,7 +4,7 @@ const map = new mapboxgl.Map({
   container: 'map',
   // Replace YOUR_STYLE_URL with your style URL.
   style: 'mapbox://styles/lukecaishsadlek/clq72rpek003e01pjcvxcfv63', 
-  center: [20, 48], //also design default
+  center: [25, 48], //also design default
   zoom: 4.2,
 });
 
@@ -18,7 +18,7 @@ if (mq.matches){
     map.setZoom(4.2); //set map zoom level for desktop size
 } else {
     map.setZoom(3.5); //set map zoom level for mobile size
-    map.setCenter([17.5, 42])
+    map.setCenter([21, 42])
 };
 
 
