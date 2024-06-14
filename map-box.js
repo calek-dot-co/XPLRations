@@ -1,3 +1,6 @@
+//-----------------------------------------------------------
+// Map config and settings
+
 mapboxgl.accessToken = 'pk.eyJ1IjoibHVrZWNhaXNoc2FkbGVrIiwiYSI6ImNscTVuMnI1cjAxN2kydnM5dXNveGJub24ifQ.KUqrzudfmNeHhF1hHEehJQ'; 
 
 const map = new mapboxgl.Map({
@@ -7,6 +10,10 @@ const map = new mapboxgl.Map({
   center: [25, 48], //also design default
   zoom: 4.2,
 });
+
+
+
+//-----------------------------------------------------------
 
 
 
@@ -23,14 +30,18 @@ if (mq.matches){
 
 
 
+
+//-----------------------------------------------------------
+
+
+
+
 // Custom pin image
 
 map.loadImage('pins.png', (error, image) => {
     if (error) throw error;
     map.addImage('custom-icon', image);
 });
-
-
 
 // Map controls
 
@@ -39,9 +50,17 @@ map.addControl(nav, 'top-left');
 
 
 
-  map.once('load', () => {
+//-----------------------------------------------------------
+
+
+
+
+// On map load, add pins
+
+
+map.once('load', () => {
     map.resize();
-    
+
     // Load GeoJSON data
     map.addSource('features', {
         type: 'geojson',
@@ -60,25 +79,103 @@ map.addControl(nav, 'top-left');
             'icon-anchor': 'bottom' // Anchor position
         }
     });
-  });
+});
 
 
-  //Add an event listener that runs when a user clicks on the map element.
-  map.on('click', (event) => {
+
+
+//-----------------------------------------------------------
+
+
+
+
+// Pin pop-up
+
+
+let currentPopup = null;
+let currentOverlay = null;
+
+// Add an event listener that runs when a user clicks on the map element.
+map.on('click', (event) => {
     const features = map.queryRenderedFeatures(event.point, {
-    layers: ['locations-layer']
+        layers: ['locations-layer']
     });
     if (!features.length) {
-    return;
+        return;
     }
     const feature = features[0];
 
-    // Create a popup, specify its options and properties, and add it to the map.
-    const popup = new mapboxgl.Popup({ offset: [0, -30] })
-    .setLngLat(feature.geometry.coordinates)
-    .setHTML(
-    `<a class="map-link" style="color: #fff; text-decoration: none;" href="${feature.properties.link}"><img class="map-image" src="${feature.properties.image}" style="width: 120%; height: auto; margin-top: -10px; margin-right: -20px; margin-left: -20px;"><h2 style="margin-top: 20px; margin-bottom: 0; color: #fff">${feature.properties.title}</h2><p style="margin-top: 5px; margin-bottom: 5px; color: #fff; font-size: 16px; line-height: 1.1rem;">${feature.properties.description}</p><a class="map-link" style="color: #fff;" href="${feature.properties.link}">More info</a></a>`
-    )
-    .addTo(map);
+    // Close existing popup or overlay
+    if (currentPopup) {
+        currentPopup.remove();
+    }
+    if (currentOverlay) {
+        document.body.removeChild(currentOverlay);
+        document.getElementById('panel').classList.remove('active');
+    }
 
-  });  
+    // Desktop version (window width >= 601px)
+    if (window.innerWidth >= 601) {
+        currentPopup = new mapboxgl.Popup({ offset: [0, -30] })
+            .setLngLat(feature.geometry.coordinates)
+            .setHTML(
+                `<a class="map-link" style="color: #fff; text-decoration: none;" href="${feature.properties.link}">
+                    <img class="map-image" src="${feature.properties.image}" style="width: 120%; height: auto; margin-top: -10px; margin-right: -20px; margin-left: -20px;">
+                    <h2 style="margin-top: 20px; margin-bottom: 0; color: #fff">${feature.properties.title}</h2>
+                    <p style="margin-top: 5px; margin-bottom: 5px; color: #fff; font-size: 16px; line-height: 1.1rem;">${feature.properties.description}</p>
+                    <a class="map-link" style="color: #fff;" href="${feature.properties.link}">More info</a>
+                </a>`
+            )
+            .addTo(map);
+    } else {
+        // Mobile version (window width <= 600px)
+        currentOverlay = document.createElement('div');
+        currentOverlay.className = 'mobile-overlay';
+        currentOverlay.style.position = 'fixed';
+        currentOverlay.style.bottom = '5vw';
+        currentOverlay.style.left = '0';
+        currentOverlay.style.width = '90%';
+        currentOverlay.style.height = 'auto';
+        currentOverlay.style.marginLeft = '5vw';
+        currentOverlay.style.borderRadius = '16px';
+        currentOverlay.style.paddingBottom = '20px';
+        currentOverlay.style.backgroundColor = 'rgba(0, 0, 0, 1)';
+        currentOverlay.style.zIndex = '1000';
+        currentOverlay.style.color = '#fff';
+        currentOverlay.style.display = 'flex';
+        currentOverlay.style.flexDirection = 'column';
+        currentOverlay.style.alignItems = 'left';
+        currentOverlay.style.justifyContent = 'left';
+        currentOverlay.innerHTML = `
+            <div style="position: relative; text-align: left;">
+                <a class="map-link" style="color: #fff; text-decoration: none;" href="${feature.properties.link}">
+                    <img class="map-image" src="${feature.properties.image}" style="width: 100%; height: auto; margin-bottom: 20px; border-radius: 16px 16px 0 0;">
+                    <h2 style="padding-left: 20px; padding-right: 20px; margin-top: 16px; margin-bottom: 5px; color: #fff; font-size: 20px;">${feature.properties.title}</h2>
+                    <p style="padding-left: 20px; padding-right: 20px; margin-top: 5px; margin-bottom: 0px; color: #fff; font-size: 16px; line-height: 1.1rem;">${feature.properties.description}</p>
+                </a>
+            </div>
+            <button id="close-overlay" style="position: absolute; top: 10px; right: 10px; height: 2rem; width: 2rem; padding: 0; background-color: #fff; color: #000; border: none; border-radius: 6px; font-size: 20px;">⤫</button>
+        `;
+
+        document.body.appendChild(currentOverlay);
+
+        // Add class to element when overlay is added if window width is 600px or less
+        if (window.innerWidth <= 600) {
+            document.getElementById('panel').classList.add('active');
+        }
+
+        // Close the overlay when the close button is clicked
+        document.getElementById('close-overlay').addEventListener('click', () => {
+            document.body.removeChild(currentOverlay);
+            currentOverlay = null;
+            document.getElementById('panel').classList.remove('active');
+        });
+    }
+});
+
+                   // <a class="map-link" style="margin-left: 20px; color: #fff;" href="${feature.properties.link}">More info</a>
+
+
+
+
+//-----------------------------------------------------------

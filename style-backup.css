@@ -132,7 +132,7 @@ span {
   #panel {
     pointer-events: none !important;
     position: absolute;
-    top: 72svh;
+    top: 87.2svh;
   }
   .panel-inner {
     padding: 1vw 0vw 8vw 0vw;
@@ -516,13 +516,6 @@ button:active {
   box-shadow:
     0px 8px 16.0px hsl(0deg 0% 0% / 0.25);
 }
-    @media (max-width: 600px) {
-      .mapboxgl-popup-content {
-        width: 80vw;
-      }
-    }
-
-
 
 .map-link, .map-link:hover {
   color: #000;
@@ -551,11 +544,6 @@ button:active {
 .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
   border-left-color: #000 !important;
 }
-    @media (max-width: 600px) {
-      .mapboxgl-popup-tip {
-        display: none !important;
-      }
-    }
 
 
 
@@ -564,17 +552,7 @@ button:active {
 .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
 --bs-gutter-x: 0;
 }
-
-
-
-
-#mobile-overlay {
-
-}
  
-#close-overlay {
-
-}
 
 
 
@@ -675,10 +653,6 @@ model-viewer {
     display: block; /* Use block, inline, or whatever suits your layout */
 }
 
-
-.active {
-  display: none;
-}
 
 
 

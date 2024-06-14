@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- General -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Explorations</title>
+	<meta name="description" content="Exploring the abandoned and the unusual.">
+	<!-- Share Metadata-->
+	<meta property="og:title" content="Explorations"/>
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Exploring the abandoned and unusual."/>
+	<meta property="og:url" content="https://explorations.calek.co"/>
+	<meta property="og:image" content="https://explorations.calek.co/og.png"/>
+	<!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+	<!-- Links -->
+	<link rel="stylesheet" href="bootstrap-grid.css">
+	<link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css'/>
+	<link rel="stylesheet" href="style.css">
+
+	
+</head>
+<body>
+<div id="panel">
+	<div class="panel-inner">
+		<div class="line-wrapper"><div class="line-mobile"></div></div>
+		<p class="panel-headline">Explorations</p>
+		<div class="menu-wrapper">
+			<div class="menu">
+				<div class="menu-row">
+					<button data-filter="all" class="button-filter button-filter-active">All</button>
+					<button data-filter="bulgaria" class="button-filter">Bulgaria (6)</button>
+					<button data-filter="macedonia" class="button-filter">North Macedonia (5)</button>
+					<button data-filter="kosovo" class="button-filter">Kosovo (3)</button>
+					<button data-filter="serbia" class="button-filter">Serbia (12)</button>
+					<button data-filter="hungary" class="button-filter">Hungary (6)</button>
+					<button data-filter="east-germany" class="button-filter">Germany (7)</button>
+				</div>
+				<div class="menu-row">
+					<button data-filter="former-yugoslavia" class="button-filter">Former Yugoslavia (35)</button>
+					<button data-filter="albania" class="button-filter">Albania (1)</button>
+					<button data-filter="montenegro" class="button-filter">Montenegro (5)</button>
+					<button data-filter="bosnia" class="button-filter">Bosnia & Herzegovina (3)</button>
+					<button data-filter="croatia" class="button-filter">Croatia (6)</button>
+				</div>
+			</div>
+		</div>
+		<div id="imageGrid" class="image-grid">
+
+
+			<div class="note bulgaria">6 Bulgaria explorations</div>
+			<div class="note macedonia">5 North Macedonia explorations</div>
+			<div class="note kosovo">3 Kosovo explorations</div>
+			<div class="note serbia">12 Serbia explorations</div>
+			<div class="note hungary">6 Hungary explorations</div>
+			<div class="note east-germany">7 Germany explorations</div>
+
+			<div class="note croatia">6 Croatia explorations</div>
+			<div class="note montenegro">5 Montenegro explorations</div>
+			<div class="note bosnia">3 Bosnia & Herzegovina explorations</div>
+			<div class="note albania">1 Albania exploration</div>
+			<div class="note former-yugoslavia">35 former Yugoslavia explorations</div>
+
+
+			<a id="prespa" class="expo all bulgaria" href="20240526_soviet-friendship/soviet-friendship.html"><div class="image-element">
+				<img src="20240526_soviet-friendship/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Monument of the Bulgarian-Soviet Friendship</h2><p class="panel-location">Varna, Bulgaria</p></div>
+			</div></a>
+			<a id="prespa" class="expo all bulgaria" href="20240525_bulgaria-founders/bulgaria-founders.html"><div class="image-element">
+				<img src="20240525_bulgaria-founders/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Founders of the Bulgarian State Monument</h2><p class="panel-location">Shumen, Bulgaria</p></div>
+			</div></a>
+			<a id="hotel-evropa" class="expo all bulgaria" href="20240519_bunker-n/bunker-n.html"><div class="image-element">
+				<img src="20240519_bunker-n/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Bunker N</h2><p class="panel-location">Novo Selo, Bulgaria</p></div>
+			</div></a>
+			<a id="makedonium" class="expo all bulgaria" href="20240518-3_samara/samara.html"><div class="image-element">
+				<img src="20240518-3_samara/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Samara Flag Monument</h2><p class="panel-location">Stara Zagora, Bulgaria</p></div>
+			</div></a>
+			<a id="prilep" class="expo all bulgaria" href="20240518-2_buzludzha/buzludzha.html"><div class="image-element">
+				<img src="20240518-2_buzludzha/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Buzludzha Monument</h2><p class="panel-location">Shipka, Bulgaria</p></div>
+			</div></a>
+			<a id="theater" class="expo all bulgaria" href="20240518-1_theater/theater.html"><div class="image-element">
+				<img src="20240518-1_theater/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Abandoned Theater</h2><p class="panel-location">Shipka, Bulgaria</p></div>
+			</div></a>
+
+
+			<a id="prespa" class="expo all former-yugoslavia macedonia" href="20240513_prespa/prespa.html"><div class="image-element">
+				<img src="20240513_prespa/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Prespa Monument</h2><p class="panel-location">Oteshevo, North Macedonia</p></div>
+			</div></a>
+			<a id="hotel-evropa" class="expo all former-yugoslavia macedonia" href="20240512_hotel-evropa/hotel-evropa.html"><div class="image-element">
+				<img src="20240512_hotel-evropa/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Hotel Evropa</h2><p class="panel-location">Oteshevo, North Macedonia</p></div>
+			</div></a>
+			<a id="makedonium" class="expo all former-yugoslavia macedonia" href="20240511_makedonium/makedonium.html"><div class="image-element">
+				<img src="20240511_makedonium/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Makedonium - Ilinden Monument</h2><p class="panel-location">Krushevo, North Macedonia</p></div>
+			</div></a>
+			<a id="prilep" class="expo all former-yugoslavia macedonia" href="20240510-2_prilep/prilep.html"><div class="image-element">
+				<img src="20240510-2_prilep/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Park of the Revolution</h2><p class="panel-location">Prilep, North Macedonia</p></div>
+			</div></a>
+			<a id="kavadarci" class="expo all former-yugoslavia macedonia" href="20240510-1_kavadarci/kavadarci.html"><div class="image-element">
+				<img src="20240510-1_kavadarci/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Kosturnica</h2><p class="panel-location">Kavadarci, North Macedonia</p></div>
+			</div></a>
+
+			
+			<a id="varrezat" class="expo all former-yugoslavia kosovo" href="20240510_varrezat/varrezat.html"><div class="image-element">
+				<img src="20240510_varrezat/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Varrezat e Dëshmorëve</h2><p class="panel-location">Pristina, Kosovo</p></div>
+			</div></a>
+			<a id="sports-hall" class="expo all former-yugoslavia kosovo" href="20240507_sports-hall/sports-hall.html"><div class="image-element">
+				<img src="20240507_sports-hall/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Palace of Youth and Sports</h2><p class="panel-location">Pristina, Kosovo</p></div>
+			</div></a>
+			<a id="kosovo-library" class="expo all former-yugoslavia kosovo" href="20240506_kosovo-library/kosovo-library.html"><div class="image-element">
+				<img src="20240506_kosovo-library/thumb.jpg">
+				<div class="info"><h2 class="panel-title">The National Library of Kosovo</h2><p class="panel-location">Pristina, Kosovo</p></div>
+			</div></a>
+
+
+			<a id="kosmaj" class="expo all former-yugoslavia serbia" href="20240501_kosmaj/kosmaj.html"><div class="image-element">
+				<img src="20240501_kosmaj/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Monument to the Fallen Soldiers</h2><p class="panel-location">Kosmaj, Serbia</p></div>
+			</div></a>
+			<a id="kragujevac" class="expo all former-yugoslavia serbia" href="20240430_kragujevac/kragujevac.html"><div class="image-element">
+				<img src="20240430_kragujevac/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Interrupted Flight Memorial</h2><p class="panel-location">Kragujevac, Serbia</p></div>
+			</div></a>
+			<a id="kadinjaca" class="expo all former-yugoslavia serbia" href="20240429-5_kadinjaca/kadinjaca.html"><div class="image-element">
+				<img src="20240429-5_kadinjaca/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Kadinjača Memorial Complex</h2><p class="panel-location">Užice, Serbia</p></div>
+			</div></a>
+			<a id="ostra" class="expo all former-yugoslavia serbia" href="20240429-4_ostra/ostra.html"><div class="image-element">
+				<img src="20240429-4_ostra/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Monument to Courage</h2><p class="panel-location">Ostra, Serbia</p></div>
+			</div></a>
+			<a id="popina" class="expo all former-yugoslavia serbia" href="20240429-3_popina/popina.html"><div class="image-element">
+				<img src="20240429-3_popina/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Mausoleum to the Fallen Insurgents</h2><p class="panel-location">Štulac, Serbia</p></div>
+			</div></a>
+			<a id="nis" class="expo all former-yugoslavia serbia" href="20240429-2_nis/nis.html"><div class="image-element">
+				<img src="20240429-2_nis/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Bubanj Memorial Park</h2><p class="panel-location">Niš, Serbia</p></div>
+			</div></a>
+			<a id="grkinja" class="expo all former-yugoslavia serbia" href="20240429-1_grkinja/grkinja.html"><div class="image-element">
+				<img src="20240429-1_grkinja/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Monument to Fallen Fighters</h2><p class="panel-location">Grkinja, Serbia</p></div>
+			</div></a>
+
+
+			<a id="majdanpek" class="expo all former-yugoslavia serbia" href="20240428-5_majdanpek/majdanpek.html"><div class="image-element">
+				<img src="20240428-5_majdanpek/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Monument to the Liberators of Majdanpek</h2><p class="panel-location">Majdanpek, Serbia</p></div>
+			</div></a>
+			<a id="pozarevac" class="expo all former-yugoslavia serbia" href="20240428-4_pozarevac/pozarevac.html"><div class="image-element">
+				<img src="20240428-4_pozarevac/thumb.jpg">
+				<div class="info"><h2 class="panel-title">The Star at the Memorial Park Čačalica</h2><p class="panel-location">Požarevac, Serbia</p></div>
+			</div></a>
+			<a id="jabuka" class="expo all former-yugoslavia serbia" href="20240428-3_jabuka/jabuka.html"><div class="image-element">
+				<img src="20240428-3_jabuka/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Brazde Monument at the Stratište Memorial Complex</h2><p class="panel-location">Jabuka, Serbia</p></div>
+			</div></a>
+			<a id="titel" class="expo all former-yugoslavia serbia" href="20240428-2_titel/titel.html"><div class="image-element">
+				<img src="20240428-2_titel/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Monument to Fallen Soldiers and Victims of Fascism</h2><p class="panel-location">Titel, Serbia</p></div>
+			</div></a>
+			<a id="zrenjanin" class="expo all former-yugoslavia serbia" href="20240428-1_zrenjanin/zrenjanin.html"><div class="image-element">
+				<img src="20240428-1_zrenjanin/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Memorial to the Uprising in Vojvodina</h2><p class="panel-location">Zrenjanin, Serbia</p></div>
+			</div></a>
+
+
+			<a id="f4" class="expo all hungary" href="20240426_f4-bunker/f4-bunker.html"><div class="image-element">
+				<img src="20240426_f4-bunker/thumb.jpg">
+				<div class="info"><h2 class="panel-title">F4 "Rákosi" Bunker</h2><p class="panel-location">Budapest, Hungary</p></div>
+			</div></a>
+			<a id="castle" class="expo all hungary" href="20240421_castle/castle.html"><div class="image-element">
+				<img src="20240421_castle/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Hajmáskér Barracks</h2><p class="panel-location">Hajmáskér, Hungary</p></div>
+			</div></a>
+			<a id="bars" class="expo all hungary" href="20240421_bars-501/bars-501.html"><div class="image-element">
+				<img src="20240421_bars-501/thumb.jpg">
+				<div class="info"><h2 class="panel-title">BARS 501</h2><p class="panel-location">Kálló, Hungary</p></div>
+			</div></a>
+			<a id="kossuth" class="expo all hungary" href="20240420_kossuth-mozi-cinema/kossuth-mozi-cinema.html"><div class="image-element">
+				<img src="20240420_kossuth-mozi-cinema/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Kossuth Mozi Cinema</h2><p class="panel-location">Miskolc, Hungary</p></div>
+			</div></a>
+			<a id="kelenfold" class="expo all hungary" href="20240414_kelenfold/kelenfold.html"><div class="image-element">
+				<img src="20240414_kelenfold/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Kelenföld Erőmű</h2><p class="panel-location">Kelenföld, Hungary</p></div>
+			</div></a>
+			<a id="graveyard" class="expo all hungary" href="20240414_abandonned-train-yard/abandonned-train-yard.html"><div class="image-element">
+				<img src="20240414_abandonned-train-yard/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Train Graveyard</h2><p class="panel-location">Istvántelek, Hungary</p></div>
+			</div></a>
+
+
+			<a id="lager" class="expo all east-germany" href="20240330_neues-lager/neues-lager.html"><div class="image-element">
+				<img src="20240330_neues-lager/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Neues Lager</h2><p class="panel-location">Jüterbog, Germany</p></div>
+			</div></a>
+			<a id="templhof" class="expo all east-germany" href="20240316_templhof-flughafen/templhof-flughafen.html"><div class="image-element">
+				<img src="20240316_templhof-flughafen/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Flughafen Templhof</h2><p class="panel-location">Berlin, Germany</p></div>
+			</div></a>
+			<a id="plessa" class="expo all east-germany" href="20240218_kraftwerk_plessa/kraftwerk_plessa.html"><div class="image-element">
+				<img src="20240218_kraftwerk_plessa/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Kraftwerk Plessa</h2><p class="panel-location">Plessa, Germany</p></div>
+			</div></a>
+			<a id="spac" class="expo all east-germany" href="20240217_kraftwerk-henningsdorf/kraftwerk-henningsdorf.html"><div class="image-element">
+				<img class="" src="20240217_kraftwerk-henningsdorf/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Kraftwerk Henningsdorf</h2><p class="panel-location">Berlin, Germany</p></div>
+			</div></a>
+			<a id="brand" class="expo all east-germany" href="20240210_flughafen-brand/flughafen-brand.html"><div class="image-element">
+				<img class="" src="20240210_flughafen-brand/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Flugplatz Brand</h2><p class="panel-location">Halbe, Germany</p></div>
+			</div></a>
+			<a id="spac" class="expo all east-germany" href="20240203_krampnitz-kaserne/krampnitz-kaserne.html"><div class="image-element">
+				<img class="" src="20240203_krampnitz-kaserne/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Krampnitz Kaserne</h2><p class="panel-location">Potsdam, Germany</p></div>
+			</div></a>
+			<a id="vogelsang" class="expo all east-germany" href="20240120_vogelsang/vogelsang.html"><div class="image-element">
+				<img class="" src="20240120_vogelsang/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Kaserne Vogelsang</h2><p class="panel-location">Zehdenick, Germany</p></div>
+			</div></a>
+
+
+			<a id="spac" class="expo all albania" href="20231231_spac/spac.html"><div class="image-element">
+				<img class="" src="20231231_spac/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Spaç Prison</h2><p class="panel-location">Kodër-Spaç, Albania</p></div>
+			</div></a>
+
+
+			<a id="godinje" class="expo all former-yugoslavia montenegro" href="20231220_godinje/godinje.html"><div class="image-element">
+				<img class="" src="20231220_godinje/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Monument to the Fallen for Freedom</h2><p class="panel-location">Godinje, Montenegro</p></div>
+			</div></a>
+			<a id="nicsik" class="expo all former-yugoslavia montenegro" href="20231218_nicsik/nicsik.html"><div class="image-element">
+				<img class="" src="20231218_nicsik/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Monument to Fallen Fighters of WWII</h2><p class="panel-location">Nikšić, Montenegro</p></div>
+			</div></a>
+			<a id="suteska" class="expo all former-yugoslavia montenegro" href="20231218_sutjeska/sutjeska.html"><div class="image-element">
+				<img class="" src="20231218_sutjeska/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Monument to the Fallen Soldiers on Sutjeska</h2><p class="panel-location">Carine, Montenegro</p></div>
+			</div></a>
+			<a id="barutana" class="expo all former-yugoslavia montenegro" href="20231218_barutana/barutana.html"><div class="image-element">
+				<img class="" src="20231218_barutana/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Memorial to the Fallen of the Lješanska Nahija Region</h2><p class="panel-location">Barutana, Montenegro</p></div>
+			</div></a>
+			<a id="barutana" class="expo all former-yugoslavia montenegro" href="20231218_sub-bunkers/sub-bunkers.html"><div class="image-element">
+				<img class="" src="20231218_sub-bunkers/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Submarine Bunkers</h2><p class="panel-location">Luštica, Montenegro</p></div>
+			</div></a>
+
+
+			<a id="kupari-hotels" class="expo all former-yugoslavia croatia" href="20231215_kupari-hotels/kupari-hotels.html"><div class="image-element">
+				<img class="" src="20231215_kupari-hotels/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Abandoned Hotels</h2><p class="panel-location">Kupari, Croatia</p></div>
+			</div></a>
+			<a id="hotel-igman" class="expo all former-yugoslavia bosnia" href="20231210_hotel-igman/hotel-igman.html"><div class="image-element">
+				<img class="" src="20231210_hotel-igman/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Hotel Igman</h2><p class="panel-location">Gornja Grkarica, Bosnia & Herzegovina</p></div>
+			</div></a>
+			<a id="titos-bunker" class="expo all former-yugoslavia bosnia" href="20231210_titos-bunker/titos-bunker.html"><div class="image-element">
+				<img class="" src="20231210_titos-bunker/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Tito's Bunker</h2><p class="panel-location">Konjic, Bosnia and Herzegovina</p></div>
+			</div></a>
+			<a id="bobsled" class="expo all former-yugoslavia bosnia" href="20231209_bobsled/bobsled.html"><div class="image-element">
+				<img class="" src="20231209_bobsled/thumb.jpg">
+				<div class="info"><h2 class="panel-title">1984 Olympic Bobsled Track</h2><p class="panel-location">Sarajevo, Bosnia and Herzegovina</p></div>
+			</div></a>
+
+
+			<a id="zeljava" class="expo all former-yugoslavia croatia" href="20231205_zeljava/zeljava.html"><div class="image-element">
+				<img class="" src="20231205_zeljava/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Željava Underground Air Base</h2><p class="panel-location">Željava, Croatia</p></div>
+			</div></a>
+			<a id="petrova-gora" class="expo all former-yugoslavia croatia" href="20231204_petrova-gora/petrova-gora.html"><div class="image-element">
+				<img class="" src="20231204_petrova-gora/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Monument to the Uprising of the People of Kordun and Banija</h2><p class="panel-location">Petrova Gora National Park, Croatia</p></div>
+			</div></a>
+			<a id="brezovica" class="expo all former-yugoslavia croatia" href="20231204_brezovica/brezovica.html"><div class="image-element">
+				<img class="" src="20231204_brezovica/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Monument to the Detachment</h2><p class="panel-location">Novo Selo Palanječko, Croatia</p></div>
+			</div></a>
+			<a id="stone-flower" class="expo all former-yugoslavia croatia" href="20231204_stone-flower/stone-flower.html"><div class="image-element">
+				<img class="" src="20231204_stone-flower/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Stone Flower</h2><p class="panel-location">Podgarić, Croatia</p></div>
+			</div></a>
+			<a id="moslavina" class="expo all former-yugoslavia croatia" href="20231204_moslavina/moslavina.html"><div class="image-element">
+				<img class="" src="20231204_moslavina/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Monument to the Revolution of the People of Moslavina</h2><p class="panel-location">Jasenovac, Croatia</p></div>
+			</div></a>
+
+
+		</div>
+		<p class="panel-credit">Created by <a class="link" href="https://www.calek.co" target="_blank">Luke</a></p>
+	</div>
+</div>
+
+<div id="map" class="map"></div>
+
+
+
+<!-- Scripts -->
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+<script src="map-box.js"></script>
+<script>
+	window.addEventListener('load', function() {
+	    // Check if the screen width is less than 600px
+	    if (window.innerWidth < 600) {
+	        // Calculate 30% of the viewport height
+	        var scrollDistance = window.innerHeight * 0.25;
+	        // Scroll to the calculated distance
+	        window.scrollTo({
+	       	    top: scrollDistance,
+	       	    left: 0,
+	        	behavior: 'smooth' // Optional: for smooth scrolling
+	      });
+	    }
+	  });
+</script>
+
+
+
+<script>
+
+// Reposition map based on button clicks
+document.addEventListener('DOMContentLoaded', function() {
+    // Define map settings for desktop and mobile for each filter, including new locations
+    const mapSettings = {
+        desktop: {
+            'all': { center: [25, 48], zoom: 4.2 },
+            'bulgaria': { center: [26.4, 42.5], zoom: 6.8 },
+            'macedonia': { center: [22.1, 41.6], zoom: 7.8 },
+            'kosovo': { center: [21.17, 42.66], zoom: 12.8 },
+            'serbia': { center: [21.5, 44.3], zoom: 7.2 },
+            'hungary': { center: [20.2, 47.8], zoom: 7 },
+            'albania': { center: [20.1, 41.1], zoom: 7 },
+            'croatia': { center: [17.2, 45.1], zoom: 7.5 },
+            'former-yugoslavia': { center: [21, 43.5], zoom: 5.8 },
+            'montenegro': { center: [19.1, 42.5], zoom: 8.5 },
+            'east-germany': { center: [14.4, 52.4], zoom: 7 },
+            'bosnia': { center: [18.5, 43.8], zoom: 8.5 }
+        },
+        mobile: {
+            'all': { center: [21, 42], zoom: 3.5 },
+            'bulgaria': { center: [25.8, 41.8], zoom: 5.5 },
+            'macedonia': { center: [21.8, 41.3], zoom: 6.8 },
+            'kosovo': { center: [21.161, 42.655], zoom: 12.8 },
+            'serbia': { center: [21, 43.5], zoom: 6 },
+            'hungary': { center: [19.4, 47.1], zoom: 6 },
+            'albania': { center: [20.1, 41.1], zoom: 7 },
+            'croatia': { center: [16, 44.6], zoom: 6 },
+            'former-yugoslavia': { center: [19, 42.5], zoom: 4.8 },
+            'montenegro': { center: [18.5, 42], zoom: 7 },
+            'east-germany': { center: [13.4, 51.5], zoom: 6 },
+            'bosnia': { center: [18.2, 43.5], zoom: 8.2 }
+        }
+    };
+    
+    // Function to change map view
+    function changeMapView(filterId) {
+        const deviceType = window.innerWidth <= 600 ? 'mobile' : 'desktop';
+        const settings = mapSettings[deviceType][filterId];
+        if (settings) {
+            map.flyTo({ center: settings.center, zoom: settings.zoom });
+        }
+    }
+    
+    // Add event listeners to each filter button
+    document.querySelectorAll('.button-filter').forEach(button => {
+        button.addEventListener('click', function() {
+            changeMapView(this.getAttribute('data-filter'));
+        });
+    });
+
+    // Optional: Adjust map when resizing window
+    // window.addEventListener('resize', function() {
+    //   const checkedFilterId = document.querySelector('input[type="radio"][name="filter"]:checked').id;
+    //   changeMapView(checkedFilterId);
+    // });
+});
+
+
+
+	// New hide-show filter menuJS
+	document.addEventListener('click', function(event) {
+	    if (event.target.classList.contains('button-filter')) { // Ensure the clicked element is a filter button
+	        const filter = event.target.getAttribute('data-filter');
+	        
+	        // Remove 'button-filter-active' class from all buttons
+	        document.querySelectorAll('.button-filter').forEach(button => {
+	            button.classList.remove('button-filter-active');
+	        });
+	        
+	        // Add 'button-filter-active' class to the clicked button
+	        event.target.classList.add('button-filter-active');
+
+	        // Handle expo elements
+	        const expos = document.querySelectorAll('.expo'); // Select only elements intended for filtering
+	        expos.forEach(expo => {
+	            if (filter === 'all') {
+	                expo.classList.remove('expo-hidden');
+	            } else if (expo.classList.contains(filter)) {
+	                expo.classList.remove('expo-hidden');
+	            } else {
+	                expo.classList.add('expo-hidden');
+	            }
+	        });
+
+	        // Handle note elements
+	        const notes = document.querySelectorAll('.note'); // Select all note elements
+	        notes.forEach(note => {
+	            note.classList.remove('note-visible'); // Hide all notes first
+	            if (filter === 'all') {
+	                note.classList.remove('note-visible'); // Ensure no notes are visible when 'All' is selected
+	            } else if (note.classList.contains(filter)) {
+	                note.classList.add('note-visible'); // Show the note if it matches the filter
+	            }
+	        });
+
+	        // Scroll the clicked button into view
+	        event.target.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+	    }
+	});
+
+
+</script>
+
+</body>
+</html>
