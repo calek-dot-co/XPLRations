@@ -164,7 +164,7 @@ map.on('click', (event) => {
                     </div>
                 </a>
             </div>
-            <button id="close-overlay" style="position: absolute; top: 10px; right: 10px; height: 2rem; width: 2rem; padding: 0; background-color: #fff; color: #000; border: none; border-radius: 6px; font-size: 20px;">⤫</button>
+            <button id="close-overlay" style="position: absolute; top: 0; right: 0; margin: 10px; height: 2.2rem; width: 2.2rem; text-align: center; padding: 0; background-color: rgba(0, 0, 0, 0.5); color: #fff; border: none; border-radius: 20px; font-size: 20px;">✕</button>
         `;
 
         document.body.appendChild(currentOverlay);
