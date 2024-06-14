@@ -100,9 +100,17 @@ map.on('click', (event) => {
     const features = map.queryRenderedFeatures(event.point, {
         layers: ['locations-layer']
     });
+    
+    // Close overlay if no features are clicked and overlay exists
     if (!features.length) {
+        if (currentOverlay) {
+            document.body.removeChild(currentOverlay);
+            currentOverlay = null;
+            document.getElementById('panel').classList.remove('active');
+        }
         return;
     }
+
     const feature = features[0];
 
     // Close existing popup or overlay
@@ -138,7 +146,6 @@ map.on('click', (event) => {
         currentOverlay.style.height = 'auto';
         currentOverlay.style.marginLeft = '5vw';
         currentOverlay.style.borderRadius = '16px';
-        currentOverlay.style.paddingBottom = '20px';
         currentOverlay.style.backgroundColor = 'rgba(0, 0, 0, 1)';
         currentOverlay.style.zIndex = '1000';
         currentOverlay.style.color = '#fff';
@@ -147,11 +154,14 @@ map.on('click', (event) => {
         currentOverlay.style.alignItems = 'left';
         currentOverlay.style.justifyContent = 'left';
         currentOverlay.innerHTML = `
-            <div style="position: relative; text-align: left;">
+            <div style="position: relative; text-align: left; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);">
                 <a class="map-link" style="color: #fff; text-decoration: none;" href="${feature.properties.link}">
-                    <img class="map-image" src="${feature.properties.image}" style="width: 100%; height: auto; margin-bottom: 20px; border-radius: 16px 16px 0 0;">
-                    <h2 style="padding-left: 20px; padding-right: 20px; margin-top: 16px; margin-bottom: 5px; color: #fff; font-size: 20px;">${feature.properties.title}</h2>
-                    <p style="padding-left: 20px; padding-right: 20px; margin-top: 5px; margin-bottom: 0px; color: #fff; font-size: 16px; line-height: 1.1rem;">${feature.properties.description}</p>
+                    <img class="map-image" src="${feature.properties.image}" style="width: 100%; height: auto; border-radius: 16px;">
+                    <div id="overlay-text" style="width: 88.5%; padding: 20px; position: absolute; bottom: 0; 
+                            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 40%,rgba(0, 0, 0, 0.7) 100%); border-radius: 0 0 16px 16px;">
+                        <h2 style="margin-bottom: 5px; color: #fff; font-size: 20px;">${feature.properties.title}</h2>
+                        <p style="color: #fff; font-size: 16px; line-height: 1.1rem; margin-bottom: 0;">${feature.properties.description}</p>
+                    </div>
                 </a>
             </div>
             <button id="close-overlay" style="position: absolute; top: 10px; right: 10px; height: 2rem; width: 2rem; padding: 0; background-color: #fff; color: #000; border: none; border-radius: 6px; font-size: 20px;">⤫</button>
@@ -173,7 +183,6 @@ map.on('click', (event) => {
     }
 });
 
-                   // <a class="map-link" style="margin-left: 20px; color: #fff;" href="${feature.properties.link}">More info</a>
 
 
 
