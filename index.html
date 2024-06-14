@@ -319,7 +319,7 @@
 	    // Check if the screen width is less than 600px
 	    if (window.innerWidth < 600) {
 	        // Calculate 30% of the viewport height
-	        var scrollDistance = window.innerHeight * 0.25;
+	        var scrollDistance = window.innerHeight * 0.1;
 	        // Scroll to the calculated distance
 	        window.scrollTo({
 	       	    top: scrollDistance,
@@ -335,87 +335,81 @@
 <script>
 
 // Reposition map based on button clicks
-document.addEventListener('DOMContentLoaded', function() {
+	document.addEventListener('DOMContentLoaded', function() {
     // Define map settings for desktop and mobile for each filter, including new locations
-    const mapSettings = {
-        desktop: {
-            'all': { center: [25, 48], zoom: 4.2 },
-            'bulgaria': { center: [26.4, 42.5], zoom: 6.8 },
-            'macedonia': { center: [22.1, 41.6], zoom: 7.8 },
-            'kosovo': { center: [21.17, 42.66], zoom: 12.8 },
-            'serbia': { center: [21.5, 44.3], zoom: 7.2 },
-            'hungary': { center: [20.2, 47.8], zoom: 7 },
-            'albania': { center: [20.1, 41.1], zoom: 7 },
-            'croatia': { center: [17.2, 45.1], zoom: 7.5 },
-            'former-yugoslavia': { center: [21, 43.5], zoom: 5.8 },
-            'montenegro': { center: [19.1, 42.5], zoom: 8.5 },
-            'east-germany': { center: [14.4, 52.4], zoom: 7 },
-            'bosnia': { center: [18.5, 43.8], zoom: 8.5 }
-        },
-        mobile: {
-            'all': { center: [21, 42], zoom: 3.5 },
-            'bulgaria': { center: [25.8, 41.8], zoom: 5.5 },
-            'macedonia': { center: [21.8, 41.3], zoom: 6.8 },
-            'kosovo': { center: [21.161, 42.655], zoom: 12.8 },
-            'serbia': { center: [21, 43.5], zoom: 6 },
-            'hungary': { center: [19.4, 47.1], zoom: 6 },
-            'albania': { center: [20.1, 41.1], zoom: 7 },
-            'croatia': { center: [16, 44.6], zoom: 6 },
-            'former-yugoslavia': { center: [19, 42.5], zoom: 4.8 },
-            'montenegro': { center: [18.5, 42], zoom: 7 },
-            'east-germany': { center: [13.4, 51.5], zoom: 6 },
-            'bosnia': { center: [18.2, 43.5], zoom: 8.2 }
-        }
-    };
-    
-    // Function to change map view
-    function changeMapView(filterId) {
-        const deviceType = window.innerWidth <= 600 ? 'mobile' : 'desktop';
-        const settings = mapSettings[deviceType][filterId];
-        if (settings) {
-            map.flyTo({ center: settings.center, zoom: settings.zoom });
-        }
-    }
-    
-    // Add event listeners to each filter button
-    document.querySelectorAll('.button-filter').forEach(button => {
-        button.addEventListener('click', function() {
-            changeMapView(this.getAttribute('data-filter'));
-        });
-    });
+		const mapSettings = {
+			desktop: {
+				'all': { center: [25, 48], zoom: 4.2 },
+				'bulgaria': { center: [26.4, 42.5], zoom: 6.8 },
+				'macedonia': { center: [22.1, 41.6], zoom: 7.8 },
+				'kosovo': { center: [21.17, 42.66], zoom: 12.8 },
+				'serbia': { center: [21.5, 44.3], zoom: 7.2 },
+				'hungary': { center: [20.2, 47.8], zoom: 7 },
+				'albania': { center: [20.1, 41.1], zoom: 7 },
+				'croatia': { center: [17.2, 45.1], zoom: 7.5 },
+				'former-yugoslavia': { center: [21, 43.5], zoom: 5.8 },
+				'montenegro': { center: [19.1, 42.5], zoom: 8.5 },
+				'east-germany': { center: [14.4, 52.4], zoom: 7 },
+				'bosnia': { center: [18.5, 43.8], zoom: 8.5 }
+			},
+			mobile: {
+				'all': { center: [21, 42], zoom: 3.5 },
+				'bulgaria': { center: [25.8, 41.8], zoom: 5.5 },
+				'macedonia': { center: [21.8, 41.3], zoom: 6.8 },
+				'kosovo': { center: [21.161, 42.655], zoom: 12.8 },
+				'serbia': { center: [21, 43.5], zoom: 6 },
+				'hungary': { center: [19.4, 47.1], zoom: 6 },
+				'albania': { center: [20.1, 41.1], zoom: 7 },
+				'croatia': { center: [16, 44.6], zoom: 6 },
+				'former-yugoslavia': { center: [19, 42.5], zoom: 4.8 },
+				'montenegro': { center: [18.5, 42], zoom: 7 },
+				'east-germany': { center: [13.4, 51.5], zoom: 6 },
+				'bosnia': { center: [18.2, 43.5], zoom: 8.2 }
+			}
+		};
 
-    // Optional: Adjust map when resizing window
-    // window.addEventListener('resize', function() {
-    //   const checkedFilterId = document.querySelector('input[type="radio"][name="filter"]:checked').id;
-    //   changeMapView(checkedFilterId);
-    // });
-});
+    // Function to change map view
+		function changeMapView(filterId) {
+			const deviceType = window.innerWidth <= 600 ? 'mobile' : 'desktop';
+			const settings = mapSettings[deviceType][filterId];
+			if (settings) {
+				map.flyTo({ center: settings.center, zoom: settings.zoom });
+			}
+		}
+
+    // Add event listeners to each filter button
+		document.querySelectorAll('.button-filter').forEach(button => {
+			button.addEventListener('click', function() {
+				changeMapView(this.getAttribute('data-filter'));
+			});
+		});
+	});
 
 
 
 	// New hide-show filter menuJS
 	document.addEventListener('click', function(event) {
 	    if (event.target.classList.contains('button-filter')) { // Ensure the clicked element is a filter button
-	        const filter = event.target.getAttribute('data-filter');
-	        
+	    	const filter = event.target.getAttribute('data-filter');
+
 	        // Remove 'button-filter-active' class from all buttons
-	        document.querySelectorAll('.button-filter').forEach(button => {
-	            button.classList.remove('button-filter-active');
-	        });
-	        
+	    	document.querySelectorAll('.button-filter').forEach(button => {
+	    		button.classList.remove('button-filter-active');
+	    	});
+
 	        // Add 'button-filter-active' class to the clicked button
-	        event.target.classList.add('button-filter-active');
+	    	event.target.classList.add('button-filter-active');
 
 	        // Handle expo elements
 	        const expos = document.querySelectorAll('.expo'); // Select only elements intended for filtering
 	        expos.forEach(expo => {
-	            if (filter === 'all') {
-	                expo.classList.remove('expo-hidden');
-	            } else if (expo.classList.contains(filter)) {
-	                expo.classList.remove('expo-hidden');
-	            } else {
-	                expo.classList.add('expo-hidden');
-	            }
+	        	if (filter === 'all') {
+	        		expo.classList.remove('expo-hidden');
+	        	} else if (expo.classList.contains(filter)) {
+	        		expo.classList.remove('expo-hidden');
+	        	} else {
+	        		expo.classList.add('expo-hidden');
+	        	}
 	        });
 
 	        // Handle note elements
