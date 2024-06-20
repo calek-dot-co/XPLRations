@@ -3,6 +3,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "1",
 	      "image": "20231204_moslavina/thumb.jpg",
         "title": "Monument to the Revolution of the People of Moslavina",
 	      "description": "Podgarić, Croatia",
@@ -17,6 +18,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "2",
 	      "image": "20231204_stone-flower/thumb.jpg",
         "title": "Stone Flower Monument",
         "description": "Jasenovac, Croatia",
@@ -31,6 +33,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "3",
         "image": "20231204_brezovica/thumb.jpg",
         "title": "Monument to the Detachment",
         "description": "Novo Selo Palanječko, Croatia",
@@ -45,6 +48,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "4",
         "image": "20231204_petrova-gora/thumb.jpg",
         "title": "Monument to the Uprising",
         "description": "Petrova Gora National Park, Croatia",
@@ -59,6 +63,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "5",
         "image": "20231205_zeljava/thumb.jpg",
         "title": "Željava Underground Air Base",
         "description": "Željava, Croatia",
@@ -73,6 +78,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "6",
         "image": "20231209_bobsled/thumb.jpg",
         "title": "1984 Olympic Bobsled Track",
         "description": "Sarajevo, Bosnia and Herzegovina",
@@ -87,6 +93,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "7",
         "image": "20231210_titos-bunker/thumb.jpg",
         "title": "Tito's Bunker",
         "description": "Konjic, Bosnia and Herzegovina",
@@ -101,6 +108,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "8",
         "image": "20231220_godinje/thumb.jpg",
         "title": "Monument to Fallen Fighters of WWII",
         "description": "Godinje, Montenegro",
@@ -115,6 +123,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "9",
         "image": "20231210_hotel-igman/thumb.jpg",
         "title": "Hotel Igman",
         "description": "Gornja Grkarica, Bosnia & Herzegovina",
@@ -129,6 +138,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "10",
         "image": "20231215_kupari-hotels/thumb.jpg",
         "title": "Abandoned Hotels",
         "description": "Kupari, Croatia",
@@ -143,6 +153,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "11",
         "image": "20231218_sub-bunkers/thumb.jpg",
         "title": "Submarine Bunkers",
         "description": "Luštica, Montenegro",
@@ -157,6 +168,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "12",
         "image": "20231218_barutana/thumb.jpg",
         "title": "Memorial to the Fallen of the Lješanska Nahija Region",
         "description": "Barutana, Montenegro",
@@ -171,6 +183,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "13",
         "image": "20231218_sutjeska/thumb.jpg",
         "title": "Monument to the Fallen Soldiers on Sutjeska",
         "description": "Carine, Montenegro",
@@ -185,6 +198,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "14",
         "image": "20231218_nicsik/thumb.jpg",
         "title": "Monument to Fallen Fighters of WWII",
         "description": "Nikšić, Montenegro",
@@ -199,6 +213,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "15",
         "image": "20231231_spac/thumb.jpg",
         "title": "Spaç Prison",
         "description": "Kodër-Spaç, Albania",
@@ -213,6 +228,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "16",
         "image": "20240120_vogelsang/thumb.jpg",
         "title": "Kaserne Vogelsang",
         "description": "Zehdenick, Germany",
@@ -227,6 +243,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "17",
         "image": "20240203_krampnitz-kaserne/thumb.jpg",
         "title": "Krampnitz Kaserne",
         "description": "Potsdam, Germany",
@@ -241,6 +258,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "18",
         "image": "20240210_flughafen-brand/thumb.jpg",
         "title": "Flugplatz Brand",
         "description": "Halbe, Germany",
@@ -255,6 +273,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "19",
         "image": "20240217_kraftwerk-henningsdorf/thumb.jpg",
         "title": "Kraftwerk Henningsdorf",
         "description": "Henningsdorf, Germany",
@@ -269,6 +288,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "20",
         "image": "20240218_kraftwerk_plessa/thumb.jpg",
         "title": "Kraftwerk Plessa",
         "description": "Plessa, Germany",
@@ -283,6 +303,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "21",
         "image": "20240330_neues-lager/thumb.jpg",
         "title": "Neues Lager",
         "description": "Jüterbog, Germany",
@@ -297,6 +318,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "22",
         "image": "20240316_templhof-flughafen/thumb.jpg",
         "title": "Flughafen Templhof",
         "description": "Berlin, Germany",
@@ -311,6 +333,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "23",
         "image": "20240414_abandonned-train-yard/thumb.jpg",
         "title": "Train Graveyard",
         "description": "Istvántelek, Hungary",
@@ -325,6 +348,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "24",
         "image": "20240414_kelenfold/thumb.jpg",
         "title": "Kelenföld Erőmű",
         "description": "Kelenföld, Hungary",
@@ -339,6 +363,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "25",
         "image": "20240420_kossuth-mozi-cinema/thumb.jpg",
         "title": "Kossuth Mozi Cinema",
         "description": "Miskolc, Hungary",
@@ -353,6 +378,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "26",
         "image": "20240421_bars-501/thumb.jpg",
         "title": "BARS 501",
         "description": "Kálló, Hungary",
@@ -367,6 +393,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "27",
         "image": "20240421_castle/thumb.jpg",
         "title": "Hajmáskér Barracks",
         "description": "Hajmáskér, Hungary",
@@ -381,6 +408,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "28",
         "image": "20240426_f4-bunker/thumb.jpg",
         "title": "F4 'Rákosi' Bunker",
         "description": "Budapest, Hungary",
@@ -395,6 +423,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "29",
         "image": "20240428-1_zrenjanin/thumb.jpg",
         "title": "Memorial to the Uprising in Vojvodina",
         "description": "Zrenjanin, Serbia",
@@ -409,6 +438,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "30",
         "image": "20240428-2_titel/thumb.jpg",
         "title": "Monument to Fallen Soldiers and Victims of Fascism",
         "description": "Titel, Serbia",
@@ -423,6 +453,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "31",
         "image": "20240428-3_jabuka/thumb.jpg",
         "title": "Brazde Monument at the Stratište Memorial Complex",
         "description": "Jabuka, Serbia",
@@ -437,6 +468,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "32",
         "image": "20240428-4_pozarevac/thumb.jpg",
         "title": "The Star at the Memorial Park Čačalica",
         "description": "Požarevac, Serbia",
@@ -451,6 +483,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "33",
         "image": "20240428-5_majdanpek/thumb.jpg",
         "title": "Monument to the Liberators of Majdanpek",
         "description": "Majdanpek, Serbia",
@@ -465,6 +498,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "34",
         "image": "20240429-1_grkinja/thumb.jpg",
         "title": "Monument to Fallen Fighters",
         "description": "Grkinja, Serbia",
@@ -479,6 +513,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "35",
         "image": "20240429-2_nis/thumb.jpg",
         "title": "Bubanj Memorial Park",
         "description": "Niš, Serbia",
@@ -493,6 +528,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "36",
         "image": "20240429-3_popina/thumb.jpg",
         "title": "Mausoleum to the Fallen Insurgents",
         "description": "Štulac, Serbia",
@@ -507,6 +543,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "37",
         "image": "20240429-4_ostra/thumb.jpg",
         "title": "Monument to Courage",
         "description": "Ostra, Serbia",
@@ -521,6 +558,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "8",
         "image": "20240429-5_kadinjaca/thumb.jpg",
         "title": "Kadinjača Memorial Complex",
         "description": "Užice, Serbia",
@@ -535,6 +573,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "39",
         "image": "20240430_kragujevac/thumb.jpg",
         "title": "Interrupted Flight Memorial",
         "description": "Kragujevac, Serbia",
@@ -549,6 +588,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "40",
         "image": "20240501_kosmaj/thumb.jpg",
         "title": "Monument to the Fallen Soldiers",
         "description": "Kosmaj, Serbia",
@@ -563,6 +603,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "41",
         "image": "20240506_kosovo-library/thumb.jpg",
         "title": "The National Library of Kosovo",
         "description": "Pristina, Kosovo",
@@ -577,6 +618,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "42",
         "image": "20240507_sports-hall/thumb.jpg",
         "title": "Palace of Youth and Sports",
         "description": "Pristina, Kosovo",
@@ -591,6 +633,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "43",
         "image": "20240510_varrezat/thumb.jpg",
         "title": "Varrezat e Dëshmorëve",
         "description": "Pristina, Kosovo",
@@ -605,6 +648,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "44",
         "image": "20240510-1_kavadarci/thumb.jpg",
         "title": "Kosturnica",
         "description": "Kavadarci, North Macedonia",
@@ -619,6 +663,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "45",
         "image": "20240510-2_prilep/thumb.jpg",
         "title": "Park of the Revolution",
         "description": "Prilep, North Macedonia",
@@ -633,6 +678,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "46",
         "image": "20240511_makedonium/thumb.jpg",
         "title": "Makedonium, Ilinden Monument",
         "description": "Krushevo, North Macedonia",
@@ -647,6 +693,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "47",
         "image": "20240512_hotel-evropa/thumb.jpg",
         "title": "Hotel Evropa",
         "description": "Oteshevo, North Macedonia",
@@ -661,6 +708,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "48",
         "image": "20240513_prespa/thumb.jpg",
         "title": "Prespa Monument",
         "description": "Oteshevo, North Macedonia",
@@ -675,6 +723,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "49",
         "image": "20240518-1_theater/thumb.jpg",
         "title": "Abandoned Theater",
         "description": "Shipka, Bulgaria",
@@ -689,6 +738,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "50",
         "image": "20240518-2_buzludzha/thumb.jpg",
         "title": "Buzludzha Monument",
         "description": "Shipka, Bulgaria",
@@ -703,6 +753,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "51",
         "image": "20240518-3_samara/thumb.jpg",
         "title": "Samara Flag Monument",
         "description": "Stara Zagora, Bulgaria",
@@ -717,6 +768,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "52",
         "image": "20240519_bunker-n/thumb.jpg",
         "title": "Bunker N",
         "description": "Novo Selo, Bulgaria",
@@ -731,6 +783,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "53",
         "image": "20240525_bulgaria-founders/thumb.jpg",
         "title": "Founders of the Bulgarian State Monument",
         "description": "Shumen, Bulgaria",
@@ -745,6 +798,7 @@
     {
       "type": "Feature",
       "properties": {
+        "id": "54",
         "image": "20240526_soviet-friendship/thumb.jpg",
         "title": "Monument of the Bulgarian-Soviet Friendship",
         "description": "Varna, Bulgaria",
@@ -752,6 +806,36 @@
       },
       "geometry": {
         "coordinates": [27.949024, 43.219038],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "55",
+        "image": "20240601_sinaia-bobsled/thumb.jpg",
+        "title": "Abandoned Bobsled Track",
+        "description": "Sinaia, Romania",
+        "link": "20240601_sinaia-bobsled/sinaia-bobsled.html"
+      },
+      "geometry": {
+        "coordinates": [25.526445, 45.357720],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "56",
+        "image": "20240602_salina-slanic-prahova/thumb.jpg",
+        "title": "Salina Slănic Prahova",
+        "description": "Slănic, Romania",
+        "link": "20240602_salina-slanic-prahova/salina-slanic-prahova.html"
+      },
+      "geometry": {
+        "coordinates": [25.937627, 45.226543],
         "type": "Point"
       }
     }
