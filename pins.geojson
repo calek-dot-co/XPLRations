@@ -838,6 +838,21 @@
         "coordinates": [25.937627, 45.226543],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "57",
+        "image": "20240603_dorfana-prison/thumb.jpg",
+        "title": "Dorfana Prison",
+        "description": "Câmpina, Romania",
+        "link": "20240603_dorfana-prison/dorfana-prison.html"
+      },
+      "geometry": {
+        "coordinates": [25.772833, 45.137223],
+        "type": "Point"
+      }
     }
 
   ],
