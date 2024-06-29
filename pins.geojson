@@ -853,6 +853,66 @@
         "coordinates": [25.772833, 45.137223],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "56",
+        "image": "20240604_palace-of-parliment/thumb.jpg",
+        "title": "Palace of Parliament",
+        "description": "Bucharest, Romania",
+        "link": "20240604_palace-of-parliment/palace-of-parliment.html"
+      },
+      "geometry": {
+        "coordinates": [26.087565, 44.427443],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "57",
+        "image": "20240608_food-institute/thumb.jpg",
+        "title": "Institute of Food Technology",
+        "description": "Bucharest, Romania",
+        "link": "20240608_food-institute/food-institute.html"
+      },
+      "geometry": {
+        "coordinates": [26.074479, 44.490383],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "56",
+        "image": "20240615_salina-turda/thumb.jpg",
+        "title": "Salina Turda",
+        "description": "Turda, Romania",
+        "link": "20240615_salina-turda/salina-turda.html"
+      },
+      "geometry": {
+        "coordinates": [23.787259, 46.587726],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "57",
+        "image": "20240616_botanica-oradea/thumb.jpg",
+        "title": "Grădina Botănica Oradea",
+        "description": "Oradea, Romania",
+        "link": "20240616_botanica-oradea/botanica-oradea.html"
+      },
+      "geometry": {
+        "coordinates": [21.943489, 47.055294],
+        "type": "Point"
+      }
     }
 
   ],
