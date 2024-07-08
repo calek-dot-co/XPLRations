@@ -30,14 +30,15 @@
 			<div class="menu">
 				<div class="menu-row">
 					<button data-filter="all" class="button-filter button-filter-active">All</button>
+					<button data-filter="slovakia" class="button-filter">Slovakia (1)</button>
 					<button data-filter="romania" class="button-filter">Romania (7)</button>
 					<button data-filter="bulgaria" class="button-filter">Bulgaria (6)</button>
 					<button data-filter="macedonia" class="button-filter">North Macedonia (5)</button>
 					<button data-filter="kosovo" class="button-filter">Kosovo (3)</button>
 					<button data-filter="serbia" class="button-filter">Serbia (12)</button>
-					<button data-filter="hungary" class="button-filter">Hungary (6)</button>
 				</div>
 				<div class="menu-row">
+					<button data-filter="hungary" class="button-filter">Hungary (6)</button>
 					<button data-filter="east-germany" class="button-filter">Germany (7)</button>
 					<button data-filter="former-yugoslavia" class="button-filter">Former Yugoslavia (35)</button>
 					<button data-filter="albania" class="button-filter">Albania (1)</button>
@@ -50,19 +51,26 @@
 		<div id="imageGrid" class="image-grid">
 
 
+			<div class="note romania">1 Slovakia exploration</div>
 			<div class="note romania">7 Romania explorations</div>
 			<div class="note bulgaria">6 Bulgaria explorations</div>
 			<div class="note macedonia">5 North Macedonia explorations</div>
 			<div class="note kosovo">3 Kosovo explorations</div>
 			<div class="note serbia">12 Serbia explorations</div>
+
 			<div class="note hungary">6 Hungary explorations</div>
-			
 			<div class="note east-germany">7 Germany explorations</div>
 			<div class="note croatia">6 Croatia explorations</div>
 			<div class="note montenegro">5 Montenegro explorations</div>
 			<div class="note bosnia">3 Bosnia & Herzegovina explorations</div>
 			<div class="note albania">1 Albania exploration</div>
 			<div class="note former-yugoslavia">35 former Yugoslavia explorations</div>
+
+
+			<a id="bunker-o" class="expo all slovakia" href="20240623_bunker-o/bunker-o.html"><div class="image-element">
+				<img src="20240623_bunker-o/thumb.jpg">
+				<div class="info"><h2 class="panel-title">Bunker O</h2><p class="panel-location">Bratislava, Slovakia</p></div>
+			</div></a>
 
 
 			<a id="oradea" class="expo all romania" href="20240616_botanica-oradea/botanica-oradea.html"><div class="image-element">
@@ -372,6 +380,7 @@
 		const mapSettings = {
 			desktop: {
 				'all': { center: [25, 48], zoom: 4.2 },
+				'slovakia': { center: [17.1, 48.15], zoom: 11 },
 				'romania': { center: [26, 45.8], zoom: 6 },
 				'bulgaria': { center: [26.4, 42.5], zoom: 6.8 },
 				'macedonia': { center: [22.1, 41.6], zoom: 7.8 },
@@ -387,6 +396,7 @@
 			},
 			mobile: {
 				'all': { center: [21, 42], zoom: 3.5 },
+				'slovakia': { center: [17.1, 48.15], zoom: 11 },
 				'romania': { center: [25.5, 44], zoom: 5 },
 				'bulgaria': { center: [25.8, 41.8], zoom: 5.5 },
 				'macedonia': { center: [21.8, 41.3], zoom: 6.8 },

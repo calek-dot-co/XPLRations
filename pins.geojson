@@ -913,6 +913,21 @@
         "coordinates": [21.943489, 47.055294],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "57",
+        "image": "20240623_bunker-o/thumb.jpg",
+        "title": "Bunker O",
+        "description": "Bratislava, Slovakia",
+        "link": "20240623_bunker-o/bunker-o.html"
+      },
+      "geometry": {
+        "coordinates": [17.071732, 48.174399],
+        "type": "Point"
+      }
     }
 
   ],
