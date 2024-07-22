@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, p, a, span {
   #panel {
 /*    pointer-events: none !important;*/
     position: absolute;
-    top: 65svh;
+    top: 85svh;
   }
   .panel-inner {
     padding: 1vw 4vw 4vw 4vw;
