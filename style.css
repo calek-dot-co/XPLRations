@@ -167,6 +167,8 @@ h1, h2, h3, h4, h5, p, a, span {
     margin-bottom: 2vw;
     margin-right: 2vw;
     overflow-x: visible;
+    box-shadow: 0px 0px 20px rgba(50, 50, 50, .5);
+    border: solid 1px #202020;
   }
   .line-wrapper {
     display: none;
@@ -187,6 +189,8 @@ h1, h2, h3, h4, h5, p, a, span {
     border-radius: 8vw 8vw 0 0;
     pointer-events: auto;
     max-width: 92vw;
+    box-shadow: 0px 0px 20px rgba(50, 50, 50, .5);
+    border: solid 1px #202020;
   }
   .line-wrapper {
     margin-top: 2vw;
@@ -363,13 +367,14 @@ option {
   text-align: center;
   font-size: 1vw;
   padding: 0.675em 6em 0.675em 1em;
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: #000;
   border: none;
-  box-shadow: 0px 0px 20px rgba(50, 50, 50, 1);
+  box-shadow: 0px 0px 20px rgba(50, 50, 50, .5);
   border-radius: 6px;
+  border: solid 1px #202020;
   cursor: pointer;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="M7 10l5 5 5-5z"/></svg>'); /* Add your dropdown arrow here */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M7 10l5 5 5-5z"/></svg>'); /* Add your dropdown arrow here */
   background-repeat: no-repeat;
   background-position: right .5em center;
   background-size: 1.5em;
@@ -383,16 +388,30 @@ option {
     }
   }
 
+.country-filter:hover {
+  background-color: #1A1A1A;
+}
 
-/*.mapboxgl-ctrl-group {
-  background: #515151;
-  border-radius: 100px;
-  box-shadow: 0px 0px 20px rgba(50, 50, 50, 1);
+
+.mapboxgl-ctrl-group {
+  background: #000;
+}
+.mapboxgl-ctrl-group:not(:empty) {
+  box-shadow: 0px 0px 20px rgba(50, 50, 50, .5);
+  border: solid 1px #202020;
 }
 .mapboxgl-ctrl-group button+button {
-border-top: 1px solid #000;
+  border-top: 1px solid #202020;
 }
-*/
+
+.mapboxgl-ctrl button.mapboxgl-ctrl-zoom-in .mapboxgl-ctrl-icon {
+  background-image: url(data:image/svg+xml;charset=utf8,<svg%20viewBox%3D%270%200%2020%2020%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27>%0A%20%20<path%20style%3D%27fill%3A%23ffffff%3B%27%20d%3D%27M%2010%206%20C%209.446%206%209%206.4459904%209%207%20L%209%209%20L%207%209%20C%206.446%209%206%209.446%206%2010%20C%206%2010.554%206.446%2011%207%2011%20L%209%2011%20L%209%2013%20C%209%2013.55401%209.446%2014%2010%2014%20C%2010.554%2014%2011%2013.55401%2011%2013%20L%2011%2011%20L%2013%2011%20C%2013.554%2011%2014%2010.554%2014%2010%20C%2014%209.446%2013.554%209%2013%209%20L%2011%209%20L%2011%207%20C%2011%206.4459904%2010.554%206%2010%206%20z%27%20%2F>%0A<%2Fsvg>%0A) !important;
+}
+.mapboxgl-ctrl button.mapboxgl-ctrl-zoom-out .mapboxgl-ctrl-icon {
+  background-image: url(data:image/svg+xml;charset=utf8,<svg%20viewBox%3D%270%200%2020%2020%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27>%0A%20%20<path%20style%3D%27fill%3A%23ffffff%3B%27%20d%3D%27m%207%2C9%20c%20-0.554%2C0%20-1%2C0.446%20-1%2C1%200%2C0.554%200.446%2C1%201%2C1%20l%206%2C0%20c%200.554%2C0%201%2C-0.446%201%2C-1%200%2C-0.554%20-0.446%2C-1%20-1%2C-1%20z%27%20%2F>%0A<%2Fsvg>%0A) !important;
+}
+
+
 
 
 /*------------ Old Filter System ------------*/
