@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- General -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Explorations by date (NEW-OLD)</title>
+	<meta name="description" content="Exploring the abandoned and the unusual.">
+	<!-- Share Metadata-->
+	<meta property="og:title" content="Explorations"/>
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Exploring the abandoned and unusual."/>
+	<meta property="og:url" content="https://explorations.calek.co"/>
+	<meta property="og:image" content="https://explorations.calek.co/og.png"/>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<!-- Links -->
+	<link rel="stylesheet" href="bootstrap-grid.css">
+	<link rel="stylesheet" href="style-v2.css">
+</head>
+<body>
+
+
+<div class="grid-wrapper">
+    <a class="homepage-browse-link" href="index-v2.html">
+		<div class="homepage-browse-content detail-page">
+			<p class="homepage-l homepage-arrow-layout">← Back to homepage</p>
+		</div>
+	</a>
+	<h1>Explorations by date</h1>
+	<div id="date">
+		<img class="loading-animation" src="loading-animation.gif">
+	</div>
+</div>
+
+
+<!-- Scripts -->
+<script>
+    // Generates listing based on GEOJSON file sorted by ID
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('pins-update.geojson')
+        .then(response => response.json())
+        .then(data => {
+            const features = data.features;
+
+            // Sort features by ID in descending order
+            features.sort((a, b) => parseInt(b.properties.id) - parseInt(a.properties.id));
+
+            // Function to generate HTML for a feature
+            function generateFeatureHTML(feature) {
+                return `
+                <div class="listing-project-teaser">
+                    <a class="listing-project-link" href="${feature.properties.link}">
+                        <img class="listing-project-image" src="${feature.properties.image}">
+                        <div class="listing-project-overlay-text">
+                            <h3 class="homepage-l homepage-l-project-teaser">${feature.properties.title}</h3>
+                            <p class="homepage-s homepage-s-project-teaser">${feature.properties.location || ''}, ${feature.properties.country || ''}</p>
+                        </div>
+                    </a>
+                </div>
+                `;
+            }
+
+            // Generate HTML for all features sorted by ID
+            const dateContainer = document.getElementById('date');
+            const dateSection = document.createElement('div');
+            dateSection.classList.add('date-section');
+
+            const dateGrid = document.createElement('div');
+            dateGrid.classList.add('date-grid');
+
+            features.forEach(feature => {
+                dateGrid.innerHTML += generateFeatureHTML(feature);
+            });
+
+            dateSection.appendChild(dateGrid);
+            dateContainer.appendChild(dateSection);
+
+            // Remove loading animation
+            document.querySelectorAll('.loading-animation').forEach(el => el.remove());
+
+        })
+        .catch(error => console.error('Error fetching the GEOJSON file:', error));
+    });
+</script>
+
+
+</body>
+</html>

@@ -6,8 +6,11 @@
         "id": "1",
 	      "image": "20231204_moslavina/thumb.jpg",
         "title": "Monument to the Revolution of the People of Moslavina",
-	      "description": "Podgarić, Croatia",
-        "link": "20231204_moslavina/moslavina.html"
+	      "location": "Podgarić",
+        "country": "Croatia",
+        "link": "20231204_moslavina/moslavina.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [16.777734, 45.640779],
@@ -21,8 +24,11 @@
         "id": "2",
 	      "image": "20231204_stone-flower/thumb.jpg",
         "title": "Stone Flower Monument",
-        "description": "Jasenovac, Croatia",
-	      "link": "20231204_stone-flower/stone-flower.html"
+        "location": "Jasenovac",
+        "country": "Croatia",
+	      "link": "20231204_stone-flower/stone-flower.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [16.928378, 45.280374],
@@ -36,8 +42,11 @@
         "id": "3",
         "image": "20231204_brezovica/thumb.jpg",
         "title": "Monument to the Detachment",
-        "description": "Novo Selo Palanječko, Croatia",
-        "link": "20231204_brezovica/brezovica.html"
+        "location": "Novo Selo Palanječko",
+        "country": "Croatia",
+        "link": "20231204_brezovica/brezovica.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [16.458686, 45.502486],
@@ -51,8 +60,11 @@
         "id": "4",
         "image": "20231204_petrova-gora/thumb.jpg",
         "title": "Monument to the Uprising",
-        "description": "Petrova Gora National Park, Croatia",
-        "link": "20231204_petrova-gora/petrova-gora.html"
+        "location": "Petrova Gora National Park",
+        "country": "Croatia",
+        "link": "20231204_petrova-gora/petrova-gora.html",
+        "tags": ["spomenik", "abandoned"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [15.804969, 45.316262],
@@ -66,8 +78,11 @@
         "id": "5",
         "image": "20231205_zeljava/thumb.jpg",
         "title": "Željava Underground Air Base",
-        "description": "Željava, Croatia",
-        "link": "20231205_zeljava/zeljava.html"
+        "location": "Željava",
+        "country": "Croatia",
+        "link": "20231205_zeljava/zeljava.html",
+        "tags": ["underground", "military", "abandoned"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [15.757574, 44.836768],
@@ -81,8 +96,11 @@
         "id": "6",
         "image": "20231209_bobsled/thumb.jpg",
         "title": "1984 Olympic Bobsled Track",
-        "description": "Sarajevo, Bosnia and Herzegovina",
-        "link": "20231209_bobsled/bobsled.html"
+        "location": "Sarajevo",
+        "country": "Bosnia & Herzegovina",
+        "link": "20231209_bobsled/bobsled.html",
+        "tags": ["bobsled", "abandoned"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [18.443177, 43.839776],
@@ -96,8 +114,11 @@
         "id": "7",
         "image": "20231210_titos-bunker/thumb.jpg",
         "title": "Tito's Bunker",
-        "description": "Konjic, Bosnia and Herzegovina",
-        "link": "20231210_titos-bunker/titos-bunker.html"
+        "location": "Konjic",
+        "country": "Bosnia & Herzegovina",
+        "link": "20231210_titos-bunker/titos-bunker.html",
+        "tags": ["military", "tour"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [17.994890, 43.634250],
@@ -111,8 +132,11 @@
         "id": "8",
         "image": "20231220_godinje/thumb.jpg",
         "title": "Monument to Fallen Fighters of WWII",
-        "description": "Godinje, Montenegro",
-        "link": "20231220_godinje/godinje.html"
+        "location": "Godinje",
+        "country": "Montenegro",
+        "link": "20231220_godinje/godinje.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [19.112164, 42.222526],
@@ -126,8 +150,11 @@
         "id": "9",
         "image": "20231210_hotel-igman/thumb.jpg",
         "title": "Hotel Igman",
-        "description": "Gornja Grkarica, Bosnia & Herzegovina",
-        "link": "20231210_hotel-igman/hotel-igman.html"
+        "location": "Gornja Grkarica",
+        "country": "Bosnia & Herzegovina",
+        "link": "20231210_hotel-igman/hotel-igman.html",
+        "tags": ["abandoned", "hotel"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [18.279432, 43.743878],
@@ -141,8 +168,11 @@
         "id": "10",
         "image": "20231215_kupari-hotels/thumb.jpg",
         "title": "Abandoned Hotels",
-        "description": "Kupari, Croatia",
-        "link": "20231215_kupari-hotels/kupari-hotels.html"
+        "location": "Kupari",
+        "country": "Croatia",
+        "link": "20231215_kupari-hotels/kupari-hotels.html",
+        "tags": ["abandoned", "hotel"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [18.190248, 42.619370],
@@ -156,8 +186,11 @@
         "id": "11",
         "image": "20231218_sub-bunkers/thumb.jpg",
         "title": "Submarine Bunkers",
-        "description": "Luštica, Montenegro",
-        "link": "20231218_sub-bunkers/sub-bunkers.html"
+        "location": "Luštica",
+        "country": "Montenegro",
+        "link": "20231218_sub-bunkers/sub-bunkers.html",
+        "tags": ["abandoned", "underground", "military"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [18.549011, 42.423696],
@@ -171,8 +204,11 @@
         "id": "12",
         "image": "20231218_barutana/thumb.jpg",
         "title": "Memorial to the Fallen of the Lješanska Nahija Region",
-        "description": "Barutana, Montenegro",
-        "link": "20231218_barutana/barutana.html"
+        "location": "Barutana",
+        "country": "Montenegro",
+        "link": "20231218_barutana/barutana.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [19.141665, 42.393865],
@@ -186,8 +222,11 @@
         "id": "13",
         "image": "20231218_sutjeska/thumb.jpg",
         "title": "Monument to the Fallen Soldiers on Sutjeska",
-        "description": "Carine, Montenegro",
-        "link": "20231218_sutjeska/sutjeska.html"
+        "location": "Carine",
+        "country": "Montenegro",
+        "link": "20231218_sutjeska/sutjeska.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [19.0833635, 42.731662],
@@ -201,8 +240,11 @@
         "id": "14",
         "image": "20231218_nicsik/thumb.jpg",
         "title": "Monument to Fallen Fighters of WWII",
-        "description": "Nikšić, Montenegro",
-        "link": "20231218_nicsik/nicsik.html"
+        "location": "Nikšić",
+        "country": "Montenegro",
+        "link": "20231218_nicsik/nicsik.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [18.959637, 42.763122],
@@ -216,8 +258,11 @@
         "id": "15",
         "image": "20231231_spac/thumb.jpg",
         "title": "Spaç Prison",
-        "description": "Kodër-Spaç, Albania",
-        "link": "20231231_spac/spac.html"
+        "location": "Kodër-Spaç",
+        "country": "Albania",
+        "link": "20231231_spac/spac.html",
+        "tags": ["abandoned", "prison"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [20.045741, 41.899179],
@@ -231,8 +276,11 @@
         "id": "16",
         "image": "20240120_vogelsang/thumb.jpg",
         "title": "Kaserne Vogelsang",
-        "description": "Zehdenick, Germany",
-        "link": "20240120_vogelsang/vogelsang.html"
+        "location": "Zehdenick",
+        "country": "Germany",
+        "link": "20240120_vogelsang/vogelsang.html",
+        "tags": ["abandoned", "military"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [13.372901, 53.054751],
@@ -246,8 +294,11 @@
         "id": "17",
         "image": "20240203_krampnitz-kaserne/thumb.jpg",
         "title": "Krampnitz Kaserne",
-        "description": "Potsdam, Germany",
-        "link": "20240203_krampnitz-kaserne/krampnitz-kaserne.html"
+        "location": "Potsdam",
+        "country": "Germany",
+        "link": "20240203_krampnitz-kaserne/krampnitz-kaserne.html",
+        "tags": ["abandoned", "military"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [13.049188, 52.459357],
@@ -261,8 +312,11 @@
         "id": "18",
         "image": "20240210_flughafen-brand/thumb.jpg",
         "title": "Flugplatz Brand",
-        "description": "Halbe, Germany",
-        "link": "20240210_flughafen-brand/flughafen-brand.html"
+        "location": "Halbe",
+        "country": "Germany",
+        "link": "20240210_flughafen-brand/flughafen-brand.html",
+        "tags": ["abandoned", "military", "airport"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [13.748315, 52.038914],
@@ -276,8 +330,11 @@
         "id": "19",
         "image": "20240217_kraftwerk-henningsdorf/thumb.jpg",
         "title": "Kraftwerk Henningsdorf",
-        "description": "Henningsdorf, Germany",
-        "link": "20240217_kraftwerk-henningsdorf/kraftwerk-henningsdorf.html"
+        "location": "Henningsdorf",
+        "country": "Germany",
+        "link": "20240217_kraftwerk-henningsdorf/kraftwerk-henningsdorf.html",
+        "tags": ["abandoned", "powerplant"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [13.213050, 52.640754],
@@ -291,8 +348,11 @@
         "id": "20",
         "image": "20240218_kraftwerk_plessa/thumb.jpg",
         "title": "Kraftwerk Plessa",
-        "description": "Plessa, Germany",
-        "link": "20240218_kraftwerk_plessa/kraftwerk_plessa.html"
+        "location": "Plessa",
+        "country": "Germany",
+        "link": "20240218_kraftwerk_plessa/kraftwerk_plessa.html",
+        "tags": ["abandoned", "powerplant"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [13.611516, 51.471062],
@@ -306,8 +366,11 @@
         "id": "21",
         "image": "20240330_neues-lager/thumb.jpg",
         "title": "Neues Lager",
-        "description": "Jüterbog, Germany",
-        "link": "20240330_neues-lager/neues-lager.html"
+        "location": "Jüterbog",
+        "country": "Germany",
+        "link": "20240330_neues-lager/neues-lager.html",
+        "tags": ["abandoned", "military"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [13.030022, 51.997822],
@@ -321,8 +384,11 @@
         "id": "22",
         "image": "20240316_templhof-flughafen/thumb.jpg",
         "title": "Flughafen Templhof",
-        "description": "Berlin, Germany",
-        "link": "20240316_templhof-flughafen/templhof-flughafen.html"
+        "location": "Berlin",
+        "country": "Germany",
+        "link": "20240316_templhof-flughafen/templhof-flughafen.html",
+        "tags": ["tour", "airport"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [13.389500, 52.482231],
@@ -336,8 +402,11 @@
         "id": "23",
         "image": "20240414_abandonned-train-yard/thumb.jpg",
         "title": "Train Graveyard",
-        "description": "Istvántelek, Hungary",
-        "link": "20240414_abandonned-train-yard/abandonned-train-yard.html"
+        "location": "Istvántelek",
+        "country": "Hungary",
+        "link": "20240414_abandonned-train-yard/abandonned-train-yard.html",
+        "tags": ["abandoned", "train"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [19.104321, 47.548947],
@@ -351,8 +420,11 @@
         "id": "24",
         "image": "20240414_kelenfold/thumb.jpg",
         "title": "Kelenföld Erőmű",
-        "description": "Kelenföld, Hungary",
-        "link": "20240414_kelenfold/kelenfold.html"
+        "location": "Kelenföld",
+        "country": "Hungary",
+        "link": "20240414_kelenfold/kelenfold.html",
+        "tags": ["abandoned", "powerplant"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [19.056976, 47.462020],
@@ -366,8 +438,11 @@
         "id": "25",
         "image": "20240420_kossuth-mozi-cinema/thumb.jpg",
         "title": "Kossuth Mozi Cinema",
-        "description": "Miskolc, Hungary",
-        "link": "20240420_kossuth-mozi-cinema/kossuth-mozi-cinema.html"
+        "location": "Miskolc",
+        "country": "Hungary",
+        "link": "20240420_kossuth-mozi-cinema/kossuth-mozi-cinema.html",
+        "tags": ["abandoned", "cinema"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [20.780335, 48.103539],
@@ -381,8 +456,11 @@
         "id": "26",
         "image": "20240421_bars-501/thumb.jpg",
         "title": "BARS 501",
-        "description": "Kálló, Hungary",
-        "link": "20240421_bars-501/bars-501.html"
+        "location": "Kálló",
+        "country": "Hungary",
+        "link": "20240421_bars-501/bars-501.html",
+        "tags": ["abandoned", "military"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [19.436019, 47.735373],
@@ -396,8 +474,11 @@
         "id": "27",
         "image": "20240421_castle/thumb.jpg",
         "title": "Hajmáskér Barracks",
-        "description": "Hajmáskér, Hungary",
-        "link": "20240421_castle/castle.html"
+        "location": "Hajmáskér",
+        "country": "Hungary",
+        "link": "20240421_castle/castle.html",
+        "tags": ["abandoned", "military"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [18.026087, 47.148408],
@@ -411,11 +492,14 @@
         "id": "28",
         "image": "20240426_f4-bunker/thumb.jpg",
         "title": "F4 'Rákosi' Bunker",
-        "description": "Budapest, Hungary",
-        "link": "20240426_f4-bunker/f4-bunker.html"
+        "location": "Budapest",
+        "country": "Hungary",
+        "link": "20240426_f4-bunker/f4-bunker.html",
+        "tags": ["abandoned", "military", "underground"],
+        "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [19.047764, 47.503848],
+        "coordinates": [19.049723733, 47.50292317],
         "type": "Point"
       }
     },
@@ -426,8 +510,11 @@
         "id": "29",
         "image": "20240428-1_zrenjanin/thumb.jpg",
         "title": "Memorial to the Uprising in Vojvodina",
-        "description": "Zrenjanin, Serbia",
-        "link": "20240428-1_zrenjanin/zrenjanin.html"
+        "location": "Zrenjanin",
+        "country": "Serbia",
+        "link": "20240428-1_zrenjanin/zrenjanin.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [20.369086, 45.368681],
@@ -441,8 +528,11 @@
         "id": "30",
         "image": "20240428-2_titel/thumb.jpg",
         "title": "Monument to Fallen Soldiers and Victims of Fascism",
-        "description": "Titel, Serbia",
-        "link": "20240428-2_titel/titel.html"
+        "location": "Titel",
+        "country": "Serbia",
+        "link": "20240428-2_titel/titel.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [20.311939, 45.205108],
@@ -456,8 +546,11 @@
         "id": "31",
         "image": "20240428-3_jabuka/thumb.jpg",
         "title": "Brazde Monument at the Stratište Memorial Complex",
-        "description": "Jabuka, Serbia",
-        "link": "20240428-3_jabuka/jabuka.html"
+        "location": "Jabuka",
+        "country": "Serbia",
+        "link": "20240428-3_jabuka/jabuka.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [20.633826, 44.928807],
@@ -471,8 +564,11 @@
         "id": "32",
         "image": "20240428-4_pozarevac/thumb.jpg",
         "title": "The Star at the Memorial Park Čačalica",
-        "description": "Požarevac, Serbia",
-        "link": "20240428-4_pozarevac/pozarevac.html"
+        "location": "Požarevac",
+        "country": "Serbia",
+        "link": "20240428-4_pozarevac/pozarevac.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [21.203777, 44.613644],
@@ -486,8 +582,11 @@
         "id": "33",
         "image": "20240428-5_majdanpek/thumb.jpg",
         "title": "Monument to the Liberators of Majdanpek",
-        "description": "Majdanpek, Serbia",
-        "link": "20240428-5_majdanpek/majdanpek.html"
+        "location": "Majdanpek",
+        "country": "Serbia",
+        "link": "20240428-5_majdanpek/majdanpek.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [21.942936, 44.428616],
@@ -501,8 +600,11 @@
         "id": "34",
         "image": "20240429-1_grkinja/thumb.jpg",
         "title": "Monument to Fallen Fighters",
-        "description": "Grkinja, Serbia",
-        "link": "20240429-1_grkinja/grkinja.html"
+        "location": "Grkinja",
+        "country": "Serbia",
+        "link": "20240429-1_grkinja/grkinja.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [21.992358, 43.208037],
@@ -516,8 +618,11 @@
         "id": "35",
         "image": "20240429-2_nis/thumb.jpg",
         "title": "Bubanj Memorial Park",
-        "description": "Niš, Serbia",
-        "link": "20240429-2_nis/nis.html"
+        "location": "Niš",
+        "country": "Serbia",
+        "link": "20240429-2_nis/nis.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [21.872675, 43.305106],
@@ -531,8 +636,11 @@
         "id": "36",
         "image": "20240429-3_popina/thumb.jpg",
         "title": "Mausoleum to the Fallen Insurgents",
-        "description": "Štulac, Serbia",
-        "link": "20240429-3_popina/popina.html"
+        "location": "Štulac",
+        "country": "Serbia",
+        "link": "20240429-3_popina/popina.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [20.958237, 43.630205],
@@ -546,8 +654,11 @@
         "id": "37",
         "image": "20240429-4_ostra/thumb.jpg",
         "title": "Monument to Courage",
-        "description": "Ostra, Serbia",
-        "link": "20240429-4_ostra/ostra.html"
+        "location": "Ostra",
+        "country": "Serbia",
+        "link": "20240429-4_ostra/ostra.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [20.516627, 43.911487],
@@ -561,8 +672,11 @@
         "id": "8",
         "image": "20240429-5_kadinjaca/thumb.jpg",
         "title": "Kadinjača Memorial Complex",
-        "description": "Užice, Serbia",
-        "link": "20240429-5_kadinjaca/kadinjaca.html"
+        "location": "Kragujevac",
+        "country": "Serbia",
+        "link": "20240429-5_kadinjaca/kadinjaca.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [19.742700, 43.912133],
@@ -576,8 +690,11 @@
         "id": "39",
         "image": "20240430_kragujevac/thumb.jpg",
         "title": "Interrupted Flight Memorial",
-        "description": "Kragujevac, Serbia",
-        "link": "20240430_kragujevac/kragujevac.html"
+        "location": "Kragujevac",
+        "country": "Serbia",
+        "link": "20240430_kragujevac/kragujevac.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [20.885852, 44.016008],
@@ -591,8 +708,11 @@
         "id": "40",
         "image": "20240501_kosmaj/thumb.jpg",
         "title": "Monument to the Fallen Soldiers",
-        "description": "Kosmaj, Serbia",
-        "link": "20240501_kosmaj/kosmaj.html"
+        "location": "Kosmaj",
+        "country": "Serbia",
+        "link": "20240501_kosmaj/kosmaj.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [20.571861, 44.467925],
@@ -606,8 +726,11 @@
         "id": "41",
         "image": "20240506_kosovo-library/thumb.jpg",
         "title": "The National Library of Kosovo",
-        "description": "Pristina, Kosovo",
-        "link": "20240506_kosovo-library/kosovo-library.html"
+        "location": "Pristina",
+        "country": "Kosovo",
+        "link": "20240506_kosovo-library/kosovo-library.html",
+        "tags": ["library"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [21.162328, 42.657527],
@@ -621,8 +744,11 @@
         "id": "42",
         "image": "20240507_sports-hall/thumb.jpg",
         "title": "Palace of Youth and Sports",
-        "description": "Pristina, Kosovo",
-        "link": "20240507_sports-hall/sports-hall.html"
+        "location": "Pristina",
+        "country": "Kosovo",
+        "link": "20240507_sports-hall/sports-hall.html",
+        "tags": ["sport"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [21.156705, 42.661130],
@@ -636,8 +762,11 @@
         "id": "43",
         "image": "20240510_varrezat/thumb.jpg",
         "title": "Varrezat e Dëshmorëve",
-        "description": "Pristina, Kosovo",
-        "link": "20240510_varrezat/varrezat.html"
+        "location": "Pristina",
+        "country": "Kosovo",
+        "link": "20240510_varrezat/varrezat.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [21.175491, 42.658779],
@@ -651,8 +780,11 @@
         "id": "44",
         "image": "20240510-1_kavadarci/thumb.jpg",
         "title": "Kosturnica",
-        "description": "Kavadarci, North Macedonia",
-        "link": "20240510-1_kavadarci/kavadarci.html"
+        "location": "Kavadarci",
+        "country": "North Macedonia",
+        "link": "20240510-1_kavadarci/kavadarci.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [22.022804, 41.432642],
@@ -666,8 +798,11 @@
         "id": "45",
         "image": "20240510-2_prilep/thumb.jpg",
         "title": "Park of the Revolution",
-        "description": "Prilep, North Macedonia",
-        "link": "20240510-2_prilep/prilep.html"
+        "location": "Prilep",
+        "country": "North Macedonia",
+        "link": "20240510-2_prilep/prilep.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [21.554519, 41.334346],
@@ -681,8 +816,11 @@
         "id": "46",
         "image": "20240511_makedonium/thumb.jpg",
         "title": "Makedonium, Ilinden Monument",
-        "description": "Krushevo, North Macedonia",
-        "link": "20240511_makedonium/makedonium.html"
+        "location": "Krushevo",
+        "country": "North Macedonia",
+        "link": "20240511_makedonium/makedonium.html",
+        "tags": ["spomenik", "tour"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [21.248343, 41.377401],
@@ -696,8 +834,11 @@
         "id": "47",
         "image": "20240512_hotel-evropa/thumb.jpg",
         "title": "Hotel Evropa",
-        "description": "Oteshevo, North Macedonia",
-        "link": "20240512_hotel-evropa/hotel-evropa.html"
+        "location": "Oteshevo",
+        "country": "North Macedonia",
+        "link": "20240512_hotel-evropa/hotel-evropa.html",
+        "tags": ["abandoned", "hotel"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [20.915578, 40.978935],
@@ -711,8 +852,11 @@
         "id": "48",
         "image": "20240513_prespa/thumb.jpg",
         "title": "Prespa Monument",
-        "description": "Oteshevo, North Macedonia",
-        "link": "20240513_prespa/prespa.html"
+        "location": "Oteshevo",
+        "country": "North Macedonia",
+        "link": "20240513_prespa/prespa.html",
+        "tags": ["spomenik"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [20.911937, 40.976450],
@@ -726,8 +870,11 @@
         "id": "49",
         "image": "20240518-1_theater/thumb.jpg",
         "title": "Abandoned Theater",
-        "description": "Shipka, Bulgaria",
-        "link": "20240518-1_theater/theater.html"
+        "location": "Shipka",
+        "country": "Bulgaria",
+        "link": "20240518-1_theater/theater.html",
+        "tags": ["abandoned", "cinema"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [25.335326, 42.710447],
@@ -741,8 +888,11 @@
         "id": "50",
         "image": "20240518-2_buzludzha/thumb.jpg",
         "title": "Buzludzha Monument",
-        "description": "Shipka, Bulgaria",
-        "link": "20240518-2_buzludzha/buzludzha.html"
+        "location": "Shipka",
+        "country": "Bulgaria",
+        "link": "20240518-2_buzludzha/buzludzha.html",
+        "tags": ["abandoned"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [25.393717, 42.735935],
@@ -756,8 +906,11 @@
         "id": "51",
         "image": "20240518-3_samara/thumb.jpg",
         "title": "Samara Flag Monument",
-        "description": "Stara Zagora, Bulgaria",
-        "link": "20240518-3_samara/samara.html"
+        "location": "Stara Zagora",
+        "country": "Bulgaria",
+        "link": "20240518-3_samara/samara.html",
+        "tags": ["monument"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [25.654055, 42.433441],
@@ -771,8 +924,11 @@
         "id": "52",
         "image": "20240519_bunker-n/thumb.jpg",
         "title": "Bunker N",
-        "description": "Novo Selo, Bulgaria",
-        "link": "20240519_bunker-n/bunker-n.html"
+        "location": "Novo Selo",
+        "country": "Bulgaria",
+        "link": "20240519_bunker-n/bunker-n.html",
+        "tags": ["underground", "military", "bunker"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [23.634439, 42.390847],
@@ -786,8 +942,11 @@
         "id": "53",
         "image": "20240525_bulgaria-founders/thumb.jpg",
         "title": "Founders of the Bulgarian State Monument",
-        "description": "Shumen, Bulgaria",
-        "link": "20240525_bulgaria-founders/bulgaria-founders.html"
+        "location": "Shumen",
+        "country": "Bulgaria",
+        "link": "20240525_bulgaria-founders/bulgaria-founders.html",
+        "tags": ["monument"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [26.922294, 43.262230],
@@ -801,8 +960,11 @@
         "id": "54",
         "image": "20240526_soviet-friendship/thumb.jpg",
         "title": "Monument of the Bulgarian-Soviet Friendship",
-        "description": "Varna, Bulgaria",
-        "link": "20240526_soviet-friendship/soviet-friendship.html"
+        "location": "Varna",
+        "country": "Bulgaria",
+        "link": "20240526_soviet-friendship/soviet-friendship.html",
+        "tags": ["monument"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [27.949024, 43.219038],
@@ -816,8 +978,11 @@
         "id": "55",
         "image": "20240601_sinaia-bobsled/thumb.jpg",
         "title": "Abandoned Bobsled Track",
-        "description": "Sinaia, Romania",
-        "link": "20240601_sinaia-bobsled/sinaia-bobsled.html"
+        "location": "Sinaia",
+        "country": "Romania",
+        "link": "20240601_sinaia-bobsled/sinaia-bobsled.html",
+        "tags": ["bobsled", "abandoned"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [25.526445, 45.357720],
@@ -831,8 +996,11 @@
         "id": "56",
         "image": "20240602_salina-slanic-prahova/thumb.jpg",
         "title": "Salina Slănic Prahova",
-        "description": "Slănic, Romania",
-        "link": "20240602_salina-slanic-prahova/salina-slanic-prahova.html"
+        "location": "Slănic",
+        "country": "Romania",
+        "link": "20240602_salina-slanic-prahova/salina-slanic-prahova.html",
+        "tags": ["underground", "saltmine"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [25.937627, 45.226543],
@@ -846,8 +1014,11 @@
         "id": "57",
         "image": "20240603_dorfana-prison/thumb.jpg",
         "title": "Dorfana Prison",
-        "description": "Câmpina, Romania",
-        "link": "20240603_dorfana-prison/dorfana-prison.html"
+        "location": "Câmpina",
+        "country": "Romania",
+        "link": "20240603_dorfana-prison/dorfana-prison.html",
+        "tags": ["abandoned", "prison"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [25.772833, 45.137223],
@@ -858,11 +1029,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "56",
+        "id": "58",
         "image": "20240604_palace-of-parliment/thumb.jpg",
         "title": "Palace of Parliament",
-        "description": "Bucharest, Romania",
-        "link": "20240604_palace-of-parliment/palace-of-parliment.html"
+        "location": "Bucharest",
+        "country": "Romania",
+        "link": "20240604_palace-of-parliment/palace-of-parliment.html",
+        "tags": ["tour"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [26.087565, 44.427443],
@@ -873,11 +1047,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "57",
+        "id": "59",
         "image": "20240608_food-institute/thumb.jpg",
         "title": "Institute of Food Technology",
-        "description": "Bucharest, Romania",
-        "link": "20240608_food-institute/food-institute.html"
+        "location": "Bucharest",
+        "country": "Romania",
+        "link": "20240608_food-institute/food-institute.html",
+        "tags": ["abandoned"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [26.074479, 44.490383],
@@ -888,11 +1065,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "56",
+        "id": "60",
         "image": "20240615_salina-turda/thumb.jpg",
         "title": "Salina Turda",
-        "description": "Turda, Romania",
-        "link": "20240615_salina-turda/salina-turda.html"
+        "location": "Turda",
+        "country": "Romania",
+        "link": "20240615_salina-turda/salina-turda.html",
+        "tags": ["underground", "saltmine"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [23.787259, 46.587726],
@@ -903,11 +1083,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "57",
+        "id": "61",
         "image": "20240616_botanica-oradea/thumb.jpg",
         "title": "Grădina Botănica Oradea",
-        "description": "Oradea, Romania",
-        "link": "20240616_botanica-oradea/botanica-oradea.html"
+        "location": "Oradea",
+        "country": "Romania",
+        "link": "20240616_botanica-oradea/botanica-oradea.html",
+        "tags": ["abandoned"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [21.943489, 47.055294],
@@ -918,11 +1101,14 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "57",
+        "id": "62",
         "image": "20240623_bunker-o/thumb.jpg",
         "title": "Bunker O",
-        "description": "Bratislava, Slovakia",
-        "link": "20240623_bunker-o/bunker-o.html"
+        "location": "Bratislava",
+        "country": "Slovakia",
+        "link": "20240623_bunker-o/bunker-o.html",
+        "tags": ["underground", "abandoned"],
+        "icon-image": "pin-active"
       },
       "geometry": {
         "coordinates": [17.071732, 48.174399],
