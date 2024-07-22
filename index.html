@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Explorations</title>
+	<title>Explorations – XPLR</title>
 	<meta name="description" content="Exploring forgotten, unknown, and unusual locations all around Europe.">
 	<!-- Share Metadata-->
 	<meta property="og:title" content="Explorations"/>
@@ -45,7 +45,7 @@
 	</div>
 
 	<div class="panel-inner">
-		<div class="line-wrapper"><div class="line-mobile"></div></div>
+		<div id="lineWrapper" class="line-wrapper"><div class="line-mobile"></div></div>
 	    
 	    <div class="homepage-section homepage-section-bottom-padding-fix">
 	    	<h1 class="homepage-xl">Latest explorations</h1>
@@ -261,7 +261,7 @@
 	    // Check if the screen width is less than 600px
 	    if (window.innerWidth < 600) {
 	        // Calculate 30% of the viewport height
-	        var scrollDistance = window.innerHeight * 0.2;
+	        var scrollDistance = window.innerHeight * 0.15;
 	        // Scroll to the calculated distance
 	        window.scrollTo({
 	       	    top: scrollDistance,
@@ -270,6 +270,29 @@
 	      });
 	    }
 	});
+
+	// Scroll mobile page when tapping on pnael handle
+	document.getElementById('lineWrapper').addEventListener('click', function() {
+	  var currentScroll = window.scrollY; // Get the current scroll position
+	  var windowHeight = window.innerHeight; // Get the window height
+	  var scrollThreshold = windowHeight * 0.89; // 89vh
+	  var scrollTarget = windowHeight * 0.95; // 95vh
+	  var scrollLimit = windowHeight * 0.90; // 90vh
+
+	  if (currentScroll < scrollThreshold) {
+	    window.scrollTo({
+	      top: scrollTarget,
+	      behavior: 'smooth'
+	    });
+	  } else if (currentScroll > scrollLimit) {
+	    window.scrollTo({
+	      top: 0,
+	      behavior: 'smooth'
+	    });
+	  }
+	});
+
+
 </script>
 
 </body>
