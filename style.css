@@ -674,14 +674,14 @@ details[open] > summary::before {
 .country-grid, .tag-grid, .date-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 4vw;
+    gap: 6vw;
     width: 100%;
 }
 
 @media (min-width: 600px) {
     .country-grid, .tag-grid, .date-grid {
         grid-template-columns: repeat(4, 1fr);
-        gap: 6vw;
+        gap: 1.5vw;
     }
 }
 
