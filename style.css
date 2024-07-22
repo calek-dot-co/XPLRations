@@ -674,13 +674,14 @@ details[open] > summary::before {
 .country-grid, .tag-grid, .date-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5vw;
+    gap: 4vw;
     width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .country-grid, .tag-grid, .date-grid {
         grid-template-columns: repeat(4, 1fr);
+        gap: 6vw;
     }
 }
 
@@ -769,9 +770,41 @@ details[open] > summary::before {
 
 
 
+/* ---- Detail & Grid View Back Button ---- */
 
+.detail-back-button {
+  padding: 0.8vw 1vw 0.8vw 1vw;
+  background-color: #292929;
+  border-radius: 8px;
+  margin-bottom: 0.5vw;
+}
+  @media (max-width: 600px) {
+    .detail-back-button {
+      padding: 2vw 3vw 1.5vw 3vw;
+      background-color: #292929;
+      border-radius: 8px;
+      margin-bottom: 2vw;
+      margin-top: 4vw;
+    }
+  }
 
+.detail-back-button:hover {
+  cursor: pointer;
+  background-color: #202020;
+}
 
+.detail-l {
+  font-size: .75vw;
+  line-height: 1vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+  @media (max-width: 600px) {
+    .detail-l {
+      font-size: 4vw;
+      line-height: 5vw;
+    }
+  }
 
 
 
