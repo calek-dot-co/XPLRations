@@ -39,7 +39,7 @@
 <script>
     // Generates category listing based on GEOJSON file
     document.addEventListener('DOMContentLoaded', function() {
-        fetch('pins-update.geojson')
+        fetch('pins.geojson')
         .then(response => response.json())
         .then(data => {
             const features = data.features;
