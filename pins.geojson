@@ -1114,6 +1114,42 @@
         "coordinates": [17.071732, 48.174399],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "63",
+        "image": "20240720_bauhaus-dessau/thumb.jpg",
+        "title": "Bauhaus School & Masters Houses",
+        "location": "Dessau",
+        "country": "Germany",
+        "link": "20240720_bauhaus-dessau/bauhaus-dessau.html",
+        "tags": ["tour"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [12.227177, 51.839273],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "64",
+        "image": "20240727_alte-ziegelei/thumb.jpg",
+        "title": "Alte Ziegelei",
+        "location": "Klausdorf",
+        "country": "Germany",
+        "link": "20240727_alte-ziegelei/alte-ziegelei.html",
+        "tags": ["tour"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [13.403149, 52.168619],
+        "type": "Point"
+      }
     }
 
   ],
