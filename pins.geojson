@@ -1150,6 +1150,42 @@
         "coordinates": [13.403149, 52.168619],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "65",
+        "image": "20240803_lychen-2/thumb.jpg",
+        "title": "Special Weapons Bunker #2",
+        "location": "Lychen",
+        "country": "Germany",
+        "link": "20240803_lychen-2/ychen-2.html",
+        "tags": ["abandoned", "bunker", "military"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [13.280508, 53.175719],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "66",
+        "image": "20240908_tsl-44/thumb.jpg",
+        "title": "TSL 44",
+        "location": "Niederlehme",
+        "country": "Germany",
+        "link": "20240908_tsl-44/tsl-44.html",
+        "tags": ["abandoned", "bunker", "military"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [13.665400, 52.327484],
+        "type": "Point"
+      }
     }
 
   ],
