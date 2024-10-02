@@ -36,6 +36,7 @@
 				<option data-filter="romania" class="button-filter">Romania (7)</option>
 				<option data-filter="serbia" class="button-filter">Serbia (12)</option>
 				<option data-filter="slovakia" class="button-filter">Slovakia (1)</option>
+				<option data-filter="switzerland" class="button-filter">Switzerland (1)</option>
 				<option data-filter="all" class="button-filter button-filter-active">All explorations (64)</option>
 		  </select>
 		</form>
@@ -112,7 +113,7 @@
 			const topFeatures = features.slice(0, 5);
 
 			// Filter features by specific titles
-			const highlightTitles = ["Kelenföld Erőmű", "Bunker N", "Makedonium, Ilinden Monument", "F4 'Rákosi' Bunker", "Salina Slănic Prahova"];
+			const highlightTitles = ["Kelenföld Erőmű", "Bunker N.", "Makedonium, Ilinden Monument", "F4 'Rákosi' Bunker", "Salina Slănic Prahova"];
 			const highlightFeatures = highlightTitles.map(title => features.find(feature => feature.properties.title === title));
 
 			// Function to generate HTML for a feature
@@ -174,6 +175,7 @@
 		const mapSettings = {
 			desktop: {
 				'all': { center: [25, 47], zoom: 4 },
+				'switzerland': { center: [9, 46.9], zoom: 7 },
 				'slovakia': { center: [17.1, 48.15], zoom: 10 },
 				'romania': { center: [26, 45.8], zoom: 6 },
 				'bulgaria': { center: [26.4, 42.5], zoom: 6.5 },
@@ -189,6 +191,7 @@
 			},
 			mobile: {
 				'all': { center: [21, 44], zoom: 3.5 },
+				'switzerland': { center: [8.5, 46], zoom: 5 },
 				'slovakia': { center: [17.1, 48.15], zoom: 11 },
 				'romania': { center: [24, 44.5], zoom: 5 },
 				'bulgaria': { center: [25.8, 41.8], zoom: 5.5 },
