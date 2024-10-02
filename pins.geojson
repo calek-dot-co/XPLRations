@@ -669,7 +669,7 @@
     {
       "type": "Feature",
       "properties": {
-        "id": "8",
+        "id": "38",
         "image": "20240429-5_kadinjaca/thumb.jpg",
         "title": "Kadinjača Memorial Complex",
         "location": "Kragujevac",
@@ -923,7 +923,7 @@
       "properties": {
         "id": "52",
         "image": "20240519_bunker-n/thumb.jpg",
-        "title": "Bunker N",
+        "title": "Bunker N.",
         "location": "Novo Selo",
         "country": "Bulgaria",
         "link": "20240519_bunker-n/bunker-n.html",
@@ -1103,7 +1103,7 @@
       "properties": {
         "id": "62",
         "image": "20240623_bunker-o/thumb.jpg",
-        "title": "Bunker O",
+        "title": "Bunker O.",
         "location": "Bratislava",
         "country": "Slovakia",
         "link": "20240623_bunker-o/bunker-o.html",
@@ -1180,6 +1180,24 @@
         "country": "Germany",
         "link": "20240908_tsl-44/tsl-44.html",
         "tags": ["abandoned", "bunker", "military"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [13.665400, 52.327484],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "67",
+        "image": "20240914_mine-lp/thumb.jpg",
+        "title": "Mine L.P.",
+        "location": "Noiraigue",
+        "country": "Switzerland",
+        "link": "20240914_mine-lp/mine-lp.html",
+        "tags": ["abandoned", "mine"],
         "icon-image": "pin-active"
       },
       "geometry": {
