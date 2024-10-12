@@ -348,14 +348,14 @@
         "id": "20",
         "image": "20240218_kraftwerk_plessa/thumb.jpg",
         "title": "Kraftwerk Plessa",
-        "location": "Plessa",
+        "location": "Plessa*",
         "country": "Germany",
         "link": "20240218_kraftwerk_plessa/kraftwerk_plessa.html",
         "tags": ["abandoned", "powerplant"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [13.611516, 51.471062],
+        "coordinates": [13.621303, 51.467572],
         "type": "Point"
       }
     },
@@ -924,7 +924,7 @@
         "id": "52",
         "image": "20240519_bunker-n/thumb.jpg",
         "title": "Bunker N.",
-        "location": "Novo Selo",
+        "location": "Novo Selo*",
         "country": "Bulgaria",
         "link": "20240519_bunker-n/bunker-n.html",
         "tags": ["underground", "military", "bunker"],
@@ -1140,14 +1140,14 @@
         "id": "64",
         "image": "20240727_alte-ziegelei/thumb.jpg",
         "title": "Alte Ziegelei",
-        "location": "Klausdorf",
+        "location": "Zossen*",
         "country": "Germany",
         "link": "20240727_alte-ziegelei/alte-ziegelei.html",
         "tags": ["abandoned"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [13.403149, 52.168619],
+        "coordinates": [13.454387, 52.214040],
         "type": "Point"
       }
     },
@@ -1194,14 +1194,68 @@
         "id": "67",
         "image": "20240914_mine-lp/thumb.jpg",
         "title": "Mine L.P.",
-        "location": "Noiraigue",
+        "location": "Noiraigue*",
         "country": "Switzerland",
         "link": "20240914_mine-lp/mine-lp.html",
-        "tags": ["abandoned", "mine"],
+        "tags": ["abandoned", "mine", "underground"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [6.732925, 46.954186],
+        "coordinates": [6.723274, 46.955647],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "68",
+        "image": "20240929-1_kreenholm-textile-factory/thumb.jpg",
+        "title": "Kreenholm Manufacturing Company",
+        "location": "Narva",
+        "country": "Estonia",
+        "link": "20240929-1_kreenholm-textile-factory/kreenholm-textile-factory.html",
+        "tags": ["tour"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [28.197726, 59.358476],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "69",
+        "image": "20240929-2_fish-farm/thumb.jpg",
+        "title": "Pärispea Pisciculture",
+        "location": "Kuusalu Parish",
+        "country": "Estonia",
+        "link": "20240929-2_fish-farm/fish-farm.html",
+        "tags": ["abandoned"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [25.674194, 59.654400],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "70",
+        "image": "20240929-3_submarine-base/thumb.jpg",
+        "title": "Hara Submarine Base",
+        "location": "Kuusalu Parish",
+        "country": "Estonia",
+        "link": "20240929-3_submarine-base/submarine-base.html",
+        "tags": ["abandoned", "military"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [25.621093, 59.588511],
         "type": "Point"
       }
     }

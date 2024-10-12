@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>XPLR.es</title>
+	<title>xplr.es</title>
 	<meta name="description" content="Exploring forgotten, unknown, and unusual locations all around Europe.">
-	<!-- Share Metadata-->
+	<!-- Share Metadata -->
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://www.xplr.es/og.png"/>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -28,6 +28,7 @@
 				<option data-filter="bosnia & herzegovina" class="button-filter">Bosnia & Herzegovina (3)</option>
 				<option data-filter="bulgaria" class="button-filter">Bulgaria (6)</option>
 				<option data-filter="croatia" class="button-filter">Croatia (6)</option>
+				<option data-filter="estonia" class="button-filter">Estonia (3)</option>
 				<option data-filter="germany" class="button-filter">Germany (11)</option>
 				<option data-filter="hungary" class="button-filter">Hungary (6)</option>
 				<option data-filter="kosovo" class="button-filter">Kosovo (3)</option>
@@ -37,7 +38,7 @@
 				<option data-filter="serbia" class="button-filter">Serbia (12)</option>
 				<option data-filter="slovakia" class="button-filter">Slovakia (1)</option>
 				<option data-filter="switzerland" class="button-filter">Switzerland (1)</option>
-				<option data-filter="all" class="button-filter button-filter-active">All explorations (64)</option>
+				<option data-filter="all" class="button-filter button-filter-active">All explorations (70)</option>
 		  </select>
 		</form>
 	</div>
@@ -84,9 +85,9 @@
 
 	    <div class="homepage-section">
 	    	<h2 class="homepage-xl">About xplr.es</h2>
-	    	<p class="homepage-s">The forgotten, the unknown, and the unusual have a magnet-like effect on me. I'm drawn in by the thrill of discovery, the wonder of exploring, and the impact of the experience.</p>
-	    	<p class="homepage-s">XPLR is a catalog of my explorations from around Europe. Documented via photographs, often with writing, and occasionally with videos.</p>
-			<p class="homepage-s">Cheers and enjoy exploring.</p>
+	    	<p class="homepage-s">The forgotten, the unknown, and the unusual have a magnet-like effect on me. I'm drawn in by the thrill of discovery, the wonder of exploring, and the lasting impact of the experience.</p>
+			<p class="homepage-s">Xplr is a collection of my explorations throughout Europe, documented primarily through photographs, often accompanied by writing, and occasionally by videos. Some locations (marked with an *) are deliberately mispositioned on the map to help safeguard them from further vandalism and decay.</p>
+			<p class="homepage-s">Cheers, and happy exploring.</p>
 		</div>
 	</div>
 </div>
@@ -156,14 +157,14 @@
 
 	  if (mq.matches) {
 	    map.flyTo({
-	      center: [25, 47], // desired center for desktop size
-	      zoom: 4, // desired zoom level for desktop size
+	      center: [25, 50], // desired center for desktop size
+	      zoom: 3.5, // desired zoom level for desktop size
 	      speed: 0.5 // make the flying slower to emphasize the zooming effect
 	    });
 	  } else {
 	    map.flyTo({
-	      center: [21, 44], // desired center for mobile size
-	      zoom: 3.5, // desired zoom level for mobile size
+	      center: [18, 48], // desired center for mobile size
+	      zoom: 3.0, // desired zoom level for mobile size
 	      speed: 0.5 // make the flying slower to emphasize the zooming effect
 	    });
 	  }
@@ -174,7 +175,8 @@
 		// Define map settings for desktop and mobile for each filter, including new locations
 		const mapSettings = {
 			desktop: {
-				'all': { center: [25, 47], zoom: 4 },
+				'all': { center: [25, 50], zoom: 3.5 },
+				'estonia': { center: [27, 58.8], zoom: 6 },
 				'switzerland': { center: [9, 46.9], zoom: 7 },
 				'slovakia': { center: [17.1, 48.15], zoom: 10 },
 				'romania': { center: [26, 45.8], zoom: 6 },
@@ -190,7 +192,8 @@
 				'croatia': { center: [19, 44], zoom: 6 }
 			},
 			mobile: {
-				'all': { center: [21, 44], zoom: 3.5 },
+				'all': { center: [18, 46], zoom: 3 },
+				'estonia': { center: [25, 57.7], zoom: 5 },
 				'switzerland': { center: [8.5, 46], zoom: 5 },
 				'slovakia': { center: [17.1, 48.15], zoom: 11 },
 				'romania': { center: [24, 44.5], zoom: 5 },
