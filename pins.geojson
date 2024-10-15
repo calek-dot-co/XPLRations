@@ -1258,6 +1258,60 @@
         "coordinates": [25.621093, 59.588511],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "71",
+        "image": "20240930-1_amari-pilot-cemetry/thumb.jpg",
+        "title": "Pilots' Cemetry",
+        "location": "Ämari",
+        "country": "Estonia",
+        "link": "20240930-1_amari-pilot-cemetry/amari-pilot-cemetry.html",
+        "tags": ["military"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [24.236154, 59.249894],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "72",
+        "image": "20240930-2_okta-centrum/thumb.jpg",
+        "title": "Okta Centrum AS",
+        "location": "Rapla",
+        "country": "Estonia",
+        "link": "20240930-2_okta-centrum/okta-centrum.html",
+        "tags": ["abandoned"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [24.797943, 58.998368],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "73",
+        "image": "20240930-3_bog-fox/thumb.jpg",
+        "title": "Soorebane High-Voltage Pylon",
+        "location": "Rõuma",
+        "country": "Estonia",
+        "link": "20240930-3_bog-fox/bog-fox.html",
+        "tags": ["uncategorised"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [24.059165, 58.992620],
+        "type": "Point"
+      }
     }
 
   ],
