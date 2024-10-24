@@ -1312,6 +1312,60 @@
         "coordinates": [24.059165, 58.992620],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "74",
+        "image": "20241001-1_fire-control-tower-1/thumb.jpg",
+        "title": "BS-26 Fire Control Tower",
+        "location": "Tahkuna",
+        "country": "Estonia",
+        "link": "20241001-1_fire-control-tower-1/fire-control-tower-1.html",
+        "tags": ["abandoned", "military"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [22.592363, 59.086329],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "75",
+        "image": "20241001-2_fire-control-tower-2/thumb.jpg",
+        "title": "BS-42 Fire Control Tower",
+        "location": "Kalana",
+        "country": "Estonia",
+        "link": "20241001-2_fire-control-tower-2/fire-control-tower-2.html",
+        "tags": ["abandoned", "military"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [22.048024, 58.924901],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "76",
+        "image": "20241002-1_battle-of-tehumardi/thumb.jpg",
+        "title": "Monument to the Night Battle of Tehumardi",
+        "location": "Tehumardi",
+        "country": "Estonia",
+        "link": "20241002-1_battle-of-tehumardi/battle-of-tehumardi.html",
+        "tags": ["monument"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [22.255480, 58.176966],
+        "type": "Point"
+      }
     }
 
   ],
