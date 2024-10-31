@@ -32,13 +32,14 @@
 				<option data-filter="germany" class="button-filter">Germany (11)</option>
 				<option data-filter="hungary" class="button-filter">Hungary (6)</option>
 				<option data-filter="kosovo" class="button-filter">Kosovo (3)</option>
+				<option data-filter="latvia" class="button-filter">Latvia (2)</option>
 				<option data-filter="montenegro" class="button-filter">Montenegro (5)</option>
 				<option data-filter="north macedonia" class="button-filter">North Macedonia (5)</option>
 				<option data-filter="romania" class="button-filter">Romania (7)</option>
 				<option data-filter="serbia" class="button-filter">Serbia (12)</option>
 				<option data-filter="slovakia" class="button-filter">Slovakia (1)</option>
 				<option data-filter="switzerland" class="button-filter">Switzerland (1)</option>
-				<option data-filter="all" class="button-filter button-filter-active">All explorations (70)</option>
+				<option data-filter="all" class="button-filter button-filter-active">All explorations (78)</option>
 		  </select>
 		</form>
 	</div>
@@ -114,7 +115,7 @@
 			const topFeatures = features.slice(0, 5);
 
 			// Filter features by specific titles
-			const highlightTitles = ["Kelenföld Erőmű", "Bunker N.", "Makedonium, Ilinden Monument", "F4 'Rákosi' Bunker", "Salina Slănic Prahova"];
+			const highlightTitles = ["Kelenföld Erőmű", "Bunker N.", "Gas Mask Cemetry", "Makedonium, Ilinden Monument", "F4 'Rákosi' Bunker", "Salina Slănic Prahova"];
 			const highlightFeatures = highlightTitles.map(title => features.find(feature => feature.properties.title === title));
 
 			// Function to generate HTML for a feature
@@ -176,6 +177,7 @@
 		const mapSettings = {
 			desktop: {
 				'all': { center: [25, 50], zoom: 3.5 },
+				'latvia': { center: [26, 57], zoom: 6 },
 				'estonia': { center: [27, 58.8], zoom: 6 },
 				'switzerland': { center: [9, 46.9], zoom: 7 },
 				'slovakia': { center: [17.1, 48.15], zoom: 10 },
@@ -193,6 +195,7 @@
 			},
 			mobile: {
 				'all': { center: [18, 46], zoom: 3 },
+				'latvia': { center: [25, 57.7], zoom: 5 },
 				'estonia': { center: [25, 57.7], zoom: 5 },
 				'switzerland': { center: [8.5, 46], zoom: 5 },
 				'slovakia': { center: [17.1, 48.15], zoom: 11 },

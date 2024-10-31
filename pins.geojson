@@ -1366,6 +1366,42 @@
         "coordinates": [22.255480, 58.176966],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "77",
+        "image": "20241003_murjāņi-bobsled/thumb.jpg",
+        "title": "Old Toboggan Run",
+        "location": "Murjāņi",
+        "country": "Latvia",
+        "link": "20241003_murjāņi-bobsled/murjāņi-bobsled.html",
+        "tags": ["bobsled", "abandoned"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [24.680462, 57.143963],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "78",
+        "image": "20241005_gas-mask-cemetry/thumb.jpg",
+        "title": "Gas Mask Cemetry",
+        "location": "Stopiņi Parish*",
+        "country": "Latvia",
+        "link": "20241005_gas-mask-cemetry/gas-mask-cemetry.html",
+        "tags": ["abandoned"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [24.325066, 56.954512],
+        "type": "Point"
+      }
     }
 
   ],
