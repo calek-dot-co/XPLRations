@@ -1305,7 +1305,7 @@
         "location": "Rõuma",
         "country": "Estonia",
         "link": "20240930-3_bog-fox/bog-fox.html",
-        "tags": ["uncategorised"],
+        "tags": ["miscellaneous"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1400,6 +1400,42 @@
       },
       "geometry": {
         "coordinates": [24.325066, 56.954512],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "79",
+        "image": "20241006-1_salaspils-memorials/thumb.jpg",
+        "title": "Salaspils Memorial",
+        "location": "Salaspils",
+        "country": "Latvia",
+        "link": "20241006-1_salaspils-memorials/salaspils-memorials.html",
+        "tags": ["memorial"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [24.302750, 56.873049],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "80",
+        "image": "20241006-2_aircraft-museum/thumb.jpg",
+        "title": "Riga Aviation Museum",
+        "location": "Skulte",
+        "country": "Latvia",
+        "link": "20241006-2_aircraft-museum/aircraft-museum.html",
+        "tags": ["airport"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [23.960475, 56.919123],
         "type": "Point"
       }
     }
