@@ -405,7 +405,7 @@
         "location": "Istvántelek",
         "country": "Hungary",
         "link": "20240414_abandonned-train-yard/abandonned-train-yard.html",
-        "tags": ["abandoned", "train"],
+        "tags": ["abandoned", "train", "graveyard"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1395,7 +1395,7 @@
         "location": "Riga*",
         "country": "Latvia",
         "link": "20241005_gas-mask-cemetry/gas-mask-cemetry.html",
-        "tags": ["abandoned"],
+        "tags": ["abandoned", "graveyard"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1436,6 +1436,60 @@
       },
       "geometry": {
         "coordinates": [23.960475, 56.919123],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "81",
+        "image": "20241007-1_fire-control-tower-3/thumb.jpg",
+        "title": "BS-46 Fire Control Tower",
+        "location": "Ventspils",
+        "country": "Latvia",
+        "link": "20241007-1_fire-control-tower-3/fire-control-tower-3.html",
+        "tags": ["abandoned", "military"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [21.526675, 57.377909],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "82",
+        "image": "20241007-2_irbene-radio-telescope/thumb.jpg",
+        "title": "VIRAC radio telescopes",
+        "location": "Irbene",
+        "country": "Latvia",
+        "link": "20241007-2_irbene-radio-telescope/irbene-radio-telescope.html",
+        "tags": ["military", "tour"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [21.854813, 57.553368],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "83",
+        "image": "20241007-3_fire-control-tower-4/thumb.jpg",
+        "title": "BS-23 Fire Control Towers",
+        "location": "Liepāja",
+        "country": "Latvia",
+        "link": "20241007-3_fire-control-tower-4/fire-control-tower-4.html",
+        "tags": ["abandoned", "military"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [21.013536, 56.584799],
         "type": "Point"
       }
     }
