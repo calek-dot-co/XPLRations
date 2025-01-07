@@ -1492,6 +1492,78 @@
         "coordinates": [21.013536, 56.584799],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "84",
+        "image": "20241008-1_lino-baseinas/thumb.jpg",
+        "title": "Lino Baseinas",
+        "location": "Palanga",
+        "country": "Lithuania",
+        "link": "20241008-1_lino-baseinas/lino-baseinas.html",
+        "tags": ["abandoned", "pool"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [21.074116, 55.939738],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "85",
+        "image": "20241008-2_r12-dvina-base/thumb.jpg",
+        "title": "R-12 Dvina Museum",
+        "location": "Plungė",
+        "country": "Lithuania",
+        "link": "20241008-2_r12-dvina-base/r12-dvina-base.html",
+        "tags": ["tour", "military"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [21.906215, 56.032267],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "86",
+        "image": "20241008-3_hill-of-crosses/thumb.jpg",
+        "title": "Hill of Crosses",
+        "location": "Šiauliai",
+        "country": "Lithuania",
+        "link": "20241008-3_hill-of-crosses/hill-of-crosses.html",
+        "tags": ["tour"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [23.415901, 56.015240],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "87",
+        "image": "20241009-1_zeltinos-base/thumb.jpg",
+        "title": "Monument to Lenin",
+        "location": "Zeltiņi Parish",
+        "country": "Latvia",
+        "link": "20241009-1_zeltinos-base/zeltinos-base.html",
+        "tags": ["abandoned", "military"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [26.747357, 57.347100],
+        "type": "Point"
+      }
     }
 
   ],
