@@ -1305,7 +1305,7 @@
         "location": "Rõuma",
         "country": "Estonia",
         "link": "20240930-3_bog-fox/bog-fox.html",
-        "tags": ["powerline"],
+        "tags": ["miscellaneous"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1413,7 +1413,7 @@
         "location": "Salaspils",
         "country": "Latvia",
         "link": "20241006-1_salaspils-memorials/salaspils-memorials.html",
-        "tags": ["monument"],
+        "tags": ["memorial"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1562,204 +1562,6 @@
       },
       "geometry": {
         "coordinates": [26.747357, 57.347100],
-        "type": "Point"
-      }
-    },
-
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "88",
-        "image": "20241012_tallinn-linnahall/thumb.jpg",
-        "title": "Linnahall",
-        "location": "Tallinn",
-        "country": "Estonia",
-        "link": "20241012_tallinn-linnahall/2tallinn-linnahall.html",
-        "tags": ["abandoned"],
-        "icon-image": "pin-active"
-      },
-      "geometry": {
-        "coordinates": [24.753533, 59.446672],
-        "type": "Point"
-      }
-    },
-
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "89",
-        "image": "20241017_palace-of-culture-and-sports/thumb.jpg",
-        "title": "Palace of Culture and Sports",
-        "location": "Vilnius",
-        "country": "Lithuania",
-        "link": "20241017_palace-of-culture-and-sports/palace-of-culture-and-sports.html",
-        "tags": ["abandoned", "sport"],
-        "icon-image": "pin-active"
-      },
-      "geometry": {
-        "coordinates": [25.2909915, 54.691142],
-        "type": "Point"
-      }
-    },
-
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "90",
-        "image": "20241019-1_kaunas-monument/thumb.jpg",
-        "title": "Monument to Commemorate the victims of Nazism",
-        "location": "Kaunas",
-        "country": "Lithuania",
-        "link": "20241019-1_kaunas-monument/kaunas-monument.html",
-        "tags": ["monument"],
-        "icon-image": "pin-active"
-      },
-      "geometry": {
-        "coordinates": [23.867860, 54.943926],
-        "type": "Point"
-      }
-    },
-
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "91",
-        "image": "20241019-2_palemono-keramika/thumb.jpg",
-        "title": "Palemono Keramika",
-        "location": "Kaunas",
-        "country": "Lithuania",
-        "link": "20241019-2_palemono-keramika/palemono-keramika.html",
-        "tags": ["abandoned"],
-        "icon-image": "pin-active"
-      },
-      "geometry": {
-        "coordinates": [24.070611, 54.918142],
-        "type": "Point"
-      }
-    },
-
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "92",
-        "image": "20241029-1_locomotive-depot/thumb.jpg",
-        "title": "Locomotive Depot",
-        "location": "Kutno",
-        "country": "Poland",
-        "link": "20241029-1_locomotive-depot/locomotive-depot.html",
-        "tags": ["abandoned", "train"],
-        "icon-image": "pin-active"
-      },
-      "geometry": {
-        "coordinates": [19.300188, 52.239316],
-        "type": "Point"
-      }
-    },
-
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "93",
-        "image": "20241029-2_salt-graduation-tower/thumb.jpg",
-        "title": "Salt Graduation Towers",
-        "location": "Ciechocinek",
-        "country": "Poland",
-        "link": "20241029-2_salt-graduation-tower/salt-graduation-tower.html",
-        "tags": ["saltmine"],
-        "icon-image": "pin-active"
-      },
-      "geometry": {
-        "coordinates": [18.782672, 52.886272],
-        "type": "Point"
-      }
-    },
-
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "94",
-        "image": "20241103_wieliczka-salt-mine/thumb.jpg",
-        "title": "Wieliczka Salt Mine",
-        "location": "Krakow",
-        "country": "Poland",
-        "link": "20241103_wieliczka-salt-mine/2wieliczka-salt-mine.html",
-        "tags": ["saltmine"],
-        "icon-image": "pin-active"
-      },
-      "geometry": {
-        "coordinates": [20.055669, 49.983057],
-        "type": "Point"
-      }
-    },
-
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "95",
-        "image": "20241106_krakow-quarry/thumb.jpg",
-        "title": "Quarry Film Set Remains",
-        "location": "Krakow",
-        "country": "Poland",
-        "link": "20241106_krakow-quarry/krakow-quarry.html",
-        "tags": ["abandoned"],
-        "icon-image": "pin-active"
-      },
-      "geometry": {
-        "coordinates": [19.956062, 50.03671],
-        "type": "Point"
-      }
-    },
-
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "96",
-        "image": "20241110-1_market-hall/thumb.jpg",
-        "title": "Market Hall",
-        "location": "Katowice",
-        "country": "Poland",
-        "link": "20241110-1_market-hall/market-hall.html",
-        "tags": ["abandoned"],
-        "icon-image": "pin-active"
-      },
-      "geometry": {
-        "coordinates": [19.000757, 50.290678],
-        "type": "Point"
-      }
-    },
-
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "97",
-        "image": "20241110-2_lecture-theater/thumb.jpg",
-        "title": "Film School Lecture Hall",
-        "location": "Katowice",
-        "country": "Poland",
-        "link": "20241110-2_lecture-theater/lecture-theater.html",
-        "tags": ["abandoned"],
-        "icon-image": "pin-active"
-      },
-      "geometry": {
-        "coordinates": [19.004580, 50.290449],
-        "type": "Point"
-      }
-    },
-
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "98",
-        "image": "20241110-3_pyskowice-train-yard/thumb.jpg",
-        "title": "Abandoned Train Yard",
-        "location": "Pyskowice",
-        "country": "Poland",
-        "link": "20241110-3_pyskowice-train-yard/pyskowice-train-yard.html",
-        "tags": ["train", "abandoned"],
-        "icon-image": "pin-active"
-      },
-      "geometry": {
-        "coordinates": [18.613315, 50.387199],
         "type": "Point"
       }
     }
