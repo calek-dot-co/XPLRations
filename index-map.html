@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- General -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xplr.es - Map</title>
+    <meta name="description" content="Exploring forgotten, unknown, and unusual locations all around Europe.">
+    <!-- Share Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.xplr.es/og.png"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Links -->
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css'/>
+    <link rel="stylesheet" href="style-home.css">
+</head>
+<body>
+    <header>
+        <h1>xplr.es</h1>
+        <div class="nav-buttons">
+            <button onclick="window.location.href='index-grid.html';">Photos</button>
+			<button onclick="window.location.href='index-list.html';">List</button>
+			<button onclick="window.location.href='index-map.html';" class="nav-button-active" >Map</button>
+        </div>
+    </header>
+    <div class="menu-wrapper">
+        <form>
+          <select name="country-filter" id="country-filter" class="country-filter">
+                <option value="" disabled selected>Filter map by country...</option>
+                <option data-filter="albania" class="button-filter">Albania (1)</option>
+                <option data-filter="bosnia & herzegovina" class="button-filter">Bosnia & Herzegovina (3)</option>
+                <option data-filter="bulgaria" class="button-filter">Bulgaria (6)</option>
+                <option data-filter="croatia" class="button-filter">Croatia (6)</option>
+                <option data-filter="estonia" class="button-filter">Estonia (10)</option>
+                <option data-filter="germany" class="button-filter">Germany (11)</option>
+                <option data-filter="hungary" class="button-filter">Hungary (6)</option>
+                <option data-filter="kosovo" class="button-filter">Kosovo (3)</option>
+                <option data-filter="latvia" class="button-filter">Latvia (8)</option>
+                <option data-filter="lithuania" class="button-filter">Lithuania (6)</option>
+                <option data-filter="montenegro" class="button-filter">Montenegro (5)</option>
+                <option data-filter="north macedonia" class="button-filter">North Macedonia (5)</option>
+                <option data-filter="poland" class="button-filter">Poland (7)</option>
+                <option data-filter="romania" class="button-filter">Romania (7)</option>
+                <option data-filter="serbia" class="button-filter">Serbia (12)</option>
+                <option data-filter="slovakia" class="button-filter">Slovakia (1)</option>
+                <option data-filter="switzerland" class="button-filter">Switzerland (1)</option>
+                <option data-filter="all" class="button-filter button-filter-active">All explorations (98)</option>
+          </select>
+        </form>
+    </div>
+    <div class="maps-container" id="map"></div>
+
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+    <script src="map-box.js"></script>
+    <script>
+        // Default map view and fly-to
+        map.on('load', function() {
+          var mq = window.matchMedia("(min-width: 600px)");
+
+          if (mq.matches) {
+            map.flyTo({
+              center: [25, 50], // desired center for desktop size
+              zoom: 3.5, // desired zoom level for desktop size
+              speed: 0.5 // make the flying slower to emphasize the zooming effect
+            });
+          } else {
+            map.flyTo({
+              center: [18, 48], // desired center for mobile size
+              zoom: 3.0, // desired zoom level for mobile size
+              speed: 0.5 // make the flying slower to emphasize the zooming effect
+            });
+          }
+        });
+
+        // Reposition map based on dropdown selection
+        document.addEventListener('DOMContentLoaded', function() {
+            // Define map settings for desktop and mobile for each filter, including new locations
+            const mapSettings = {
+                desktop: {
+                    'all': { center: [25, 50], zoom: 3.5 },
+                    'poland': { center: [21.5, 52.2], zoom: 5.5 },
+                    'lithuania': { center: [25, 55.2], zoom: 6.25 },
+                    'latvia': { center: [26, 57], zoom: 6 },
+                    'estonia': { center: [27, 58.8], zoom: 6 },
+                    'switzerland': { center: [9, 46.9], zoom: 7 },
+                    'slovakia': { center: [17.1, 48.15], zoom: 10 },
+                    'romania': { center: [26, 45.8], zoom: 6 },
+                    'bulgaria': { center: [26.4, 42.5], zoom: 6.5 },
+                    'north macedonia': { center: [22.1, 41.6], zoom: 7.2 },
+                    'kosovo': { center: [21.17, 42.66], zoom: 12.8 },
+                    'serbia': { center: [21.5, 44], zoom: 6 },
+                    'hungary': { center: [20.2, 47.5], zoom: 6.5 },
+                    'germany': { center: [14.4, 52.4], zoom: 6 },
+                    'albania': { center: [21, 41.1], zoom: 6.5 },
+                    'montenegro': { center: [19.1, 42.5], zoom: 7.5 },
+                    'bosnia & herzegovina': { center: [18.5, 44], zoom: 7 },
+                    'croatia': { center: [19, 44], zoom: 6 }
+                },
+                mobile: {
+                    'all': { center: [18, 46], zoom: 3 },
+                    'poland': { center: [19.5, 50], zoom: 4.5 },
+                    'lithuania': { center: [24, 55.2], zoom: 5 },
+                    'latvia': { center: [25, 57.7], zoom: 4.8 },
+                    'estonia': { center: [25, 57.7], zoom: 5 },
+                    'switzerland': { center: [8.5, 46], zoom: 5 },
+                    'slovakia': { center: [17.1, 48.15], zoom: 11 },
+                    'romania': { center: [24, 44.5], zoom: 5 },
+                    'bulgaria': { center: [25.8, 41.8], zoom: 5.5 },
+                    'north macedonia': { center: [21.4, 41], zoom: 6.8 },
+                    'kosovo': { center: [21.162328, 42.655], zoom: 12 },
+                    'serbia': { center: [21, 43.5], zoom: 5.8 },
+                    'hungary': { center: [19.4, 47.1], zoom: 6 },
+                    'germany': { center: [13.4, 51.5], zoom: 6 },
+                    'albania': { center: [20.1, 41.1], zoom: 6 },
+                    'montenegro': { center: [19, 42], zoom: 7 },
+                    'bosnia & herzegovina': { center: [18.2, 43.5], zoom: 7 },
+                    'croatia': { center: [17, 43], zoom: 5 },
+                }
+            };
+
+            // Function to change map view
+            function changeMapView(filterId) {
+                const deviceType = window.innerWidth <= 600 ? 'mobile' : 'desktop';
+                const settings = mapSettings[deviceType][filterId];
+                if (settings) {
+                    map.flyTo({ center: settings.center, zoom: settings.zoom });
+                }
+            }
+
+            // Add event listener to the dropdown
+            document.getElementById('country-filter').addEventListener('change', function() {
+                const selectedOption = this.options[this.selectedIndex];
+                const filterId = selectedOption.getAttribute('data-filter');
+                changeMapView(filterId);
+                
+                // Remove 'button-filter-active' class from all options
+                document.querySelectorAll('#country-filter option').forEach(option => {
+                    option.classList.remove('button-filter-active');
+                });
+
+                // Add 'button-filter-active' class to the selected option
+                selectedOption.classList.add('button-filter-active');
+
+                // Handle expo elements
+                const expos = document.querySelectorAll('.expo'); // Select only elements intended for filtering
+                expos.forEach(expo => {
+                    if (filterId === 'all') {
+                        expo.classList.remove('expo-hidden');
+                    } else if (expo.classList.contains(filterId)) {
+                        expo.classList.remove('expo-hidden');
+                    } else {
+                        expo.classList.add('expo-hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

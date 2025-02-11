@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- General -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xplr.es - Photos</title>
+    <meta name="description" content="Exploring forgotten, unknown, and unusual locations all around Europe.">
+    <!-- Share Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.xplr.es/og.png"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Links -->
+    <link rel="stylesheet" href="style-home.css">
+</head>
+<body>
+    <header>
+        <h1>xplr.es</h1>
+        <div class="nav-buttons">
+            <button onclick="window.location.href='index-grid.html';" class="nav-button-active" >Photos</button>
+            <button onclick="window.location.href='index-list.html';">List</button>
+            <button onclick="window.location.href='index-map.html';">Map</button>
+        </div>
+    </header>
+    <div class="grid-container" id="gallery"></div>
+	<script>
+        async function loadImages() {
+            const response = await fetch('pins-new.geojson');
+            const data = await response.json();
+            const images = data.features.map(feature => ({
+                url: feature.properties.hero,
+                link: feature.properties.link
+            })).sort(() => Math.random() - 0.5); // Randomize order
+
+            const gallery = document.getElementById('gallery');
+            images.forEach(image => {
+                const item = document.createElement('div');
+                item.classList.add('grid-item');
+                const anchor = document.createElement('a');
+                anchor.href = image.link;
+                anchor.target = '_blank';
+                const img = document.createElement('img');
+                img.src = image.url;
+                anchor.appendChild(img);
+                item.appendChild(anchor);
+                gallery.appendChild(item);
+            });
+        }
+        loadImages();
+	</script>
+
+</body>
+</html>

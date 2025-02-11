@@ -47,7 +47,7 @@ map.loadImage('pin-selected.png', (error, image) => {
 // Map controls
 
 var nav = new mapboxgl.NavigationControl();
-map.addControl(nav, 'top-left');
+map.addControl(nav, 'bottom-right');
 
 
 
