@@ -271,7 +271,7 @@
       "properties": {
         "id": "15",
         "image": "20231231_spac/thumb.jpg",
-        "hero": "20231231_spac/5.jpg",
+        "hero": "20231231_spac/6.jpg",
         "title": "Spaç Prison",
         "location": "Kodër-Spaç",
         "country": "Albania",
@@ -404,7 +404,7 @@
       "properties": {
         "id": "22",
         "image": "20240316_templhof-flughafen/thumb.jpg",
-        "hero": "20240316_templhof-flughafen/1.jpg",
+        "hero": "20240316_templhof-flughafen/hero.jpg",
         "title": "Flughafen Templhof",
         "location": "Berlin",
         "country": "Germany",

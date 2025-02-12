@@ -103,17 +103,18 @@
         });
 
         // Hover image functionality
-        $('#locationTable tbody').on('mouseenter', 'tr', function () {
+        $('#locationTable tbody').on('mouseenter', 'tr', function (event) {
             const rowData = table.row(this).data();
             const hoverImage = document.getElementById('hoverImage');
+            hoverImage.style.display = 'none'; // Instantly hide image before changing source
             hoverImage.src = rowData.hero;
             hoverImage.style.display = 'block';
         });
 
         $('#locationTable tbody').on('mousemove', 'tr', function (event) {
             const hoverImage = document.getElementById('hoverImage');
-            hoverImage.style.left = event.pageX + 10 + 'px';
-            hoverImage.style.top = event.pageY + 10 + 'px';
+            hoverImage.style.left = event.pageX + 20 + 'px';
+            hoverImage.style.top = event.pageY + 20 + 'px';
         });
 
         $('#locationTable tbody').on('mouseleave', 'tr', function () {
