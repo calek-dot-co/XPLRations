@@ -504,4 +504,10 @@ option {
     }
   }
 
+#close-overlay:hover {
+  background-color: rgba(0, 0, 0, 1) !important;
+  color: #CCC !important;
+  cursor: pointer;
+}
+
 
