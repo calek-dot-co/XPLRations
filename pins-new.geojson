@@ -271,7 +271,7 @@
       "properties": {
         "id": "15",
         "image": "20231231_spac/thumb.jpg",
-        "hero": "20231231_spac/6.jpg",
+        "hero": "20231231_spac/hero.jpg",
         "title": "Spaç Prison",
         "location": "Kodër-Spaç",
         "country": "Albania",
@@ -290,7 +290,7 @@
       "properties": {
         "id": "16",
         "image": "20240120_vogelsang/thumb.jpg",
-        "hero": "20240120_vogelsang/1.jpg",
+        "hero": "20240120_vogelsang/hero.jpg",
         "title": "Kaserne Vogelsang",
         "location": "Zehdenick",
         "country": "Germany",
@@ -309,7 +309,7 @@
       "properties": {
         "id": "17",
         "image": "20240203_krampnitz-kaserne/thumb.jpg",
-        "hero": "20240203_krampnitz-kaserne/1.jpg",
+        "hero": "20240203_krampnitz-kaserne/hero.jpg",
         "title": "Krampnitz Kaserne",
         "location": "Potsdam",
         "country": "Germany",
@@ -347,7 +347,7 @@
       "properties": {
         "id": "19",
         "image": "20240217_kraftwerk-henningsdorf/thumb.jpg",
-        "hero": "20240217_kraftwerk-henningsdorf/8.jpg",
+        "hero": "20240217_kraftwerk-henningsdorf/hero.jpg",
         "title": "Kraftwerk Henningsdorf",
         "location": "Henningsdorf",
         "country": "Germany",
@@ -366,7 +366,7 @@
       "properties": {
         "id": "20",
         "image": "20240218_kraftwerk_plessa/thumb.jpg",
-        "hero": "20240218_kraftwerk_plessa/21.jpg",
+        "hero": "20240218_kraftwerk_plessa/hero.jpg",
         "title": "Kraftwerk Plessa",
         "location": "Plessa*",
         "country": "Germany",
@@ -385,7 +385,7 @@
       "properties": {
         "id": "21",
         "image": "20240330_neues-lager/thumb.jpg",
-        "hero": "20240330_neues-lager/28.jpg",
+        "hero": "20240330_neues-lager/hero.jpg",
         "title": "Neues Lager",
         "location": "Jüterbog",
         "country": "Germany",
@@ -423,7 +423,7 @@
       "properties": {
         "id": "23",
         "image": "20240414_abandonned-train-yard/thumb.jpg",
-        "hero": "20240414_abandonned-train-yard/10.jpg",
+        "hero": "20240414_abandonned-train-yard/hero.jpg",
         "title": "Train Graveyard",
         "location": "Istvántelek",
         "country": "Hungary",
@@ -442,7 +442,7 @@
       "properties": {
         "id": "24",
         "image": "20240414_kelenfold/thumb.jpg",
-        "hero": "20240414_kelenfold/7.jpg",
+        "hero": "20240414_kelenfold/hero.jpg",
         "title": "Kelenföld Erőmű",
         "location": "Kelenföld",
         "country": "Hungary",
@@ -480,7 +480,7 @@
       "properties": {
         "id": "26",
         "image": "20240421_bars-501/thumb.jpg",
-        "hero": "20240421_bars-501/8.jpg",
+        "hero": "20240421_bars-501/hero.jpg",
         "title": "BARS 501",
         "location": "Kálló",
         "country": "Hungary",
@@ -499,7 +499,7 @@
       "properties": {
         "id": "27",
         "image": "20240421_castle/thumb.jpg",
-        "hero": "20240421_castle/1.jpg",
+        "hero": "20240421_castle/hero.jpg",
         "title": "Hajmáskér Barracks",
         "location": "Hajmáskér",
         "country": "Hungary",
@@ -518,7 +518,7 @@
       "properties": {
         "id": "28",
         "image": "20240426_f4-bunker/thumb.jpg",
-        "hero": "20240426_f4-bunker/5.jpg",
+        "hero": "20240426_f4-bunker/hero.jpg",
         "title": "F4 'Rákosi' Bunker",
         "location": "Budapest",
         "country": "Hungary",
@@ -537,7 +537,7 @@
       "properties": {
         "id": "29",
         "image": "20240428-1_zrenjanin/thumb.jpg",
-        "hero": "20240428-1_zrenjanin/1.jpg",
+        "hero": "20240428-1_zrenjanin/hero.jpg",
         "title": "Memorial to the Uprising in Vojvodina",
         "location": "Zrenjanin",
         "country": "Serbia",
@@ -556,7 +556,7 @@
       "properties": {
         "id": "30",
         "image": "20240428-2_titel/thumb.jpg",
-        "hero": "20240428-2_titel/3.jpg",
+        "hero": "20240428-2_titel/hero.jpg",
         "title": "Monument to Fallen Soldiers and Victims of Fascism",
         "location": "Titel",
         "country": "Serbia",
@@ -575,7 +575,7 @@
       "properties": {
         "id": "31",
         "image": "20240428-3_jabuka/thumb.jpg",
-        "hero": "20240428-3_jabuka/2.jpg",
+        "hero": "20240428-3_jabuka/hero.jpg",
         "title": "Brazde Monument at the Stratište Memorial Complex",
         "location": "Jabuka",
         "country": "Serbia",
@@ -594,7 +594,7 @@
       "properties": {
         "id": "32",
         "image": "20240428-4_pozarevac/thumb.jpg",
-        "hero": "20240428-4_pozarevac/2.jpg",
+        "hero": "20240428-4_pozarevac/hero.jpg",
         "title": "The Star at the Memorial Park Čačalica",
         "location": "Požarevac",
         "country": "Serbia",
@@ -613,7 +613,7 @@
       "properties": {
         "id": "33",
         "image": "20240428-5_majdanpek/thumb.jpg",
-        "hero": "20240428-5_majdanpek/1.jpg",
+        "hero": "20240428-5_majdanpek/hero.jpg",
         "title": "Monument to the Liberators of Majdanpek",
         "location": "Majdanpek",
         "country": "Serbia",
@@ -632,7 +632,7 @@
       "properties": {
         "id": "34",
         "image": "20240429-1_grkinja/thumb.jpg",
-        "hero": "20240429-1_grkinja/2.jpg",
+        "hero": "20240429-1_grkinja/hero.jpg",
         "title": "Monument to Fallen Fighters",
         "location": "Grkinja",
         "country": "Serbia",
@@ -651,7 +651,7 @@
       "properties": {
         "id": "35",
         "image": "20240429-2_nis/thumb.jpg",
-        "hero": "20240429-2_nis/1.jpg",
+        "hero": "20240429-2_nis/hero.jpg",
         "title": "Bubanj Memorial Park",
         "location": "Niš",
         "country": "Serbia",
@@ -670,7 +670,7 @@
       "properties": {
         "id": "36",
         "image": "20240429-3_popina/thumb.jpg",
-        "hero": "20240429-3_popina/1.jpg",
+        "hero": "20240429-3_popina/hero.jpg",
         "title": "Mausoleum to the Fallen Insurgents",
         "location": "Štulac",
         "country": "Serbia",
@@ -689,7 +689,7 @@
       "properties": {
         "id": "37",
         "image": "20240429-4_ostra/thumb.jpg",
-        "hero": "20240429-4_ostra/2.jpg",
+        "hero": "20240429-4_ostra/hero.jpg",
         "title": "Monument to Courage",
         "location": "Ostra",
         "country": "Serbia",
@@ -708,7 +708,7 @@
       "properties": {
         "id": "38",
         "image": "20240429-5_kadinjaca/thumb.jpg",
-        "hero": "20240429-5_kadinjaca/6.jpg",
+        "hero": "20240429-5_kadinjaca/hero.jpg",
         "title": "Kadinjača Memorial Complex",
         "location": "Kragujevac",
         "country": "Serbia",
@@ -727,7 +727,7 @@
       "properties": {
         "id": "39",
         "image": "20240430_kragujevac/thumb.jpg",
-        "hero": "20240430_kragujevac/2.jpg",
+        "hero": "20240430_kragujevac/hero.jpg",
         "title": "Interrupted Flight Memorial",
         "location": "Kragujevac",
         "country": "Serbia",
@@ -746,7 +746,7 @@
       "properties": {
         "id": "40",
         "image": "20240501_kosmaj/thumb.jpg",
-        "hero": "20240501_kosmaj/2.jpg",
+        "hero": "20240501_kosmaj/hero.jpg",
         "title": "Monument to the Fallen Soldiers",
         "location": "Kosmaj",
         "country": "Serbia",
@@ -765,7 +765,7 @@
       "properties": {
         "id": "41",
         "image": "20240506_kosovo-library/thumb.jpg",
-        "hero": "20240506_kosovo-library/6.jpg",
+        "hero": "20240506_kosovo-library/hero.jpg",
         "title": "The National Library of Kosovo",
         "location": "Pristina",
         "country": "Kosovo",
@@ -784,7 +784,7 @@
       "properties": {
         "id": "42",
         "image": "20240507_sports-hall/thumb.jpg",
-        "hero": "20240507_sports-hall/2.jpg",
+        "hero": "20240507_sports-hall/hero.jpg",
         "title": "Palace of Youth and Sports",
         "location": "Pristina",
         "country": "Kosovo",
@@ -803,7 +803,7 @@
       "properties": {
         "id": "43",
         "image": "20240510_varrezat/thumb.jpg",
-        "hero": "20240510_varrezat/5.jpg",
+        "hero": "20240510_varrezat/hero.jpg",
         "title": "Varrezat e Dëshmorëve",
         "location": "Pristina",
         "country": "Kosovo",
@@ -822,7 +822,7 @@
       "properties": {
         "id": "44",
         "image": "20240510-1_kavadarci/thumb.jpg",
-        "hero": "20240510-1_kavadarci/3.jpg",
+        "hero": "20240510-1_kavadarci/hero.jpg",
         "title": "Kosturnica",
         "location": "Kavadarci",
         "country": "North Macedonia",
@@ -841,7 +841,7 @@
       "properties": {
         "id": "45",
         "image": "20240510-2_prilep/thumb.jpg",
-        "hero": "20240510-2_prilep/3.jpg",
+        "hero": "20240510-2_prilep/hero.jpg",
         "title": "Park of the Revolution",
         "location": "Prilep",
         "country": "North Macedonia",
@@ -860,7 +860,7 @@
       "properties": {
         "id": "46",
         "image": "20240511_makedonium/thumb.jpg",
-        "hero": "20240511_makedonium/6.jpg",
+        "hero": "20240511_makedonium/hero.jpg",
         "title": "Makedonium, Ilinden Monument",
         "location": "Krushevo",
         "country": "North Macedonia",
@@ -879,7 +879,7 @@
       "properties": {
         "id": "47",
         "image": "20240512_hotel-evropa/thumb.jpg",
-        "hero": "20240512_hotel-evropa/2.jpg",
+        "hero": "20240512_hotel-evropa/hero.jpg",
         "title": "Hotel Evropa",
         "location": "Oteshevo",
         "country": "North Macedonia",
@@ -898,7 +898,7 @@
       "properties": {
         "id": "48",
         "image": "20240513_prespa/thumb.jpg",
-        "hero": "20240513_prespa/5.jpg",
+        "hero": "20240513_prespa/hero.jpg",
         "title": "Prespa Monument",
         "location": "Oteshevo",
         "country": "North Macedonia",
@@ -936,7 +936,7 @@
       "properties": {
         "id": "50",
         "image": "20240518-2_buzludzha/thumb.jpg",
-        "hero": "20240518-2_buzludzha/10.jpg",
+        "hero": "20240518-2_buzludzha/hero.jpg",
         "title": "Buzludzha Monument",
         "location": "Shipka",
         "country": "Bulgaria",
@@ -955,7 +955,7 @@
       "properties": {
         "id": "51",
         "image": "20240518-3_samara/thumb.jpg",
-        "hero": "20240518-3_samara/1.jpg",
+        "hero": "20240518-3_samara/hero.jpg",
         "title": "Samara Flag Monument",
         "location": "Stara Zagora",
         "country": "Bulgaria",
@@ -974,7 +974,7 @@
       "properties": {
         "id": "52",
         "image": "20240519_bunker-n/thumb.jpg",
-        "hero": "20240519_bunker-n/8.jpg",
+        "hero": "20240519_bunker-n/hero.jpg",
         "title": "Bunker N.",
         "location": "Novo Selo*",
         "country": "Bulgaria",
@@ -993,7 +993,7 @@
       "properties": {
         "id": "53",
         "image": "20240525_bulgaria-founders/thumb.jpg",
-        "hero": "20240525_bulgaria-founders/4.jpg",
+        "hero": "20240525_bulgaria-founders/hero.jpg",
         "title": "Founders of the Bulgarian State Monument",
         "location": "Shumen",
         "country": "Bulgaria",
@@ -1012,7 +1012,7 @@
       "properties": {
         "id": "54",
         "image": "20240526_soviet-friendship/thumb.jpg",
-        "hero": "20240526_soviet-friendship/8.jpg",
+        "hero": "20240526_soviet-friendship/hero.jpg",
         "title": "Monument of the Bulgarian-Soviet Friendship",
         "location": "Varna",
         "country": "Bulgaria",
@@ -1031,7 +1031,7 @@
       "properties": {
         "id": "55",
         "image": "20240601_sinaia-bobsled/thumb.jpg",
-        "hero": "20240601_sinaia-bobsled/4.jpg",
+        "hero": "20240601_sinaia-bobsled/hero.jpg",
         "title": "Abandoned Bobsled Track",
         "location": "Sinaia",
         "country": "Romania",
@@ -1050,7 +1050,7 @@
       "properties": {
         "id": "56",
         "image": "20240602_salina-slanic-prahova/thumb.jpg",
-        "hero": "20240602_salina-slanic-prahova/2.jpg",
+        "hero": "20240602_salina-slanic-prahova/hero.jpg",
         "title": "Salina Slănic Prahova",
         "location": "Slănic",
         "country": "Romania",
@@ -1069,7 +1069,7 @@
       "properties": {
         "id": "57",
         "image": "20240603_dorfana-prison/thumb.jpg",
-        "hero": "20240603_dorfana-prison/4.jpg",
+        "hero": "20240603_dorfana-prison/hero.jpg",
         "title": "Doftana Prison",
         "location": "Câmpina",
         "country": "Romania",
@@ -1107,7 +1107,7 @@
       "properties": {
         "id": "59",
         "image": "20240608_food-institute/thumb.jpg",
-        "hero": "20240608_food-institute/1.jpg",
+        "hero": "20240608_food-institute/hero.jpg",
         "title": "Institute of Food Technology",
         "location": "Bucharest",
         "country": "Romania",
@@ -1126,7 +1126,7 @@
       "properties": {
         "id": "60",
         "image": "20240615_salina-turda/thumb.jpg",
-        "hero": "20240615_salina-turda/5.jpg",
+        "hero": "20240615_salina-turda/hero.jpg",
         "title": "Salina Turda",
         "location": "Turda",
         "country": "Romania",
@@ -1145,7 +1145,7 @@
       "properties": {
         "id": "61",
         "image": "20240616_botanica-oradea/thumb.jpg",
-        "hero": "20240616_botanica-oradea/1.jpg",
+        "hero": "20240616_botanica-oradea/hero.jpg",
         "title": "Grădina Botănica Oradea",
         "location": "Oradea",
         "country": "Romania",
@@ -1164,7 +1164,7 @@
       "properties": {
         "id": "62",
         "image": "20240623_bunker-o/thumb.jpg",
-        "hero": "20240623_bunker-o/2.jpg",
+        "hero": "20240623_bunker-o/hero.jpg",
         "title": "Bunker O.",
         "location": "Bratislava",
         "country": "Slovakia",
@@ -1183,7 +1183,7 @@
       "properties": {
         "id": "63",
         "image": "20240720_bauhaus-dessau/thumb.jpg",
-        "hero": "20240720_bauhaus-dessau/1.jpg",
+        "hero": "20240720_bauhaus-dessau/hero.jpg",
         "title": "Bauhaus School & Masters Houses",
         "location": "Dessau",
         "country": "Germany",
@@ -1202,7 +1202,7 @@
       "properties": {
         "id": "64",
         "image": "20240727_alte-ziegelei/thumb.jpg",
-        "hero": "20240727_alte-ziegelei/10.jpg",
+        "hero": "20240727_alte-ziegelei/hero.jpg",
         "title": "Alte Ziegelei",
         "location": "Zossen*",
         "country": "Germany",
@@ -1221,7 +1221,7 @@
       "properties": {
         "id": "65",
         "image": "20240803_lychen-2/thumb.jpg",
-        "hero": "20240803_lychen-2/4.jpg",
+        "hero": "20240803_lychen-2/hero.jpg",
         "title": "Special Weapons Bunker #2",
         "location": "Lychen",
         "country": "Germany",
@@ -1240,7 +1240,7 @@
       "properties": {
         "id": "66",
         "image": "20240908_tsl-44/thumb.jpg",
-        "hero": "20240908_tsl-44/12.jpg",
+        "hero": "20240908_tsl-44/hero.jpg",
         "title": "TSL 44",
         "location": "Niederlehme",
         "country": "Germany",
@@ -1259,7 +1259,7 @@
       "properties": {
         "id": "67",
         "image": "20240914_mine-lp/thumb.jpg",
-        "hero": "20240914_mine-lp/5.jpg",
+        "hero": "20240914_mine-lp/hero.jpg",
         "title": "Mine L.P.",
         "location": "Noiraigue*",
         "country": "Switzerland",
@@ -1278,7 +1278,7 @@
       "properties": {
         "id": "68",
         "image": "20240929-1_kreenholm-textile-factory/thumb.jpg",
-        "hero": "20240929-1_kreenholm-textile-factory/1.jpg",
+        "hero": "20240929-1_kreenholm-textile-factory/hero.jpg",
         "title": "Kreenholm Manufacturing Company",
         "location": "Narva",
         "country": "Estonia",
@@ -1297,7 +1297,7 @@
       "properties": {
         "id": "69",
         "image": "20240929-2_fish-farm/thumb.jpg",
-        "hero": "20240929-2_fish-farm/1.jpg",
+        "hero": "20240929-2_fish-farm/hero.jpg",
         "title": "Pärispea Pisciculture",
         "location": "Kuusalu Parish",
         "country": "Estonia",
@@ -1316,7 +1316,7 @@
       "properties": {
         "id": "70",
         "image": "20240929-3_submarine-base/thumb.jpg",
-        "hero": "20240929-3_submarine-base/2.jpg",
+        "hero": "20240929-3_submarine-base/hero.jpg",
         "title": "Hara Submarine Base",
         "location": "Kuusalu Parish",
         "country": "Estonia",
@@ -1335,7 +1335,7 @@
       "properties": {
         "id": "71",
         "image": "20240930-1_amari-pilot-cemetry/thumb.jpg",
-        "hero": "20240930-1_amari-pilot-cemetry/3.jpg",
+        "hero": "20240930-1_amari-pilot-cemetry/hero.jpg",
         "title": "Pilots' Cemetry",
         "location": "Ämari",
         "country": "Estonia",
@@ -1354,7 +1354,7 @@
       "properties": {
         "id": "72",
         "image": "20240930-2_okta-centrum/thumb.jpg",
-        "hero": "20240930-2_okta-centrum/1.jpg",
+        "hero": "20240930-2_okta-centrum/hero.jpg",
         "title": "Okta Centrum AS",
         "location": "Rapla",
         "country": "Estonia",
@@ -1373,7 +1373,7 @@
       "properties": {
         "id": "73",
         "image": "20240930-3_bog-fox/thumb.jpg",
-        "hero": "20240930-3_bog-fox/3.jpg",
+        "hero": "20240930-3_bog-fox/hero.jpg",
         "title": "Soorebane High-Voltage Pylon",
         "location": "Rõuma",
         "country": "Estonia",
@@ -1392,7 +1392,7 @@
       "properties": {
         "id": "74",
         "image": "20241001-1_fire-control-tower-1/thumb.jpg",
-        "hero": "20241001-1_fire-control-tower-1/1.jpg",
+        "hero": "20241001-1_fire-control-tower-1/hero.jpg",
         "title": "BS-26 Fire Control Tower",
         "location": "Tahkuna",
         "country": "Estonia",
@@ -1411,7 +1411,7 @@
       "properties": {
         "id": "75",
         "image": "20241001-2_fire-control-tower-2/thumb.jpg",
-        "hero": "20241001-2_fire-control-tower-2/6.jpg",
+        "hero": "20241001-2_fire-control-tower-2/hero.jpg",
         "title": "BS-42 Fire Control Tower",
         "location": "Kalana",
         "country": "Estonia",
@@ -1430,7 +1430,7 @@
       "properties": {
         "id": "76",
         "image": "20241002-1_battle-of-tehumardi/thumb.jpg",
-        "hero": "20241002-1_battle-of-tehumardi/7.jpg",
+        "hero": "20241002-1_battle-of-tehumardi/hero.jpg",
         "title": "Monument to the Night Battle of Tehumardi",
         "location": "Tehumardi",
         "country": "Estonia",
@@ -1449,7 +1449,7 @@
       "properties": {
         "id": "77",
         "image": "20241003_murjani-bobsled/thumb.jpg",
-        "hero": "20241003_murjani-bobsled/4.jpg",
+        "hero": "20241003_murjani-bobsled/hero.jpg",
         "title": "Old Toboggan Run",
         "location": "Murjāņi",
         "country": "Latvia",
@@ -1468,7 +1468,7 @@
       "properties": {
         "id": "78",
         "image": "20241005_gas-mask-cemetry/thumb.jpg",
-        "hero": "20241005_gas-mask-cemetry/3.jpg",
+        "hero": "20241005_gas-mask-cemetry/hero.jpg",
         "title": "Gas Mask Cemetry",
         "location": "Riga*",
         "country": "Latvia",
@@ -1487,7 +1487,7 @@
       "properties": {
         "id": "79",
         "image": "20241006-1_salaspils-memorials/thumb.jpg",
-        "hero": "20241006-1_salaspils-memorials/1.jpg",
+        "hero": "20241006-1_salaspils-memorials/hero.jpg",
         "title": "Salaspils Memorial",
         "location": "Salaspils",
         "country": "Latvia",
@@ -1506,7 +1506,7 @@
       "properties": {
         "id": "80",
         "image": "20241006-2_aircraft-museum/thumb.jpg",
-        "hero": "20241006-2_aircraft-museum/1.jpg",
+        "hero": "20241006-2_aircraft-museum/hero.jpg",
         "title": "Riga Aviation Museum",
         "location": "Skulte",
         "country": "Latvia",
@@ -1525,7 +1525,7 @@
       "properties": {
         "id": "81",
         "image": "20241007-1_fire-control-tower-3/thumb.jpg",
-        "hero": "20241007-1_fire-control-tower-3/1.jpg",
+        "hero": "20241007-1_fire-control-tower-3/hero.jpg",
         "title": "BS-46 Fire Control Tower",
         "location": "Ventspils",
         "country": "Latvia",
@@ -1544,7 +1544,7 @@
       "properties": {
         "id": "82",
         "image": "20241007-2_irbene-radio-telescope/thumb.jpg",
-        "hero": "20241007-2_irbene-radio-telescope/12.jpg",
+        "hero": "20241007-2_irbene-radio-telescope/hero.jpg",
         "title": "VIRAC radio telescopes",
         "location": "Irbene",
         "country": "Latvia",
@@ -1563,7 +1563,7 @@
       "properties": {
         "id": "83",
         "image": "20241007-3_fire-control-tower-4/thumb.jpg",
-        "hero": "20241007-3_fire-control-tower-4/3.jpg",
+        "hero": "20241007-3_fire-control-tower-4/hero.jpg",
         "title": "BS-23 Fire Control Towers",
         "location": "Liepāja",
         "country": "Latvia",
@@ -1582,7 +1582,7 @@
       "properties": {
         "id": "84",
         "image": "20241008-1_lino-baseinas/thumb.jpg",
-        "hero": "20241008-1_lino-baseinas/5.jpg",
+        "hero": "20241008-1_lino-baseinas/hero.jpg",
         "title": "Lino Baseinas",
         "location": "Palanga",
         "country": "Lithuania",
@@ -1601,7 +1601,7 @@
       "properties": {
         "id": "85",
         "image": "20241008-2_r12-dvina-base/thumb.jpg",
-        "hero": "20241008-2_r12-dvina-base/2.jpg",
+        "hero": "20241008-2_r12-dvina-base/hero.jpg",
         "title": "R-12 Dvina Museum",
         "location": "Plungė",
         "country": "Lithuania",
@@ -1620,7 +1620,7 @@
       "properties": {
         "id": "86",
         "image": "20241008-3_hill-of-crosses/thumb.jpg",
-        "hero": "20241008-3_hill-of-crosses/5.jpg",
+        "hero": "20241008-3_hill-of-crosses/hero.jpg",
         "title": "Hill of Crosses",
         "location": "Šiauliai",
         "country": "Lithuania",
@@ -1639,7 +1639,7 @@
       "properties": {
         "id": "87",
         "image": "20241009-1_zeltinos-base/thumb.jpg",
-        "hero": "20241009-1_zeltinos-base/6.jpg",
+        "hero": "20241009-1_zeltinos-base/hero.jpg",
         "title": "Monument to Lenin",
         "location": "Zeltiņi Parish",
         "country": "Latvia",
@@ -1658,7 +1658,7 @@
       "properties": {
         "id": "88",
         "image": "20241012_tallinn-linnahall/thumb.jpg",
-        "hero": "20241012_tallinn-linnahall/1.jpg",
+        "hero": "20241012_tallinn-linnahall/hero.jpg",
         "title": "Linnahall",
         "location": "Tallinn",
         "country": "Estonia",
@@ -1677,7 +1677,7 @@
       "properties": {
         "id": "89",
         "image": "20241017_palace-of-culture-and-sports/thumb.jpg",
-        "hero": "20241017_palace-of-culture-and-sports/1.jpg",
+        "hero": "20241017_palace-of-culture-and-sports/hero.jpg",
         "title": "Palace of Culture and Sports",
         "location": "Vilnius",
         "country": "Lithuania",
@@ -1696,7 +1696,7 @@
       "properties": {
         "id": "90",
         "image": "20241019-1_kaunas-monument/thumb.jpg",
-        "hero": "20241019-1_kaunas-monument/1.jpg",
+        "hero": "20241019-1_kaunas-monument/hero.jpg",
         "title": "Monument to Commemorate the victims of Nazism",
         "location": "Kaunas",
         "country": "Lithuania",
@@ -1715,7 +1715,7 @@
       "properties": {
         "id": "91",
         "image": "20241019-2_palemono-keramika/thumb.jpg",
-        "hero": "20241019-2_palemono-keramika/2.jpg",
+        "hero": "20241019-2_palemono-keramika/hero.jpg",
         "title": "Palemono Keramika",
         "location": "Kaunas",
         "country": "Lithuania",
@@ -1734,7 +1734,7 @@
       "properties": {
         "id": "92",
         "image": "20241029-1_locomotive-depot/thumb.jpg",
-        "hero": "20241029-1_locomotive-depot/3.jpg",
+        "hero": "20241029-1_locomotive-depot/hero.jpg",
         "title": "Locomotive Depot",
         "location": "Kutno",
         "country": "Poland",
@@ -1753,7 +1753,7 @@
       "properties": {
         "id": "93",
         "image": "20241029-2_salt-graduation-tower/thumb.jpg",
-        "hero": "20241029-2_salt-graduation-tower/8.jpg",
+        "hero": "20241029-2_salt-graduation-tower/hero.jpg",
         "title": "Salt Graduation Towers",
         "location": "Ciechocinek",
         "country": "Poland",
@@ -1772,7 +1772,7 @@
       "properties": {
         "id": "94",
         "image": "20241103_wieliczka-salt-mine/thumb.jpg",
-        "hero": "20241103_wieliczka-salt-mine/1.jpg",
+        "hero": "20241103_wieliczka-salt-mine/hero.jpg",
         "title": "Wieliczka Salt Mine",
         "location": "Krakow",
         "country": "Poland",
@@ -1791,7 +1791,7 @@
       "properties": {
         "id": "95",
         "image": "20241106_krakow-quarry/thumb.jpg",
-        "hero": "20241106_krakow-quarry/3.jpg",
+        "hero": "20241106_krakow-quarry/hero.jpg",
         "title": "Quarry Film Set Remains",
         "location": "Krakow",
         "country": "Poland",
@@ -1810,7 +1810,7 @@
       "properties": {
         "id": "96",
         "image": "20241110-1_market-hall/thumb.jpg",
-        "hero": "20241110-1_market-hall/5.jpg",
+        "hero": "20241110-1_market-hall/hero.jpg",
         "title": "Market Hall",
         "location": "Katowice",
         "country": "Poland",
@@ -1829,7 +1829,7 @@
       "properties": {
         "id": "97",
         "image": "20241110-2_lecture-theater/thumb.jpg",
-        "hero": "20241110-2_lecture-theater/2.jpg",
+        "hero": "20241110-2_lecture-theater/hero.jpg",
         "title": "Film School Lecture Hall",
         "location": "Katowice",
         "country": "Poland",
@@ -1848,7 +1848,7 @@
       "properties": {
         "id": "98",
         "image": "20241110-3_pyskowice-train-yard/thumb.jpg",
-        "hero": "20241110-3_pyskowice-train-yard/2.jpg",
+        "hero": "20241110-3_pyskowice-train-yard/hero.jpg",
         "title": "Abandoned Train Yard",
         "location": "Pyskowice",
         "country": "Poland",
