@@ -96,6 +96,15 @@ async function loadTable() {
         table.column(3).visible(!isMobile);
         table.column(4).visible(!isMobile);
     });
+    window.addEventListener('resize', function() {
+        let isMobile = window.innerWidth <= 880;
+        table.column(2).visible(!isMobile);
+        table.column(4).visible(!isMobile);
+    });
+    window.addEventListener('resize', function() {
+        let isMobile = window.innerWidth <= 1080;
+        table.column(4).visible(!isMobile);
+    });
 
     // Handle hover functionality only on non-touch devices
     if (!isMobile()) {

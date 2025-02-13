@@ -40,12 +40,15 @@ header {
   align-items: center;
   padding: 2vw;
   color: white;
+  padding-bottom: 10px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
 }
 h1 {
   font-size: 60px;
   margin-top: 0vw;
   margin-bottom: 0vw;
-  text-shadow: 0px 10px 25px black;
+  user-select: none;
+  -webkit-user-select: none;
 }
   @media (max-width: 600px) {
     h1 {
@@ -59,13 +62,13 @@ h1 {
   background-color: #222;
   cursor: default;
   margin-top: .7vw;
-  margin-left: 1vw;
-  box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.5);
+  margin-left: 15px;
+  pointer-events: auto;
 }
   @media (max-width: 600px) {
     .nav-buttons {
       margin-top: 3vw;
-      margin-left: 1vw;
+      margin-left: 2vw;
     }
   }
 .nav-buttons button {
@@ -82,7 +85,7 @@ h1 {
   @media (max-width: 600px) {
     .nav-buttons button {
       font-size: 4vw;
-      line-height: 6vw;
+      line-height: 5vw;
       padding: 2vw 4vw;
     }
   }
@@ -185,9 +188,24 @@ thead th, tbody td {
   text-overflow: ellipsis;
   /* max-width: 200px; */
 }
+#locationTable_wrapper {
+  overflow: hidden;
+}
+thead th:first-child, tbody td:first-child {
+  padding-left: 2vw !important;
+}
+thead th:last-child, tbody td:last-child {
+  padding-right: 2vw !important;
+}
   @media (max-width: 600px) {
     thead th, tbody td {
       padding: 2vw !important;
+    }
+    thead th:first-child, tbody td:first-child {
+      padding-left: 4vw !important;
+    }
+    thead th:last-child, tbody td:last-child {
+      padding-right: 4vw !important;
     }
   }
 .dataTables_info {
@@ -295,9 +313,10 @@ option {
 }
   @media (max-width: 600px) {
     .country-filter {
-      width: 90vw;
+      width: 60vw;
+      margin-left: 15vw;
       font-size: 4vw;
-      padding: 0.675em 6em 0.675em 1em;
+      padding: 2vw 4vw;
     }
   }
 
