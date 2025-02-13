@@ -102,8 +102,15 @@
             table.column(4).visible(!isMobile);
         });
 
-        // Hover image functionality
-        $('#locationTable tbody').on('mouseenter', 'tr', function (event) {
+        // Function to detect if input is from a mouse
+        function isMouseEvent(event) {
+            return event.pointerType === 'mouse' || event.originalEvent.pointerType === 'mouse';
+        }
+
+        // Hover image functionality (only for mouse input)
+        $('#locationTable tbody').on('pointerenter', 'tr', function (event) {
+            if (!isMouseEvent(event)) return;
+            
             const rowData = table.row(this).data();
             const hoverImage = document.getElementById('hoverImage');
             hoverImage.style.display = 'none'; // Instantly hide image before changing source
@@ -111,13 +118,17 @@
             hoverImage.style.display = 'block';
         });
 
-        $('#locationTable tbody').on('mousemove', 'tr', function (event) {
+        $('#locationTable tbody').on('pointermove', 'tr', function (event) {
+            if (!isMouseEvent(event)) return;
+            
             const hoverImage = document.getElementById('hoverImage');
             hoverImage.style.left = event.pageX + 20 + 'px';
             hoverImage.style.top = event.pageY + 20 + 'px';
         });
 
-        $('#locationTable tbody').on('mouseleave', 'tr', function () {
+        $('#locationTable tbody').on('pointerleave', 'tr', function (event) {
+            if (!isMouseEvent(event)) return;
+            
             document.getElementById('hoverImage').style.display = 'none';
         });
     }
