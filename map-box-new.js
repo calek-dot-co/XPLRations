@@ -162,7 +162,7 @@ map.once('load', () => {
                         </div>
                     </a>
                 </div>
-        <button id="close-overlay" style="position: absolute; top: 0; right: 0; margin: 10px; height: 2.2rem; width: 2.2rem; text-align: center; padding: 0; background-color: rgba(0, 0, 0, 0.5); color: #fff; border: none; border-radius: 20px; font-size: 20px;">✕</button>
+        <button id="close-overlay" style="font-family: san-serif; position: absolute; top: 0; right: 0; margin: 10px; height: 2.2rem; width: 2.2rem; text-align: center; padding: 2px 0 0 0; background-color: rgba(0, 0, 0, 0.5); color: #fff; border: none; border-radius: 20px; font-size: 20px;">✕</button>
       `
 
       document.body.appendChild(currentOverlay);
