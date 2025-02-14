@@ -62,11 +62,13 @@
                         observer.unobserve(img);
                     }
                 });
-            });
+            }, { rootMargin: '100px' }); // Loads images slightly before they enter viewport
+
             images.forEach(img => observer.observe(img));
         }
 
         loadImages();
+
     </script>
 
 </body>

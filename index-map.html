@@ -61,14 +61,14 @@
 
           if (mq.matches) {
             map.flyTo({
-              center: [25, 50], // desired center for desktop size
-              zoom: 3.5, // desired zoom level for desktop size
+              center: [22, 51], // desired center for desktop size
+              zoom: 3.8, // desired zoom level for desktop size
               speed: 0.5 // make the flying slower to emphasize the zooming effect
             });
           } else {
             map.flyTo({
-              center: [18, 48], // desired center for mobile size
-              zoom: 3.0, // desired zoom level for mobile size
+              center: [18, 51], // desired center for mobile size
+              zoom: 3.2, // desired zoom level for mobile size
               speed: 0.5 // make the flying slower to emphasize the zooming effect
             });
           }
@@ -79,44 +79,44 @@
             // Define map settings for desktop and mobile for each filter, including new locations
             const mapSettings = {
                 desktop: {
-                    'all': { center: [25, 50], zoom: 3.5 },
-                    'poland': { center: [21.5, 52.2], zoom: 5.5 },
-                    'lithuania': { center: [25, 55.2], zoom: 6.25 },
-                    'latvia': { center: [26, 57], zoom: 6 },
-                    'estonia': { center: [27, 58.8], zoom: 6 },
-                    'switzerland': { center: [9, 46.9], zoom: 7 },
+                    'all': { center: [22, 51], zoom: 3.8 },
+                    'poland': { center: [20, 52.2], zoom: 5.5 },
+                    'lithuania': { center: [24, 55.2], zoom: 6.35 },
+                    'latvia': { center: [25, 57], zoom: 6.2 },
+                    'estonia': { center: [25, 58.7], zoom: 6.5 },
+                    'switzerland': { center: [8, 46.9], zoom: 7 },
                     'slovakia': { center: [17.1, 48.15], zoom: 10 },
-                    'romania': { center: [26, 45.8], zoom: 6 },
-                    'bulgaria': { center: [26.4, 42.5], zoom: 6.5 },
-                    'north macedonia': { center: [22.1, 41.6], zoom: 7.2 },
+                    'romania': { center: [24.5, 45.8], zoom: 5.9 },
+                    'bulgaria': { center: [25, 42.5], zoom: 6.5 },
+                    'north macedonia': { center: [21.6, 41.6], zoom: 7.7 },
                     'kosovo': { center: [21.17, 42.66], zoom: 12.8 },
-                    'serbia': { center: [21.5, 44], zoom: 6 },
-                    'hungary': { center: [20.2, 47.5], zoom: 6.5 },
-                    'germany': { center: [14.4, 52.4], zoom: 6 },
-                    'albania': { center: [21, 41.1], zoom: 6.5 },
-                    'montenegro': { center: [19.1, 42.5], zoom: 7.5 },
-                    'bosnia & herzegovina': { center: [18.5, 44], zoom: 7 },
-                    'croatia': { center: [19, 44], zoom: 6 }
+                    'serbia': { center: [20.5, 44], zoom: 6.2 },
+                    'hungary': { center: [19.4, 47.2], zoom: 6.5 },
+                    'germany': { center: [10, 51], zoom: 5.2 },
+                    'albania': { center: [20, 41.1], zoom: 6.5 },
+                    'montenegro': { center: [19.1, 42.75], zoom: 7.5 },
+                    'bosnia & herzegovina': { center: [18, 44], zoom: 6.5 },
+                    'croatia': { center: [16, 44.75], zoom: 6 }
                 },
                 mobile: {
-                    'all': { center: [18, 46], zoom: 3 },
-                    'poland': { center: [19.5, 50], zoom: 4.5 },
-                    'lithuania': { center: [24, 55.2], zoom: 5 },
-                    'latvia': { center: [25, 57.7], zoom: 4.8 },
-                    'estonia': { center: [25, 57.7], zoom: 5 },
-                    'switzerland': { center: [8.5, 46], zoom: 5 },
+                    'all': { center: [18, 51], zoom: 3.2 },
+                    'poland': { center: [19.5, 52], zoom: 4.5 },
+                    'lithuania': { center: [24, 55.2], zoom: 5.3 },
+                    'latvia': { center: [24.8, 57], zoom: 4.8 },
+                    'estonia': { center: [25, 58.7], zoom: 5 },
+                    'switzerland': { center: [8.5, 46.5], zoom: 5.7 },
                     'slovakia': { center: [17.1, 48.15], zoom: 11 },
-                    'romania': { center: [24, 44.5], zoom: 5 },
-                    'bulgaria': { center: [25.8, 41.8], zoom: 5.5 },
-                    'north macedonia': { center: [21.4, 41], zoom: 6.8 },
+                    'romania': { center: [24.8, 45.5], zoom: 4.8 },
+                    'bulgaria': { center: [25.5, 42.5], zoom: 5.3 },
+                    'north macedonia': { center: [21.8, 41.5], zoom: 6.5 },
                     'kosovo': { center: [21.162328, 42.655], zoom: 12 },
-                    'serbia': { center: [21, 43.5], zoom: 5.8 },
-                    'hungary': { center: [19.4, 47.1], zoom: 6 },
-                    'germany': { center: [13.4, 51.5], zoom: 6 },
+                    'serbia': { center: [21, 44], zoom: 5.7 },
+                    'hungary': { center: [19.4, 47.1], zoom: 5.2 },
+                    'germany': { center: [10, 51], zoom: 4.6 },
                     'albania': { center: [20.1, 41.1], zoom: 6 },
-                    'montenegro': { center: [19, 42], zoom: 7 },
-                    'bosnia & herzegovina': { center: [18.2, 43.5], zoom: 7 },
-                    'croatia': { center: [17, 43], zoom: 5 },
+                    'montenegro': { center: [19.25, 42.8], zoom: 6.8 },
+                    'bosnia & herzegovina': { center: [17.7, 44], zoom: 6 },
+                    'croatia': { center: [16.5, 44.5], zoom: 5.3 },
                 }
             };
 
