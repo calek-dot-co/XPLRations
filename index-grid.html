@@ -13,6 +13,9 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- Links -->
     <link rel="stylesheet" href="style-home.css">
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -23,53 +26,49 @@
             <button onclick="window.location.href='index-map.html';">Map</button>
         </div>
     </header>
-    <div class="grid-container" id="gallery"></div>
-    <script>
-        async function loadImages() {
-            const response = await fetch('pins-new.geojson');
-            const data = await response.json();
-            const images = data.features.map(feature => ({
-                url: feature.properties.hero,
-                link: feature.properties.link
-            })).sort(() => Math.random() - 0.5); // Randomize order
+    <div class="grid grid-container" id="gallery"></div>
+<script>
+    async function loadImages() {
+        const response = await fetch('pins-new.geojson');
+        const data = await response.json();
+        const images = data.features.map(feature => ({
+            url: feature.properties.hero,
+            link: feature.properties.link
+        })).sort(() => Math.random() - 0.5); // Randomize order
 
-            const gallery = document.getElementById('gallery');
-            images.forEach(image => {
-                const item = document.createElement('div');
-                item.classList.add('grid-item');
-                const anchor = document.createElement('a');
-                anchor.href = image.link;
-                anchor.target = '_blank';
-                const img = document.createElement('img');
-                img.dataset.src = image.url; // Set data-src for lazy loading
-                img.classList.add('lazy');
-                anchor.appendChild(img);
-                item.appendChild(anchor);
-                gallery.appendChild(item);
+        const gallery = document.getElementById('gallery');
+        images.forEach(image => {
+            const item = document.createElement('div');
+            item.classList.add('grid-item');
+            const anchor = document.createElement('a');
+            anchor.href = image.link;
+            anchor.target = '_blank';
+            const img = document.createElement('img');
+            img.src = image.url;
+            img.onload = () => masonryInstance.layout(); // Trigger layout update when each image loads
+            anchor.appendChild(img);
+            item.appendChild(anchor);
+            gallery.appendChild(item);
+        });
+
+        // Initialize Masonry AFTER images are added
+        setTimeout(() => {
+            masonryInstance = new Masonry(gallery, {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-item',
+                percentPosition: true,
+                gutter: 6,
             });
+        }, 1); // Small delay to ensure images are loaded
+    }
 
-            lazyLoadImages();
-        }
-
-        function lazyLoadImages() {
-            const images = document.querySelectorAll('img.lazy');
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        img.src = img.dataset.src;
-                        img.classList.remove('lazy');
-                        observer.unobserve(img);
-                    }
-                });
-            }, { rootMargin: '100px' }); // Loads images slightly before they enter viewport
-
-            images.forEach(img => observer.observe(img));
-        }
-
+    document.addEventListener("DOMContentLoaded", () => {
         loadImages();
+    });
 
-    </script>
+    let masonryInstance; // Declare globally to use later
+</script>
+
 
 </body>
 </html>
