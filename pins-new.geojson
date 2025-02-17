@@ -10,7 +10,7 @@
 	      "location": "Podgarić",
         "country": "Croatia",
         "link": "20231204_moslavina/moslavina.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -29,7 +29,7 @@
         "location": "Jasenovac",
         "country": "Croatia",
 	      "link": "20231204_stone-flower/stone-flower.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -48,7 +48,7 @@
         "location": "Novo Selo Palanječko",
         "country": "Croatia",
         "link": "20231204_brezovica/brezovica.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -67,7 +67,7 @@
         "location": "Petrova Gora National Park",
         "country": "Croatia",
         "link": "20231204_petrova-gora/petrova-gora.html",
-        "tags": ["spomenik", "abandoned"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -86,7 +86,7 @@
         "location": "Željava",
         "country": "Croatia",
         "link": "20231205_zeljava/zeljava.html",
-        "tags": ["underground", "military", "abandoned"],
+        "tags": ["Bunker"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -105,7 +105,7 @@
         "location": "Sarajevo",
         "country": "Bosnia & Herzegovina",
         "link": "20231209_bobsled/bobsled.html",
-        "tags": ["bobsled", "abandoned"],
+        "tags": ["Bobsled track"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -124,7 +124,7 @@
         "location": "Konjic",
         "country": "Bosnia & Herzegovina",
         "link": "20231210_titos-bunker/titos-bunker.html",
-        "tags": ["military", "tour"],
+        "tags": ["Bunker"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -143,7 +143,7 @@
         "location": "Godinje",
         "country": "Montenegro",
         "link": "20231220_godinje/godinje.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -162,7 +162,7 @@
         "location": "Gornja Grkarica",
         "country": "Bosnia & Herzegovina",
         "link": "20231210_hotel-igman/hotel-igman.html",
-        "tags": ["abandoned", "hotel"],
+        "tags": ["Hotel"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -181,7 +181,7 @@
         "location": "Kupari",
         "country": "Croatia",
         "link": "20231215_kupari-hotels/kupari-hotels.html",
-        "tags": ["abandoned", "hotel"],
+        "tags": ["Hotel"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -200,7 +200,7 @@
         "location": "Luštica",
         "country": "Montenegro",
         "link": "20231218_sub-bunkers/sub-bunkers.html",
-        "tags": ["abandoned", "underground", "military"],
+        "tags": ["Bunker"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -219,7 +219,7 @@
         "location": "Barutana",
         "country": "Montenegro",
         "link": "20231218_barutana/barutana.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -238,7 +238,7 @@
         "location": "Carine",
         "country": "Montenegro",
         "link": "20231218_sutjeska/sutjeska.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -257,7 +257,7 @@
         "location": "Nikšić",
         "country": "Montenegro",
         "link": "20231218_nicsik/nicsik.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -276,7 +276,7 @@
         "location": "Kodër-Spaç",
         "country": "Albania",
         "link": "20231231_spac/spac.html",
-        "tags": ["abandoned", "prison"],
+        "tags": ["Prison"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -295,7 +295,7 @@
         "location": "Zehdenick",
         "country": "Germany",
         "link": "20240120_vogelsang/vogelsang.html",
-        "tags": ["abandoned", "military"],
+        "tags": ["Military base"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -314,7 +314,7 @@
         "location": "Potsdam",
         "country": "Germany",
         "link": "20240203_krampnitz-kaserne/krampnitz-kaserne.html",
-        "tags": ["abandoned", "military"],
+        "tags": ["Military base"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -333,7 +333,7 @@
         "location": "Halbe",
         "country": "Germany",
         "link": "20240210_flughafen-brand/flughafen-brand.html",
-        "tags": ["abandoned", "military", "airport"],
+        "tags": ["Airport"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -348,11 +348,11 @@
         "id": "19",
         "image": "20240217_kraftwerk-henningsdorf/thumb.jpg",
         "hero": "20240217_kraftwerk-henningsdorf/hero.jpg",
-        "title": "Kraftwerk Henningsdorf",
-        "location": "Henningsdorf",
+        "title": "Kraftwerk H",
+        "location": "Brandenburg",
         "country": "Germany",
         "link": "20240217_kraftwerk-henningsdorf/kraftwerk-henningsdorf.html",
-        "tags": ["abandoned", "powerplant"],
+        "tags": ["Powerplant"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -367,11 +367,11 @@
         "id": "20",
         "image": "20240218_kraftwerk_plessa/thumb.jpg",
         "hero": "20240218_kraftwerk_plessa/hero.jpg",
-        "title": "Kraftwerk Plessa",
-        "location": "Plessa*",
+        "title": "Kraftwerk P",
+        "location": "Brandenburg",
         "country": "Germany",
         "link": "20240218_kraftwerk_plessa/kraftwerk_plessa.html",
-        "tags": ["abandoned", "powerplant"],
+        "tags": ["Powerplant"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -390,7 +390,7 @@
         "location": "Jüterbog",
         "country": "Germany",
         "link": "20240330_neues-lager/neues-lager.html",
-        "tags": ["abandoned", "military"],
+        "tags": ["Military base"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -409,7 +409,7 @@
         "location": "Berlin",
         "country": "Germany",
         "link": "20240316_templhof-flughafen/templhof-flughafen.html",
-        "tags": ["tour", "airport"],
+        "tags": ["Airport"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -428,7 +428,7 @@
         "location": "Istvántelek",
         "country": "Hungary",
         "link": "20240414_abandonned-train-yard/abandonned-train-yard.html",
-        "tags": ["abandoned", "train", "graveyard"],
+        "tags": ["Train yard"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -447,7 +447,7 @@
         "location": "Kelenföld",
         "country": "Hungary",
         "link": "20240414_kelenfold/kelenfold.html",
-        "tags": ["abandoned", "powerplant"],
+        "tags": ["Powerplant"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -466,7 +466,7 @@
         "location": "Miskolc",
         "country": "Hungary",
         "link": "20240420_kossuth-mozi-cinema/kossuth-mozi-cinema.html",
-        "tags": ["abandoned", "cinema"],
+        "tags": ["Theater"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -485,7 +485,7 @@
         "location": "Kálló",
         "country": "Hungary",
         "link": "20240421_bars-501/bars-501.html",
-        "tags": ["abandoned", "military"],
+        "tags": ["Military base"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -504,7 +504,7 @@
         "location": "Hajmáskér",
         "country": "Hungary",
         "link": "20240421_castle/castle.html",
-        "tags": ["abandoned", "military"],
+        "tags": ["Military base"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -523,7 +523,7 @@
         "location": "Budapest",
         "country": "Hungary",
         "link": "20240426_f4-bunker/f4-bunker.html",
-        "tags": ["abandoned", "military", "underground"],
+        "tags": ["Bunker"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -542,7 +542,7 @@
         "location": "Zrenjanin",
         "country": "Serbia",
         "link": "20240428-1_zrenjanin/zrenjanin.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -561,7 +561,7 @@
         "location": "Titel",
         "country": "Serbia",
         "link": "20240428-2_titel/titel.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -580,7 +580,7 @@
         "location": "Jabuka",
         "country": "Serbia",
         "link": "20240428-3_jabuka/jabuka.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -599,7 +599,7 @@
         "location": "Požarevac",
         "country": "Serbia",
         "link": "20240428-4_pozarevac/pozarevac.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -618,7 +618,7 @@
         "location": "Majdanpek",
         "country": "Serbia",
         "link": "20240428-5_majdanpek/majdanpek.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -637,7 +637,7 @@
         "location": "Grkinja",
         "country": "Serbia",
         "link": "20240429-1_grkinja/grkinja.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -656,7 +656,7 @@
         "location": "Niš",
         "country": "Serbia",
         "link": "20240429-2_nis/nis.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -675,7 +675,7 @@
         "location": "Štulac",
         "country": "Serbia",
         "link": "20240429-3_popina/popina.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -694,7 +694,7 @@
         "location": "Ostra",
         "country": "Serbia",
         "link": "20240429-4_ostra/ostra.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -713,7 +713,7 @@
         "location": "Kragujevac",
         "country": "Serbia",
         "link": "20240429-5_kadinjaca/kadinjaca.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -732,7 +732,7 @@
         "location": "Kragujevac",
         "country": "Serbia",
         "link": "20240430_kragujevac/kragujevac.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -751,7 +751,7 @@
         "location": "Kosmaj",
         "country": "Serbia",
         "link": "20240501_kosmaj/kosmaj.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -770,7 +770,7 @@
         "location": "Pristina",
         "country": "Kosovo",
         "link": "20240506_kosovo-library/kosovo-library.html",
-        "tags": ["library"],
+        "tags": ["Library"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -789,7 +789,7 @@
         "location": "Pristina",
         "country": "Kosovo",
         "link": "20240507_sports-hall/sports-hall.html",
-        "tags": ["sport"],
+        "tags": ["Sports hall"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -808,7 +808,7 @@
         "location": "Pristina",
         "country": "Kosovo",
         "link": "20240510_varrezat/varrezat.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -827,7 +827,7 @@
         "location": "Kavadarci",
         "country": "North Macedonia",
         "link": "20240510-1_kavadarci/kavadarci.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -846,7 +846,7 @@
         "location": "Prilep",
         "country": "North Macedonia",
         "link": "20240510-2_prilep/prilep.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -865,7 +865,7 @@
         "location": "Krushevo",
         "country": "North Macedonia",
         "link": "20240511_makedonium/makedonium.html",
-        "tags": ["spomenik", "tour"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -884,7 +884,7 @@
         "location": "Oteshevo",
         "country": "North Macedonia",
         "link": "20240512_hotel-evropa/hotel-evropa.html",
-        "tags": ["abandoned", "hotel"],
+        "tags": ["Hotel"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -903,7 +903,7 @@
         "location": "Oteshevo",
         "country": "North Macedonia",
         "link": "20240513_prespa/prespa.html",
-        "tags": ["spomenik"],
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -922,7 +922,7 @@
         "location": "Shipka",
         "country": "Bulgaria",
         "link": "20240518-1_theater/theater.html",
-        "tags": ["abandoned", "cinema"],
+        "tags": ["Theater"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -941,7 +941,7 @@
         "location": "Shipka",
         "country": "Bulgaria",
         "link": "20240518-2_buzludzha/buzludzha.html",
-        "tags": ["abandoned"],
+        "tags": ["Building"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -960,7 +960,7 @@
         "location": "Stara Zagora",
         "country": "Bulgaria",
         "link": "20240518-3_samara/samara.html",
-        "tags": ["monument"],
+        "tags": ["Monument"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -976,10 +976,10 @@
         "image": "20240519_bunker-n/thumb.jpg",
         "hero": "20240519_bunker-n/hero.jpg",
         "title": "Bunker N.",
-        "location": "Novo Selo*",
+        "location": "Sofia Province",
         "country": "Bulgaria",
         "link": "20240519_bunker-n/bunker-n.html",
-        "tags": ["underground", "military", "bunker"],
+        "tags": ["Bunker"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -998,7 +998,7 @@
         "location": "Shumen",
         "country": "Bulgaria",
         "link": "20240525_bulgaria-founders/bulgaria-founders.html",
-        "tags": ["monument"],
+        "tags": ["Monument"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1017,7 +1017,7 @@
         "location": "Varna",
         "country": "Bulgaria",
         "link": "20240526_soviet-friendship/soviet-friendship.html",
-        "tags": ["monument"],
+        "tags": ["Monument"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1036,7 +1036,7 @@
         "location": "Sinaia",
         "country": "Romania",
         "link": "20240601_sinaia-bobsled/sinaia-bobsled.html",
-        "tags": ["bobsled", "abandoned"],
+        "tags": ["Bobsled track"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1055,7 +1055,7 @@
         "location": "Slănic",
         "country": "Romania",
         "link": "20240602_salina-slanic-prahova/salina-slanic-prahova.html",
-        "tags": ["underground", "saltmine"],
+        "tags": ["Saltmine"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1074,7 +1074,7 @@
         "location": "Câmpina",
         "country": "Romania",
         "link": "20240603_dorfana-prison/dorfana-prison.html",
-        "tags": ["abandoned", "prison"],
+        "tags": ["Prison"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1093,7 +1093,7 @@
         "location": "Bucharest",
         "country": "Romania",
         "link": "20240604_palace-of-parliment/palace-of-parliment.html",
-        "tags": ["tour"],
+        "tags": ["Building"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1112,7 +1112,7 @@
         "location": "Bucharest",
         "country": "Romania",
         "link": "20240608_food-institute/food-institute.html",
-        "tags": ["abandoned"],
+        "tags": ["Building"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1131,7 +1131,7 @@
         "location": "Turda",
         "country": "Romania",
         "link": "20240615_salina-turda/salina-turda.html",
-        "tags": ["underground", "saltmine"],
+        "tags": ["Saltmine"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1150,7 +1150,7 @@
         "location": "Oradea",
         "country": "Romania",
         "link": "20240616_botanica-oradea/botanica-oradea.html",
-        "tags": ["abandoned"],
+        "tags": ["Building"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1169,7 +1169,7 @@
         "location": "Bratislava",
         "country": "Slovakia",
         "link": "20240623_bunker-o/bunker-o.html",
-        "tags": ["underground", "abandoned"],
+        "tags": ["Bunker"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1188,7 +1188,7 @@
         "location": "Dessau",
         "country": "Germany",
         "link": "20240720_bauhaus-dessau/bauhaus-dessau.html",
-        "tags": ["tour"],
+        "tags": ["Building"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1204,10 +1204,10 @@
         "image": "20240727_alte-ziegelei/thumb.jpg",
         "hero": "20240727_alte-ziegelei/hero.jpg",
         "title": "Alte Ziegelei",
-        "location": "Zossen*",
+        "location": "Brandenburg",
         "country": "Germany",
         "link": "20240727_alte-ziegelei/alte-ziegelei.html",
-        "tags": ["abandoned"],
+        "tags": ["Brickworks"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1226,7 +1226,7 @@
         "location": "Lychen",
         "country": "Germany",
         "link": "20240803_lychen-2/lychen-2.html",
-        "tags": ["abandoned", "bunker", "military"],
+        "tags": ["Military Base"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1245,7 +1245,7 @@
         "location": "Niederlehme",
         "country": "Germany",
         "link": "20240908_tsl-44/tsl-44.html",
-        "tags": ["abandoned", "bunker", "military"],
+        "tags": ["Bunker"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1261,10 +1261,10 @@
         "image": "20240914_mine-lp/thumb.jpg",
         "hero": "20240914_mine-lp/hero.jpg",
         "title": "Mine L.P.",
-        "location": "Noiraigue*",
+        "location": "Neuchâtel",
         "country": "Switzerland",
         "link": "20240914_mine-lp/mine-lp.html",
-        "tags": ["abandoned", "mine", "underground"],
+        "tags": ["Mine"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1283,7 +1283,7 @@
         "location": "Narva",
         "country": "Estonia",
         "link": "20240929-1_kreenholm-textile-factory/kreenholm-textile-factory.html",
-        "tags": ["tour"],
+        "tags": ["Building"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1302,7 +1302,7 @@
         "location": "Kuusalu Parish",
         "country": "Estonia",
         "link": "20240929-2_fish-farm/fish-farm.html",
-        "tags": ["abandoned"],
+        "tags": ["Building"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1321,7 +1321,7 @@
         "location": "Kuusalu Parish",
         "country": "Estonia",
         "link": "20240929-3_submarine-base/submarine-base.html",
-        "tags": ["abandoned", "military"],
+        "tags": ["Military base"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1340,7 +1340,7 @@
         "location": "Ämari",
         "country": "Estonia",
         "link": "20240930-1_amari-pilot-cemetry/amari-pilot-cemetry.html",
-        "tags": ["military"],
+        "tags": ["Cemetry"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1359,7 +1359,7 @@
         "location": "Rapla",
         "country": "Estonia",
         "link": "20240930-2_okta-centrum/okta-centrum.html",
-        "tags": ["abandoned"],
+        "tags": ["Building"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1378,7 +1378,7 @@
         "location": "Rõuma",
         "country": "Estonia",
         "link": "20240930-3_bog-fox/bog-fox.html",
-        "tags": ["powerline"],
+        "tags": ["Powerline tower"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1397,7 +1397,7 @@
         "location": "Tahkuna",
         "country": "Estonia",
         "link": "20241001-1_fire-control-tower-1/fire-control-tower-1.html",
-        "tags": ["abandoned", "military"],
+        "tags": ["Tower"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1416,7 +1416,7 @@
         "location": "Kalana",
         "country": "Estonia",
         "link": "20241001-2_fire-control-tower-2/fire-control-tower-2.html",
-        "tags": ["abandoned", "military"],
+        "tags": ["Tower"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1435,7 +1435,7 @@
         "location": "Tehumardi",
         "country": "Estonia",
         "link": "20241002-1_battle-of-tehumardi/battle-of-tehumardi.html",
-        "tags": ["monument"],
+        "tags": ["Monument"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1454,7 +1454,7 @@
         "location": "Murjāņi",
         "country": "Latvia",
         "link": "20241003_murjani-bobsled/murjani-bobsled.html",
-        "tags": ["bobsled", "abandoned"],
+        "tags": ["Bobsled track"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1470,10 +1470,10 @@
         "image": "20241005_gas-mask-cemetry/thumb.jpg",
         "hero": "20241005_gas-mask-cemetry/hero.jpg",
         "title": "Gas Mask Cemetry",
-        "location": "Riga*",
+        "location": "Riga",
         "country": "Latvia",
         "link": "20241005_gas-mask-cemetry/gas-mask-cemetry.html",
-        "tags": ["abandoned", "graveyard"],
+        "tags": ["Cemetry"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1492,7 +1492,7 @@
         "location": "Salaspils",
         "country": "Latvia",
         "link": "20241006-1_salaspils-memorials/salaspils-memorials.html",
-        "tags": ["monument"],
+        "tags": ["Monument"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1511,7 +1511,7 @@
         "location": "Skulte",
         "country": "Latvia",
         "link": "20241006-2_aircraft-museum/aircraft-museum.html",
-        "tags": ["airport"],
+        "tags": ["Airport"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1530,7 +1530,7 @@
         "location": "Ventspils",
         "country": "Latvia",
         "link": "20241007-1_fire-control-tower-3/fire-control-tower-3.html",
-        "tags": ["abandoned", "military"],
+        "tags": ["Tower"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1549,7 +1549,7 @@
         "location": "Irbene",
         "country": "Latvia",
         "link": "20241007-2_irbene-radio-telescope/irbene-radio-telescope.html",
-        "tags": ["military", "tour"],
+        "tags": ["Radio telescope"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1568,7 +1568,7 @@
         "location": "Liepāja",
         "country": "Latvia",
         "link": "20241007-3_fire-control-tower-4/fire-control-tower-4.html",
-        "tags": ["abandoned", "military"],
+        "tags": ["Tower"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1587,7 +1587,7 @@
         "location": "Palanga",
         "country": "Lithuania",
         "link": "20241008-1_lino-baseinas/lino-baseinas.html",
-        "tags": ["abandoned", "pool"],
+        "tags": ["Pool"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1606,7 +1606,7 @@
         "location": "Plungė",
         "country": "Lithuania",
         "link": "20241008-2_r12-dvina-base/r12-dvina-base.html",
-        "tags": ["tour", "military"],
+        "tags": ["Military base"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1625,7 +1625,7 @@
         "location": "Šiauliai",
         "country": "Lithuania",
         "link": "20241008-3_hill-of-crosses/hill-of-crosses.html",
-        "tags": ["tour"],
+        "tags": ["Cemetry"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1644,7 +1644,7 @@
         "location": "Zeltiņi Parish",
         "country": "Latvia",
         "link": "20241009-1_zeltinos-base/zeltinos-base.html",
-        "tags": ["abandoned", "military"],
+        "tags": ["Miltary base"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1663,7 +1663,7 @@
         "location": "Tallinn",
         "country": "Estonia",
         "link": "20241012_tallinn-linnahall/2tallinn-linnahall.html",
-        "tags": ["abandoned"],
+        "tags": ["Building"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1682,7 +1682,7 @@
         "location": "Vilnius",
         "country": "Lithuania",
         "link": "20241017_palace-of-culture-and-sports/palace-of-culture-and-sports.html",
-        "tags": ["abandoned", "sport"],
+        "tags": ["Sports hall"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1701,7 +1701,7 @@
         "location": "Kaunas",
         "country": "Lithuania",
         "link": "20241019-1_kaunas-monument/kaunas-monument.html",
-        "tags": ["monument"],
+        "tags": ["Monument"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1720,7 +1720,7 @@
         "location": "Kaunas",
         "country": "Lithuania",
         "link": "20241019-2_palemono-keramika/palemono-keramika.html",
-        "tags": ["abandoned"],
+        "tags": ["Brickworks"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1739,7 +1739,7 @@
         "location": "Kutno",
         "country": "Poland",
         "link": "20241029-1_locomotive-depot/locomotive-depot.html",
-        "tags": ["abandoned", "train"],
+        "tags": ["Train yard"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1758,7 +1758,7 @@
         "location": "Ciechocinek",
         "country": "Poland",
         "link": "20241029-2_salt-graduation-tower/salt-graduation-tower.html",
-        "tags": ["saltmine"],
+        "tags": ["Salt towers"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1776,8 +1776,8 @@
         "title": "Wieliczka Salt Mine",
         "location": "Krakow",
         "country": "Poland",
-        "link": "20241103_wieliczka-salt-mine/2wieliczka-salt-mine.html",
-        "tags": ["saltmine"],
+        "link": "20241103_wieliczka-salt-mine/wieliczka-salt-mine.html",
+        "tags": ["Saltmine"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1796,7 +1796,7 @@
         "location": "Krakow",
         "country": "Poland",
         "link": "20241106_krakow-quarry/krakow-quarry.html",
-        "tags": ["abandoned"],
+        "tags": ["Quarry"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1815,7 +1815,7 @@
         "location": "Katowice",
         "country": "Poland",
         "link": "20241110-1_market-hall/market-hall.html",
-        "tags": ["abandoned"],
+        "tags": ["Building"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1834,7 +1834,7 @@
         "location": "Katowice",
         "country": "Poland",
         "link": "20241110-2_lecture-theater/lecture-theater.html",
-        "tags": ["abandoned"],
+        "tags": ["Theater"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1853,7 +1853,7 @@
         "location": "Pyskowice",
         "country": "Poland",
         "link": "20241110-3_pyskowice-train-yard/pyskowice-train-yard.html",
-        "tags": ["train", "abandoned"],
+        "tags": ["Train yard"],
         "icon-image": "pin-active"
       },
       "geometry": {

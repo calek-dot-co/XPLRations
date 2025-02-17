@@ -59,11 +59,13 @@ async function loadTable() {
         hero: feature.properties.image
     })).sort((a, b) => b.id - a.id); // Sort newest to oldest
 
+    const isMobile = window.innerWidth <= 600
+
     const table = $('#locationTable').DataTable({
         data: tableData,
         order: [[0, 'desc']],
         searching: false,
-        ordering: false,
+        ordering: !isMobile,
         columns: [
             { data: 'id', width: '5%' },
             { 
@@ -118,14 +120,26 @@ async function loadTable() {
 
         $('#locationTable tbody').on('mousemove', 'tr', function (event) {
             const hoverImage = document.getElementById('hoverImage');
-            hoverImage.style.left = event.pageX + 20 + 'px';
-            hoverImage.style.top = event.pageY + 20 + 'px';
+            const screenWidth = window.innerWidth;
+            const rightBoundary = screenWidth - (30 * screenWidth / 100); // 30vw from the right
+            let xPosition;
+
+            // If cursor is within 30vw from the right, shift image 30vw to the left and position it at -20px from cursor
+            if (event.pageX > rightBoundary) {
+                xPosition = event.pageX - 20 - (30 * screenWidth / 100);
+            } else {
+                xPosition = event.pageX + 20; // Default position
+            }
+
+            hoverImage.style.left = `${xPosition}px`;
+            hoverImage.style.top = `${event.pageY + 20}px`;
         });
 
         $('#locationTable tbody').on('mouseleave', 'tr', function () {
             document.getElementById('hoverImage').style.display = 'none';
         });
     }
+
 }
 
 loadTable();

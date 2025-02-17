@@ -61,7 +61,7 @@ map.once('load', () => {
   map.resize();
 
   // Load GeoJSON data and store it
-  fetch('pins.geojson')
+  fetch('pins-new.geojson')
     .then(response => response.json())
     .then(data => {
       originalGeoJSONData = data;
