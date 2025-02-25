@@ -42,107 +42,107 @@
     </div>
     <img id="hoverImage" class="hover-image" src="" alt="">
     <script>
-function isMobile() {
-    return window.innerWidth <= 600 || 'ontouchstart' in document.documentElement;
-}
-
-async function loadTable() {
-    const response = await fetch('pins-new.geojson');
-    const data = await response.json();
-    const tableData = data.features.map(feature => ({
-        id: feature.properties.id,
-        title: feature.properties.title,
-        location: feature.properties.location,
-        country: feature.properties.country,
-        tags: feature.properties.tags.join(', '),
-        link: feature.properties.link,
-        hero: feature.properties.image
-    })).sort((a, b) => b.id - a.id); // Sort newest to oldest
-
-    const isMobile = window.innerWidth <= 600
-
-    const table = $('#locationTable').DataTable({
-        data: tableData,
-        order: [[0, 'desc']],
-        searching: false,
-        ordering: !isMobile,
-        columns: [
-            { data: 'id', width: '5%' },
-            { 
-                data: 'title', 
-                width: 'auto', 
-                render: function(data, type, row) {
-                    return `<span class="truncate-text" title="${data}">${data}</span>`;
-                }
-            },
-            { data: 'location', width: '15%', visible: window.innerWidth > 600 },
-            { data: 'country', width: '15%', visible: window.innerWidth > 600 },
-            { data: 'tags', width: '15%', visible: window.innerWidth > 600 }
-        ],
-        paging: false,
-        className: 'row-border'
-    });
-
-    // Make rows clickable (redirect to link)
-    $('#locationTable tbody').on('click', 'tr', function () {
-        const rowData = table.row(this).data();
-        if (rowData.link) {
-            window.location.href = rowData.link;
+        function checkIsMobile() {
+            return window.innerWidth <= 600 || 'ontouchstart' in document.documentElement;
         }
-    });
 
-    // Update column visibility on window resize
-    window.addEventListener('resize', function() {
-        let isMobile = window.innerWidth <= 600;
-        table.column(2).visible(!isMobile);
-        table.column(3).visible(!isMobile);
-        table.column(4).visible(!isMobile);
-    });
-    window.addEventListener('resize', function() {
-        let isMobile = window.innerWidth <= 880;
-        table.column(2).visible(!isMobile);
-        table.column(4).visible(!isMobile);
-    });
-    window.addEventListener('resize', function() {
-        let isMobile = window.innerWidth <= 1080;
-        table.column(4).visible(!isMobile);
-    });
+        async function loadTable() {
+            const response = await fetch('pins-new.geojson');
+            const data = await response.json();
+            const tableData = data.features.map(feature => ({
+                id: feature.properties.id,
+                title: feature.properties.title,
+                location: feature.properties.location,
+                country: feature.properties.country,
+                tags: feature.properties.tags.join(', '),
+                link: feature.properties.link,
+                hero: feature.properties.image
+            })).sort((a, b) => b.id - a.id); // Sort newest to oldest
 
-    // Handle hover functionality only on non-touch devices
-    if (!isMobile()) {
-        $('#locationTable tbody').on('mouseenter', 'tr', function (event) {
-            const rowData = table.row(this).data();
-            const hoverImage = document.getElementById('hoverImage');
-            hoverImage.style.display = 'none'; // Instantly hide image before changing source
-            hoverImage.src = rowData.hero;
-            hoverImage.style.display = 'block';
-        });
+            const isMobile = window.innerWidth <= 600
 
-        $('#locationTable tbody').on('mousemove', 'tr', function (event) {
-            const hoverImage = document.getElementById('hoverImage');
-            const screenWidth = window.innerWidth;
-            const rightBoundary = screenWidth - (30 * screenWidth / 100); // 30vw from the right
-            let xPosition;
+            const table = $('#locationTable').DataTable({
+                data: tableData,
+                order: [[0, 'desc']],
+                searching: false,
+                ordering: !isMobile,
+                columns: [
+                    { data: 'id', width: '5%' },
+                    { 
+                        data: 'title', 
+                        width: 'auto', 
+                        render: function(data, type, row) {
+                            return `<span class="truncate-text" title="${data}">${data}</span>`;
+                        }
+                    },
+                    { data: 'location', width: '15%', visible: window.innerWidth > 600 },
+                    { data: 'country', width: '15%', visible: window.innerWidth > 600 },
+                    { data: 'tags', width: '15%', visible: window.innerWidth > 600 }
+                ],
+                paging: false,
+                className: 'row-border'
+            });
 
-            // If cursor is within 30vw from the right, shift image 30vw to the left and position it at -20px from cursor
-            if (event.pageX > rightBoundary) {
-                xPosition = event.pageX - 20 - (30 * screenWidth / 100);
-            } else {
-                xPosition = event.pageX + 20; // Default position
+            // Make rows clickable (redirect to link)
+            $('#locationTable tbody').on('click', 'tr', function () {
+                const rowData = table.row(this).data();
+                if (rowData.link) {
+                    window.location.href = rowData.link;
+                }
+            });
+
+            // Update column visibility on window resize
+            window.addEventListener('resize', function() {
+                let isMobile = window.innerWidth <= 600;
+                table.column(2).visible(!isMobile);
+                table.column(3).visible(!isMobile);
+                table.column(4).visible(!isMobile);
+            });
+            window.addEventListener('resize', function() {
+                let isMobile = window.innerWidth <= 880;
+                table.column(2).visible(!isMobile);
+                table.column(4).visible(!isMobile);
+            });
+            window.addEventListener('resize', function() {
+                let isMobile = window.innerWidth <= 1080;
+                table.column(4).visible(!isMobile);
+            });
+
+            // Handle hover functionality only on non-touch devices
+            if (!checkIsMobile()) {
+                $('#locationTable tbody').on('mouseenter', 'tr', function (event) {
+                    const rowData = table.row(this).data();
+                    const hoverImage = document.getElementById('hoverImage');
+                    hoverImage.style.display = 'none'; // Instantly hide image before changing source
+                    hoverImage.src = rowData.hero;
+                    hoverImage.style.display = 'block';
+                });
+
+                $('#locationTable tbody').on('mousemove', 'tr', function (event) {
+                    const hoverImage = document.getElementById('hoverImage');
+                    const screenWidth = window.innerWidth;
+                    const rightBoundary = screenWidth - (30 * screenWidth / 100); // 30vw from the right
+                    let xPosition;
+
+                    // If cursor is within 30vw from the right, shift image 30vw to the left and position it at -20px from cursor
+                    if (event.pageX > rightBoundary) {
+                        xPosition = event.pageX - 20 - (30 * screenWidth / 100);
+                    } else {
+                        xPosition = event.pageX + 20; // Default position
+                    }
+
+                    hoverImage.style.left = `${xPosition}px`;
+                    hoverImage.style.top = `${event.pageY + 20}px`;
+                });
+
+                $('#locationTable tbody').on('mouseleave', 'tr', function () {
+                    document.getElementById('hoverImage').style.display = 'none';
+                });
             }
 
-            hoverImage.style.left = `${xPosition}px`;
-            hoverImage.style.top = `${event.pageY + 20}px`;
-        });
+        }
 
-        $('#locationTable tbody').on('mouseleave', 'tr', function () {
-            document.getElementById('hoverImage').style.display = 'none';
-        });
-    }
-
-}
-
-loadTable();
+        loadTable();
     </script>
 </body>
 </html>

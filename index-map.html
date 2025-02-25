@@ -29,12 +29,13 @@
         <form>
           <select name="country-filter" id="country-filter" class="country-filter">
                 <option value="" disabled selected>Filter map by country...</option>
+                <option data-filter="australia" class="button-filter">Australia (1)</option>
                 <option data-filter="albania" class="button-filter">Albania (1)</option>
                 <option data-filter="bosnia & herzegovina" class="button-filter">Bosnia & Herzegovina (3)</option>
                 <option data-filter="bulgaria" class="button-filter">Bulgaria (6)</option>
                 <option data-filter="croatia" class="button-filter">Croatia (6)</option>
                 <option data-filter="estonia" class="button-filter">Estonia (10)</option>
-                <option data-filter="germany" class="button-filter">Germany (11)</option>
+                <option data-filter="germany" class="button-filter">Germany (14)</option>
                 <option data-filter="hungary" class="button-filter">Hungary (6)</option>
                 <option data-filter="kosovo" class="button-filter">Kosovo (3)</option>
                 <option data-filter="latvia" class="button-filter">Latvia (8)</option>
@@ -80,6 +81,7 @@
             const mapSettings = {
                 desktop: {
                     'all': { center: [20, 51], zoom: 3.8 },
+                    'australia': { center: [133, -27], zoom: 3.4 },
                     'poland': { center: [20, 52.2], zoom: 5.5 },
                     'lithuania': { center: [24, 55.2], zoom: 6.35 },
                     'latvia': { center: [25, 57], zoom: 6.2 },
@@ -100,6 +102,7 @@
                 },
                 mobile: {
                     'all': { center: [18, 51], zoom: 3.2 },
+                    'australia': { center: [133, -27], zoom: 2.2 },
                     'poland': { center: [19.5, 52], zoom: 4.5 },
                     'lithuania': { center: [24, 55.2], zoom: 5.3 },
                     'latvia': { center: [24.8, 57], zoom: 4.8 },

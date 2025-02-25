@@ -1860,6 +1860,82 @@
         "coordinates": [18.613315, 50.387199],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "99",
+        "image": "20241223_catherine-hill-bay-jetty/thumb.jpg",
+        "hero": "20241223_catherine-hill-bay-jetty/hero.jpg",
+        "title": "Mining Jetty",
+        "location": "Catherine Hill Bay",
+        "country": "Australia",
+        "link": "20241223_catherine-hill-bay-jetty/catherine-hill-bay-jetty.html",
+        "tags": ["Pier"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [151.632301, -33.159411],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "100",
+        "image": "20250202_ kraftfuttermischwerk/thumb.jpg",
+        "hero": "20250202_ kraftfuttermischwerk/hero.jpg",
+        "title": "Kraftfuttermischwerk",
+        "location": "Fürstenberg",
+        "country": "Germany",
+        "link": "20250202_ kraftfuttermischwerk/kraftfuttermischwerk.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [13.136446, 53.184892],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "101",
+        "image": "20250222-1_forgotten-clinic/thumb.jpg",
+        "hero": "20250222-1_forgotten-clinic/hero.jpg",
+        "title": "Klinik Ost",
+        "location": "Flensburg",
+        "country": "Germany",
+        "link": "20250222-1_forgotten-clinic/forgotten-clinic.html",
+        "tags": ["Hospital"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [9.459897, 54.812484],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "102",
+        "image": "20250222-2_maps-amt/thumb.jpg",
+        "hero": "20250222-2_maps-amt/hero.jpg",
+        "title": "Amtsgebäude R",
+        "location": "Schleswig-Holstein",
+        "country": "germany",
+        "link": "20250222-2_maps-amt/maps-amt.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [9.254760, 54.595062],
+        "type": "Point"
+      }
     }
 
   ],
