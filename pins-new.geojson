@@ -1936,6 +1936,25 @@
         "coordinates": [9.254760, 54.595062],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "103",
+        "image": "103/thumb.jpg",
+        "hero": "103/hero.jpg",
+        "title": "Telekom Lager",
+        "location": "Brandenburg",
+        "country": "Germany",
+        "link": "103/telekom-lager.html",
+        "tags": ["Cemetry"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [13.015380, 52.318383],
+        "type": "Point"
+      }
     }
 
   ],
