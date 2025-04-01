@@ -4,12 +4,12 @@
       "type": "Feature",
       "properties": {
         "id": "1",
-	      "image": "20231204_moslavina/thumb.jpg",
-        "hero": "20231204_moslavina/hero.jpg",
+	      "image": "20231204-1_moslavina/thumb.jpg",
+        "hero": "20231204-1_moslavina/hero.jpg",
         "title": "Monument to the Revolution of the People of Moslavina",
 	      "location": "Podgarić",
         "country": "Croatia",
-        "link": "20231204_moslavina/moslavina.html",
+        "link": "20231204-1_moslavina/moslavina.html",
         "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
@@ -23,12 +23,12 @@
       "type": "Feature",
       "properties": {
         "id": "2",
-	      "image": "20231204_stone-flower/thumb.jpg",
-        "hero": "20231204_stone-flower/hero.jpg",
+	      "image": "20231204-2_stone-flower/thumb.jpg",
+        "hero": "20231204-2_stone-flower/hero.jpg",
         "title": "Stone Flower Monument",
         "location": "Jasenovac",
         "country": "Croatia",
-	      "link": "20231204_stone-flower/stone-flower.html",
+	      "link": "20231204-2_stone-flower/stone-flower.html",
         "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
@@ -42,12 +42,12 @@
       "type": "Feature",
       "properties": {
         "id": "3",
-        "image": "20231204_brezovica/thumb.jpg",
-        "hero": "20231204_brezovica/hero.jpg",
+        "image": "20231204-3_brezovica/thumb.jpg",
+        "hero": "20231204-3_brezovica/hero.jpg",
         "title": "Monument to the Detachment",
         "location": "Novo Selo Palanječko",
         "country": "Croatia",
-        "link": "20231204_brezovica/brezovica.html",
+        "link": "20231204-3_brezovica/brezovica.html",
         "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
@@ -61,12 +61,12 @@
       "type": "Feature",
       "properties": {
         "id": "4",
-        "image": "20231204_petrova-gora/thumb.jpg",
-        "hero": "20231204_petrova-gora/hero.jpg",
+        "image": "20231204-4_petrova-gora/thumb.jpg",
+        "hero": "20231204-4_petrova-gora/hero.jpg",
         "title": "Monument to the Uprising",
         "location": "Petrova Gora National Park",
         "country": "Croatia",
-        "link": "20231204_petrova-gora/petrova-gora.html",
+        "link": "20231204-4_petrova-gora/petrova-gora.html",
         "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
@@ -289,17 +289,17 @@
       "type": "Feature",
       "properties": {
         "id": "16",
-        "image": "20240120_vogelsang/thumb.jpg",
-        "hero": "20240120_vogelsang/hero.jpg",
-        "title": "Kaserne Vogelsang",
-        "location": "Zehdenick",
+        "image": "20240120_kaserne-v/thumb.jpg",
+        "hero": "20240120_kaserne-v/hero.jpg",
+        "title": "Kaserne V",
+        "location": "Somewhere",
         "country": "Germany",
-        "link": "20240120_vogelsang/vogelsang.html",
+        "link": "20240120_kaserne-v/kaserne-v.html",
         "tags": ["Military base"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [13.372901, 53.054751],
+        "coordinates": [13.385920, 53.037696],
         "type": "Point"
       }
     },
@@ -308,17 +308,17 @@
       "type": "Feature",
       "properties": {
         "id": "17",
-        "image": "20240203_krampnitz-kaserne/thumb.jpg",
-        "hero": "20240203_krampnitz-kaserne/hero.jpg",
-        "title": "Krampnitz Kaserne",
-        "location": "Potsdam",
+        "image": "20240203_kaserne-k/thumb.jpg",
+        "hero": "20240203_kaserne-k/hero.jpg",
+        "title": "Kaserne K",
+        "location": "Somewhere",
         "country": "Germany",
-        "link": "20240203_krampnitz-kaserne/krampnitz-kaserne.html",
+        "link": "20240203_20240203_kaserne-k/20240203_kaserne-k.html",
         "tags": ["Military base"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [13.049188, 52.459357],
+        "coordinates": [13.051035, 52.459297],
         "type": "Point"
       }
     },
@@ -330,7 +330,7 @@
         "image": "20240210_flughafen-brand/thumb.jpg",
         "hero": "20240210_flughafen-brand/hero.jpg",
         "title": "Flugplatz Brand",
-        "location": "Halbe",
+        "location": "Somewhere",
         "country": "Germany",
         "link": "20240210_flughafen-brand/flughafen-brand.html",
         "tags": ["Airport"],
@@ -346,17 +346,17 @@
       "type": "Feature",
       "properties": {
         "id": "19",
-        "image": "20240217_kraftwerk-henningsdorf/thumb.jpg",
-        "hero": "20240217_kraftwerk-henningsdorf/hero.jpg",
+        "image": "20240217_kraftwerk-h/thumb.jpg",
+        "hero": "20240217_kraftwerk-h/hero.jpg",
         "title": "Kraftwerk H",
-        "location": "Brandenburg",
+        "location": "Somewhere",
         "country": "Germany",
-        "link": "20240217_kraftwerk-henningsdorf/kraftwerk-henningsdorf.html",
+        "link": "20240217_kraftwerk-h/kraftwerk-h.html",
         "tags": ["Powerplant"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [13.213050, 52.640754],
+        "coordinates": [12.769844, 53.004751],
         "type": "Point"
       }
     },
@@ -365,17 +365,17 @@
       "type": "Feature",
       "properties": {
         "id": "20",
-        "image": "20240218_kraftwerk_plessa/thumb.jpg",
-        "hero": "20240218_kraftwerk_plessa/hero.jpg",
+        "image": "20240218_kraftwerk-p/thumb.jpg",
+        "hero": "20240218_kraftwerk-p/hero.jpg",
         "title": "Kraftwerk P",
-        "location": "Brandenburg",
+        "location": "Somewhere",
         "country": "Germany",
-        "link": "20240218_kraftwerk_plessa/kraftwerk_plessa.html",
+        "link": "20240218_kraftwerk-p/kraftwerk-p.html",
         "tags": ["Powerplant"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [13.621303, 51.467572],
+        "coordinates": [13.322489, 51.318328],
         "type": "Point"
       }
     },
@@ -443,15 +443,15 @@
         "id": "24",
         "image": "20240414_kelenfold/thumb.jpg",
         "hero": "20240414_kelenfold/hero.jpg",
-        "title": "Kelenföld Erőmű",
-        "location": "Kelenföld",
+        "title": "Powerplant K",
+        "location": "Somewhere",
         "country": "Hungary",
         "link": "20240414_kelenfold/kelenfold.html",
         "tags": ["Powerplant"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [19.056976, 47.462020],
+        "coordinates": [19.031274, 47.466085],
         "type": "Point"
       }
     },
@@ -520,7 +520,7 @@
         "image": "20240426_f4-bunker/thumb.jpg",
         "hero": "20240426_f4-bunker/hero.jpg",
         "title": "F4 'Rákosi' Bunker",
-        "location": "Budapest",
+        "location": "Somewhere",
         "country": "Hungary",
         "link": "20240426_f4-bunker/f4-bunker.html",
         "tags": ["Bunker"],
@@ -976,14 +976,14 @@
         "image": "20240519_bunker-n/thumb.jpg",
         "hero": "20240519_bunker-n/hero.jpg",
         "title": "Bunker N.",
-        "location": "Sofia Province",
+        "location": "Somewhere",
         "country": "Bulgaria",
         "link": "20240519_bunker-n/bunker-n.html",
         "tags": ["Bunker"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [23.634439, 42.390847],
+        "coordinates": [23.517936, 42.142570],
         "type": "Point"
       }
     },
@@ -1109,14 +1109,14 @@
         "image": "20240608_food-institute/thumb.jpg",
         "hero": "20240608_food-institute/hero.jpg",
         "title": "Institute of Food Technology",
-        "location": "Bucharest",
+        "location": "Somewhere",
         "country": "Romania",
         "link": "20240608_food-institute/food-institute.html",
         "tags": ["Building"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [26.074479, 44.490383],
+        "coordinates": [26.013886, 44.502184],
         "type": "Point"
       }
     },
@@ -1166,7 +1166,7 @@
         "image": "20240623_bunker-o/thumb.jpg",
         "hero": "20240623_bunker-o/hero.jpg",
         "title": "Bunker O.",
-        "location": "Bratislava",
+        "location": "Somewhere",
         "country": "Slovakia",
         "link": "20240623_bunker-o/bunker-o.html",
         "tags": ["Bunker"],
@@ -1204,14 +1204,14 @@
         "image": "20240727_alte-ziegelei/thumb.jpg",
         "hero": "20240727_alte-ziegelei/hero.jpg",
         "title": "Alte Ziegelei",
-        "location": "Brandenburg",
+        "location": "Somewhere",
         "country": "Germany",
         "link": "20240727_alte-ziegelei/alte-ziegelei.html",
         "tags": ["Brickworks"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [13.454387, 52.214040],
+        "coordinates": [13.610666, 52.131681],
         "type": "Point"
       }
     },
@@ -1226,7 +1226,7 @@
         "location": "Lychen",
         "country": "Germany",
         "link": "20240803_lychen-2/lychen-2.html",
-        "tags": ["Military Base"],
+        "tags": ["Bunker"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1261,14 +1261,14 @@
         "image": "20240914_mine-lp/thumb.jpg",
         "hero": "20240914_mine-lp/hero.jpg",
         "title": "Mine L.P.",
-        "location": "Neuchâtel",
+        "location": "Somewhere",
         "country": "Switzerland",
         "link": "20240914_mine-lp/mine-lp.html",
         "tags": ["Mine"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [6.723274, 46.955647],
+        "coordinates": [6.344222, 46.500516],
         "type": "Point"
       }
     },
@@ -1470,14 +1470,14 @@
         "image": "20241005_gas-mask-cemetry/thumb.jpg",
         "hero": "20241005_gas-mask-cemetry/hero.jpg",
         "title": "Gas Mask Cemetry",
-        "location": "Riga",
+        "location": "Somewhere",
         "country": "Latvia",
         "link": "20241005_gas-mask-cemetry/gas-mask-cemetry.html",
         "tags": ["Cemetry"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [24.325066, 56.954512],
+        "coordinates": [24.104394, 56.952214],
         "type": "Point"
       }
     },
@@ -1511,7 +1511,7 @@
         "location": "Skulte",
         "country": "Latvia",
         "link": "20241006-2_aircraft-museum/aircraft-museum.html",
-        "tags": ["Airport"],
+        "tags": ["Museum"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1584,7 +1584,7 @@
         "image": "20241008-1_lino-baseinas/thumb.jpg",
         "hero": "20241008-1_lino-baseinas/hero.jpg",
         "title": "Lino Baseinas",
-        "location": "Palanga",
+        "location": "Somewhere",
         "country": "Lithuania",
         "link": "20241008-1_lino-baseinas/lino-baseinas.html",
         "tags": ["Pool"],
@@ -1606,7 +1606,7 @@
         "location": "Plungė",
         "country": "Lithuania",
         "link": "20241008-2_r12-dvina-base/r12-dvina-base.html",
-        "tags": ["Military base"],
+        "tags": ["Museum"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1717,14 +1717,14 @@
         "image": "20241019-2_palemono-keramika/thumb.jpg",
         "hero": "20241019-2_palemono-keramika/hero.jpg",
         "title": "Palemono Keramika",
-        "location": "Kaunas",
+        "location": "Somewhere",
         "country": "Lithuania",
         "link": "20241019-2_palemono-keramika/palemono-keramika.html",
         "tags": ["Brickworks"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [24.070611, 54.918142],
+        "coordinates": [23.910556, 54.890152],
         "type": "Point"
       }
     },
@@ -1812,14 +1812,14 @@
         "image": "20241110-1_market-hall/thumb.jpg",
         "hero": "20241110-1_market-hall/hero.jpg",
         "title": "Market Hall",
-        "location": "Katowice",
+        "location": "Somewhere",
         "country": "Poland",
         "link": "20241110-1_market-hall/market-hall.html",
         "tags": ["Building"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [19.000757, 50.290678],
+        "coordinates": [18.995628, 50.277046],
         "type": "Point"
       }
     },
@@ -1831,14 +1831,14 @@
         "image": "20241110-2_lecture-theater/thumb.jpg",
         "hero": "20241110-2_lecture-theater/hero.jpg",
         "title": "Film School Lecture Hall",
-        "location": "Katowice",
+        "location": "Somewhere",
         "country": "Poland",
         "link": "20241110-2_lecture-theater/lecture-theater.html",
         "tags": ["Theater"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [19.004580, 50.290449],
+        "coordinates": [19.066170, 50.249328],
         "type": "Point"
       }
     },
@@ -1885,12 +1885,12 @@
       "type": "Feature",
       "properties": {
         "id": "100",
-        "image": "20250202_ kraftfuttermischwerk/thumb.jpg",
-        "hero": "20250202_ kraftfuttermischwerk/hero.jpg",
+        "image": "20250202_kraftfuttermischwerk/thumb.jpg",
+        "hero": "20250202_kraftfuttermischwerk/hero.jpg",
         "title": "Kraftfuttermischwerk",
-        "location": "Fürstenberg",
+        "location": "Somewhere",
         "country": "Germany",
-        "link": "20250202_ kraftfuttermischwerk/kraftfuttermischwerk.html",
+        "link": "20250202_kraftfuttermischwerk/kraftfuttermischwerk.html",
         "tags": ["Building"],
         "icon-image": "pin-active"
       },
@@ -1907,7 +1907,7 @@
         "image": "20250222-1_forgotten-clinic/thumb.jpg",
         "hero": "20250222-1_forgotten-clinic/hero.jpg",
         "title": "Klinik Ost",
-        "location": "Flensburg",
+        "location": "Somewhere",
         "country": "Germany",
         "link": "20250222-1_forgotten-clinic/forgotten-clinic.html",
         "tags": ["Hospital"],
@@ -1926,7 +1926,7 @@
         "image": "20250222-2_maps-amt/thumb.jpg",
         "hero": "20250222-2_maps-amt/hero.jpg",
         "title": "Amtsgebäude R",
-        "location": "Schleswig-Holstein",
+        "location": "Somewhere",
         "country": "Germany",
         "link": "20250222-2_maps-amt/maps-amt.html",
         "tags": ["Building"],
@@ -1942,17 +1942,112 @@
       "type": "Feature",
       "properties": {
         "id": "103",
-        "image": "103/thumb.jpg",
-        "hero": "103/hero.jpg",
-        "title": "Telekom Lager",
-        "location": "Brandenburg",
+        "image": "103_telekom-lager/thumb.jpg",
+        "hero": "103_telekom-lager/hero.jpg",
+        "title": "Phone Booth Graveyard",
+        "location": "Somewhere",
         "country": "Germany",
-        "link": "103/telekom-lager.html",
+        "link": "103_telekom-lager/telekom-lager.html",
         "tags": ["Cemetry"],
         "icon-image": "pin-active"
       },
       "geometry": {
-        "coordinates": [13.015380, 52.318383],
+        "coordinates": [12.927668, 52.314265],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "104",
+        "image": "104_bagger-258/thumb.jpg",
+        "hero": "104_bagger-258/hero.jpg",
+        "title": "Bagger 258",
+        "location": "Senftenburg",
+        "country": "Germany",
+        "link": "104_bagger-258/bagger-258.html",
+        "tags": ["Machinery"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [13.949525, 51.535345],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "105",
+        "image": "105_objekt-3001/thumb.jpg",
+        "hero": "105_objekt-3001/hero.jpg",
+        "title": "Object 3001",
+        "location": "Podborsko",
+        "country": "Poland",
+        "link": "105_objekt-3001/objekt-3001.html",
+        "tags": ["Bunker"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [16.121437, 53.955991],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "106",
+        "image": "106_objekt-3002/thumb.jpg",
+        "hero": "106_objekt-3002/hero.jpg",
+        "title": "Object 3002",
+        "location": "Somewhere",
+        "country": "Poland",
+        "link": "106_objekt-3002/objekt-3002.html",
+        "tags": ["Bunker"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [16.576069, 53.434617],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "107",
+        "image": "107_objekt-3003/thumb.jpg",
+        "hero": "107_objekt-3003/hero.jpg",
+        "title": "Object 3003",
+        "location": "Somewhere",
+        "country": "Poland",
+        "link": "107_objekt-3003/objekt-3003.html",
+        "tags": ["Bunker"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [15.320438, 52.425151],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "108",
+        "image": "108_nobel-silos/thumb.jpg",
+        "hero": "108_nobel-silos/hero.jpg",
+        "title": "Nobel Silos",
+        "location": "Nowogrod Bobrzanski",
+        "country": "Poland",
+        "link": "108_nobel-silos/nobel-silos.html",
+        "tags": ["Silos"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [15.182209, 51.799244],
         "type": "Point"
       }
     }
