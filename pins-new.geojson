@@ -2050,6 +2050,120 @@
         "coordinates": [15.182209, 51.799244],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "109",
+        "image": "109_blue-power-plant/thumb.jpg",
+        "hero": "109_blue-power-plant/hero.jpg",
+        "title": "Blue Power Plant",
+        "location": "Somewhere",
+        "country": "Belgium",
+        "link": "109_blue-power-plant/blue-power-plant.html",
+        "tags": ["Powerplant"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "110",
+        "image": "110_im-cooling-tower/thumb.jpg",
+        "hero": "110_im-cooling-tower/hero.jpg",
+        "title": "IM Cooling Tower",
+        "location": "Somewhere",
+        "country": "Belgium",
+        "link": "110_im-cooling-tower/im-cooling-tower.html",
+        "tags": ["Cooling Tower"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "111",
+        "image": "111_nato-bunker/thumb.jpg",
+        "hero": "111_nato-bunker/hero.jpg",
+        "title": "NATO Radar Bunker",
+        "location": "Somewhere",
+        "country": "Belgium",
+        "link": "111_nato-bunker/nato-bunker.html",
+        "tags": ["Bunker"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "112",
+        "image": "112_nato-radar/thumb.jpg",
+        "hero": "112_nato-radar/hero.jpg",
+        "title": "NATO Radar Tower",
+        "location": "Somewhere",
+        "country": "Belgium",
+        "link": "112_nato-radar/nato-radar.html",
+        "tags": ["Radar"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "113",
+        "image": "113_abandoned-slides/thumb.jpg",
+        "hero": "113_abandoned-slides/hero.jpg",
+        "title": "Abandoned Water Slides",
+        "location": "Somewhere",
+        "country": "Slovakia",
+        "link": "113_abandoned-slides/abandoned-slides.html",
+        "tags": ["Waterpark"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "114",
+        "image": "114_mining-tower/thumb.jpg",
+        "hero": "114_mining-tower/hero.jpg",
+        "title": "Rusting Mining Tower",
+        "location": "Somewhere",
+        "country": "Slovakia",
+        "link": "114_mining-tower/mining-tower.html",
+        "tags": ["Tower"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
