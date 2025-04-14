@@ -2081,7 +2081,7 @@
         "location": "Somewhere",
         "country": "Belgium",
         "link": "110_im-cooling-tower/im-cooling-tower.html",
-        "tags": ["Cooling Tower"],
+        "tags": ["Cooling tower"],
         "icon-image": "pin-active"
       },
       "geometry": {
