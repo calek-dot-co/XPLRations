@@ -2164,6 +2164,82 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "115",
+        "image": "115_high-tatra-hike/thumb.jpg",
+        "hero": "115_high-tatra-hike/hero.jpg",
+        "title": "High Tatras Hike",
+        "location": "Vysoké Tatry",
+        "country": "Slovakia",
+        "link": "115_high-tatra-hike/high-tatra-hike.html",
+        "tags": ["Hike"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [20.222301, 49.139274],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "116",
+        "image": "116_slovak-national-uprising/thumb.jpg",
+        "hero": "116_slovak-national-uprising/hero.jpg",
+        "title": "Museum of the Slovak National Uprising",
+        "location": "Banská Bystrica",
+        "country": "Slovakia",
+        "link": "116_slovak-national-uprising/slovak-national-uprising.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "117",
+        "image": "117_twin-cooling-towers/thumb.jpg",
+        "hero": "117_twin-cooling-towers/hero.jpg",
+        "title": "Twin Cooling Towers",
+        "location": "Somewhere",
+        "country": "Slovakia",
+        "link": "117_twin-cooling-towers/twin-cooling-towers.html",
+        "tags": ["Cooling tower"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "118",
+        "image": "118_radar-control-room/thumb.jpg",
+        "hero": "118_radar-control-room/hero.jpg",
+        "title": "Radar Control Room",
+        "location": "Somewhere",
+        "country": "Europe",
+        "link": "118_radar-control-room/radar-control-room.html",
+        "tags": ["Bunker"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
