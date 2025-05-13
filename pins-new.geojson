@@ -2240,6 +2240,101 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "119",
+        "image": "119_vienna-flakturm/thumb.jpg",
+        "hero": "119_vienna-flakturm/hero.jpg",
+        "title": "Vienna Flak Towers",
+        "location": "Augarten",
+        "country": "Austria",
+        "link": "119_vienna-flakturm/vienna-flakturm.html",
+        "tags": ["Tower"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "120",
+        "image": "120_soviet-relics-bratislava/thumb.jpg",
+        "hero": "120_soviet-relics-bratislava/hero.jpg",
+        "title": "Soviet Relics of Blava",
+        "location": "Bratislava",
+        "country": "Slovakia",
+        "link": "120_soviet-relics-bratislava/soviet-relics-bratislava.html",
+        "tags": ["City highlights"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "121",
+        "image": "121_the-pink-city/thumb.jpg",
+        "hero": "121_the-pink-city/hero.jpg",
+        "title": "The Pink City",
+        "location": "Yerevan",
+        "country": "Armenia",
+        "link": "121_the-pink-city/the-pink-city.html",
+        "tags": ["City highlights"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "122",
+        "image": "122_monument-of-gratitude/thumb.jpg",
+        "hero": "122_monument-of-gratitude/hero.jpg",
+        "title": "Monument of Graditude",
+        "location": "Yerevan",
+        "country": "Armenia",
+        "link": "122_monument-of-gratitude/monument-of-gratitude.html",
+        "tags": ["Monument"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "123",
+        "image": "123_armenian-genocide-memorial/thumb.jpg",
+        "hero": "123_armenian-genocide-memorial/hero.jpg",
+        "title": "Armenian Genocide Memorial",
+        "location": "Yerevan",
+        "country": "Armenia",
+        "link": "123_armenian-genocide-memorial/armenian-genocide-memorial.html",
+        "tags": ["Memorial"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
