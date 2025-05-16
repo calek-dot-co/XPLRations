@@ -2335,6 +2335,63 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "124",
+        "image": "124_sports-complex/thumb.jpg",
+        "hero": "124_sports-complex/hero.jpg",
+        "title": "Sport and Concert Complex",
+        "location": "Yerevan",
+        "country": "Armenia",
+        "link": "124_sports-complex/sports-complex.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "125",
+        "image": "125_mother-armenia/thumb.jpg",
+        "hero": "125_mother-armenia/hero.jpg",
+        "title": "Mother Armenia",
+        "location": "Yerevan",
+        "country": "Armenia",
+        "link": "125_mother-armenia/mother-armenia.html",
+        "tags": ["Monument"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "126",
+        "image": "126_unfinished-metro/thumb.jpg",
+        "hero": "126_unfinished-metro/hero.jpg",
+        "title": "Unfinished Metro Tunnels ▶",
+        "location": "Somewhere",
+        "country": "Armenia",
+        "link": "126_unfinished-metro/unfinished-metro.html",
+        "tags": ["Metro"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],

@@ -41,7 +41,7 @@
             item.classList.add('grid-item');
             const anchor = document.createElement('a');
             anchor.href = image.link;
-            anchor.target = '_blank';
+            anchor.target = '_self';
             const img = document.createElement('img');
             img.src = image.url;
             img.onload = () => masonryInstance.layout(); // Trigger layout update when each image loads
