@@ -1662,7 +1662,7 @@
         "title": "Linnahall",
         "location": "Tallinn",
         "country": "Estonia",
-        "link": "20241012_tallinn-linnahall/2tallinn-linnahall.html",
+        "link": "20241012_tallinn-linnahall/tallinn-linnahall.html",
         "tags": ["Building"],
         "icon-image": "pin-active"
       },
@@ -2386,6 +2386,44 @@
         "country": "Armenia",
         "link": "126_unfinished-metro/unfinished-metro.html",
         "tags": ["Metro"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "127",
+        "image": "127_sevan-viewing-platform/thumb.jpg",
+        "hero": "127_sevan-viewing-platform/hero.jpg",
+        "title": "Soviet Viewing Platform",
+        "location": "Sevan",
+        "country": "Armenia",
+        "link": "127_sevan-viewing-platform/sevan-viewing-platform.html",
+        "tags": ["Tower"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [44.943909, 40.535544],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "128",
+        "image": "128_armenian-monasteries/thumb.jpg",
+        "hero": "128_armenian-monasteries/hero.jpg",
+        "title": "Monasteries and Churches of Armenia",
+        "location": "Various",
+        "country": "Armenia",
+        "link": "128_armenian-monasteries/armenian-monasteries.html",
+        "tags": ["Churches"],
         "icon-image": "pin-active"
       },
       "geometry": {
