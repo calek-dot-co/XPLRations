@@ -26,46 +26,72 @@
         </div>
     </header>
     <div class="grid grid-container" id="gallery"></div>
-<script>
-    async function loadImages() {
-        const response = await fetch('pins-new.geojson');
-        const data = await response.json();
-        const images = data.features.map(feature => ({
-            url: feature.properties.hero,
-            link: feature.properties.link
-        })).sort(() => Math.random() - 0.5); // Randomize order
+    <div class="loadMoreContainer">
+        <button id="loadMoreBtn" class="loadMoreButton">Load more</button>
+    </div>
+    <script>
+        let allImages = [];
+        let currentIndex = 0;
+        const batchSize = 30;
+        let masonryInstance;
 
-        const gallery = document.getElementById('gallery');
-        images.forEach(image => {
-            const item = document.createElement('div');
-            item.classList.add('grid-item');
-            const anchor = document.createElement('a');
-            anchor.href = image.link;
-            anchor.target = '_self';
-            const img = document.createElement('img');
-            img.src = image.url;
-            img.onload = () => masonryInstance.layout(); // Trigger layout update when each image loads
-            anchor.appendChild(img);
-            item.appendChild(anchor);
-            gallery.appendChild(item);
-        });
+        async function loadImages() {
+            const response = await fetch('pins-new.geojson');
+            const data = await response.json();
+            allImages = data.features
+                .sort(() => Math.random() - 0.5)
+                .map(feature => ({
+                    url: feature.properties.hero,
+                    link: feature.properties.link
+                }));
 
-        // Initialize Masonry AFTER images are added
-        setTimeout(() => {
-            masonryInstance = new Masonry(gallery, {
-                itemSelector: '.grid-item',
-                columnWidth: '.grid-item',
-                percentPosition: true,
-                gutter: 6,
+            renderNextBatch();
+        }
+
+        function renderNextBatch() {
+            const gallery = document.getElementById('gallery');
+            const endIndex = currentIndex + batchSize;
+            const nextBatch = allImages.slice(currentIndex, endIndex);
+            currentIndex = endIndex;
+
+            nextBatch.forEach(image => {
+                const item = document.createElement('div');
+                item.classList.add('grid-item');
+                const anchor = document.createElement('a');
+                anchor.href = image.link;
+                anchor.target = '_self';
+                const img = document.createElement('img');
+                img.src = image.url;
+                img.onload = () => masonryInstance?.layout();
+                anchor.appendChild(img);
+                item.appendChild(anchor);
+                gallery.appendChild(item);
             });
-        }, 1); // Small delay to ensure images are loaded
-    }
 
-    document.addEventListener("DOMContentLoaded", () => {
-        loadImages();
-    });
+            if (!masonryInstance) {
+                masonryInstance = new Masonry(gallery, {
+                    itemSelector: '.grid-item',
+                    columnWidth: '.grid-item',
+                    percentPosition: true,
+                    gutter: 6,
+                });
+            } else {
+                masonryInstance.reloadItems();
+                masonryInstance.layout();
+            }
 
-    let masonryInstance; // Declare globally to use later
+            // Hide button if all images loaded
+            if (currentIndex >= allImages.length) {
+                document.getElementById('loadMoreBtn').style.display = 'none';
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            loadImages();
+            document.getElementById('loadMoreBtn').addEventListener('click', renderNextBatch);
+        });
+    </script>
+
 </script>
 
 
