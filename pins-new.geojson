@@ -2430,6 +2430,63 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "129",
+        "image": "129_pioneer-camp/thumb.jpg",
+        "hero": "129_pioneer-camp/hero.jpg",
+        "title": "Pioneer Camp",
+        "location": "Somewhere",
+        "country": "Armenia",
+        "link": "129_pioneer-camp/pioneer-camp.html",
+        "tags": ["Pioneer Camp"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "130",
+        "image": "130_iron-fountain/thumb.jpg",
+        "hero": "130_iron-fountain/hero.jpg",
+        "title": "Iron Fountain",
+        "location": "Gyumri",
+        "country": "Armenia",
+        "link": "130_iron-fountain/iron-fountain.html",
+        "tags": ["Fountain"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1131",
+        "image": "131_blue-fountains/thumb.jpg",
+        "hero": "131_blue-fountains/hero.jpg",
+        "title": "Blue Fountains",
+        "location": "Gyumri",
+        "country": "Armenia",
+        "link": "131_blue-fountains/blue-fountains.html",
+        "tags": ["Churches"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
