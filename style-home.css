@@ -99,15 +99,39 @@ h1 {
   color: black;
   border-radius: 100px;
 }
-
-
+.loadMoreContainer {
+  width: 100%;
+  margin-top: 5vw;
+  margin-bottom: 20vw;
+  text-align: center;
+}
+  @media (max-width: 600px) {
+    .loadMoreContainer {
+      margin-top: 15vw;
+      margin-bottom: 50vw;
+    }
+  }
+.loadMoreButton {
+  background-color: #222;
+  border: none;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 10px 30px;
+  width: auto;
+  border-radius: 100px;
+}
+.loadMoreButton:hover {
+  background-color: #444;
+  border-radius: 100px;
+}
 
 /*------------ Homepage: Grid ------------*/
 
 .grid-container {
   padding: 0px;
   margin-top: 1vw;
-  margin-bottom: 20vw;
 }
   @media (max-width: 600px) {
     .grid-container {
