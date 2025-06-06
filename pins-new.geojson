@@ -2423,7 +2423,7 @@
         "location": "Various",
         "country": "Armenia",
         "link": "128_armenian-monasteries/armenian-monasteries.html",
-        "tags": ["Churches"],
+        "tags": ["Monastery"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -2480,7 +2480,45 @@
         "location": "Gyumri",
         "country": "Armenia",
         "link": "131_blue-fountains/blue-fountains.html",
-        "tags": ["Churches"],
+        "tags": ["Fountain"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "132",
+        "image": "132_sheram-1/thumb.jpg",
+        "hero": "132_sheram-1/hero.jpg",
+        "title": "Sheram I",
+        "location": "Gyumri",
+        "country": "Armenia",
+        "link": "132_sheram-1/sheram-1.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "133",
+        "image": "133_armenian-alphabet/thumb.jpg",
+        "hero": "133_armenian-alphabet/hero.jpg",
+        "title": "Armenian Alphabet Monument",
+        "location": "Artashavan",
+        "country": "Armenia",
+        "link": "133_armenian-alphabet/armenian-alphabet.html",
+        "tags": ["Monument"],
         "icon-image": "pin-active"
       },
       "geometry": {

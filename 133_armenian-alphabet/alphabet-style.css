@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*------------ Page Specific Styles ------------*/
+
+
+.alphabet-left {
+  padding-right: 1.1vw;
+}
+.alphabet-right {
+  padding-left: 1.1vw;
+}
+.alphabet-text {
+  text-align: center;
+  margin-top: 1vw;
+  margin-bottom: 4vw;
+}
+@media (max-width: 600px) {
+    .alphabet-text {
+      margin-top: 3vw;
+      margin-bottom: 5vw;
+    }
+  }
+
+.letters {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.alphabet-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2vw;
+}
+.alphabet-letter {
+}
+.letter-small {
+  width: 20%;
+}
+.letter-large {
+  width: 41.85%;
+}
+@media (max-width: 600px) {
+    .letters {
+      font-size: 1rem;
+    }
+    .alphabet-container {
+      gap: 4vw;
+    }
+    .letter-small {
+      width: 25%;
+    }
+    .letter-large {
+      width: 52.5%;
+    }
+  }
