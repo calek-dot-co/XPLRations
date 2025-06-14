@@ -2525,6 +2525,63 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "134",
+        "image": "134_rot-54/thumb.jpg",
+        "hero": "134_rot-54/hero.jpg",
+        "title": "ROT-54 &#9654;",
+        "location": "Orgov",
+        "country": "Armenia",
+        "link": "134_rot-54/rot-54.html",
+        "tags": ["Radio telescope"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "135",
+        "image": "135_jermuk-building/thumb.jpg",
+        "hero": "135_jermuk-building/hero.jpg",
+        "title": "Palace of Culture",
+        "location": "Jerkum",
+        "country": "Armenia",
+        "link": "135_jermuk-building/jermuk-building.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "136",
+        "image": "136_knitting-factory/thumb.jpg",
+        "hero": "136_knitting-factory/hero.jpg",
+        "title": "Soviet Knitting Factory",
+        "location": "Yeghegnadzor",
+        "country": "Armenia",
+        "link": "136_knitting-factory/knitting-factory.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
