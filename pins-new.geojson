@@ -2442,7 +2442,7 @@
         "location": "Somewhere",
         "country": "Armenia",
         "link": "129_pioneer-camp/pioneer-camp.html",
-        "tags": ["Pioneer Camp"],
+        "tags": ["Pioneer camp"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -2533,7 +2533,7 @@
         "id": "134",
         "image": "134_rot-54/thumb.jpg",
         "hero": "134_rot-54/hero.jpg",
-        "title": "ROT-54 &#9654;",
+        "title": "ROT-54 &#9658;",
         "location": "Orgov",
         "country": "Armenia",
         "link": "134_rot-54/rot-54.html",
