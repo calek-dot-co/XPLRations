@@ -2613,7 +2613,7 @@
         "location": "Bulachauri",
         "country": "Georgia",
         "link": "138_georgian-bus-stops/georgian-bus-stops.html",
-        "tags": ["Mural"],
+        "tags": ["Bus stop"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -2632,7 +2632,7 @@
         "location": "Gudauri",
         "country": "Georgia",
         "link": "139_panorama-gudauri/panorama-gudauri.html",
-        "tags": ["Mural"],
+        "tags": ["Monument"],
         "icon-image": "pin-active"
       },
       "geometry": {
