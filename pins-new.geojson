@@ -1697,7 +1697,7 @@
         "id": "90",
         "image": "20241019-1_kaunas-monument/thumb.jpg",
         "hero": "20241019-1_kaunas-monument/hero.jpg",
-        "title": "Monument to Commemorate the victims of Nazism",
+        "title": "Monument to Commemorate the Victims of Nazism",
         "location": "Kaunas",
         "country": "Lithuania",
         "link": "20241019-1_kaunas-monument/kaunas-monument.html",
@@ -2576,6 +2576,63 @@
         "country": "Armenia",
         "link": "136_knitting-factory/knitting-factory.html",
         "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "137",
+        "image": "137_chronicles-of-georgia/thumb.jpg",
+        "hero": "137_chronicles-of-georgia/hero.jpg",
+        "title": "Chronicles of Georgia",
+        "location": "Tbisili",
+        "country": "Georgia",
+        "link": "137_chronicles-of-georgia/chronicles-of-georgia.html",
+        "tags": ["Monument"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "138",
+        "image": "138_georgian-bus-stops/thumb.jpg",
+        "hero": "138_georgian-bus-stops/hero.jpg",
+        "title": "Georgian Bus Stops",
+        "location": "Bulachauri",
+        "country": "Georgia",
+        "link": "138_georgian-bus-stops/georgian-bus-stops.html",
+        "tags": ["Mural"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "139",
+        "image": "139_panorama-gudauri/thumb.jpg",
+        "hero": "139_panorama-gudauri/hero.jpg",
+        "title": "Russia–Georgia Friendship Monument",
+        "location": "Gudauri",
+        "country": "Georgia",
+        "link": "139_panorama-gudauri/panorama-gudauri.html",
+        "tags": ["Mural"],
         "icon-image": "pin-active"
       },
       "geometry": {

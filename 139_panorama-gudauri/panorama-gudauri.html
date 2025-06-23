@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Russia–Georgia Friendship Monument / Panorama Gudauri, Georgia – xplr</title>
+    <meta name="description" content="Soviet‑era panorama mural made from melted glass." />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../bootstrap-grid.css" />
+    <link rel="stylesheet" href="../style.css" />
+
+    <style>
+        /* --- horizontal scroll section --- */
+        .sub-title {
+            margin-bottom: 1vh;
+        }
+        .horizontal-scroll {
+            position: relative;
+            height: 90vh;
+            overflow: hidden;
+        }
+        .panorama {
+	        padding-top: 5vh;
+	        padding-left: 25vw;
+	        padding-right: 25vw;
+	     }
+
+        .horizontal-scroll img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 90vh;
+            width: auto;
+            will-change: transform;
+            user-select: none;
+            pointer-events: none;
+        }
+        @media (max-width: 600px) {
+		    .horizontal-scroll {
+		    	height: 90vh;
+		    }
+		    .horizontal-scroll img {
+		    	height: 90vh;
+		    }
+		    .panorama {
+	        	padding-top: 5vh;
+	        	padding-left: 10vw;
+	        	padding-right: 10vw;
+	        }
+		}
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Russia–Georgia Friendship Monument</h1>
+                <p class="sub-title">Gudauri, Georgia</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="image-landscape"><img src="1.jpg"/></div>
+                <div class="spacer"></div>
+                <div class="text-content">
+                    <p>Perched high in the mountains of northern Georgia, about an hour’s drive from the Russian border along the Georgian Military Highway, stands a large curved mural. Originally known as the Russia–Georgia Friendship Monument, it was erected in 1983 by the Soviet Union to commemorate 200 years since the Treaty of Georgievsk—an agreement that made eastern Georgia a Russian protectorate, safeguarding its territorial integrity.</p>
+                    <p>Yet in 1795, just two years after the treaty was signed, when the Persian ruler Agha Mohammad Khan invaded Georgia, the Russians did nothing to help. Some say this was a friendship that never existed.</p>
+                    <p>Decades have passed since the monument’s construction, but doubts surrounding the friendship persist. Following the 2008 Russian invasion and annexation of Georgian territory, the mural gained a more neutral name: Panorama Gudauri. Today, it’s a popular tourist attraction, often visited en route to or from the remote mountain town of Kazbegi. Twelve balconies built into the base of the mural offer views of the true panorama: the Devil’s Valley and the Caucasus Mountains.</p>
+                </div>
+                <div class="spacer"></div>
+                <div class="image-landscape"><img src="2.jpg" alt="Gudauri panorama photograph 2"/></div>
+                <div class="spacer"></div>
+
+                <p class="sub-title text-content">The full Gudauri panorama</p> 
+                <!-- Fixed horizontal scroll section -->
+                <section class="horizontal-scroll">
+                    <img class="panorama" src="panorama.jpg" alt="Very wide panorama of the Gudauri memorial" />
+                </section>
+
+                <div class="spacer"></div>
+                <div class="image-landscape"><img src="3.jpg"/></div>
+                <div class="spacer"></div>
+                <div class="image-landscape"><img src="4.jpg"/></div>
+                <div class="spacer-small"></div>
+                <div class="text-content">
+                    <p>This close-up reveals the mural's construction materials more clearly. Unlike most Soviet-era murals, which are typically mosaics, this one employs a technique similar to <a class="link" href="https://en.wikipedia.org/wiki/Vitreous_enamel" target="_blank">vitreous enamel</a>, but executed on a much larger scale.</p>
+                    <p>Coloured powdered glass is placed between metal strips arranged in the shape of the final design on a tile. These tiles are then fired in a kiln, melting the glass powder so it fuses with the metal outlines.</p>
+                </div>
+                <div class="spacer"></div>
+                <div class="image-landscape"><img src="5.jpg"/></div>
+                <div class="spacer"></div>
+                <div class="image-landscape"><img src="6.jpg"/></div>
+                <div class="spacer"></div>
+                <div class="image-landscape"><img src="7.jpg"/></div>
+                <div class="spacer"></div>
+                <div class="image-landscape"><img src="8.jpg"/></div>
+                <div class="spacer"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="row">
+            <div class="col-md-4 previous-teaser order-md-1 order-3">
+                <a href="../138_georgian-bus-stops/georgian-bus-stops.html">
+                    <div class="image-thumb"><img src="../138_georgian-bus-stops/thumb.jpg"/></div>
+                    <p class="panel-location">Previous</p>
+                    <h2 class="panel-title">Georgian Bus Stops</h2><p class="panel-location">Bulachauri, Georgia</p>
+                </a>
+            </div>
+            <div class="col-md-4 map-teaser order-md-2 order-2">
+                <a href="../index.html">
+                    <div class="image-thumb"><img src="../thumb.jpg"/></div>
+                    <p class="panel-location">Home</p>
+                    <h2 class="panel-title">Overview</h2>
+                </a>
+            </div>
+            <div class="col-md-4 next-teaser order-md-3 order-1">
+                <!-- <a href="../???/???.html"> -->
+                    <div class="image-thumb"><img class="" src="../soon.jpg"></div>
+                    <p class="panel-location">Coming soon</p>
+                    <h2 class="panel-title">More explorations</h2><p class="panel-location">Georgia</p>
+                <!-- </a> -->
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+/**
+ * Horizontal scroll helper (fixed‑in‑view so the image never “falls off”)
+ */
+function makeHorizontalScroll(section) {
+    const img = section.querySelector('img');
+
+    function setSectionHeight() {
+        // Extra width we need to reveal horizontally
+        const overflowX = img.naturalWidth - window.innerWidth;
+        // Make the section tall enough so the user can scroll that distance
+        section.style.height = (overflowX * 0.5 + window.innerHeight) + 'px';
+    }
+
+    function update() {
+        const rect     = section.getBoundingClientRect();
+        const maxY     = section.offsetHeight - window.innerHeight;      // how far we can scroll “inside” the section
+        const yInside  = Math.min(Math.max(-rect.top, 0), maxY);        // clamp 0‥maxY
+        const progress = yInside / maxY;                                 // 0‥1 progress ratio
+        const shiftX   = img.offsetWidth - window.innerWidth;            // total horizontal shift needed
+
+        /*
+         * NEW ⭐: Counter‑scroll the image by the exact amount the
+         * section has travelled vertically so it remains pinned in view.
+         */
+        const yShift = yInside; // cancelling vertical movement
+
+        img.style.transform = `translate(${-progress * shiftX}px, ${yShift}px)`;
+
+    }
+
+    // Throttle scroll using rAF for smoothness
+    let ticking = false;
+    function onScroll() {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                update();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+
+    /* ---------- init ---------- */
+    if (img.complete) {
+        setSectionHeight();
+        update();
+    } else {
+        img.addEventListener('load', () => {
+            setSectionHeight();
+            update();
+        });
+    }
+
+    window.addEventListener('resize', () => {
+        setSectionHeight();
+        update();
+    });
+    window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+// Apply the helper to every .horizontal-scroll section in case you add more later.
+document.querySelectorAll('.horizontal-scroll').forEach(makeHorizontalScroll);
+</script>
+</body>
+</html>
