@@ -2658,6 +2658,44 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "141",
+        "image": "141_zestafoni-mosaics/thumb.jpg",
+        "hero": "141_zestafoni-mosaics/hero.jpg",
+        "title": "Mosaic Walls",
+        "location": "Zestafoni",
+        "country": "Georgia",
+        "link": "141_zestafoni-mosaics/zestafoni-mosaics.html",
+        "tags": ["Mosaics"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "142",
+        "image": "142_zestafoni-pool-mosaics/thumb.jpg",
+        "hero": "142_zestafoni-pool-mosaics/hero.jpg",
+        "title": "Pool Mosaics",
+        "location": "Zestafoni",
+        "country": "Georgia",
+        "link": "142_zestafoni-pool-mosaics/zestafoni-pool-mosaics.html",
+        "tags": ["Mosaics"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
