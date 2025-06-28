@@ -2639,6 +2639,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "140",
+        "image": "140_kazbegi-hike/thumb.jpg",
+        "hero": "140_kazbegi-hike/hero.jpg",
+        "title": "Kazbegi Hike",
+        "location": "Stepantsminda",
+        "country": "Georgia",
+        "link": "140_kazbegi-hike/kazbegi-hike.html",
+        "tags": ["Hike"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],

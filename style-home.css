@@ -2,6 +2,8 @@
 /* CSS Document */
 
 
+
+
 /*------------ Homepage: All ------------*/
 
 html {
@@ -45,7 +47,7 @@ header {
   pointer-events: none;
 }
 h1 {
-  font-size: 60px;
+  font-size: 70px;
   margin-top: 0vw;
   margin-bottom: 0vw;
   user-select: none;
@@ -127,6 +129,11 @@ h1 {
   border-radius: 100px;
 }
 
+
+
+
+
+
 /*------------ Homepage: Grid ------------*/
 
 .grid-container {
@@ -163,13 +170,17 @@ h1 {
 }
 
 
+
+
+
+
 /*------------ Homepage: List ------------*/
 
 .table-container {
   width: auto;
   margin: 1.5vw;
   margin-top: 1vw;
-  margin-bottom: 20vw;
+  margin-bottom: 30vw;
 }
   @media (max-width: 600px) {
     .table-container {
@@ -209,6 +220,7 @@ thead th, tbody td {
 }
 thead th:first-child, tbody td:first-child {
   padding-left: 2vw !important;
+  padding-right: 2vw !important;
 }
 thead th:last-child, tbody td:last-child {
   padding-right: 2vw !important;
@@ -216,12 +228,16 @@ thead th:last-child, tbody td:last-child {
   @media (max-width: 600px) {
     thead th, tbody td {
       padding: 2vw !important;
+      padding-right: 4vw !important;
     }
     thead th:first-child, tbody td:first-child {
       padding-left: 4vw !important;
     }
     thead th:last-child, tbody td:last-child {
       padding-right: 4vw !important;
+    }
+    tr:last-child {
+      padding-right: 12vw !important;
     }
   }
 .dataTables_info {
@@ -236,7 +252,7 @@ thead th:last-child, tbody td:last-child {
 }
   @media (max-width: 600px) {
     .hover-image {
-      width: 50vw;
+      width: 30vw;
     }
   }
 
