@@ -13,63 +13,61 @@
     <link rel="stylesheet" href="../style.css" />
 
     <style>
-        /* --- horizontal scroll section --- */
-        .sub-title {
-            margin-bottom: 1vh;
-        }
-        .horizontal-scroll {
-            position: relative;
-            height: 90vh;
-            overflow: hidden;
-        }
-        .panorama {
-	        padding-top: 5vh;
-	        padding-left: 25vw;
-	        padding-right: 25vw;
-	   }
+    #horizontal-wrapper{
+      overflow: hidden;
+      position: relative;
+    }
+    #horizontal-wrapper.sticky .inner{
+      position: fixed;
+      top: 0;
+      bottom: auto;
+    }
+    #horizontal-wrapper.post-sticky .inner{
+      position: absolute;
+      top: auto;
+      bottom: 0;
+    }
 
-        .horizontal-scroll img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 90vh;
-            width: auto;
-            will-change: transform;
-            user-select: none;
-            pointer-events: none;
+    .panorama {
+      height: 90vh;
+      width: auto;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      padding-left: 25vw;
+      padding-right: 25vw;
+    }
+    @media (max-width: 600px) {
+        .panorama {
+            height: 70vh;
+            margin-top: 15vh;
+            margin-bottom: 15vh;
+            padding-left: 10vw;
+            padding-right: 10vw;
         }
-        @media (max-width: 600px) {
-		    .horizontal-scroll {
-		    	height: 90vh;
-		    }
-		    .horizontal-scroll img {
-		    	height: 90vh;
-		    }
-		    .panorama {
-	        	padding-top: 5vh;
-	        	padding-left: 10vw;
-	        	padding-right: 10vw;
-	        }
-		}
-        .horizontal-scroll img {
-            position: sticky;
-            top: 0;
-            will-change: transform;
-            transform: translateZ(0);
-        }
-        img {
-          will-change: transform;
-        }
-    </style>
+    }
+
+    .sub-title {
+        margin-bottom: 0;
+    }
+
+
+
+</style>
 </head>
 
 <body>
+
+
+
+
+
+
 <div class="container-fluid">
     <!-- Header -->
     <header id="header" class="header">
         <div class="row">
             <div class="col-md-12">
-                <h1>Russia–Georgia Friendship Monument</h1>
+                <h1>Russia–Georgia Friendship Monument 2</h1>
                 <p class="sub-title">Gudauri, Georgia</p>
             </div>
         </div>
@@ -88,13 +86,16 @@
                 </div>
                 <div class="spacer"></div>
                 <div class="image-landscape"><img src="2.jpg" alt="Gudauri panorama photograph 2"/></div>
-                <div class="spacer"></div>
+                <div class="spacer hidden-mobile"></div>
 
                 <!-- Fixed horizontal scroll section -->
-                <p class="sub-title text-content">The full Gudauri panorama</p> 
-                <section class="horizontal-scroll">
-                    <img class="panorama" src="panorama.jpg" alt="Very wide panorama of the Gudauri memorial" />
-                </section>
+                <div id="horizontal-wrapper">
+                    <div class="inner">
+                        <img class="panorama" src="panorama.jpg" alt="Very wide panorama of the Gudauri memorial" />
+                    </div>
+                </div>
+
+
 
                 <div class="spacer"></div>
                 <div class="image-landscape"><img src="3.jpg"/></div>
@@ -146,60 +147,55 @@
     </footer>
 </div>
 
-<script>
-function makeHorizontalScroll(section) {
-    const img = section.querySelector('img');
-    img.style.willChange = 'transform';
+<script type="text/javascript">
+window.addEventListener("load", function() {
+    const horizontalWrapper = document.getElementById("horizontal-wrapper");
+    const inner = horizontalWrapper.querySelector(".inner");
+    const panorama = inner.querySelector("img");
 
-    function setSectionHeight() {
-        const overflowX = img.naturalWidth - window.innerWidth;
-        section.style.height = (overflowX * 0.5 + window.innerHeight) + 'px';
-    }
+    // Wait until image is fully loaded
+    panorama.addEventListener("load", function() {
+        const imageWidth = panorama.offsetWidth;
+        const viewportWidth = window.innerWidth;
 
-    function update() {
-        const rect     = section.getBoundingClientRect();
-        const maxY     = section.offsetHeight - window.innerHeight;
-        const yInside  = Math.min(Math.max(-rect.top, 0), maxY);
-        const progress = yInside / maxY;
-        const shiftX   = img.offsetWidth - window.innerWidth;
-        const yShift   = yInside;
+        // Set the scroll height dynamically based on the image width
+        const scrollableDistance = imageWidth - viewportWidth;
+        const scrollContainerHeight = scrollableDistance + window.innerHeight;
 
-        img.style.transform = `translate(${-progress * shiftX}px, ${yShift}px)`;
-    }
+        // Apply dynamic height
+        horizontalWrapper.style.height = scrollContainerHeight + "px";
 
-    let ticking = false;
-    function onScroll() {
-        if (!ticking) {
-            requestAnimationFrame(() => {
-                update();
-                ticking = false;
-            });
-            ticking = true;
-        }
-    }
+        // Update transform on scroll
+        window.addEventListener("scroll", function() {
+            const windowScroll = window.pageYOffset;
+            const start = horizontalWrapper.offsetTop;
+            const end = start + scrollContainerHeight - window.innerHeight;
 
-    function initialize() {
-        setSectionHeight();
-        requestAnimationFrame(update); // Ensures no layout jump on load
-    }
+            horizontalWrapper.className = '';
 
-    if (img.complete) {
-        initialize();
-    } else {
-        img.addEventListener('load', initialize);
-    }
-
-    window.addEventListener('resize', () => {
-        setSectionHeight();
-        requestAnimationFrame(update);
+            if (windowScroll >= end) {
+                horizontalWrapper.classList.add("post-sticky");
+                inner.style.transform = `translateX(-${scrollableDistance}px)`;
+            } else if (windowScroll >= start) {
+                horizontalWrapper.classList.add("sticky");
+                const scrollProgress = (windowScroll - start) / (end - start);
+                const translateX = scrollProgress * scrollableDistance;
+                inner.style.transform = `translateX(-${translateX}px)`;
+            } else {
+                horizontalWrapper.classList.add("pre-sticky");
+                inner.style.transform = "translateX(0)";
+            }
+        });
     });
 
-    window.addEventListener('scroll', onScroll, { passive: true });
-}
-
-document.querySelectorAll('.horizontal-scroll').forEach(makeHorizontalScroll);
-
-
+    // If image already cached
+    if (panorama.complete) {
+        panorama.dispatchEvent(new Event("load"));
+    }
+});
 </script>
+
+
+
 </body>
 </html>
