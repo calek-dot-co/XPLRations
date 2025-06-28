@@ -49,25 +49,16 @@
     .sub-title {
         margin-bottom: 0;
     }
-
-
-
-</style>
+    </style>
 </head>
 
 <body>
-
-
-
-
-
-
 <div class="container-fluid">
     <!-- Header -->
     <header id="header" class="header">
         <div class="row">
             <div class="col-md-12">
-                <h1>Russia–Georgia Friendship Monument 2</h1>
+                <h1>Russia–Georgia Friendship Monument</h1>
                 <p class="sub-title">Gudauri, Georgia</p>
             </div>
         </div>
@@ -153,40 +144,52 @@ window.addEventListener("load", function() {
     const inner = horizontalWrapper.querySelector(".inner");
     const panorama = inner.querySelector("img");
 
-    // Wait until image is fully loaded
-    panorama.addEventListener("load", function() {
+    let scrollableDistance = 0;
+    let scrollContainerHeight = 0;
+
+    function recalculateDimensions() {
         const imageWidth = panorama.offsetWidth;
         const viewportWidth = window.innerWidth;
 
-        // Set the scroll height dynamically based on the image width
-        const scrollableDistance = imageWidth - viewportWidth;
-        const scrollContainerHeight = scrollableDistance + window.innerHeight;
+        scrollableDistance = imageWidth - viewportWidth;
+        scrollContainerHeight = scrollableDistance + window.innerHeight;
 
-        // Apply dynamic height
         horizontalWrapper.style.height = scrollContainerHeight + "px";
 
-        // Update transform on scroll
-        window.addEventListener("scroll", function() {
-            const windowScroll = window.pageYOffset;
-            const start = horizontalWrapper.offsetTop;
-            const end = start + scrollContainerHeight - window.innerHeight;
+        // Trigger a scroll to update transform
+        handleScroll();
+    }
 
-            horizontalWrapper.className = '';
+    function handleScroll() {
+        const windowScroll = window.pageYOffset;
+        const start = horizontalWrapper.offsetTop;
+        const end = start + scrollContainerHeight - window.innerHeight;
 
-            if (windowScroll >= end) {
-                horizontalWrapper.classList.add("post-sticky");
-                inner.style.transform = `translateX(-${scrollableDistance}px)`;
-            } else if (windowScroll >= start) {
-                horizontalWrapper.classList.add("sticky");
-                const scrollProgress = (windowScroll - start) / (end - start);
-                const translateX = scrollProgress * scrollableDistance;
-                inner.style.transform = `translateX(-${translateX}px)`;
-            } else {
-                horizontalWrapper.classList.add("pre-sticky");
-                inner.style.transform = "translateX(0)";
-            }
-        });
+        horizontalWrapper.className = '';
+
+        if (windowScroll >= end) {
+            horizontalWrapper.classList.add("post-sticky");
+            inner.style.transform = `translateX(-${scrollableDistance}px)`;
+        } else if (windowScroll >= start) {
+            horizontalWrapper.classList.add("sticky");
+            const scrollProgress = (windowScroll - start) / (end - start);
+            const translateX = scrollProgress * scrollableDistance;
+            inner.style.transform = `translateX(-${translateX}px)`;
+        } else {
+            horizontalWrapper.classList.add("pre-sticky");
+            inner.style.transform = "translateX(0)";
+        }
+    }
+
+    panorama.addEventListener("load", function() {
+        recalculateDimensions();
     });
+
+    window.addEventListener("resize", function() {
+        recalculateDimensions();
+    });
+
+    window.addEventListener("scroll", handleScroll);
 
     // If image already cached
     if (panorama.complete) {
@@ -194,6 +197,7 @@ window.addEventListener("load", function() {
     }
 });
 </script>
+
 
 
 
