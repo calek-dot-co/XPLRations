@@ -2696,6 +2696,44 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "143",
+        "image": "143_anaklia-tower/thumb.jpg",
+        "hero": "143_anaklia-tower/hero.jpg",
+        "title": "Anaklia Tower",
+        "location": "Anaklia",
+        "country": "Georgia",
+        "link": "143_anaklia-tower/anaklia-tower.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "144",
+        "image": "144_tikori-tower/thumb.jpg",
+        "hero": "144_tikori-tower/hero.jpg",
+        "title": "Pier Sculpture",
+        "location": "Tikori",
+        "country": "Georgia",
+        "link": "144_tikori-tower/tikori-tower.html",
+        "tags": ["Sculpture"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
