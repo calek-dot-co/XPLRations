@@ -2734,6 +2734,44 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "145",
+        "image": "145_bathhouse-8/thumb.jpg",
+        "hero": "145_bathhouse-8/hero.jpg",
+        "title": "Bathhouse 8",
+        "location": "Tskaltubo",
+        "country": "Georgia",
+        "link": "145_bathhouse-8/bathhouse-8.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "146",
+        "image": "146_hotel-aia/thumb.jpg",
+        "hero": "146_hotel-aia/hero.jpg",
+        "title": "Hotel Aia Mosaic",
+        "location": "Tskaltubo",
+        "country": "Georgia",
+        "link": "146_hotel-aia/hotel-aia.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
