@@ -2772,6 +2772,139 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "147",
+        "image": "147_sanatorium-medea/thumb.jpg",
+        "hero": "147_sanatorium-medea/hero.jpg",
+        "title": "Sanatorium Medea",
+        "location": "Tskaltubo",
+        "country": "Georgia",
+        "link": "147_sanatorium-medea/sanatorium-medea.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "148",
+        "image": "148_peace/thumb.jpg",
+        "hero": "148_peace/hero.jpg",
+        "title": "Hotel Aia Mosaic",
+        "location": "Zemo Magharo",
+        "country": "Georgia",
+        "link": "148_peace/peace.html",
+        "tags": ["Monument"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "149",
+        "image": "149_unfinished-museum/thumb.jpg",
+        "hero": "149_unfinished-museum/hero.jpg",
+        "title": "Unfinished Museum",
+        "location": "Sighnaghi",
+        "country": "Georgia",
+        "link": "149_unfinished-museum/unfinished-museum.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "150",
+        "image": "150_ww2-memorial/thumb.jpg",
+        "hero": "150_ww2-memorial/hero.jpg",
+        "title": "World War II Memorial",
+        "location": "Arboshiki",
+        "country": "Georgia",
+        "link": "150_ww2-memorial/ww2-memorial.html",
+        "tags": ["Mosaics"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "151",
+        "image": "151_archaeological-museum/thumb.jpg",
+        "hero": "151_archaeological-museum/hero.jpg",
+        "title": "Archaeological Museum",
+        "location": "Tbilisi",
+        "country": "Georgia",
+        "link": "151_archaeological-museum/archaeological-museum.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "152",
+        "image": "152_nutsubidze-skybridge/thumb.jpg",
+        "hero": "152_nutsubidze-skybridge/hero.jpg",
+        "title": "Nutsubidze Skybridge",
+        "location": "Tbilisi",
+        "country": "Georgia",
+        "link": "152_nutsubidze-skybridge/nutsubidze-skybridge.html",
+        "tags": ["Bridge"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "153",
+        "image": "153_exhibition-centre/thumb.jpg",
+        "hero": "153_exhibition-centre/hero.jpg",
+        "title": "Exhibition Center",
+        "location": "Tbilisi",
+        "country": "Georgia",
+        "link": "153_exhibition-centre/exhibition-centre.html",
+        "tags": ["Highlights"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
