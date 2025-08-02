@@ -2898,7 +2898,45 @@
         "location": "Tbilisi",
         "country": "Georgia",
         "link": "153_exhibition-centre/exhibition-centre.html",
-        "tags": ["Highlights"],
+        "tags": ["Exhibition"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "154",
+        "image": "154_maribor-spomenik/thumb.jpg",
+        "hero": "154_maribor-spomenik/hero.jpg",
+        "title": "Liberation Monument",
+        "location": "Maribor",
+        "country": "Slovenia",
+        "link": "154_maribor-spomenik/maribor-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "155",
+        "image": "155_drazgose-spomenik/thumb.jpg",
+        "hero": "155_drazgose-spomenik/hero.jpg",
+        "title": "Cankar Battalion Monument",
+        "location": "Dražgoše",
+        "country": "Slovenia",
+        "link": "155_drazgose-spomenik/drazgose-spomenik.html",
+        "tags": ["Spomenik"],
         "icon-image": "pin-active"
       },
       "geometry": {
