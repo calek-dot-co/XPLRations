@@ -2943,6 +2943,63 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "156",
+        "image": "156_lepoglava-spomenik/thumb.jpg",
+        "hero": "156_lepoglava-spomenik/hero.jpg",
+        "title": "Memorial Graveyard",
+        "location": "Lepoglava",
+        "country": "Croatia",
+        "link": "156_lepoglava-spomenik/lepoglava-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "157",
+        "image": "157_political-school/thumb.jpg",
+        "hero": "157_political-school/hero.jpg",
+        "title": "Political School 'Josip Tito'",
+        "location": "Somewhere",
+        "country": "Croatia",
+        "link": "157_political-school/political-school.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "158",
+        "image": "158_mirna-spomenik/thumb.jpg",
+        "hero": "158_mirna-spomenik/hero.jpg",
+        "title": "Monument to the Fallen",
+        "location": "Mirna",
+        "country": "Slovenia",
+        "link": "158_mirna-spomenik/mirna-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
