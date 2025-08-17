@@ -3000,6 +3000,82 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "159",
+        "image": "159_ilirska-bistrica/thumb.jpg",
+        "hero": "159_ilirska-bistrica/hero.jpg",
+        "title": "Freedom Hill Monument",
+        "location": "Ilirska Bistrica",
+        "country": "Slovenia",
+        "link": "159_ilirska-bistrica/ilirska-bistrica.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "160",
+        "image": "160_torpedo-station/thumb.jpg",
+        "hero": "160_torpedo-station/hero.jpg",
+        "title": "Abandoned Torpedo Station",
+        "location": "Somewhere",
+        "country": "Croatia",
+        "link": "160_torpedo-station/torpedo-station.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "161",
+        "image": "161_beach-palace-hotel/thumb.jpg",
+        "hero": "161_beach-palace-hotel/hero.jpg",
+        "title": "Beach Palace Hotel",
+        "location": "Somewhere",
+        "country": "Croatia",
+        "link": "161_beach-palace-hotel/beach-palace-hotel.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "162",
+        "image": "162_podhumskim-spomenik/thumb.jpg",
+        "hero": "162_podhumskim-spomenik/hero.jpg",
+        "title": "Monument to the Victims of Fascism",
+        "location": "Podhum",
+        "country": "Croatia",
+        "link": "162_podhumskim-spomenik/podhumskim-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
