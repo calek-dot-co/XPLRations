@@ -257,7 +257,7 @@ button:active {
     @media (max-width: 600px) {
       .header {
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
       }
     }
     @media (max-width: 1024px) {
@@ -287,6 +287,7 @@ button:active {
   @media (max-width: 600px) {
     .footer-reel {
       padding-top: 35vh;
+      padding-bottom: 27vh;
     }
   }
 
@@ -296,12 +297,16 @@ button:active {
   padding-left: 80px;
   padding-right: 80px;
   overflow-x: auto;
+  padding-bottom: 40px;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+  /* scrollbar height */ 
+  scrollbar-height: thin;
 }
   @media (max-width: 600px) {
     .footer-reel__track {
       gap: 20px;
+      padding-bottom: 20px;
     }
   }
 
@@ -369,19 +374,6 @@ button:active {
 @media (max-width: 600px) {
   .footer-reel__tile { flex-basis: 180px; }
   .footer-reel__thumb { height: auto; }
-}
-
-.footer-reel__track {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 0 24px;
-  padding-bottom: 40px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-
-  /* scrollbar height */ 
-  scrollbar-height: thin;
 }
 
 .footer-reel__track::-webkit-scrollbar {
