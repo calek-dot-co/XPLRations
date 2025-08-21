@@ -249,7 +249,7 @@ button:active {
 
 .header {
   margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin-bottom: 8vw;
   margin-left: 12.5%;
   margin-right: 12.5%;
   text-align: center;
@@ -293,8 +293,8 @@ button:active {
 .footer-reel__track {
   display: flex;
   gap: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -371,7 +371,7 @@ button:active {
   .footer-reel__thumb { height: auto; }
 }
 
-/*.footer-reel__track {
+.footer-reel__track {
   display: flex;
   gap: 20px;
   overflow-x: auto;
@@ -380,7 +380,7 @@ button:active {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 
-  /* scrollbar height */
+  /* scrollbar height */ 
   scrollbar-height: thin;
 }
 
@@ -400,6 +400,19 @@ button:active {
   cursor: grab;
 }*/
 
+
+.footer-reel__track::-webkit-scrollbar {
+  height: 10px;
+}
+
+.footer-reel__track::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.footer-reel__track::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 5px;
+}
 
 
 
