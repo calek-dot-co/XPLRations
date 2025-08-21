@@ -3076,6 +3076,63 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "163",
+        "image": "163_pleso-spomenik/thumb.jpg",
+        "hero": "163_pleso-spomenik/hero.jpg",
+        "title": "Monument to Fallen Defenders",
+        "location": "Pleso",
+        "country": "Croatia",
+        "link": "163_pleso-spomenik/pleso-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "164",
+        "image": "164_slabinja-spomenik/thumb.jpg",
+        "hero": "164_slabinja-spomenik/hero.jpg",
+        "title": "Monument to Fallen Fighters and Victims of Fascism",
+        "location": "Slabinja",
+        "country": "Croatia",
+        "link": "164_slabinja-spomenik/slabinja-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "165",
+        "image": "165_gligino-brdo-spomenik/thumb.jpg",
+        "hero": "165_gligino-brdo-spomenik/hero.jpg",
+        "title": "Freedom Hill Monument",
+        "location": "Dobrljin",
+        "country": "Bosnia & Herzegovina",
+        "link": "165_gligino-brdo-spomenik/gligino-brdo-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
