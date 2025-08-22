@@ -235,6 +235,7 @@ button:active {
 }
 .nav-button-disabled {
   color: #444;
+  cursor: default;
 }
 .nav-button-disabled:hover {
   background: #222;
@@ -277,6 +278,7 @@ button:active {
 .footer {
   min-height: 100vh;
   width: 100%;
+  user-select: none;
 }
 
 .footer-reel {
@@ -302,6 +304,7 @@ button:active {
   -webkit-overflow-scrolling: touch;
   /* scrollbar height */ 
   scrollbar-height: thin;
+  user-select: none;
 }
   @media (max-width: 600px) {
     .footer-reel__track {
@@ -315,6 +318,16 @@ button:active {
   scroll-snap-align: center;
   text-decoration: none;
   color: inherit;
+  user-select: none;
+}
+.footer-reel__tile:hover {
+ opacity: .8;
+}
+.footer-reel__tile:hover .footer-reel__title {
+ text-decoration: underline;
+}
+.footer-reel__tile:hover.is-current .footer-reel__title {
+ text-decoration: none;
 }
 
 .footer-reel__tile.is-placeholder {
@@ -344,7 +357,6 @@ button:active {
   opacity: 0.8;
   padding-bottom: 4px;
 }
-
 .footer-reel__title {
   margin: 2px 0 0;
   font-size: 20px;
@@ -353,18 +365,39 @@ button:active {
   padding-bottom: 6px;
   padding-right: 10px;
 }
-
 .footer-reel__loc {
   margin: 2px 0 0;
   font-size: 16px;
   opacity: 0.75;
 }
+  @media (max-width: 600px) {
+    .footer-reel__meta {
+      margin-top: 8px;
+      font-size: 16px;
+      opacity: 0.8;
+      padding-bottom: 4px;
+    }
+    .footer-reel__title {
+      margin: 2px 0 0;
+      font-size: 18px;
+      line-height: 1.25;
+      font-weight: 600;
+      padding-bottom: 6px;
+      padding-right: 10px;
+    }
+    .footer-reel__loc {
+      margin: 2px 0 0;
+      font-size: 16px;
+      opacity: 0.75;
+    }
+  }
 
 /* Center/current tile appears at 50% opacity per requirement */
-.footer-reel__tile.is-current {
+.footer-reel__tile.is-current, .footer-reel__tile:hover.is-current {
   opacity: 0.3;
   filter: grayscale(100%);
   cursor: default;
+  text-decoration: none;
 }
 
 /* Hide scrollbars on WebKit while preserving scrollability */
@@ -372,7 +405,7 @@ button:active {
 
 /* Small screens can use a slightly narrower tile */
 @media (max-width: 600px) {
-  .footer-reel__tile { flex-basis: 180px; }
+  .footer-reel__tile { flex-basis: 160px; }
   .footer-reel__thumb { height: auto; }
 }
 
@@ -394,7 +427,7 @@ button:active {
 
 
 .footer-reel__track::-webkit-scrollbar {
-  height: 10px;
+  height: 6px;
 }
 
 .footer-reel__track::-webkit-scrollbar-track {
@@ -410,6 +443,18 @@ button:active {
 
 
 
+/* Keep native momentum on touch; show expected cursor on desktop */
+.footer-reel__track {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+}
+
+/* If you use scroll-snap on the track, turn it off during drag to prevent jumpy snaps */
+.footer-reel__track.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none !important; /* only needed if you have scroll-snap */
+}
 
 
 
