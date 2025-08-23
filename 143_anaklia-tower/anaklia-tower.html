@@ -12,12 +12,22 @@
 	<meta property="og:image" content="https://www.xplr.es/143_anaklia-tower/thumb.jpg"/>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<!-- Links -->
-	<link rel="stylesheet" href="../bootstrap-grid.css">
-	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../style-explore.css">
+	<script src="../navigation.js" defer></script>
 	
 </head>
-<body>
+<body data-current-id="143">
 <div class="container-fluid">
+
+	<div id=nav class="nav">
+		<div class="nav-left">
+			<a class="nav-logo" href="../index.html">xplr.es</a>
+		</div>
+		<div class="nav-right">
+			<button class="nav-buttons" onclick="window.location.href='../142_zestafoni-pool-mosaics/zestafoni-pool-mosaics.html';">‹ Prev</button>
+			<button class="nav-buttons" onclick="window.location.href='../144_tikori-tower/tikori-tower.html';">Next ›</button>
+		</div>
+	</div>
 
 	<div id="header" class="header">
 		<div class="row">
@@ -62,34 +72,11 @@
 			</div>
 		</div>
 	</div>
-
-
-	<div id="footer" class="footer">
-		<div class="row">
-			<div class="col-md-4 previous-teaser order-md-1 order-3">
-                <a href="../142_zestafoni-pool-mosaics/zestafoni-pool-mosaics.html">
-					<div class="image-thumb"><img class="" src="../142_zestafoni-pool-mosaics/thumb.jpg"></div>
-					<p class="panel-location">Previous</p>
-					<h2 class="panel-title">Pool Mosaics</h2><p class="panel-location">Zestafoni, Georgia</p>
-				</a>
-			</div>
-			<div class="col-md-4 map-teaser order-md-2 order-2">
-				<a href="../index.html">
-					<div class="image-thumb"><img class="" src="../thumb.jpg"></div>
-					<p class="panel-location">Home</p>
-					<h2 class="panel-title">Overview</h2>
-				</a>
-			</div>
-			<div class="col-md-4 next-teaser order-md-3 order-1">
-				<a href="../144_tikori-tower/tikori-tower.html">
-					<div class="image-thumb"><img class="" src="../144_tikori-tower/thumb.jpg"></div>
-					<p class="panel-location">Next</p>
-					<h2 class="panel-title">Pier Sculpture</h2><p class="panel-location">Tikori, Georgia</p>
-				</a>
-			</div>
-		</div>
+	
+	<div class="footer">
+		<div id="footer-reel" class="footer-reel" data-geojson="../pins-new.geojson"></div>
 	</div>
-
 </div>
+
 </body>
 </html>

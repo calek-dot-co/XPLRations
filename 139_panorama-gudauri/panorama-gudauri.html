@@ -12,52 +12,58 @@
     <meta property="og:image" content="https://www.xplr.es/139_panorama-gudauri/thumb.jpg"/>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- Links -->
-    <link rel="stylesheet" href="../bootstrap-grid.css" />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../style-explore.css">
+    <script src="../navigation.js" defer></script>
 
     <style>
-    #horizontal-wrapper{
-      overflow: hidden;
-      position: relative;
-    }
-    #horizontal-wrapper.sticky .inner{
-      position: fixed;
-      top: 0;
-      bottom: auto;
-    }
-    #horizontal-wrapper.post-sticky .inner{
-      position: absolute;
-      top: auto;
-      bottom: 0;
-    }
-
-    .panorama {
-      height: 90vh;
-      width: auto;
-      margin-top: 5vh;
-      margin-bottom: 5vh;
-      padding-left: 25vw;
-      padding-right: 25vw;
-    }
-    @media (max-width: 600px) {
-        .panorama {
-            height: 70vh;
-            margin-top: 15vh;
-            margin-bottom: 15vh;
-            padding-left: 10vw;
-            padding-right: 10vw;
+        #horizontal-wrapper{
+          overflow: hidden;
+          position: relative;
         }
-    }
+        #horizontal-wrapper.sticky .inner{
+          position: fixed;
+          top: 0;
+          bottom: auto;
+        }
+        #horizontal-wrapper.post-sticky .inner{
+          position: absolute;
+          top: auto;
+          bottom: 0;
+        }
 
-    /*.sub-title {
-        margin-bottom: 0;
-    }*/
+        .panorama {
+          height: 90vh;
+          width: auto;
+          margin-top: 5vh;
+          margin-bottom: 5vh;
+          padding-left: 25vw;
+          padding-right: 25vw;
+        }
+        @media (max-width: 600px) {
+            .panorama {
+                height: 70vh;
+                margin-top: 15vh;
+                margin-bottom: 15vh;
+                padding-left: 10vw;
+                padding-right: 10vw;
+            }
+        }
     </style>
 </head>
 
-<body>
+<body data-current-id="139">
 <div class="container-fluid">
-    <!-- Header -->
+
+    <div id=nav class="nav">
+        <div class="nav-left">
+            <a class="nav-logo" href="../index.html">xplr.es</a>
+        </div>
+        <div class="nav-right">
+            <button class="nav-buttons" onclick="window.location.href='../138_georgian-bus-stops/georgian-bus-stops.html';">‹ Prev</button>
+            <button class="nav-buttons" onclick="window.location.href='../140_kazbegi-hike/kazbegi-hike.html';">Next ›</button>
+        </div>
+    </div>
+
     <header id="header" class="header">
         <div class="row">
             <div class="col-md-12">
@@ -67,7 +73,6 @@
         </div>
     </header>
 
-    <!-- Main content -->
     <main class="content">
         <div class="row">
             <div class="col-md-12">
@@ -88,8 +93,6 @@
                         <img class="panorama" src="panorama.jpg" alt="Very wide panorama of the Gudauri memorial" />
                     </div>
                 </div>
-
-
 
                 <div class="spacer"></div>
                 <div class="image-landscape"><img src="3.jpg"/></div>
@@ -113,96 +116,70 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer id="footer" class="footer">
-        <div class="row">
-            <div class="col-md-4 previous-teaser order-md-1 order-3">
-                <a href="../138_georgian-bus-stops/georgian-bus-stops.html">
-                    <div class="image-thumb"><img src="../138_georgian-bus-stops/thumb.jpg"/></div>
-                    <p class="panel-location">Previous</p>
-                    <h2 class="panel-title">Georgian Bus Stops</h2><p class="panel-location">Bulachauri, Georgia</p>
-                </a>
-            </div>
-            <div class="col-md-4 map-teaser order-md-2 order-2">
-                <a href="../index.html">
-                    <div class="image-thumb"><img src="../thumb.jpg"/></div>
-                    <p class="panel-location">Home</p>
-                    <h2 class="panel-title">Overview</h2>
-                </a>
-            </div>
-            <div class="col-md-4 next-teaser order-md-3 order-1">
-                <a href="../140_kazbegi-hike/kazbegi-hike.html">
-                    <div class="image-thumb"><img src="../140_kazbegi-hike/thumb.jpg"/></div>
-                    <p class="panel-location">Next</p>
-                    <h2 class="panel-title">Kazbegi Hike</h2><p class="panel-location">Stepantsminda, Georgia</p>
-                </a>
-            </div>
-        </div>
-    </footer>
+    <div class="footer">
+        <div id="footer-reel" class="footer-reel" data-geojson="../pins-new.geojson"></div>
+    </div>
 </div>
 
 <script type="text/javascript">
-window.addEventListener("load", function() {
-    const horizontalWrapper = document.getElementById("horizontal-wrapper");
-    const inner = horizontalWrapper.querySelector(".inner");
-    const panorama = inner.querySelector("img");
+    window.addEventListener("load", function() {
+        const horizontalWrapper = document.getElementById("horizontal-wrapper");
+        const inner = horizontalWrapper.querySelector(".inner");
+        const panorama = inner.querySelector("img");
 
-    let scrollableDistance = 0;
-    let scrollContainerHeight = 0;
+        let scrollableDistance = 0;
+        let scrollContainerHeight = 0;
 
-    function recalculateDimensions() {
-        const imageWidth = panorama.offsetWidth;
-        const viewportWidth = window.innerWidth;
+        function recalculateDimensions() {
+            const imageWidth = panorama.offsetWidth;
+            const viewportWidth = window.innerWidth;
 
-        scrollableDistance = imageWidth - viewportWidth;
-        scrollContainerHeight = scrollableDistance + window.innerHeight;
+            scrollableDistance = imageWidth - viewportWidth;
+            scrollContainerHeight = scrollableDistance + window.innerHeight;
 
-        horizontalWrapper.style.height = scrollContainerHeight + "px";
+            horizontalWrapper.style.height = scrollContainerHeight + "px";
 
-        // Trigger a scroll to update transform
-        handleScroll();
-    }
-
-    function handleScroll() {
-        const windowScroll = window.pageYOffset;
-        const start = horizontalWrapper.offsetTop;
-        const end = start + scrollContainerHeight - window.innerHeight;
-
-        horizontalWrapper.className = '';
-
-        if (windowScroll >= end) {
-            horizontalWrapper.classList.add("post-sticky");
-            inner.style.transform = `translateX(-${scrollableDistance}px)`;
-        } else if (windowScroll >= start) {
-            horizontalWrapper.classList.add("sticky");
-            const scrollProgress = (windowScroll - start) / (end - start);
-            const translateX = scrollProgress * scrollableDistance;
-            inner.style.transform = `translateX(-${translateX}px)`;
-        } else {
-            horizontalWrapper.classList.add("pre-sticky");
-            inner.style.transform = "translateX(0)";
+            // Trigger a scroll to update transform
+            handleScroll();
         }
-    }
 
-    panorama.addEventListener("load", function() {
-        recalculateDimensions();
+        function handleScroll() {
+            const windowScroll = window.pageYOffset;
+            const start = horizontalWrapper.offsetTop;
+            const end = start + scrollContainerHeight - window.innerHeight;
+
+            horizontalWrapper.className = '';
+
+            if (windowScroll >= end) {
+                horizontalWrapper.classList.add("post-sticky");
+                inner.style.transform = `translateX(-${scrollableDistance}px)`;
+            } else if (windowScroll >= start) {
+                horizontalWrapper.classList.add("sticky");
+                const scrollProgress = (windowScroll - start) / (end - start);
+                const translateX = scrollProgress * scrollableDistance;
+                inner.style.transform = `translateX(-${translateX}px)`;
+            } else {
+                horizontalWrapper.classList.add("pre-sticky");
+                inner.style.transform = "translateX(0)";
+            }
+        }
+
+        panorama.addEventListener("load", function() {
+            recalculateDimensions();
+        });
+
+        window.addEventListener("resize", function() {
+            recalculateDimensions();
+        });
+
+        window.addEventListener("scroll", handleScroll);
+
+        // If image already cached
+        if (panorama.complete) {
+            panorama.dispatchEvent(new Event("load"));
+        }
     });
-
-    window.addEventListener("resize", function() {
-        recalculateDimensions();
-    });
-
-    window.addEventListener("scroll", handleScroll);
-
-    // If image already cached
-    if (panorama.complete) {
-        panorama.dispatchEvent(new Event("load"));
-    }
-});
 </script>
-
-
-
 
 </body>
 </html>

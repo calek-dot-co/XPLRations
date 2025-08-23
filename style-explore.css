@@ -198,7 +198,7 @@ img, video {
 }
   @media (max-width: 600px) {
     .nav-logo {
-      font-size: 30px;
+      font-size: 2rem;
       line-height: 1.2;
     }
   }
@@ -320,15 +320,6 @@ button:active {
   color: inherit;
   user-select: none;
 }
-.footer-reel__tile:hover {
- opacity: .8;
-}
-.footer-reel__tile:hover .footer-reel__title {
- text-decoration: underline;
-}
-.footer-reel__tile:hover.is-current .footer-reel__title {
- text-decoration: none;
-}
 
 .footer-reel__tile.is-placeholder {
   opacity: 0.15;
@@ -350,59 +341,75 @@ button:active {
   height: 100%;
   padding-bottom: 4px;
 }
-
 .footer-reel__meta {
   margin-top: 12px;
-  font-size: 16px;
-  opacity: 0.8;
-  padding-bottom: 4px;
+  font-size: 14px;
+  opacity: 0.5;
+  padding-bottom: 10px;
 }
 .footer-reel__title {
   margin: 2px 0 0;
   font-size: 20px;
   line-height: 1.25;
   font-weight: 600;
-  padding-bottom: 6px;
+  padding-bottom: 2px;
   padding-right: 10px;
 }
 .footer-reel__loc {
   margin: 2px 0 0;
-  font-size: 16px;
-  opacity: 0.75;
+  font-size: 14px;
+  opacity: 1;
 }
   @media (max-width: 600px) {
+    .footer-reel__thumb img {
+      padding-bottom: 8px;
+    }
     .footer-reel__meta {
       margin-top: 8px;
-      font-size: 16px;
-      opacity: 0.8;
-      padding-bottom: 4px;
+      font-size: 14px;
+      padding-bottom: 10px;
     }
     .footer-reel__title {
       margin: 2px 0 0;
       font-size: 18px;
       line-height: 1.25;
       font-weight: 600;
-      padding-bottom: 6px;
+      padding-bottom: 2px;
       padding-right: 10px;
     }
     .footer-reel__loc {
       margin: 2px 0 0;
-      font-size: 16px;
-      opacity: 0.75;
+      font-size: 14px;
+      opacity: 1;
     }
   }
 
 /* Center/current tile appears at 50% opacity per requirement */
 .footer-reel__tile.is-current, .footer-reel__tile:hover.is-current {
-  opacity: 0.3;
+  opacity: 0.5;
   filter: grayscale(100%);
   cursor: default;
   text-decoration: none;
 }
+.footer-reel__tile:hover > .footer-reel__thumb{
+ opacity: .8;
+}
+.footer-reel__tile.is-current > .footer-reel__thumb {
+  opacity: 1;
+}
+.footer-reel__tile.is-current > .footer-reel__meta {
+  opacity: 1;
+}
+.footer-reel__tile:hover .footer-reel__title {
+ text-decoration: underline;
+}
+.footer-reel__tile:hover.is-current .footer-reel__title {
+ text-decoration: none;
+}
 
 /* Hide scrollbars on WebKit while preserving scrollability */
-.footer-reel__track::-webkit-scrollbar { height: 0; }
-
+/*.footer-reel__track::-webkit-scrollbar { height: 0; }
+*/
 /* Small screens can use a slightly narrower tile */
 @media (max-width: 600px) {
   .footer-reel__tile { flex-basis: 160px; }
@@ -425,8 +432,7 @@ button:active {
   cursor: grab;
 }*/
 
-
-.footer-reel__track::-webkit-scrollbar {
+.footer-reel__track::-webkit-scrollbar, ::-webkit-scrollbar {
   height: 6px;
 }
 
@@ -436,7 +442,8 @@ button:active {
 
 .footer-reel__track::-webkit-scrollbar-thumb {
   background-color: #444;
-  border-radius: 5px;
+  border-radius: 10px;
+  height: 6px;
 }
 
 

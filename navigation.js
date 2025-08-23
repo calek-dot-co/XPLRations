@@ -80,7 +80,7 @@
 
 // ---- Footer Reel (with desktop drag-to-scroll + momentum) ----
 const FOOTER_MOUNT_SELECTOR = "#footer-reel";
-const WINDOW_SIZE = 10;
+const WINDOW_SIZE = 15;
 window.XPLR_PINS = null; // store data globally
 
 document.addEventListener("DOMContentLoaded", () => {
