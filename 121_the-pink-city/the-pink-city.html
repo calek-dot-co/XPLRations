@@ -12,12 +12,22 @@
 	<meta property="og:image" content="https://www.xplr.es/121_the-pink-city/thumb.jpg"/>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<!-- Links -->
-	<link rel="stylesheet" href="../bootstrap-grid.css">
-	<link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style-explore.css">
+    <script src="../navigation.js" defer></script>
 	
 </head>
-<body>
+<body data-current-id="121">
 <div class="container-fluid">
+
+    <div id=nav class="nav">
+        <div class="nav-left">
+            <a class="nav-logo" href="../index.html">xplr.es</a>
+        </div>
+        <div class="nav-right">
+            <button class="nav-buttons" onclick="window.location.href='../120_soviet-relics-bratislava/soviet-relics-bratislava.html';">‹ Prev</button>
+            <button class="nav-buttons" onclick="window.location.href='../122_monument-of-gratitude/monument-of-gratitude.html';">Next ›</button>
+        </div>
+    </div>
 
 	<div id="header" class="header">
 		<div class="row">
@@ -79,38 +89,14 @@
 					<p>The Cascade Complex is both a monumental staircase and a cultural hub, housing a museum and offering a popular social space for both locals and tourists. Yet even this impressive structure is overshadowed by what lies beyond it on a clear day: a breathtaking view of the pink city and Mt Ararat.</p>
 					<p>Location: 40.191191, 44.515559</p>
 				</div>
-				<div class="spacer"></div>
 			</div>
 		</div>
 	</div>
 
-
-	<div id="footer" class="footer">
-		<div class="row">
-			<div class="col-md-4 previous-teaser order-md-1 order-3">
-				<a href="../120_soviet-relics-bratislava/soviet-relics-bratislava.html">
-					<div class="image-thumb"><img class="" src="../120_soviet-relics-bratislava/thumb.jpg"></div>
-					<p class="panel-location">Previous</p>
-					<h2 class="panel-title">Soviet Relics of Blava</h2><p class="panel-location">Bratislava, Slovakia</p>
-				</a>
-			</div>
-			<div class="col-md-4 map-teaser order-md-2 order-2">
-				<a href="../index.html">
-					<div class="image-thumb"><img class="" src="../thumb.jpg"></div>
-					<p class="panel-location">Home</p>
-					<h2 class="panel-title">Overview</h2>
-				</a>
-			</div>
-			<div class="col-md-4 next-teaser order-md-3 order-1">
-				<a href="../122_monument-of-gratitude/monument-of-gratitude.html">
-					<div class="image-thumb"><img class="" src="../122_monument-of-gratitude/thumb.jpg"></div>
-					<p class="panel-location">Next</p>
-					<h2 class="panel-title">Monument of Gratitude</h2><p class="panel-location">Yerevan, Armenia</p>
-				</a>
-			</div>
-		</div>
-	</div>
-
+    <div class="footer">
+        <div id="footer-reel" class="footer-reel" data-geojson="../pins-new.geojson"></div>
+    </div>
 </div>
+
 </body>
 </html>

@@ -12,18 +12,28 @@
 	<meta property="og:image" content="https://www.xplr.es/104_bagger-258/thumb.jpg"/>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<!-- Links -->
-	<link rel="stylesheet" href="../bootstrap-grid.css">
-	<link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style-explore.css">
+    <script src="../navigation.js" defer></script>
 	
 </head>
-<body>
+<body data-current-id="104">
 <div class="container-fluid">
+
+    <div id=nav class="nav">
+        <div class="nav-left">
+            <a class="nav-logo" href="../index.html">xplr.es</a>
+        </div>
+        <div class="nav-right">
+            <button class="nav-buttons" onclick="window.location.href='../103_telekom-lager/telekom-lager.html';">‹ Prev</button>
+            <button class="nav-buttons" onclick="window.location.href='../105_objekt-3001/objekt-3001.html';">Next ›</button>
+        </div>
+    </div>
 
 	<div id="header" class="header">
 		<div class="row">
 			<div class="col-md-12">
 				<h1>Bagger 258</h1>
-				<p class="sub-title">Senftenburg, Germany</p>
+				<p class="sub-title">Senftenberg, Germany</p>
 			</div>
 		</div>
 	</div>
@@ -66,38 +76,14 @@
 				<div class="image-landscape"><img class="" src="17.jpg"></div>
 				<div class="spacer"></div>
 				<div class="image-landscape"><img class="" src="18.jpg"></div>
-				<div class="spacer"></div>
 			</div>
 		</div>
 	</div>
 
-
-	<div id="footer" class="footer">
-		<div class="row">
-			<div class="col-md-4 previous-teaser order-md-1 order-3">
-				<a href="../103_telekom-lager/telekom-lager.html">
-					<div class="image-thumb"><img class="" src="../103_telekom-lager/thumb.jpg"></div>
-					<p class="panel-location">Previous</p>
-					<h2 class="panel-title">Telekom Graveyard</h2><p class="panel-location">Somewhere, Germany</p>
-				</a>
-			</div>
-			<div class="col-md-4 map-teaser order-md-2 order-2">
-				<a href="../index.html">
-					<div class="image-thumb"><img class="" src="../thumb.jpg"></div>
-					<p class="panel-location">Home</p>
-					<h2 class="panel-title">Overview</h2>
-				</a>
-			</div>
-			<div class="col-md-4 next-teaser order-md-3 order-1">
-				<a href="../105_objekt-3001/objekt-3001.html">
-					<div class="image-thumb"><img class="" src="../105_objekt-3001/thumb.jpg"></div>
-					<p class="panel-location">Next</p>
-					<h2 class="panel-title">Object 3001</h2><p class="panel-location">Podborsko, Poland</p>
-				</a>
-			</div>
-		</div>
-	</div>
-
+    <div class="footer">
+        <div id="footer-reel" class="footer-reel" data-geojson="../pins-new.geojson"></div>
+    </div>
 </div>
+
 </body>
 </html>

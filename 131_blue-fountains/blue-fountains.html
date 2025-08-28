@@ -12,12 +12,22 @@
 	<meta property="og:image" content="https://www.xplr.es/131_blue-fountains/thumb.jpg"/>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<!-- Links -->
-	<link rel="stylesheet" href="../bootstrap-grid.css">
-	<link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style-explore.css">
+    <script src="../navigation.js" defer></script>
 	
 </head>
-<body>
+<body data-current-id="131">
 <div class="container-fluid">
+
+    <div id=nav class="nav">
+        <div class="nav-left">
+            <a class="nav-logo" href="../index.html">xplr.es</a>
+        </div>
+        <div class="nav-right">
+            <button class="nav-buttons" onclick="window.location.href='../130_iron-fountain/iron-fountain.html';">‹ Prev</button>
+            <button class="nav-buttons" onclick="window.location.href='../132_sheram-1/sheram-1.html';">Next ›</button>
+        </div>
+    </div>
 
 	<div id="header" class="header">
 		<div class="row">
@@ -34,7 +44,7 @@
 				<div class="image-landscape"><img class="" src="1.jpg"></div>
 				<div class="spacer"></div>
 				<div class="text-content">	
-					<p>On the opposite side of town from the better-known <a class="link" target="_blank" href="http://xplr.es/130_iron-fountain/iron-fountain.html">Iron Fountain</a> lies Gyumri’s lesser-known counterpart: the Blue Fountains. This abandoned site features six blue-painted steel structures with a more decorative, ornamental design.</p>
+					<p>On the opposite side of town from the better-known <a class="link" target="_blank" href="../130_iron-fountain/iron-fountain.html">Iron Fountain</a> lies Gyumri’s lesser-known counterpart: the Blue Fountains. This abandoned site features six blue-painted steel structures with a more decorative, ornamental design.</p>
 					<p>Also damaged in the 1988 earthquake, the fountain now gets very little attention, its frames repurposed as makeshift electrical poles for nearby homes.</p>
 				</div>
 				<div class="spacer"></div>
@@ -45,38 +55,14 @@
 				<div class="image-landscape"><img class="" src="4.jpg"></div>
 				<div class="spacer"></div>
 				<div class="image-landscape"><img class="" src="5.jpg"></div>
-				<div class="spacer"></div>
 			</div>
 		</div>
 	</div>
 
-
-	<div id="footer" class="footer">
-		<div class="row">
-			<div class="col-md-4 previous-teaser order-md-1 order-3">
-				<a href="../130_iron-fountain/iron-fountain.html">
-					<div class="image-thumb"><img class="" src="../130_iron-fountain/thumb.jpg"></div>
-					<p class="panel-location">Previous</p>
-					<h2 class="panel-title">Iron Fountain</h2><p class="panel-location">Gyumri, Armenia</p>
-				</a>
-			</div>
-			<div class="col-md-4 map-teaser order-md-2 order-2">
-				<a href="../index.html">
-					<div class="image-thumb"><img class="" src="../thumb.jpg"></div>
-					<p class="panel-location">Home</p>
-					<h2 class="panel-title">Overview</h2>
-				</a>
-			</div>
-			<div class="col-md-4 next-teaser order-md-3 order-1">
-				<a href="../132_sheram-1/sheram-1.html">
-					<div class="image-thumb"><img class="" src="../132_sheram-1/thumb.jpg"></div>
-					<p class="panel-location">Next</p>
-					<h2 class="panel-title">Sheram I</h2><p class="panel-location">Gyumri, Armenia</p>
-				</a>
-			</div>
-		</div>
-	</div>
-
+    <div class="footer">
+        <div id="footer-reel" class="footer-reel" data-geojson="../pins-new.geojson"></div>
+    </div>
 </div>
+
 </body>
 </html>
