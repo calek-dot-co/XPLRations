@@ -3190,6 +3190,63 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "169",
+        "image": "169_novi-travnik-spomenik/thumb.jpg",
+        "hero": "169_novi-travnik-spomenik/hero.jpg",
+        "title": "Necropolis for the Victims of Fascism",
+        "location": "Novi Travnik",
+        "country": "Bosnia & Herzegovina",
+        "link": "169_novi-travnik-spomenik/novi-travnik-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "170",
+        "image": "170_vogosca-spomenik/thumb.jpg",
+        "hero": "170_vogosca-spomenik/hero.jpg",
+        "title": "Monument to the Fallen Fighters",
+        "location": "Vogošća",
+        "country": "Bosnia & Herzegovina",
+        "link": "170_vogosca-spomenik/vogosca-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "171",
+        "image": "171_tjentiste-spomenik/thumb.jpg",
+        "hero": "171_tjentiste-spomenik/hero.jpg",
+        "title": "The Battle of Sutjeska Memorial",
+        "location": "Tjentište",
+        "country": "Bosnia & Herzegovina",
+        "link": "171_tjentiste-spomenik/tjentiste-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
