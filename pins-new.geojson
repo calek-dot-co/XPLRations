@@ -3247,6 +3247,63 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "172",
+        "image": "172_susnjar-spomenik/thumb.jpg",
+        "hero": "172_susnjar-spomenik/hero.jpg",
+        "title": "Šušnjar Memorial Complex",
+        "location": "Sanski Most",
+        "country": "Bosnia & Herzegovina",
+        "link": "172_susnjar-spomenik/susnjar-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "173",
+        "image": "173_korcanica-spomenik/thumb.jpg",
+        "hero": "173_korcanica-spomenik/hero.jpg",
+        "title": "Partisan Hospital Memorial",
+        "location": "Grmeč Mountain",
+        "country": "Bosnia & Herzegovina",
+        "link": "173_korcanica-spomenik/korcanica-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "174",
+        "image": "174_kazara-spomenik/thumb.jpg",
+        "hero": "174_kazara-spomenik/hero.jpg",
+        "title": "Monument to the Revolution",
+        "location": "Kozara National Park",
+        "country": "Bosnia & Herzegovina",
+        "link": "174_kazara-spomenik/kazara-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
