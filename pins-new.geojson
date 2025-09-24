@@ -3304,6 +3304,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "175",
+        "image": "175_isola-hydroelectric/thumb.jpg",
+        "hero": "175_isola-hydroelectric/hero.jpg",
+        "title": "Isola Hydroelectric Power Plant",
+        "location": "Brescia Province",
+        "country": "Italy",
+        "link": "175_isola-hydroelectric/isola-hydroelectric.html",
+        "tags": ["Powerplant"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
