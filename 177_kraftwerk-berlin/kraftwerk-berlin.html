@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- General -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kraftwerk Berlin-Mitte, Germany – xplr</title>
+	<meta name="description" content="Former power plant turned event space in Berlin.">
+	<!-- Share Metadata -->
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://www.xplr.es/177_kraftwerk-berlin/thumb.jpg"/>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<!-- Links -->
+	<link rel="stylesheet" href="../style-explore.css">
+	<script src="../navigation.js" defer></script>
+
+	<style>
+		body {
+		margin: 0;
+			font-family: sans-serif;
+			background: #0b0c10;
+			height: 100vh;
+		}
+		.player {
+			position: fixed;
+			bottom: 30px;
+			left: 50%;
+			transform: translateX(-50%);
+			background: #3c3c3c;
+			border-radius: 100px;
+			padding: 16px 16px;
+			box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		.title {
+			color: #e6e6e6;
+			font-size: .9rem;
+			white-space: nowrap;
+			padding-left: 12px;
+		}
+		audio {
+			height: 28px;
+		}
+	</style>
+	
+</head>
+<body data-current-id="177">
+<div class="container-fluid">
+
+	<div id=nav class="nav">
+		<div class="nav-left">
+			<a class="nav-logo" href="../index.html">xplr.es</a>
+		</div>
+		<div class="nav-right">
+			<button class="nav-buttons" onclick="window.location.href='../176_nato-idgz/nato-idgz.html';">‹ Prev</button>
+			<button class="nav-buttons nav-button-disabled">Next ›</button>
+		</div>
+	</div>
+
+	<div id="header" class="header">
+		<h1>The Quite Space</h1>
+		<p class="sub-title">Berlin-Mitte, Germany</p>
+	</div>
+
+	<div class="player" aria-label="Floating MP3 Player">
+		<span class="title">Play audio</span>
+		<audio controls preload="none" controlslist="nodownload noplaybackrate" aria-label="Play Track">
+			<source src="track1.mp3" type="audio/mpeg" />
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+
+	<div class="content">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="image-landscape"><img class="" src="1.jpg"></div>
+				<div class="spacer"></div>
+				<div class="text-content">	
+					<p>Every few years, the former Berlin-Mitte Kraftwerk turbine hall opens to the public. This year, it was transformed into <em>The Quiet Place</em>, inviting visitors to experience the vast industrial hall in silence.</p>
+				</div>
+				<details class="text-content">
+					<summary><p style="text-decoration: underline; display: inline-block;">About the audio</p></summary>
+					<p>The audio track on this page was recorded during one of my visits to <em>The Quiet Space</em>. The composition accurately captures the eeriness and beauty of this empty space.</p>
+					<p>It is performed by a four-piece ensemble consisting of a synth player, a violin player, a trombone player, and a primitive bellows player (an animal-skin bag that produces breathing-like sounds).</p>
+				</details>
+				<div class="spacer"></div>
+				<!-- <div class="image-landscape"><img class="" src="2.jpg"></div>
+				<div class="spacer"></div> -->
+				<div class="image-vertical"><img class="" src="3.jpg"></div>
+        		<div class="spacer"></div>
+        		<div class="image-landscape"><img class="" src="4.jpg"></div>
+        		<div class="spacer"></div>
+        		<div class="image-landscape"><img class="" src="5.jpg"></div>
+        		<div class="spacer"></div>
+				<div class="image-vertical"><img class="" src="6.jpg"></div>
+        		<div class="spacer"></div>
+        		<div class="image-landscape"><img class="" src="7.jpg"></div>
+        		<div class="spacer"></div>
+        		<div class="image-vertical"><img class="" src="8.jpg"></div>
+        		<div class="spacer"></div>
+				<!-- <div class="image-landscape"><img class="" src="9.jpg"></div>
+				<div class="spacer"></div> -->
+				<div class="image-landscape"><img class="" src="10.jpg"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div id="footer-reel" class="footer-reel" data-geojson="../pins-new.geojson"></div>
+	</div>
+</div>
+
+</body>
+</html>

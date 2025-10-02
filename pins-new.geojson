@@ -485,7 +485,7 @@
         "location": "Kálló",
         "country": "Hungary",
         "link": "026_bars-501/bars-501.html",
-        "tags": ["Military base"],
+        "tags": ["Tropo-scatter radar"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -3316,6 +3316,44 @@
         "location": "Brescia Province",
         "country": "Italy",
         "link": "175_isola-hydroelectric/isola-hydroelectric.html",
+        "tags": ["Powerplant"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "176",
+        "image": "176_nato-idgz/thumb.jpg",
+        "hero": "176_nato-idgz/hero.jpg",
+        "title": "ACE High IDGZ",
+        "location": "Somewhere",
+        "country": "Italy",
+        "link": "176_nato-idgz/nato-idgz.html",
+        "tags": ["Tropo-scatter radar"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "177",
+        "image": "177_kraftwerk-berlin/thumb.jpg",
+        "hero": "177_kraftwerk-berlin/hero.jpg",
+        "title": "The Quite Space",
+        "location": "Berlin-Mitte",
+        "country": "Germany",
+        "link": "177_kraftwerk-berlin/kraftwerk-berlin.html",
         "tags": ["Powerplant"],
         "icon-image": "pin-active"
       },

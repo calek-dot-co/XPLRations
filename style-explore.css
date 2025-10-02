@@ -89,6 +89,10 @@ a {
     }
   }
 
+  details:hover {
+    cursor: pointer;
+  }
+
 
 
 
