@@ -3361,6 +3361,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "178",
+        "image": "178_cooling-tower-frame/thumb.jpg",
+        "hero": "178_cooling-tower-frame/hero.jpg",
+        "title": "Cooling Tower Pond",
+        "location": "Somewhere",
+        "country": "Germany",
+        "link": "178_cooling-tower-frame/cooling-tower-frame.html",
+        "tags": ["Cooling tower"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
