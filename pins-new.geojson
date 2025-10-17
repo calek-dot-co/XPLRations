@@ -3380,6 +3380,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "179",
+        "image": "179_eisenhuttenstadt/thumb.jpg",
+        "hero": "179_eisenhuttenstadt/hero.jpg",
+        "title": "Former-Stalinstadt Mosaics",
+        "location": "Eisenhüttenstadt",
+        "country": "Germany",
+        "link": "179_eisenhuttenstadt/eisenhuttenstadt.html",
+        "tags": ["Mosaics"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
