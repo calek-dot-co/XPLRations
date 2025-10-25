@@ -3399,6 +3399,44 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "180",
+        "image": "180_dobsinska-ice-cave/thumb.jpg",
+        "hero": "180_dobsinska-ice-cave/hero.jpg",
+        "title": "Dobšiná Ice Cave",
+        "location": "Slovak Paradise",
+        "country": "Slovakia",
+        "link": "180_dobsinska-ice-cave/dobsinska-ice-cave.html",
+        "tags": ["Ice cave"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "181",
+        "image": "181_air-raid-shelter/thumb.jpg",
+        "hero": "181_air-raid-shelter/hero.jpg",
+        "title": "Air Raid Shelter",
+        "location": "Somewhere",
+        "country": "Germany",
+        "link": "181_air-raid-shelter/air-raid-shelter.html",
+        "tags": ["Bunker"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
