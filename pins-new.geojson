@@ -3437,6 +3437,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "182",
+        "image": "182_rocket-case-graveyard/thumb.jpg",
+        "hero": "182_rocket-case-graveyard/hero.jpg",
+        "title": "Anti-Tank Missle Graveyard",
+        "location": "Somewhere",
+        "country": "Germany",
+        "link": "182_rocket-case-graveyard/rocket-case-graveyard.html",
+        "tags": ["Cemetery"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
