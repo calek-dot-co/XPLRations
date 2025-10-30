@@ -3456,6 +3456,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "183",
+        "image": "183_tirana-highlights/thumb.jpg",
+        "hero": "183_tirana-highlights/hero.jpg",
+        "title": "Past & Present in Albania's Capital",
+        "location": "Tirana",
+        "country": "Albania",
+        "link": "183_tirana-highlights/tirana-highlights.html",
+        "tags": ["City highlights"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
