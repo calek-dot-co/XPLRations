@@ -3475,6 +3475,82 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "184",
+        "image": "184_knjazevac-spomenik/thumb.jpg",
+        "hero": "184_knjazevac-spomenik/hero.jpg",
+        "title": "Monument Park Knjaževac",
+        "location": "Andrijevica",
+        "country": "Montenegro",
+        "link": "184_knjazevac-spomenik/knjazevac-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "185",
+        "image": "185_jasikovac-hill-spomenik/thumb.jpg",
+        "hero": "185_jasikovac-hill-spomenik/hero.jpg",
+        "title": "Jasikovac Hill Freedom Monument",
+        "location": "Berane",
+        "country": "Montenegro",
+        "link": "185_jasikovac-hill-spomenik/jasikovac-hill-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "186",
+        "image": "186_ice-cave-bobotuv-kuk/thumb.jpg",
+        "hero": "186_ice-cave-bobotuv-kuk/hero.jpg",
+        "title": "Ledena Pecina Ice Cave Hike",
+        "location": "Durmitor National Park",
+        "country": "Montenegro",
+        "link": "186_ice-cave-bobotuv-kuk/ice-cave-bobotuv-kuk.html",
+        "tags": ["Ice cave"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "187",
+        "image": "187_zabljak-spomenik/thumb.jpg",
+        "hero": "187_zabljak-spomenik/hero.jpg",
+        "title": "The Monument for the Victims of Fascism",
+        "location": "Žabljak",
+        "country": "Montenegro",
+        "link": "187_zabljak-spomenik/zabljak-spomenik.html",
+        "tags": ["Spomenik"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
