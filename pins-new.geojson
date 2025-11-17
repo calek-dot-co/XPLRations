@@ -3551,6 +3551,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "188",
+        "image": "188_abandoned-beach-hotel/thumb.jpg",
+        "hero": "188_abandoned-beach-hotel/hero.jpg",
+        "title": "Abandoned Beach Hotel",
+        "location": "Somewhere",
+        "country": "Montenegro",
+        "link": "188_abandoned-beach-hotel/abandoned-beach-hotel.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
