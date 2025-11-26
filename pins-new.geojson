@@ -3570,6 +3570,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "189",
+        "image": "189_schwedt-mosaics/thumb.jpg",
+        "hero": "189_schwedt-mosaics/hero.jpg",
+        "title": "Mosaics from the GDR",
+        "location": "Schwedt",
+        "country": "Germany",
+        "link": "189_schwedt-mosaics/schwedt-mosaics.html",
+        "tags": ["Mosaics"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],

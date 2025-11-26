@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- General -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mosaics from the GDR, Germany – xplr</title>
+	<meta name="description" content="Two east German mosaics ">
+	<!-- Share Metadata -->
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://www.xplr.es/189_schwedt-mosaics/thumb.jpg"/>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<!-- Links -->
+	<link rel="stylesheet" href="../style-explore.css">
+	<script src="../navigation.js" defer></script>
+
+	<style>
+        #horizontal-wrapper {
+          overflow: hidden;
+          position: relative;
+        }
+        #horizontal-wrapper.sticky .inner {
+          position: fixed;
+          top: 0;
+          bottom: auto;
+        }
+        #horizontal-wrapper.post-sticky .inner {
+          position: absolute;
+          top: auto;
+          bottom: 0;
+        }
+        .panorama {
+          height: 90vh;
+          width: auto;
+          margin-top: 5vh;
+          margin-bottom: 5vh;
+          padding-left: 25vw;
+          padding-right: 25vw;
+        }
+        @media (max-width: 600px) {
+            .panorama {
+                height: 70vh;
+                margin-top: 15vh;
+                margin-bottom: 15vh;
+                padding-left: 10vw;
+                padding-right: 10vw;
+            }
+        }
+    </style>
+	
+</head>
+<body data-current-id="189">
+<div class="container-fluid">
+
+	<div id=nav class="nav">
+		<div class="nav-left">
+			<a class="nav-logo" href="../index.html">xplr.es</a>
+		</div>
+		<div class="nav-right">
+			<button class="nav-buttons" onclick="window.location.href='../188_abandoned-beach-hotel/abandoned-beach-hotel.html';">‹ Prev</button>
+            <button class="nav-buttons nav-button-disabled">Next ›</button>
+		</div>
+	</div>
+
+	<div id="header" class="header">
+		<h1>Mosaics from the GDR</h1>
+		<p class="sub-title">Schwedt, Germany</p>
+	</div>
+
+	<div class="content">
+		<div class="row">
+			<div class="col-md-12">
+				<p class="sub-title text-content">Kosmonaut mosaic</p> 
+                <div class="spacer-tiny"></div>
+                <div class="text-content">	
+					<p>Best known today for its crude oil and paper processing factories, the town of Schwedt on the Oder river also features several intriguing historical artworks. The first notable example is a vibrant mural of a cosmonaut reaching out into space.</p>
+					<p>By Erich Enge, 1967. Location: 53.058103, 14.293952</p>
+				</div>
+				<div class="spacer-small"></div>
+				<div class="image-landscape"><img class="" src="1.jpg"></div>
+				<div class="spacer"></div>
+				<!-- Fixed horizontal scroll section -->
+                <div id="horizontal-wrapper">
+                    <div class="inner">
+                        <img class="panorama" src="2.jpg" alt="A glass mosic of a kosmonaut in space" />
+                    </div>
+                </div>
+                <div class="spacer"></div>
+				<div class="image-landscape"><img class="" src="3.jpg"></div>
+                <div class="spacer"></div>
+				<p class="sub-title text-content">Friedrich Engels mosaic</p> 
+                <div class="spacer-tiny"></div>
+                <div class="text-content">	
+					<p>Mounted on the side of an abandoned building is a 7.5-metre-high glass mosaic portrait of <a href="https://en.wikipedia.org/wiki/Friedrich_Engels" class="link" target="_blank">Friedrich Engels</a>. The mosaic depicts the German philosopher and co-founder of Marxism gazing stoically into the distance, a common pose for propagandistic portrayals of intellectuals and Soviet-era cultural icons.</p>
+					<p>By Herdegen Fehlhaber & Werner Voigt, 1978. Location: 53.068540, 14.248736</p>
+				</div>
+				<div class="spacer-small"></div>
+				<div class="image-landscape"><img class="" src="4.jpg"></div>
+        		<div class="spacer"></div>
+        		<div class="image-vertical"><img class="" src="5.jpg"></div>
+        		<div class="spacer"></div>
+        		<div class="image-landscape"><img class="" src="6.jpg"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div id="footer-reel" class="footer-reel" data-geojson="../pins-new.geojson"></div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+window.addEventListener("load", function() {
+    const horizontalWrapper = document.getElementById("horizontal-wrapper");
+    const inner = horizontalWrapper.querySelector(".inner");
+    const panorama = inner.querySelector("img");
+
+    let scrollableDistance = 0;
+    let scrollContainerHeight = 0;
+
+    function recalculateDimensions() {
+        const imageWidth = panorama.offsetWidth;
+        const viewportWidth = window.innerWidth;
+
+        scrollableDistance = imageWidth - viewportWidth;
+        scrollContainerHeight = scrollableDistance + window.innerHeight;
+
+        horizontalWrapper.style.height = scrollContainerHeight + "px";
+
+        // Trigger a scroll to update transform
+        handleScroll();
+    }
+
+    function handleScroll() {
+        const windowScroll = window.pageYOffset;
+        const start = horizontalWrapper.offsetTop;
+        const end = start + scrollContainerHeight - window.innerHeight;
+
+        horizontalWrapper.className = '';
+
+        if (windowScroll >= end) {
+            horizontalWrapper.classList.add("post-sticky");
+            inner.style.transform = `translateX(-${scrollableDistance}px)`;
+        } else if (windowScroll >= start) {
+            horizontalWrapper.classList.add("sticky");
+            const scrollProgress = (windowScroll - start) / (end - start);
+            const translateX = scrollProgress * scrollableDistance;
+            inner.style.transform = `translateX(-${translateX}px)`;
+        } else {
+            horizontalWrapper.classList.add("pre-sticky");
+            inner.style.transform = "translateX(0)";
+        }
+    }
+
+    panorama.addEventListener("load", function() {
+        recalculateDimensions();
+    });
+
+    window.addEventListener("resize", function() {
+        recalculateDimensions();
+    });
+
+    window.addEventListener("scroll", handleScroll);
+
+    // If image already cached
+    if (panorama.complete) {
+        panorama.dispatchEvent(new Event("load"));
+    }
+});
+</script>
+
+
+
+</body>
+</html>
