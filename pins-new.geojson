@@ -3589,6 +3589,44 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "190",
+        "image": "190_beach-bunkers/thumb.jpg",
+        "hero": "190_beach-bunkers/hero.jpg",
+        "title": "Danish Beach Bunkers",
+        "location": "Vestkystruten",
+        "country": "Denmark",
+        "link": "190_beach-bunkers/beach-bunkers.html",
+        "tags": ["Bunkers"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "191",
+        "image": "191_ocean-bunkers/thumb.jpg",
+        "hero": "191_ocean-bunkers/hero.jpg",
+        "title": "Ocean Bunkers",
+        "location": "Vigsø",
+        "country": "Denmark",
+        "link": "191_ocean-bunkers/ocean-bunkers.html",
+        "tags": ["Bunkers"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
