@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style-home.css">
 </head>
 <body>
-    <header>
+    <header class="list-page">
         <h1>xplr.es</h1>
         <div class="nav-buttons">
             <button onclick="window.location.href='index.html';">Photos</button>
@@ -63,8 +63,12 @@
             const table = $('#locationTable').DataTable({
                 data: tableData,
                 order: [[0, 'desc']],
-                searching: false,
+                searching: true,
                 ordering: !isMobile,
+                language: {
+                    search: "",
+                    searchPlaceholder: "Search names, countries, tags…"
+                },
                 columns: [
                     { data: 'id', width: '5%' },
                     { 

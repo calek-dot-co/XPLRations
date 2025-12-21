@@ -3601,7 +3601,7 @@
         "location": "Vestkystruten",
         "country": "Denmark",
         "link": "190_beach-bunkers/beach-bunkers.html",
-        "tags": ["Bunkers"],
+        "tags": ["Bunker"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -3620,7 +3620,45 @@
         "location": "Vigsø",
         "country": "Denmark",
         "link": "191_ocean-bunkers/ocean-bunkers.html",
-        "tags": ["Bunkers"],
+        "tags": ["Bunker"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "192",
+        "image": "192_abandoned-waterpark/thumb.jpg",
+        "hero": "192_abandoned-waterpark/hero.jpg",
+        "title": "Abandoned Water Park",
+        "location": "Somewhere",
+        "country": "Greece",
+        "link": "192_abandoned-waterpark/abandoned-waterpark.html",
+        "tags": ["Waterpark"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "193",
+        "image": "193_beach-shipwreck/thumb.jpg",
+        "hero": "193_beach-shipwreck/hero.jpg",
+        "title": "Dimitrios Shipwreck",
+        "location": "Valtaki",
+        "country": "Greece",
+        "link": "193_beach-shipwreck/beach-shipwreck.html",
+        "tags": ["Shipwreck"],
         "icon-image": "pin-active"
       },
       "geometry": {
