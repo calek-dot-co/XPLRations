@@ -485,7 +485,7 @@
         "location": "Kálló",
         "country": "Hungary",
         "link": "026_bars-501/bars-501.html",
-        "tags": ["Tropo-scatter radar"],
+        "tags": ["Troposcatter"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -3335,7 +3335,7 @@
         "location": "Somewhere",
         "country": "Italy",
         "link": "176_nato-idgz/nato-idgz.html",
-        "tags": ["Tropo-scatter radar"],
+        "tags": ["Troposcatter"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -3659,6 +3659,25 @@
         "country": "Greece",
         "link": "193_beach-shipwreck/beach-shipwreck.html",
         "tags": ["Shipwreck"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "194",
+        "image": "194_nato-gkfz/thumb.jpg",
+        "hero": "194_nato-gkfz/hero.jpg",
+        "title": "ACE High GKFZ",
+        "location": "Somewhere",
+        "country": "Greece",
+        "link": "194_nato-gkfz/nato-gkfz.html",
+        "tags": ["Troposcatter"],
         "icon-image": "pin-active"
       },
       "geometry": {
