@@ -3684,6 +3684,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "195",
+        "image": "195_forgotten-planes/thumb.jpg",
+        "hero": "195_forgotten-planes/hero.jpg",
+        "title": "Forgotten Hellenic Aircraft",
+        "location": "Somewhere",
+        "country": "Greece",
+        "link": "195_forgotten-planes/forgotten-planes.html",
+        "tags": ["Airplanes"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],

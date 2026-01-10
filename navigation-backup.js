@@ -78,10 +78,9 @@
 
 
 
-// ----------  Navigation Footer ----------
-
+// ---- Footer Reel (with desktop drag-to-scroll + momentum) ----
 const FOOTER_MOUNT_SELECTOR = "#footer-reel";
-const WINDOW_SIZE = 10;
+const WINDOW_SIZE = 15;
 window.XPLR_PINS = null; // store data globally
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -106,25 +105,21 @@ function renderFooterReelFromData(data, mount, currentIdRaw) {
 
   const currentIdNum = Number(currentIdRaw);
   const features = data.features
-    .map((f) => ({ ...f, _idNum: Number(f.properties.id) }))
+    .map((f) => ({ ...f, _idNum: Number(f?.properties?.id) }))
+    .filter((f) => Number.isFinite(f._idNum))
     .sort((a, b) => a._idNum - b._idNum);
 
   const currIdx = features.findIndex((f) => f._idNum === currentIdNum);
 
   const tiles = [];
-  for (let offset = WINDOW_SIZE; offset >= 1; offset--) {
-    tiles.push(features[currIdx - offset] ?? null);
-  }
+  for (let offset = WINDOW_SIZE; offset >= 1; offset--) tiles.push(features[currIdx - offset] ?? null);
   tiles.push(features[currIdx] ?? null);
-  for (let offset = 1; offset <= WINDOW_SIZE; offset++) {
-    tiles.push(features[currIdx + offset] ?? null);
-  }
+  for (let offset = 1; offset <= WINDOW_SIZE; offset++) tiles.push(features[currIdx + offset] ?? null);
 
   const track = document.createElement("div");
   track.className = "footer-reel__track";
 
   tiles.forEach((f, i) => {
-    // Label only the immediate neighbors and the current tile
     let label = "";
     if (i === WINDOW_SIZE - 1) label = "– Prev";
     else if (i === WINDOW_SIZE) label = "– Current";
@@ -137,33 +132,48 @@ function renderFooterReelFromData(data, mount, currentIdRaw) {
 
   mount.replaceChildren(track);
 
-  // center current tile
+  // enable desktop drag-scroll (mouse) with inertial fling
+  initDesktopDragScroll(track);
+
+  // center current tile smoothly (after layout)
   const currentEl = track.children[WINDOW_SIZE];
   if (currentEl) {
     requestAnimationFrame(() => {
-      const left = currentEl.offsetLeft - (track.clientWidth - currentEl.clientWidth) / 2;
-      track.scrollLeft = left;
+      const left = Math.max(
+        0,
+        currentEl.offsetLeft - (track.clientWidth - currentEl.clientWidth) / 2
+      );
+      if ("scrollTo" in track) {
+        try {
+          track.scrollTo({ left, behavior: "smooth" });
+        } catch {
+          track.scrollLeft = left;
+        }
+      } else {
+        track.scrollLeft = left;
+      }
     });
   }
 }
 
 function renderTile(feature, label = "") {
-  const p = feature.properties;
+  const p = feature.properties || {};
   const a = document.createElement("a");
   a.className = "footer-reel__tile";
-  a.href = prefixPath(p.link);
+  a.href = prefixPath(p.link || "");
 
   const thumb = document.createElement("span");
   thumb.className = "footer-reel__thumb";
+
   const img = document.createElement("img");
   img.src = prefixPath(p.image || p.hero || "");
   img.alt = p.title || "";
+  img.draggable = false; // stop ghost-image while dragging
   thumb.appendChild(img);
 
   const meta = document.createElement("div");
   meta.className = "footer-reel__meta";
-  // "XXX Previous/Current/Next"
-  const numberText = String(p.id).padStart(3, "0");
+  const numberText = String(p.id ?? "").padStart(3, "0");
   meta.textContent = label ? `${numberText} ${label}` : numberText;
 
   const title = document.createElement("div");
@@ -190,5 +200,136 @@ function renderPlaceholder() {
 
 function prefixPath(path) {
   if (!path) return "";
-  return "../" + path.replace(/^\/+/, ""); // ensure exactly one ../
+  return "../" + String(path).replace(/^\/+/, ""); // ensure exactly one ../
 }
+
+// --- Desktop drag-to-scroll with momentum/fling ---
+function initDesktopDragScroll(track) {
+  // Only enable on fine pointers (mouse/trackpad). Touch remains native.
+  const hasFinePointer = typeof window.matchMedia === "function"
+    ? window.matchMedia("(pointer: fine)").matches
+    : true;
+  if (!hasFinePointer) return;
+
+  let isDown = false;
+  let startX = 0;
+  let startScroll = 0;
+  let dragged = false;
+
+  // Velocity sampling
+  let lastX = 0;
+  let lastT = 0;
+  let velocity = 0; // px/ms
+  const DRAG_THRESHOLD = 5;          // px before we treat it as a drag
+  const MAX_ABS_VELOCITY = 2.0;      // px/ms safety cap
+  const FLING_MIN_VELOCITY = 0.15;   // px/ms to start a fling
+  const FRICTION = 0.95;             // per-frame multiplier
+  const FRAME_MS = 16;               // ~60fps
+  let flingId = 0;                   // RAF id
+
+  function clampScroll(x) {
+    const max = track.scrollWidth - track.clientWidth;
+    if (max <= 0) return 0;
+    return Math.min(Math.max(0, x), max);
+  }
+
+  function stopFling() {
+    if (flingId) {
+      cancelAnimationFrame(flingId);
+      flingId = 0;
+    }
+  }
+
+  function startFling(v0) {
+    stopFling();
+    let v = Math.max(Math.min(v0, MAX_ABS_VELOCITY), -MAX_ABS_VELOCITY);
+
+    const step = () => {
+      // if user interacted again, abort
+      if (isDown) {
+        flingId = 0;
+        return;
+      }
+      // advance position
+      track.scrollLeft = clampScroll(track.scrollLeft - v * FRAME_MS);
+      // apply friction
+      v *= FRICTION;
+
+      // stop conditions
+      const atEdge = track.scrollLeft === 0 || track.scrollLeft === track.scrollWidth - track.clientWidth;
+      if (Math.abs(v) < 0.02 || atEdge) {
+        flingId = 0;
+        return;
+      }
+      flingId = requestAnimationFrame(step);
+    };
+
+    flingId = requestAnimationFrame(step);
+  }
+
+  function onPointerDown(e) {
+    if (e.pointerType !== "mouse" || e.button !== 0) return;
+    isDown = true;
+    dragged = false;
+    startX = e.clientX;
+    startScroll = track.scrollLeft;
+    lastX = e.clientX;
+    lastT = performance.now();
+    stopFling();
+    try { track.setPointerCapture?.(e.pointerId); } catch {}
+    track.classList.add("is-dragging");
+    document.body.style.userSelect = "none";
+  }
+
+  function onPointerMove(e) {
+    if (!isDown || e.pointerType !== "mouse") return;
+    const now = performance.now();
+    const dx = e.clientX - startX;
+
+    if (!dragged && Math.abs(dx) > DRAG_THRESHOLD) dragged = true;
+
+    // move in natural direction
+    track.scrollLeft = clampScroll(startScroll - dx);
+
+    // velocity sampling (px per ms)
+    const dt = now - lastT || 1;
+    velocity = (e.clientX - lastX) / dt;
+    lastX = e.clientX;
+    lastT = now;
+  }
+
+  function endDrag(e) {
+    if (!isDown) return;
+    isDown = false;
+    track.classList.remove("is-dragging");
+    document.body.style.userSelect = "";
+    try { track.releasePointerCapture?.(e.pointerId); } catch {}
+
+    // Start a fling if the user actually dragged and released with speed
+    if (dragged && Math.abs(velocity) >= FLING_MIN_VELOCITY) {
+      startFling(velocity);
+    }
+  }
+
+  function onClickCapture(e) {
+    if (dragged) {
+      e.preventDefault();
+      e.stopPropagation();
+      dragged = false;
+    }
+  }
+
+  function preventImageDrag(e) {
+    if (e instanceof DragEvent) e.preventDefault();
+  }
+
+  track.addEventListener("pointerdown", onPointerDown, { passive: true });
+  track.addEventListener("pointermove", onPointerMove, { passive: true });
+  track.addEventListener("pointerup", endDrag, { passive: true });
+  track.addEventListener("pointercancel", endDrag, { passive: true });
+  track.addEventListener("mouseleave", endDrag, { passive: true });
+
+  track.addEventListener("click", onClickCapture, { capture: true });
+  track.addEventListener("dragstart", preventImageDrag);
+}
+// ---- end ----

@@ -467,6 +467,10 @@ button:active {
   scroll-snap-type: none !important; /* only needed if you have scroll-snap */
 }
 
+/* Fix for not clickable footer tiles */
+.footer-reel__track {
+  touch-action: pan-y;
+}
 
 
 
