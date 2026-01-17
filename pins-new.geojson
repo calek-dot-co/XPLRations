@@ -3331,7 +3331,7 @@
         "id": "176",
         "image": "176_nato-idgz/thumb.jpg",
         "hero": "176_nato-idgz/hero.jpg",
-        "title": "ACE High IDGZ",
+        "title": "Troposcatter B",
         "location": "Somewhere",
         "country": "Italy",
         "link": "176_nato-idgz/nato-idgz.html",
@@ -3673,7 +3673,7 @@
         "id": "194",
         "image": "194_nato-gkfz/thumb.jpg",
         "hero": "194_nato-gkfz/hero.jpg",
-        "title": "ACE High GKFZ",
+        "title": "Troposcatter K",
         "location": "Somewhere",
         "country": "Greece",
         "link": "194_nato-gkfz/nato-gkfz.html",
@@ -3697,6 +3697,25 @@
         "country": "Greece",
         "link": "195_forgotten-planes/forgotten-planes.html",
         "tags": ["Airplanes"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "196",
+        "image": "196_nato-14b/thumb.jpg",
+        "hero": "196_nato-14b/hero.jpg",
+        "title": "Troposcatter L",
+        "location": "Somewhere",
+        "country": "Greece",
+        "link": "196_nato-14b/nato-14b.html",
+        "tags": ["Troposcatter"],
         "icon-image": "pin-active"
       },
       "geometry": {
