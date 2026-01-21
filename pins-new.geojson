@@ -1283,7 +1283,7 @@
         "location": "Narva",
         "country": "Estonia",
         "link": "068_kreenholm-textile-factory/kreenholm-textile-factory.html",
-        "tags": ["Building"],
+        "tags": ["Factory"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -1891,7 +1891,7 @@
         "location": "Somewhere",
         "country": "Germany",
         "link": "100_kraftfuttermischwerk/kraftfuttermischwerk.html",
-        "tags": ["Building"],
+        "tags": ["Factory"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -2575,7 +2575,7 @@
         "location": "Yeghegnadzor",
         "country": "Armenia",
         "link": "136_knitting-factory/knitting-factory.html",
-        "tags": ["Building"],
+        "tags": ["Factory"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -2765,7 +2765,7 @@
         "location": "Tskaltubo",
         "country": "Georgia",
         "link": "146_hotel-aia/hotel-aia.html",
-        "tags": ["Building"],
+        "tags": ["Hotel"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -2974,7 +2974,7 @@
         "location": "Somewhere",
         "country": "Croatia",
         "link": "157_political-school/political-school.html",
-        "tags": ["Building"],
+        "tags": ["School"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -3031,7 +3031,7 @@
         "location": "Somewhere",
         "country": "Croatia",
         "link": "160_torpedo-station/torpedo-station.html",
-        "tags": ["Building"],
+        "tags": ["Factory"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -3050,7 +3050,7 @@
         "location": "Somewhere",
         "country": "Croatia",
         "link": "161_beach-palace-hotel/beach-palace-hotel.html",
-        "tags": ["Building"],
+        "tags": ["Hotel"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -3563,7 +3563,7 @@
         "location": "Somewhere",
         "country": "Montenegro",
         "link": "188_abandoned-beach-hotel/abandoned-beach-hotel.html",
-        "tags": ["Building"],
+        "tags": ["Hotel"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -3716,6 +3716,25 @@
         "country": "Greece",
         "link": "196_nato-14b/nato-14b.html",
         "tags": ["Troposcatter"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "197",
+        "image": "197_chemical-factory/thumb.jpg",
+        "hero": "197_chemical-factory/hero.jpg",
+        "title": "Abandoned Chemical Plant",
+        "location": "Somewhere",
+        "country": "Greece",
+        "link": "197_chemical-factory/nato-14b.html",
+        "tags": ["Factory"],
         "icon-image": "pin-active"
       },
       "geometry": {
