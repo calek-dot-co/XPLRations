@@ -3733,8 +3733,65 @@
         "title": "Abandoned Chemical Plant",
         "location": "Somewhere",
         "country": "Greece",
-        "link": "197_chemical-factory/nato-14b.html",
+        "link": "197_chemical-factory/chemical-factory.html",
         "tags": ["Factory"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "198",
+        "image": "198_pigeon-poo-church/thumb.jpg",
+        "hero": "198_pigeon-poo-church/hero.jpg",
+        "title": "Pigeon Poo Church",
+        "location": "Somewhere",
+        "country": "Greece",
+        "link": "198_pigeon-poo-church/pigeon-poo-church.html",
+        "tags": ["Church"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "199",
+        "image": "199_railway-graveyard/thumb.jpg",
+        "hero": "199_railway-graveyard/hero.jpg",
+        "title": "Rusting Railway Graveyard",
+        "location": "Somewhere",
+        "country": "Greece",
+        "link": "199_railway-graveyard/railway-graveyard.html",
+        "tags": ["Graveyard"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "200",
+        "image": "200_telecom-tower/thumb.jpg",
+        "hero": "200_telecom-tower/hero.jpg",
+        "title": "Half-Alive Telecom Tower",
+        "location": "Somewhere",
+        "country": "Greece",
+        "link": "200_telecom-tower/telecom-tower.html",
+        "tags": ["Tower"],
         "icon-image": "pin-active"
       },
       "geometry": {
