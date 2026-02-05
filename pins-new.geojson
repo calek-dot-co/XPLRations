@@ -3798,6 +3798,63 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "201",
+        "image": "201_green-line/thumb.jpg",
+        "hero": "201_green-line/hero.jpg",
+        "title": "The Green Line",
+        "location": "Nicosia",
+        "country": "Cyprus",
+        "link": "201_green-line/green-line.html",
+        "tags": ["Border"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "202",
+        "image": "202_carousel-swing/thumb.jpg",
+        "hero": "202_carousel-swing/hero.jpg",
+        "title": "Fading Carousel Swing",
+        "location": "Somewhere",
+        "country": "Cyprus",
+        "link": "202_carousel-swing/carousel-swing.html",
+        "tags": ["Carousel"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "203",
+        "image": "203_bath-house/thumb.jpg",
+        "hero": "203_bath-house/hero.jpg",
+        "title": "Brutalist Bathhouse",
+        "location": "Somewhere",
+        "country": "Cyprus",
+        "link": "203_bath-house/bath-house.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
