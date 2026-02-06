@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- General -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xplr.es - Sets</title>
+    <meta name="description" content="Exploring forgotten, unknown, and unusual locations all around Europe.">
+    <!-- Share Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.xplr.es/og.png"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css">
+    <link rel="stylesheet" href="style-home.css">
+
+    <style>
+      /* Basic Container Styling */
+      #app-container {
+        margin-top: 200px;
+      }
+      .carousel-wrapper {
+        max-width: 1600px;
+        margin: 100px auto;
+        padding: 0 30px;
+        font-family: sans-serif;
+      }
+      .carousel-section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #fff;
+        padding-bottom: 10px;
+      }
+      /* Card Styling */
+      .card {
+        background: #fff;
+        overflow: hidden;
+        height: 100%;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        background-color: black;
+      }
+      .card:hover .card-title {
+        text-decoration: underline;
+      }
+      .card:hover .card-image {
+        opacity: .8;
+      }
+      .card-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        background-color: #eee;
+      }
+      .card-content {
+        padding-top: 15px;
+      }
+      .card-id {
+        font-size: .9rem;
+        color: #fff;
+        opacity: .5;
+        padding-bottom: 8px;
+      }
+      .card-title {
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .card-meta {
+        font-size: .9rem;
+        color: #fff;
+      }
+      /* Glide Arrow Tweaks */
+      .glide__arrow {
+        background-color: rgba(0,0,0,0.5);
+        border: none;
+      }
+    </style>
+
+</head>
+<body>
+    <header class="list-page">
+        <h1>xplr.es</h1>
+        <div class="nav-buttons">
+            <button onclick="window.location.href='index.html';">Photos</button>
+            <button onclick="window.location.href='list.html';">List</button>
+            <button onclick="window.location.href='sets.html';" class="nav-button-active">Sets</button>
+        </div>
+    </header>
+
+    <div id="app-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+<script>
+    // ==========================================
+    // 1. CONFIGURATION
+    // ==========================================
+    const carouselSettings = [
+      {
+        id: 'videos', 
+        title: 'Videos',
+        // Example: IDs 1 and 3
+        filter: (props) => ['196', '194', '191', '188', '182', '181', '178', '176', '134', '129', '126', '122', '67', '62', '52'].includes(props.id) 
+      },
+        {
+        id: 'panos', 
+        title: 'Mosaic Panoramas',
+        // Example: IDs 1 and 3
+        filter: (props) => ['183', '189', '179', '155', '139'].includes(props.id) 
+      }
+/*      {
+        id: 'croatia-locations', 
+        title: 'All Locations in Croatia',
+        filter: (props) => props.country === 'Croatia'
+      },*/
+    ];
+
+    // UPDATED OPTIONS: "slider" instead of "carousel"
+    const glideOptions = {
+      type: 'slider',    // Stops looping
+      rewind: false,     // Prevents jumping to start
+      perView: 5,
+      gap: 20,
+      bound: true,       // Snaps to edges
+      breakpoints: {
+        1024: { perView: 4 },
+        600: { perView: 2 }
+      }
+    };
+
+    // ==========================================
+    // 2. MAIN LOGIC
+    // ==========================================
+    async function initCarousels() {
+        const container = document.getElementById('app-container');
+
+        try {
+            // Fetch the file just like index.html does
+            // (No strict 'response.ok' check, allowing local file access to work)
+            const response = await fetch('pins-new.geojson');
+            const data = await response.json();
+            
+            const features = data.features;
+
+            // Build carousels
+            carouselSettings.forEach(setting => {
+                // Filter items AND Sort by ID (Highest to Lowest)
+                const items = features
+                    .filter(f => setting.filter(f.properties))
+                    .sort((a, b) => Number(b.properties.id) - Number(a.properties.id));
+
+                if (items.length === 0) return; 
+
+                // Create Section
+                const section = document.createElement('div');
+                section.className = 'carousel-wrapper';
+                
+                // Create Slides
+                const slidesHTML = items.map(item => {
+                    const p = item.properties;
+                    return `
+                        <li class="glide__slide">
+                        <a href="${p.link || '#'}" class="card">
+                            <img src="${p.image}" alt="${p.title}" class="card-image" loading="lazy">
+                            <div class="card-content">
+                                <div class="card-id">${p.id}</div>
+                                <div class="card-title">${p.title}</div>
+                                <div class="card-meta">${p.location}, ${p.country}</div>
+                            </div>
+                        </a>
+                        </li>
+                    `;
+                }).join('');
+
+                // Inject HTML
+                section.innerHTML = `
+                    <h2 class="carousel-section-title">${setting.title}</h2>
+                    <div class="glide" id="${setting.id}">
+                        <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            ${slidesHTML}
+                        </ul>
+                        </div>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">❮</button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">❯</button>
+                        </div>
+                    </div>
+                `;
+
+                container.appendChild(section);
+
+                // Mount Glide
+                new Glide(`#${setting.id}`, glideOptions).mount();
+            });
+
+        } catch (error) {
+            console.error(error);
+            container.innerHTML = `
+                <div style="text-align:center; padding: 20px; color: red;">
+                    <h3>Error Loading Data</h3>
+                    <p>${error.message}</p>
+                </div>
+            `;
+        }
+    }
+
+    // Initialize when DOM is ready
+    document.addEventListener("DOMContentLoaded", () => {
+        initCarousels();
+    });
+</script>
+
+</body>
+</html>

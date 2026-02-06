@@ -204,132 +204,130 @@ function prefixPath(path) {
 }
 
 // --- Desktop drag-to-scroll with momentum/fling ---
-function initDesktopDragScroll(track) {
-  // Only enable on fine pointers (mouse/trackpad). Touch remains native.
-  const hasFinePointer = typeof window.matchMedia === "function"
-    ? window.matchMedia("(pointer: fine)").matches
-    : true;
-  if (!hasFinePointer) return;
+    function initDesktopDragScroll(track) {
+        // Only enable on fine pointers (mouse). Touch remains native.
+        const hasFinePointer = typeof window.matchMedia === "function"
+            ? window.matchMedia("(pointer: fine)").matches
+            : true;
+        if (!hasFinePointer) return;
 
-  let isDown = false;
-  let startX = 0;
-  let startScroll = 0;
-  let dragged = false;
+        let isDown = false;
+        let startX = 0;
+        let startScroll = 0;
+        let dragged = false;
 
-  // Velocity sampling
-  let lastX = 0;
-  let lastT = 0;
-  let velocity = 0; // px/ms
-  const DRAG_THRESHOLD = 5;          // px before we treat it as a drag
-  const MAX_ABS_VELOCITY = 2.0;      // px/ms safety cap
-  const FLING_MIN_VELOCITY = 0.15;   // px/ms to start a fling
-  const FRICTION = 0.95;             // per-frame multiplier
-  const FRAME_MS = 16;               // ~60fps
-  let flingId = 0;                   // RAF id
+        // Velocity sampling
+        let lastX = 0;
+        let lastT = 0;
+        let velocity = 0; 
+        const DRAG_THRESHOLD = 5;          
+        const MAX_ABS_VELOCITY = 2.0;      
+        const FLING_MIN_VELOCITY = 0.15;   
+        const FRICTION = 0.95;             
+        const FRAME_MS = 16;               
+        let flingId = 0;                   
 
-  function clampScroll(x) {
-    const max = track.scrollWidth - track.clientWidth;
-    if (max <= 0) return 0;
-    return Math.min(Math.max(0, x), max);
-  }
+        function clampScroll(x) {
+            const max = track.scrollWidth - track.clientWidth;
+            if (max <= 0) return 0;
+            return Math.min(Math.max(0, x), max);
+        }
 
-  function stopFling() {
-    if (flingId) {
-      cancelAnimationFrame(flingId);
-      flingId = 0;
+        function stopFling() {
+            if (flingId) {
+                cancelAnimationFrame(flingId);
+                flingId = 0;
+            }
+        }
+
+        function startFling(v0) {
+            stopFling();
+            let v = Math.max(Math.min(v0, MAX_ABS_VELOCITY), -MAX_ABS_VELOCITY);
+
+            const step = () => {
+                if (isDown) {
+                    flingId = 0;
+                    return;
+                }
+                track.scrollLeft = clampScroll(track.scrollLeft - v * FRAME_MS);
+                v *= FRICTION;
+
+                const atEdge = track.scrollLeft === 0 || track.scrollLeft === track.scrollWidth - track.clientWidth;
+                if (Math.abs(v) < 0.02 || atEdge) {
+                    flingId = 0;
+                    return;
+                }
+                flingId = requestAnimationFrame(step);
+            };
+            flingId = requestAnimationFrame(step);
+        }
+
+        function onPointerDown(e) {
+            if (e.pointerType !== "mouse" || e.button !== 0) return;
+            isDown = true;
+            dragged = false;
+            startX = e.clientX;
+            startScroll = track.scrollLeft;
+            lastX = e.clientX;
+            lastT = performance.now();
+            stopFling();
+            
+            // --- CHANGE 1: DO NOT Capture/Add Class here yet ---
+            // We wait until the user moves > 5px in onPointerMove
+        }
+
+        function onPointerMove(e) {
+            if (!isDown || e.pointerType !== "mouse") return;
+            const now = performance.now();
+            const dx = e.clientX - startX;
+
+            // --- CHANGE 2: Activate Drag Mode only after threshold ---
+            if (!dragged && Math.abs(dx) > DRAG_THRESHOLD) {
+                dragged = true;
+                track.classList.add("is-dragging"); // Now CSS triggers
+                try { track.setPointerCapture?.(e.pointerId); } catch {} // Now we capture
+            }
+
+            if (dragged) {
+                // Only scroll if we are officially dragging
+                track.scrollLeft = clampScroll(startScroll - dx);
+                
+                const dt = now - lastT || 1;
+                velocity = (e.clientX - lastX) / dt;
+                lastX = e.clientX;
+                lastT = now;
+            }
+        }
+
+        function endDrag(e) {
+            if (!isDown) return;
+            isDown = false;
+            
+            // Cleanup
+            track.classList.remove("is-dragging");
+            try { track.releasePointerCapture?.(e.pointerId); } catch {}
+
+            // Start fling only if we were dragging
+            if (dragged && Math.abs(velocity) >= FLING_MIN_VELOCITY) {
+                startFling(velocity);
+            }
+            dragged = false;
+        }
+
+        function onClickCapture(e) {
+            // Block the click only if we actually dragged
+            if (dragged) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+        }
+
+        track.addEventListener("pointerdown", onPointerDown, { passive: true });
+        track.addEventListener("pointermove", onPointerMove, { passive: true });
+        track.addEventListener("pointerup", endDrag, { passive: true });
+        track.addEventListener("pointercancel", endDrag, { passive: true });
+        track.addEventListener("mouseleave", endDrag, { passive: true });
+        track.addEventListener("click", onClickCapture, { capture: true });
     }
-  }
 
-  function startFling(v0) {
-    stopFling();
-    let v = Math.max(Math.min(v0, MAX_ABS_VELOCITY), -MAX_ABS_VELOCITY);
-
-    const step = () => {
-      // if user interacted again, abort
-      if (isDown) {
-        flingId = 0;
-        return;
-      }
-      // advance position
-      track.scrollLeft = clampScroll(track.scrollLeft - v * FRAME_MS);
-      // apply friction
-      v *= FRICTION;
-
-      // stop conditions
-      const atEdge = track.scrollLeft === 0 || track.scrollLeft === track.scrollWidth - track.clientWidth;
-      if (Math.abs(v) < 0.02 || atEdge) {
-        flingId = 0;
-        return;
-      }
-      flingId = requestAnimationFrame(step);
-    };
-
-    flingId = requestAnimationFrame(step);
-  }
-
-  function onPointerDown(e) {
-    if (e.pointerType !== "mouse" || e.button !== 0) return;
-    isDown = true;
-    dragged = false;
-    startX = e.clientX;
-    startScroll = track.scrollLeft;
-    lastX = e.clientX;
-    lastT = performance.now();
-    stopFling();
-    try { track.setPointerCapture?.(e.pointerId); } catch {}
-    track.classList.add("is-dragging");
-    document.body.style.userSelect = "none";
-  }
-
-  function onPointerMove(e) {
-    if (!isDown || e.pointerType !== "mouse") return;
-    const now = performance.now();
-    const dx = e.clientX - startX;
-
-    if (!dragged && Math.abs(dx) > DRAG_THRESHOLD) dragged = true;
-
-    // move in natural direction
-    track.scrollLeft = clampScroll(startScroll - dx);
-
-    // velocity sampling (px per ms)
-    const dt = now - lastT || 1;
-    velocity = (e.clientX - lastX) / dt;
-    lastX = e.clientX;
-    lastT = now;
-  }
-
-  function endDrag(e) {
-    if (!isDown) return;
-    isDown = false;
-    track.classList.remove("is-dragging");
-    document.body.style.userSelect = "";
-    try { track.releasePointerCapture?.(e.pointerId); } catch {}
-
-    // Start a fling if the user actually dragged and released with speed
-    if (dragged && Math.abs(velocity) >= FLING_MIN_VELOCITY) {
-      startFling(velocity);
-    }
-  }
-
-  function onClickCapture(e) {
-    if (dragged) {
-      e.preventDefault();
-      e.stopPropagation();
-      dragged = false;
-    }
-  }
-
-  function preventImageDrag(e) {
-    if (e instanceof DragEvent) e.preventDefault();
-  }
-
-  track.addEventListener("pointerdown", onPointerDown, { passive: true });
-  track.addEventListener("pointermove", onPointerMove, { passive: true });
-  track.addEventListener("pointerup", endDrag, { passive: true });
-  track.addEventListener("pointercancel", endDrag, { passive: true });
-  track.addEventListener("mouseleave", endDrag, { passive: true });
-
-  track.addEventListener("click", onClickCapture, { capture: true });
-  track.addEventListener("dragstart", preventImageDrag);
-}
 // ---- end ----

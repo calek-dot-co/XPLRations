@@ -641,3 +641,34 @@ option {
 }
 
 
+
+/*--- ******************************** ---*/
+/*---         Sets / Collections       ---*/
+/*--- ******************************** ---*/
+
+/* Match the Footer Reel Scrollbar Style */
+
+.reel-track {
+  /* 1. Fix for Firefox: Stop it from being "thin" or auto-hiding */
+  scrollbar-width: auto; 
+  scrollbar-color: #444 transparent; 
+}
+
+/* 2. Fix for Chrome/Safari: Force a custom widget so it never disappears */
+.reel-track::-webkit-scrollbar {
+  height: 6px;         /* Fixed height */
+  display: block;      /* Force it to always exist */
+  -webkit-appearance: none; /* Disable native OS styling */
+}
+
+.reel-track::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+.reel-track::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 10px;
+  border: 1px solid transparent; /* sometimes helps force rendering */
+  background-clip: content-box;
+}
+

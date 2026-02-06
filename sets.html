@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xplr.es - Sets</title>
+    <meta name="description" content="Exploring forgotten, unknown, and unusual locations all around Europe.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.xplr.es/og.png"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style-home.css">
+
+<style>
+      /* --- PAGE LAYOUT --- */
+      #app-container {
+        margin-top: 150px; 
+        margin-bottom: 200px;
+      }
+      .carousel-wrapper {
+        max-width: 100%; 
+        margin: 60px 0;
+        padding-left: 0;
+        font-family: sans-serif;
+        overflow: hidden; 
+      }
+      .carousel-section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #fff;
+        padding-left: 30px;
+      }
+
+      /* --- REEL / TRACK STYLING --- */
+      .reel-track {
+        display: flex;
+        gap: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px; /* Space for the scrollbar */
+        
+        /* ENABLE SCROLLING */
+        overflow-x: auto; 
+        
+        /* Interaction cursors */
+        cursor: grab;
+        -webkit-overflow-scrolling: touch; 
+        
+        /* 1. Firefox Scrollbar Support */
+        scrollbar-width: auto; 
+        scrollbar-color: #444 transparent; 
+      }
+
+      /* 2. Chrome / Safari / Edge Scrollbar Support */
+      .reel-track::-webkit-scrollbar {
+        height: 6px;            /* Fixed height matches footer */
+        background: transparent; 
+        -webkit-appearance: none;
+      }
+      
+      .reel-track::-webkit-scrollbar-thumb {
+        background-color: #444; /* Dark Grey */
+        border-radius: 10px;    /* Rounded pills */
+      }
+
+      .reel-track::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      .reel-track.is-dragging {
+        cursor: grabbing;
+      }
+
+      /* --- CARD STYLING --- */
+      .card {
+        flex: 0 0 22vw; 
+        background: #000;
+        overflow: hidden;
+        height: 100%;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        user-select: none; 
+      }
+
+      /* Mobile Sizing */
+      @media (max-width: 600px) {
+        .carousel-wrapper {
+        }
+        .carousel-section-title {
+            font-size: 1.5rem;
+        }
+        .card {
+            flex: 0 0 50vw; 
+        }
+        .reel-track {
+        display: flex;
+            gap: 10px;
+            padding-left: 20px;
+            padding-right: 30px;
+            padding-bottom: 20px; /* Space for the scrollbar */
+          }
+        .carousel-section-title {
+          padding-left: 20px;
+        }
+        #app-container {
+            margin-top: 100px; 
+        }
+        .carousel-wrapper {
+            max-width: 100%; 
+            margin:20px 0;
+            padding-left: 0;
+            font-family: sans-serif;
+            overflow: hidden; 
+          }
+      }
+
+      .card:hover .card-title {
+        text-decoration: underline;
+      }
+      .card:hover .card-image {
+        opacity: .8;
+      }
+      .card-image {
+        width: 100%;
+        height: auto; 
+        object-fit: cover;
+        background-color: #333;
+      }
+      .card-content {
+        padding-top: 15px;
+      }
+      .card-id {
+        font-size: .9rem;
+        color: #fff;
+        opacity: .5;
+        padding-bottom: 8px;
+      }
+      .card-title {
+        font-weight: bold;
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+        color: #fff;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .card-meta {
+        font-size: .9rem;
+        color: #fff;
+      }
+
+    /* --- WRAPPER FOR IMAGE + OVERLAY --- */
+      .card-image-wrapper {
+        position: relative; /* creates context for the absolute button */
+        display: block;
+      }
+
+      /* --- PLAY BUTTON OVERLAY --- */
+      .play-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        /* Crucial: ensures the icon doesn't block dragging/clicking */
+        pointer-events: none; 
+        
+        transition: transform 0.2s ease, background-color 0.2s;
+        backdrop-filter: blur(5px); /* Optional: adds a nice glass effect */
+      }
+
+      /* Hover Effect */
+      .card:hover .play-icon {
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      /* Counter Badge Styling */
+      .counter-badge {
+        display: inline-block;
+        background-color: #fff; /* White background */
+        color: #000;            /* Black text */
+        font-size: 1rem;      /* Slightly smaller than title */
+        font-weight: bold;
+        border-radius: 50px;    /* Makes it a pill/circle shape */
+        padding: 4px 12px;      /* Spacing around the number */
+        margin-left: 2px;      /* Space between title and badge */
+        vertical-align: top; /* Aligns perfectly with text */
+        margin-top: 7px;
+        line-height: 1;         /* Ensures the badge height is tight */
+      }
+      @media (max-width: 600px) {
+        .counter-badge {
+            font-size: .9rem;      /* Slightly smaller than title */
+            padding: 3px 10px;      /* Spacing around the number */
+            margin-left: 2px;      /* Space between title and badge */
+            margin-top: 3px;
+            line-height: 1;         /* Ensures the badge height is tight */
+          }
+
+
+</style>
+
+</head>
+<body>
+    <header class="list-page">
+        <h1>xplr.es</h1>
+        <div class="nav-buttons">
+            <button onclick="window.location.href='index.html';">Photos</button>
+            <button onclick="window.location.href='list.html';">List</button>
+            <button onclick="window.location.href='sets.html';" class="nav-button-active">Sets</button>
+        </div>
+    </header>
+
+    <div id="app-container"></div>
+
+<script>
+    // ==========================================
+    // 1. CONFIGURATION
+    // ==========================================
+    const carouselSettings = [
+      {
+        id: 'videos', 
+        title: 'Videos',
+        filter: (props) => ['196', '194', '191', '188', '182', '181', '178', '176', '134', '129', '126', '122', '67', '62', '52'].includes(props.id) 
+      },
+      {
+        id: 'mosaics', 
+        title: 'Mosaics',
+        filter: (props) => ['189', '183', '179', '150', '146', '142', '141', '129'].includes(props.id) 
+      },
+      {
+        id: 'monalith', 
+        title: 'Monalith Bunkers',
+        filter: (props) => ['107', '106', '105', '52'].includes(props.id) 
+      },
+      {
+        id: 'graveyards', 
+        title: 'Object Graveyards',
+        filter: (props) => ['199', '182', '103', '78', '23'].includes(props.id) 
+      },
+      {
+        id: 'control', 
+        title: 'Control Panels',
+        filter: (props) => ['197', '109', '24', '20', '19'].includes(props.id) 
+      }
+    ];
+
+    // ==========================================
+    // 2. MAIN APP LOGIC
+    // ==========================================
+    async function initCarousels() {
+        const container = document.getElementById('app-container');
+
+        try {
+            const response = await fetch('pins-new.geojson');
+            const data = await response.json();
+            const features = data.features;
+
+            // Build carousels
+            carouselSettings.forEach(setting => {
+                
+                // Filter items AND Sort by ID (Highest to Lowest)
+                const items = features
+                    .filter(f => setting.filter(f.properties))
+                    .sort((a, b) => Number(b.properties.id) - Number(a.properties.id));
+
+                if (items.length === 0) return; 
+
+                // Create Wrapper
+                const section = document.createElement('div');
+                section.className = 'carousel-wrapper';
+                
+                // Create Title
+                const title = document.createElement('h2');
+                title.className = 'carousel-section-title';
+                title.innerHTML = `${setting.title} <span class="counter-badge">${items.length}</span>`;
+                section.appendChild(title);
+
+                // Create Track (The scrollable reel)
+                const track = document.createElement('div');
+                track.className = 'reel-track';
+                // Drag Logic ID if needed
+                track.id = `track-${setting.id}`;
+
+                // Alternative: if you want to keep your existing loop structure
+                items.forEach(item => {
+                    const p = item.properties;
+                    const isVideo = setting.id === 'videos'; // Check ID
+                    
+                    const link = document.createElement('a');
+                    link.className = 'card';
+                    link.href = p.link || '#';
+                    link.draggable = false;
+
+                    link.innerHTML = `
+                        <div class="card-image-wrapper">
+                            <img src="${p.image}" alt="${p.title}" class="card-image" loading="lazy" draggable="false">
+                            ${isVideo ? '<div class="play-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="black"><path d="M8 5v14l11-7z"/></svg></div>' : ''}
+                        </div>
+                        <div class="card-content">
+                            <div class="card-id">${p.id}</div>
+                            <div class="card-title">${p.title}</div>
+                            <div class="card-meta">${p.location}, ${p.country}</div>
+                        </div>
+                    `;
+                    track.appendChild(link);
+                });
+
+                section.appendChild(track);
+                container.appendChild(section);
+
+                // 3. APPLY THE PHYSICS ENGINE
+                initDesktopDragScroll(track);
+            });
+
+        } catch (error) {
+            console.error(error);
+            container.innerHTML = `<p style="color:red; text-align:center;">Error: ${error.message}</p>`;
+        }
+    }
+
+    // ==========================================
+    // 3. PHYSICS ENGINE (From navigation.js)
+    // ==========================================
+    function initDesktopDragScroll(track) {
+        // Only enable on fine pointers (mouse). Touch remains native.
+        const hasFinePointer = typeof window.matchMedia === "function"
+            ? window.matchMedia("(pointer: fine)").matches
+            : true;
+        if (!hasFinePointer) return;
+
+        let isDown = false;
+        let startX = 0;
+        let startScroll = 0;
+        let dragged = false;
+
+        // Velocity sampling
+        let lastX = 0;
+        let lastT = 0;
+        let velocity = 0; 
+        const DRAG_THRESHOLD = 5;          
+        const MAX_ABS_VELOCITY = 2.0;      
+        const FLING_MIN_VELOCITY = 0.15;   
+        const FRICTION = 0.95;             
+        const FRAME_MS = 16;               
+        let flingId = 0;                   
+
+        function clampScroll(x) {
+            const max = track.scrollWidth - track.clientWidth;
+            if (max <= 0) return 0;
+            return Math.min(Math.max(0, x), max);
+        }
+
+        function stopFling() {
+            if (flingId) {
+                cancelAnimationFrame(flingId);
+                flingId = 0;
+            }
+        }
+
+        function startFling(v0) {
+            stopFling();
+            let v = Math.max(Math.min(v0, MAX_ABS_VELOCITY), -MAX_ABS_VELOCITY);
+
+            const step = () => {
+                if (isDown) {
+                    flingId = 0;
+                    return;
+                }
+                track.scrollLeft = clampScroll(track.scrollLeft - v * FRAME_MS);
+                v *= FRICTION;
+
+                const atEdge = track.scrollLeft === 0 || track.scrollLeft === track.scrollWidth - track.clientWidth;
+                if (Math.abs(v) < 0.02 || atEdge) {
+                    flingId = 0;
+                    return;
+                }
+                flingId = requestAnimationFrame(step);
+            };
+            flingId = requestAnimationFrame(step);
+        }
+
+        function onPointerDown(e) {
+            if (e.pointerType !== "mouse" || e.button !== 0) return;
+            isDown = true;
+            dragged = false;
+            startX = e.clientX;
+            startScroll = track.scrollLeft;
+            lastX = e.clientX;
+            lastT = performance.now();
+            stopFling();
+            
+            // --- CHANGE 1: DO NOT Capture/Add Class here yet ---
+            // We wait until the user moves > 5px in onPointerMove
+        }
+
+        function onPointerMove(e) {
+            if (!isDown || e.pointerType !== "mouse") return;
+            const now = performance.now();
+            const dx = e.clientX - startX;
+
+            // --- CHANGE 2: Activate Drag Mode only after threshold ---
+            if (!dragged && Math.abs(dx) > DRAG_THRESHOLD) {
+                dragged = true;
+                track.classList.add("is-dragging"); // Now CSS triggers
+                try { track.setPointerCapture?.(e.pointerId); } catch {} // Now we capture
+            }
+
+            if (dragged) {
+                // Only scroll if we are officially dragging
+                track.scrollLeft = clampScroll(startScroll - dx);
+                
+                const dt = now - lastT || 1;
+                velocity = (e.clientX - lastX) / dt;
+                lastX = e.clientX;
+                lastT = now;
+            }
+        }
+
+        function endDrag(e) {
+            if (!isDown) return;
+            isDown = false;
+            
+            // Cleanup
+            track.classList.remove("is-dragging");
+            try { track.releasePointerCapture?.(e.pointerId); } catch {}
+
+            // Start fling only if we were dragging
+            if (dragged && Math.abs(velocity) >= FLING_MIN_VELOCITY) {
+                startFling(velocity);
+            }
+            dragged = false;
+        }
+
+        function onClickCapture(e) {
+            // Block the click only if we actually dragged
+            if (dragged) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+        }
+
+        track.addEventListener("pointerdown", onPointerDown, { passive: true });
+        track.addEventListener("pointermove", onPointerMove, { passive: true });
+        track.addEventListener("pointerup", endDrag, { passive: true });
+        track.addEventListener("pointercancel", endDrag, { passive: true });
+        track.addEventListener("mouseleave", endDrag, { passive: true });
+        track.addEventListener("click", onClickCapture, { capture: true });
+    }
+
+    // Initialize when DOM is ready
+    document.addEventListener("DOMContentLoaded", () => {
+        initCarousels();
+    });
+</script>
+
+</body>
+</html>
