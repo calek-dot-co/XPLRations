@@ -83,7 +83,7 @@
         "image": "005_zeljava/thumb.jpg",
         "hero": "005_zeljava/hero.jpg",
         "title": "Željava Underground Air Base",
-        "location": "Željava",
+        "location": "Somewhere",
         "country": "Croatia",
         "link": "005_zeljava/zeljava.html",
         "tags": ["Bunker"],
@@ -482,7 +482,7 @@
         "image": "026_bars-501/thumb.jpg",
         "hero": "026_bars-501/hero.jpg",
         "title": "BARS 501",
-        "location": "Kálló",
+        "location": "Somewhere",
         "country": "Hungary",
         "link": "026_bars-501/bars-501.html",
         "tags": ["Troposcatter"],
@@ -1469,7 +1469,7 @@
         "id": "78",
         "image": "078_gas-mask-cemetry/thumb.jpg",
         "hero": "078_gas-mask-cemetry/hero.jpg",
-        "title": "Gas Mask Cemetery",
+        "title": "Gas Mask Graveyard",
         "location": "Somewhere",
         "country": "Latvia",
         "link": "078_gas-mask-cemetry/gas-mask-cemetry.html",
@@ -3849,6 +3849,120 @@
         "country": "Cyprus",
         "link": "203_bath-house/bath-house.html",
         "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "204",
+        "image": "204_varosha/thumb.jpg",
+        "hero": "204_varosha/hero.jpg",
+        "title": "The Abandoned City",
+        "location": "Somewhere",
+        "country": "Cyprus",
+        "link": "204_varosha/varosha.html",
+        "tags": ["City"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "205",
+        "image": "205_mining-tunnels/thumb.jpg",
+        "hero": "205_mining-tunnels/hero.jpg",
+        "title": "Decaying Beams and Broken Rock",
+        "location": "Somewhere",
+        "country": "Cyprus",
+        "link": "205_mining-tunnels/mining-tunnels.html",
+        "tags": ["Mine"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "206",
+        "image": "206_abandoned-buses/thumb.jpg",
+        "hero": "206_abandoned-buses/hero.jpg",
+        "title": "Abandoned Buses",
+        "location": "Somewhere",
+        "country": "Cyprus",
+        "link": "206_abandoned-buses/abandoned-buses.html",
+        "tags": ["Buses"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "207",
+        "image": "207_toxic-mining-lakes/thumb.jpg",
+        "hero": "207_toxic-mining-lakes/hero.jpg",
+        "title": "Toxic Mining Lakes",
+        "location": "Somewhere",
+        "country": "Cyprus",
+        "link": "207_toxic-mining-lakes/toxic-mining-lakes.html",
+        "tags": ["Lakes"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "208",
+        "image": "208_mining-tower/thumb.jpg",
+        "hero": "208_mining-tower/hero.jpg",
+        "title": "Rusting Mining Tower",
+        "location": "Somewhere",
+        "country": "Cyprus",
+        "link": "208_mining-tower/mining-tower.html",
+        "tags": ["Tower"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "209",
+        "image": "209_abandoned-tanks/thumb.jpg",
+        "hero": "209_abandoned-tanks/hero.jpg",
+        "title": "Costal Shooting Range",
+        "location": "Somewhere",
+        "country": "Cyprus",
+        "link": "209_abandoned-tanks/abandoned-tanks.html",
+        "tags": ["Tanks"],
         "icon-image": "pin-active"
       },
       "geometry": {
