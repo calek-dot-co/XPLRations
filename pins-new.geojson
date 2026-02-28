@@ -159,7 +159,7 @@
         "image": "009_hotel-igman/thumb.jpg",
         "hero": "009_hotel-igman/hero.jpg",
         "title": "Hotel Igman",
-        "location": "Gornja Grkarica",
+        "location": "Somewhere",
         "country": "Bosnia & Herzegovina",
         "link": "009_hotel-igman/hotel-igman.html",
         "tags": ["Hotel"],
@@ -177,8 +177,8 @@
         "id": "10",
         "image": "010_kupari-hotels/thumb.jpg",
         "hero": "010_kupari-hotels/hero.jpg",
-        "title": "Abandoned Hotels",
-        "location": "Kupari",
+        "title": "Bay of Abandoned Hotels",
+        "location": "Somewhere",
         "country": "Croatia",
         "link": "010_kupari-hotels/kupari-hotels.html",
         "tags": ["Hotel"],
@@ -3962,6 +3962,25 @@
         "location": "Somewhere",
         "country": "Cyprus",
         "link": "209_abandoned-tanks/abandoned-tanks.html",
+        "tags": ["Tanks"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "210",
+        "image": "210_potsdam-mosaics/thumb.jpg",
+        "hero": "210_potsdam-mosaics/hero.jpg",
+        "title": "Cosmic Ambitions in Glass",
+        "location": "Potsdam",
+        "country": "Germany",
+        "link": "210_potsdam-mosaics/potsdam-mosaics.html",
         "tags": ["Tanks"],
         "icon-image": "pin-active"
       },
