@@ -3977,11 +3977,87 @@
         "id": "210",
         "image": "210_potsdam-mosaics/thumb.jpg",
         "hero": "210_potsdam-mosaics/hero.jpg",
-        "title": "Cosmic Ambitions in Glass",
+        "title": "Mosaics of Contrast",
         "location": "Potsdam",
         "country": "Germany",
         "link": "210_potsdam-mosaics/potsdam-mosaics.html",
-        "tags": ["Tanks"],
+        "tags": ["Mosaics"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "211",
+        "image": "211_snowy-bunker/thumb.jpg",
+        "hero": "211_snowy-bunker/hero.jpg",
+        "title": "Alternative Command Bunker P",
+        "location": "Somewhere",
+        "country": "Germany",
+        "link": "211_snowy-bunker/snowy-bunker.html",
+        "tags": ["Bunker"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "212",
+        "image": "212_stasi-spy-station/thumb.jpg",
+        "hero": "212_stasi-spy-station/hero.jpg",
+        "title": "Stasi Spy Tower",
+        "location": "Somewhere",
+        "country": "Germany",
+        "link": "212_stasi-spy-station/stasi-spy-station.html",
+        "tags": ["Tower"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "213",
+        "image": "213_pump-house/thumb.jpg",
+        "hero": "213_pump-house/hero.jpg",
+        "title": "Abandoned Pump House",
+        "location": "Somewhere",
+        "country": "Germany",
+        "link": "213_pump-house/pump-house.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "214",
+        "image": "214_halle-saale/thumb.jpg",
+        "hero": "214_halle-saale/hero.jpg",
+        "title": "Tile Murals of the GDR",
+        "location": "Halle (Saale)",
+        "country": "Germany",
+        "link": "214_halle-saale/halle-saale.html",
+        "tags": ["Mosaics"],
         "icon-image": "pin-active"
       },
       "geometry": {
