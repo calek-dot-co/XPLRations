@@ -4064,6 +4064,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "215",
+        "image": "215_amusement-park/thumb.jpg",
+        "hero": "215_amusement-park/hero.jpg",
+        "title": "Abandoned Kids Park",
+        "location": "Somewhere",
+        "country": "Denmark",
+        "link": "215_amusement-park/amusement-park.html",
+        "tags": ["Play park"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
