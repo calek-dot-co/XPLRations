@@ -4083,6 +4083,44 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "216",
+        "image": "216_chisinau/thumb.jpg",
+        "hero": "216_chisinau/hero.jpg",
+        "title": "The City of Parks",
+        "location": "Chișinău",
+        "country": "Moldova",
+        "link": "216_chisinau/chisinau.html",
+        "tags": ["City highlights"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "217",
+        "image": "217_moldovan-road-sights/thumb.jpg",
+        "hero": "217_moldovan-road-sights/hero.jpg",
+        "title": "Found on the Moldovan Roads",
+        "location": "Various",
+        "country": "Moldova",
+        "link": "217_moldovan-road-sights/moldovan-road-sights.html",
+        "tags": ["Play park"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
