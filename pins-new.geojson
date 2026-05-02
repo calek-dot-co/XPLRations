@@ -4121,6 +4121,44 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "218",
+        "image": "218_moldovan-mosaics/thumb.jpg",
+        "hero": "218_moldovan-mosaics/hero.jpg",
+        "title": "Mosaics between the Rivers",
+        "location": "Various",
+        "country": "Moldova",
+        "link": "218_moldovan-mosaics/moldovan-mosaics.html",
+        "tags": ["Mosaics"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "219",
+        "image": "219_stucco-farm/thumb.jpg",
+        "hero": "219_stucco-farm/hero.jpg",
+        "title": "Stucco Collective Farm",
+        "location": "Somewhere",
+        "country": "Moldova",
+        "link": "219_stucco-farm/stucco-farm.html",
+        "tags": ["Farm"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
