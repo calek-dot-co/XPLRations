@@ -2613,7 +2613,7 @@
         "location": "Bulachauri",
         "country": "Georgia",
         "link": "138_georgian-bus-stops/georgian-bus-stops.html",
-        "tags": ["Bus stop"],
+        "tags": ["Bus stops"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -4019,7 +4019,7 @@
         "location": "Somewhere",
         "country": "Germany",
         "link": "212_stasi-spy-station/stasi-spy-station.html",
-        "tags": ["Tower"],
+        "tags": ["Radar"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -4114,7 +4114,7 @@
         "location": "Various",
         "country": "Moldova",
         "link": "217_moldovan-road-sights/moldovan-road-sights.html",
-        "tags": ["Play park"],
+        "tags": ["Bus stops"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -4153,6 +4153,63 @@
         "country": "Moldova",
         "link": "219_stucco-farm/stucco-farm.html",
         "tags": ["Farm"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "220",
+        "image": "220_soviet-radome/thumb.jpg",
+        "hero": "220_soviet-radome/hero.jpg",
+        "title": "Soviet Radome",
+        "location": "Somewhere",
+        "country": "Moldova",
+        "link": "220_soviet-radome/soviet-radome.html",
+        "tags": ["Radar"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "221",
+        "image": "221_bunker-r/thumb.jpg",
+        "hero": "221_bunker-r/hero.jpg",
+        "title": "Bunker R",
+        "location": "Somewhere",
+        "country": "Moldova",
+        "link": "221_bunker-r/bunker-r.html",
+        "tags": ["Bunker"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "222",
+        "image": "222_object-1180/thumb.jpg",
+        "hero": "222_object-1180/hero.jpg",
+        "title": "Object 1180",
+        "location": "Somewhere",
+        "country": "Moldova",
+        "link": "222_object-1180/object-1180.html",
+        "tags": ["Bunker"],
         "icon-image": "pin-active"
       },
       "geometry": {
