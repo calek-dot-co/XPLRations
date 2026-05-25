@@ -2438,7 +2438,7 @@
         "id": "129",
         "image": "129_pioneer-camp/thumb.jpg",
         "hero": "129_pioneer-camp/hero.jpg",
-        "title": "Pioneer Camp",
+        "title": "Mosaic Pioneer Camp",
         "location": "Somewhere",
         "country": "Armenia",
         "link": "129_pioneer-camp/pioneer-camp.html",
@@ -4210,6 +4210,44 @@
         "country": "Moldova",
         "link": "222_object-1180/object-1180.html",
         "tags": ["Bunker"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "223",
+        "image": "223_soviet-bridge/thumb.jpg",
+        "hero": "223_soviet-bridge/hero.jpg",
+        "title": "Old Soviet Bridge",
+        "location": "Somewhere",
+        "country": "Moldova",
+        "link": "223_soviet-bridge/soviet-bridge.html",
+        "tags": ["Bridge"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "224",
+        "image": "224_colourful-pioneer-camp/thumb.jpg",
+        "hero": "224_colourful-pioneer-camp/hero.jpg",
+        "title": "Colourful Pioneer Camp",
+        "location": "Somewhere",
+        "country": "Moldova",
+        "link": "224_colourful-pioneer-camp/colourful-pioneer-camp.html",
+        "tags": ["Pioneer camp"],
         "icon-image": "pin-active"
       },
       "geometry": {
