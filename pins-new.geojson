@@ -4254,6 +4254,101 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "225",
+        "image": "225_garden-of-lenins/thumb.jpg",
+        "hero": "225_garden-of-lenins/hero.jpg",
+        "title": "Lenin's Garden",
+        "location": "Malcoci",
+        "country": "Moldova",
+        "link": "225_garden-of-lenins/garden-of-lenins.html",
+        "tags": ["Museum"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "226",
+        "image": "226_jewish-cemetery/thumb.jpg",
+        "hero": "226_jewish-cemetery/hero.jpg",
+        "title": "Old Jewish Cemetery",
+        "location": "Chișinău",
+        "country": "Moldova",
+        "link": "226_jewish-cemetery/jewish-cemetery.html",
+        "tags": ["Cemetery"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "227",
+        "image": "227_forgotten-station/thumb.jpg",
+        "hero": "227_forgotten-station/hero.jpg",
+        "title": "Forgotten Train Station",
+        "location": "Somewhere",
+        "country": "Moldova",
+        "link": "227_forgotten-station/forgotten-station.html",
+        "tags": ["Station"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "228",
+        "image": "228_cable-car/thumb.jpg",
+        "hero": "228_cable-car/hero.jpg",
+        "title": "Forest Cable Way",
+        "location": "Somewhere",
+        "country": "Moldova",
+        "link": "228_cable-car/cable-car.html",
+        "tags": ["Cable car"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "229",
+        "image": "229_pavilion-eight/thumb.jpg",
+        "hero": "229_pavilion-eight/hero.jpg",
+        "title": "Pavilion Number 8",
+        "location": "Somewhere",
+        "country": "Moldova",
+        "link": "229_pavilion-eight/pavilion-eight.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
