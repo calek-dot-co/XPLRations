@@ -881,7 +881,7 @@
         "image": "047_hotel-evropa/thumb.jpg",
         "hero": "047_hotel-evropa/hero.jpg",
         "title": "Hotel Evropa",
-        "location": "Oteshevo",
+        "location": "Somewhere",
         "country": "North Macedonia",
         "link": "047_hotel-evropa/hotel-evropa.html",
         "tags": ["Hotel"],
@@ -919,7 +919,7 @@
         "image": "049_theater/thumb.jpg",
         "hero": "049_theater/hero.jpg",
         "title": "Abandoned Theater",
-        "location": "Shipka",
+        "location": "Somewhere",
         "country": "Bulgaria",
         "link": "049_theater/theater.html",
         "tags": ["Theater"],
@@ -1242,7 +1242,7 @@
         "image": "066_tsl-44/thumb.jpg",
         "hero": "066_tsl-44/hero.jpg",
         "title": "TSL 44",
-        "location": "Niederlehme",
+        "location": "Somewhere",
         "country": "Germany",
         "link": "066_tsl-44/tsl-44.html",
         "tags": ["Bunker"],
@@ -1736,7 +1736,7 @@
         "image": "092_locomotive-depot/thumb.jpg",
         "hero": "092_locomotive-depot/hero.jpg",
         "title": "Locomotive Depot",
-        "location": "Kutno",
+        "location": "Somewhere",
         "country": "Poland",
         "link": "092_locomotive-depot/locomotive-depot.html",
         "tags": ["Train yard"],
@@ -1793,7 +1793,7 @@
         "image": "095_krakow-quarry/thumb.jpg",
         "hero": "095_krakow-quarry/hero.jpg",
         "title": "Quarry Film Set Remains",
-        "location": "Krakow",
+        "location": "Somewhere",
         "country": "Poland",
         "link": "095_krakow-quarry/krakow-quarry.html",
         "tags": ["Quarry"],
@@ -1964,7 +1964,7 @@
         "image": "104_bagger-258/thumb.jpg",
         "hero": "104_bagger-258/hero.jpg",
         "title": "Bagger 258",
-        "location": "Senftenberg",
+        "location": "Somewhere",
         "country": "Germany",
         "link": "104_bagger-258/bagger-258.html",
         "tags": ["Machinery"],
@@ -4343,6 +4343,44 @@
         "country": "Moldova",
         "link": "229_pavilion-eight/pavilion-eight.html",
         "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "230",
+        "image": "230_tiraspol/thumb.jpg",
+        "hero": "230_tiraspol/hero.jpg",
+        "title": "Soviets Frozen in Time",
+        "location": "Tiraspol",
+        "country": "Transnistria",
+        "link": "230_tiraspol/tiraspol.html",
+        "tags": ["City highlights"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "231",
+        "image": "231_bender/thumb.jpg",
+        "hero": "231_bender/hero.jpg",
+        "title": "The City of Military Glory",
+        "location": "Bender",
+        "country": "Transnistria",
+        "link": "231_bender/bender.html",
+        "tags": ["City highlights"],
         "icon-image": "pin-active"
       },
       "geometry": {
