@@ -4387,6 +4387,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "232",
+        "image": "232_dnister-mine/thumb.jpg",
+        "hero": "232_dnister-mine/hero.jpg",
+        "title": "Red Star Mine",
+        "location": "Somewhere",
+        "country": "Transnistria",
+        "link": "232_dnister-mine/dnister-mine.html",
+        "tags": ["Mine"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
