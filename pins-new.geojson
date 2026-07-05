@@ -4406,6 +4406,82 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "233",
+        "image": "233_tbilisi/thumb.jpg",
+        "hero": "233_tbilisi/hero.jpg",
+        "title": "Heart of the Caucasus",
+        "location": "Tbilisi",
+        "country": "Georgia",
+        "link": "233_tbilisi/tbilisi.html",
+        "tags": ["City highlights"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "234",
+        "image": "234_didgori-battle-memorial/thumb.jpg",
+        "hero": "234_didgori-battle-memorial/hero.jpg",
+        "title": "Didgori Battle Memorial",
+        "location": "Didgori",
+        "country": "Georgia",
+        "link": "234_didgori-battle-memorial/didgori-battle-memorial.html",
+        "tags": ["Memorial"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "235",
+        "image": "235_mural-pioneer-camp/thumb.jpg",
+        "hero": "235_mural-pioneer-camp/hero.jpg",
+        "title": "Mural Pioneer Camp",
+        "location": "Somewhere",
+        "country": "Georgia",
+        "link": "235_mural-pioneer-camp/mural-pioneer-camp.html",
+        "tags": ["Pioneer camp"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "236",
+        "image": "236_tskhvarichamia/thumb.jpg",
+        "hero": "236_tskhvarichamia/hero.jpg",
+        "title": "Abandoned Resort Village",
+        "location": "Tskhvarichamia",
+        "country": "Georgia",
+        "link": "236_tskhvarichamia/tskhvarichamia.html",
+        "tags": ["Village"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
