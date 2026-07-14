@@ -4471,11 +4471,30 @@
         "id": "236",
         "image": "236_tskhvarichamia/thumb.jpg",
         "hero": "236_tskhvarichamia/hero.jpg",
-        "title": "Abandoned Resort Village",
+        "title": "Former Recovery Village",
         "location": "Tskhvarichamia",
         "country": "Georgia",
         "link": "236_tskhvarichamia/tskhvarichamia.html",
         "tags": ["Village"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "237",
+        "image": "237_roadside-murals/thumb.jpg",
+        "hero": "237_roadside-murals/hero.jpg",
+        "title": "Soviet Roadside Murals",
+        "location": "Tskhvarichamia",
+        "country": "Georgia",
+        "link": "237_roadside-murals/roadside-murals.html",
+        "tags": ["Mural"],
         "icon-image": "pin-active"
       },
       "geometry": {
