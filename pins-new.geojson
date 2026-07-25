@@ -1245,7 +1245,7 @@
         "location": "Somewhere",
         "country": "Germany",
         "link": "066_tsl-44/tsl-44.html",
-        "tags": ["Bunker"],
+        "tags": ["Tank"],
         "icon-image": "pin-active"
       },
       "geometry": {
@@ -2420,7 +2420,7 @@
         "image": "128_armenian-monasteries/thumb.jpg",
         "hero": "128_armenian-monasteries/hero.jpg",
         "title": "Monasteries and Churches of Armenia",
-        "location": "Various",
+        "location": "Various locations",
         "country": "Armenia",
         "link": "128_armenian-monasteries/armenian-monasteries.html",
         "tags": ["Monastery"],
@@ -4111,7 +4111,7 @@
         "image": "217_moldovan-road-sights/thumb.jpg",
         "hero": "217_moldovan-road-sights/hero.jpg",
         "title": "Found on the Moldovan Roads",
-        "location": "Various",
+        "location": "Various locations",
         "country": "Moldova",
         "link": "217_moldovan-road-sights/moldovan-road-sights.html",
         "tags": ["Bus stops"],
@@ -4130,7 +4130,7 @@
         "image": "218_moldovan-mosaics/thumb.jpg",
         "hero": "218_moldovan-mosaics/hero.jpg",
         "title": "Mosaics between the Rivers",
-        "location": "Various",
+        "location": "Various locations",
         "country": "Moldova",
         "link": "218_moldovan-mosaics/moldovan-mosaics.html",
         "tags": ["Mosaics"],
@@ -4495,6 +4495,82 @@
         "country": "Georgia",
         "link": "237_roadside-murals/roadside-murals.html",
         "tags": ["Mural"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "238",
+        "image": "238_rail-tunnel/thumb.jpg",
+        "hero": "238_rail-tunnel/hero.jpg",
+        "title": "Abandoned Rail Bypass",
+        "location": "Somewhere",
+        "country": "Georgia",
+        "link": "238_rail-tunnel/rail-tunnel.html",
+        "tags": ["Tunnel"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "239",
+        "image": "239_water-storage/thumb.jpg",
+        "hero": "239_water-storage/hero.jpg",
+        "title": "Underground Water Reservoir",
+        "location": "Somewhere",
+        "country": "Georgia",
+        "link": "239_water-storage/water-storage.html",
+        "tags": ["Reservoir"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "240",
+        "image": "240_land-of-fire/thumb.jpg",
+        "hero": "240_land-of-fire/hero.jpg",
+        "title": "Land of Fire",
+        "location": "Various locations",
+        "country": "Azerbaijan",
+        "link": "240_land-of-fire/land-of-fire.html",
+        "tags": ["Country highlights"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "241",
+        "image": "241_we-are-mountains/thumb.jpg",
+        "hero": "241_we-are-mountains/hero.jpg",
+        "title": "We Are Mountains",
+        "location": "Stepanakert / Xankəndi",
+        "country": "Azerbaijan",
+        "link": "241_we-are-mountains/we-are-mountains.html",
+        "tags": ["Monument"],
         "icon-image": "pin-active"
       },
       "geometry": {
