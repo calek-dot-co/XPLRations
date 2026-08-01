@@ -4577,6 +4577,63 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "242",
+        "image": "242_u-boat-loch/thumb.jpg",
+        "hero": "242_u-boat-loch/hero.jpg",
+        "title": "Inland U-boat Loch",
+        "location": "Somewhere",
+        "country": "Poland",
+        "link": "242_u-boat-loch/u-boat-loch.html",
+        "tags": ["Loch"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "243",
+        "image": "243_castle-hotel/thumb.jpg",
+        "hero": "243_castle-hotel/hero.jpg",
+        "title": "The Artist's Unfinished Castle",
+        "location": "Somewhere",
+        "country": "Poland",
+        "link": "243_castle-hotel/castle-hotel.html",
+        "tags": ["Castle"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "244",
+        "image": "244_half-finished-nuclear/thumb.jpg",
+        "hero": "244_half-finished-nuclear/hero.jpg",
+        "title": "Flooded Nuclear Power Plant",
+        "location": "Somewhere",
+        "country": "Poland",
+        "link": "244_half-finished-nuclear/half-finished-nuclear.html",
+        "tags": ["Powerplant"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
