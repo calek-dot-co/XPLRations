@@ -1393,7 +1393,7 @@
         "id": "74",
         "image": "074_fire-control-tower-1/thumb.jpg",
         "hero": "074_fire-control-tower-1/hero.jpg",
-        "title": "BS-26 Fire Control Tower",
+        "title": "BS-26 Fire Correction Tower",
         "location": "Tahkuna",
         "country": "Estonia",
         "link": "074_fire-control-tower-1/fire-control-tower-1.html",
@@ -1412,7 +1412,7 @@
         "id": "75",
         "image": "075_fire-control-tower-2/thumb.jpg",
         "hero": "075_fire-control-tower-2/hero.jpg",
-        "title": "BS-42 Fire Control Tower",
+        "title": "BS-42 Fire Correction Tower",
         "location": "Kalana",
         "country": "Estonia",
         "link": "075_fire-control-tower-2/fire-control-tower-2.html",
@@ -1526,7 +1526,7 @@
         "id": "81",
         "image": "081_fire-control-tower-3/thumb.jpg",
         "hero": "081_fire-control-tower-3/hero.jpg",
-        "title": "BS-46 Fire Control Tower",
+        "title": "BS-46 Fire Correction Tower",
         "location": "Ventspils",
         "country": "Latvia",
         "link": "081_fire-control-tower-3/fire-control-tower-3.html",
@@ -1564,7 +1564,7 @@
         "id": "83",
         "image": "083_fire-control-tower-4/thumb.jpg",
         "hero": "083_fire-control-tower-4/hero.jpg",
-        "title": "BS-23 Fire Control Towers",
+        "title": "BS-23 Fire Correction Towers",
         "location": "Liepāja",
         "country": "Latvia",
         "link": "083_fire-control-tower-4/fire-control-tower-4.html",
@@ -4628,6 +4628,63 @@
         "country": "Poland",
         "link": "244_half-finished-nuclear/half-finished-nuclear.html",
         "tags": ["Powerplant"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "245",
+        "image": "245_fire-control-tower-5/thumb.jpg",
+        "hero": "245_fire-control-tower-5/hero.jpg",
+        "title": "BS-27 Fire Correction Tower",
+        "location": "Hel Peninsula",
+        "country": "Poland",
+        "link": "245_fire-control-tower-5/fire-control-tower-5.html",
+        "tags": ["Tower"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "246",
+        "image": "246_fire-control-tower-6/thumb.jpg",
+        "hero": "246_fire-control-tower-6/hero.jpg",
+        "title": "BS-13 Fire Correction Tower",
+        "location": "Hel Peninsula",
+        "country": "Poland",
+        "link": "246_fire-control-tower-6/fire-control-tower-6.html",
+        "tags": ["Tower"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "247",
+        "image": "247_fire-control-tower-7/thumb.jpg",
+        "hero": "247_fire-control-tower-7/hero.jpg",
+        "title": "BS-25 Fire Correction Tower",
+        "location": "Somewhere",
+        "country": "Poland",
+        "link": "247_fire-control-tower-7/fire-control-tower-7.html",
+        "tags": ["Tower"],
         "icon-image": "pin-active"
       },
       "geometry": {
