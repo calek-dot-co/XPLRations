@@ -4691,6 +4691,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "248",
+        "image": "248_linnahall-theater/thumb.jpg",
+        "hero": "248_linnahall-theater/hero.jpg",
+        "title": "Linnahall Theater",
+        "location": "Tallinn",
+        "country": "Estonia",
+        "link": "248_linnahall-theater/linnahall-theater.html",
+        "tags": ["Building"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
