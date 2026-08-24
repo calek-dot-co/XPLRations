@@ -4710,6 +4710,44 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "249",
+        "image": "249_tallinn-memorial/thumb.jpg",
+        "hero": "249_tallinn-memorial/hero.jpg",
+        "title": "Maarjamäe Memorial",
+        "location": "Tallinn",
+        "country": "Estonia",
+        "link": "249_tallinn-memorial/tallinn-memorial.html",
+        "tags": ["Memorial"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "250",
+        "image": "250_rummu-quarry/thumb.jpg",
+        "hero": "250_rummu-quarry/hero.jpg",
+        "title": "Flooded Quarry",
+        "location": "Rummu",
+        "country": "Estonia",
+        "link": "250_rummu-quarry/rummu-quarry.html",
+        "tags": ["Quarry"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
