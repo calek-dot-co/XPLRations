@@ -4748,6 +4748,25 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "251",
+        "image": "251_sea-mines/thumb.jpg",
+        "hero": "251_sea-mines/hero.jpg",
+        "title": "Sea Mine Forest",
+        "location": "Somewhere",
+        "country": "Estonia",
+        "link": "251_sea-mines/sea-mines.html",
+        "tags": ["Forest"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
