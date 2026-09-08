@@ -4767,6 +4767,63 @@
         "coordinates": [1, 1],
         "type": "Point"
       }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "252",
+        "image": "252_peters-battery/thumb.jpg",
+        "hero": "252_peters-battery/hero.jpg",
+        "title": "Peter's Coastal Defence Battery",
+        "location": "Somewhere",
+        "country": "Estonia",
+        "link": "252_peters-battery/peters-battery.html",
+        "tags": ["Battery"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "253",
+        "image": "253_peters-bunker/thumb.jpg",
+        "hero": "253_peters-bunker/hero.jpg",
+        "title": "Peter's Coastal Defence Bunker",
+        "location": "Somewhere",
+        "country": "Estonia",
+        "link": "253_peters-bunker/peters-bunker.html",
+        "tags": ["Bunker"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "254",
+        "image": "254_rusting-cemetery/thumb.jpg",
+        "hero": "254_rusting-cemetery/hero.jpg",
+        "title": "Overgrown Island Cemetery",
+        "location": "Somewhere",
+        "country": "Estonia",
+        "link": "254_rusting-cemetery/rusting-cemetery.html",
+        "tags": ["Cemetery"],
+        "icon-image": "pin-active"
+      },
+      "geometry": {
+        "coordinates": [1, 1],
+        "type": "Point"
+      }
     }
 
   ],
